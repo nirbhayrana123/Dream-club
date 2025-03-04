@@ -139,7 +139,7 @@ a.button.greys:hover {
     font-weight: 400;
     text-decoration: none;
     font-family: 'Gilroy';
-    color: rgba(255, 255, 255, 1);
+    color: #ffffff;
     padding: 13px 15px;
 }
 
@@ -219,7 +219,10 @@ header.scrolled .navebar ul li a svg path {
 header.scrolled .logo-wareper {
     width: 80px;
 }
-
+header.scrolled .navebar ul li.login:hover a {
+    background: #171717;
+    color: #fff;
+}
 /**********************header end********************************/
 
 ul.list-unstyled li {
@@ -397,17 +400,41 @@ section.Upcoming-events {
     object-fit: cover;
     height: 550px;
 }
-
+.contentarea {
+    max-width: 625px;
+    height: 100%;
+}
 .event-overlay {
     position: absolute;
     bottom: 0;
     left: 0px;
-    width: 100%;
-    padding: 60px;
-    background: rgba(0, 0, 0, 0.5);
+    width: 100%; 
     top: 0px;
 }
-
+.contentarea img.bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    position: absolute;
+    left: 0;
+    max-width: 625px;
+}
+.innterContent {
+    position: relative;
+    padding: 58px;
+}
+.Olives p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.8px;
+}
+.Olives h5 { 
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: 0%;
+}
 .event-time {
     color: black;
     font-weight: bold;
