@@ -82,10 +82,11 @@ button.toggle-button {
 }
 header {
     position: absolute;
-    padding: 50px 0px;
+    padding:10px 0px;
     left: 0;
     right: 0;
     z-index: 9;
+    transition: 0.1s allease;
 }
 
 .logo-wareper img {
@@ -93,8 +94,8 @@ header {
 }
 a.button.greys:hover {
     background-color: #f3f3f300;
-    border: 1px solid #000000;
-    color: #000000;
+    border: 1px solid #171717;
+    color: #171717;
 }
 .topnavbar {
     display: flex;
@@ -102,26 +103,80 @@ a.button.greys:hover {
     justify-content: space-between;
 }
 
-.navebar ul.navebar-list {
+.navebar ul {
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0;
 }
 
-.navebar ul.navebar-list li.nav-item a.nav-link {
-    font-size: 15px;
-    font-weight: 500;
+.navebar ul li  a {
+    font-size: 16px;
+    font-weight: 400;
     text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    color: #fff;
-    padding: 15px 15px;
+    font-family: 'Gilroy';
+    color: rgba(255, 255, 255, 1);
+    padding: 13px 15px;
 }
+a.button-btn{
+    color: #171717!important;
+    font-weight: bold!important;
+}
+.navebar ul li  a b{
+    font-weight: bold;
+}
+.button-btn{
+    font-family: 'Gilroy';
+    font-weight: bold;
+}
+.navebar ul li.login:hover a  {
+    background-color: #ffffffeb;
+    color: #171717;
 
+}
+.button-btn:hover,.button:hover {
+    background-color: #ffffffeb;
+}
 .navebar ul.navebar-list li.nav-item:last-child a.nav-link {
     padding-right: 0px;
 }
- 
+.button-btn {
+    padding: 12px 15px; 
+    margin-left: 15px;
+}
+.navebar ul li a:hover{
+    color: #fff;
+    opacity: 0.9;
+}
+header.scrolled {
+    position: fixed;
+    top: 0;
+    background: #fff;
+    padding: 10px 0px;
+    box-shadow: 2px 2px 32px 0px rgba(0, 0, 0, 0.15);
+
+}
+header.scrolled .navebar ul li  a {
+    color: #171717;
+}
+.logoblack{  display: none;  }   
+header.scrolled .logoblack{
+ display: block;
+}   
+header.scrolled .logowhite{
+    display: none;
+}
+header.scrolled .button-btn{
+    background-color: #051827;
+    color: #fff!important;
+}
+header.scrolled .navebar ul li a svg path{
+    fill:  #051827;
+}
+header.scrolled .logo-wareper {
+    width: 80px;
+}
 /**********************header end********************************/
 
 ul.list-unstyled li {
@@ -138,9 +193,12 @@ ul.list-unstyled li {
 }
 /**********************banner********************************/
 .banner {
-    height: auto;
+    height: 100vh;
     background-size: cover;
     background-position: center;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
 }
 .ul-li-row ul {
     padding: 0;
@@ -160,11 +218,6 @@ a {
     text-decoration: none;
 }
 
-.button:hover {
-    background-color: #02020200;
-    color: #ffffff;
-}
-
 .button-row {
     display: flex;
     gap: 15px;
@@ -174,19 +227,19 @@ a {
     padding: 12px 30px;
     background-color: #ffffff;
     border: 1px solid #FFFFFF66;
-    color: #000000;
+    color: #171717;
     cursor: pointer;
     font-size: 17px;
     transition: 0.6s;
     font-weight: 600;
 }
 a.button.black-border:hover {
-    background-color: #00000000;
-    border: 1px solid #000000;
-    color: #000000;
+    background-color: #17171700;
+    border: 1px solid #171717;
+    color: #171717;
 }
 a.button.black-border { 
-    border: 1px solid #00000000; 
+    border: 1px solid #17171700; 
 }
 rgba(0, 0, 0, 0)
 a.button.hover {
@@ -196,11 +249,12 @@ a.button.hover {
 
 a.button.hover:hover {
     background-color: #ffffff;
-    color: #000000;
+    color: #171717;
 }
 a.button.greys {
     background-color: #F3F3F3;
     border: 1px solid #F3F3F3;
+    padding: 14px 30px;
 }
 .banner-top {
     padding: 0px;
@@ -218,8 +272,8 @@ a.button.greys {
 .bubble-home-banner {
     position: absolute;
     z-index: -1;
-    right: 0;
-    top: 5px;
+    right: 26px;
+    top: -42px;
 }
 
 .banner-left {
@@ -234,6 +288,7 @@ a.button.greys {
     padding-top: 15px;
     font-size: 18px;
     line-height: 1.8em;
+    color: #e7e7e7;
 }
 
 .banner-left h2 {
@@ -272,8 +327,8 @@ a.button.greys {
 /************Upcoming events START***************/
 
 section.Upcoming-events {
-    padding-top: 160px; 
-    padding-bottom: 140px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
  
 .event-card {
@@ -417,24 +472,24 @@ h4.margin-top {
     justify-content: center;
 }
 a.button.black:hover {
-    background-color: #00000000;
-    border: 1px solid #000000;
-    color: #000000;
+    background-color: #17171700;
+    border: 1px solid #171717;
+    color: #171717;
 }
 a.button.black {
-    background-color: #000000;
-    border: 1px solid #000000;
+    background-color: #171717;
+    border: 1px solid #171717;
     color: #ffffff;
 }
 a.button.black-hover:hover { 
-    background-color: #000000;
-    border: 1px solid #000000;
+    background-color: #171717;
+    border: 1px solid #171717;
     color: #ffffff;
 }
 a.button.black-hover {
-    background-color: #00000000;
-    border: 1px solid #000000;
-    color: #000000;
+    background-color: #17171700;
+    border: 1px solid #171717;
+    color: #171717;
 }
 .service-card {
     position: relative;
@@ -565,7 +620,7 @@ p.gray {
 }
 .testimonial-content p {
     font-size: 16px;
-    color: rgba(231, 231, 231, 1);
+    color: #e7e7e7;
     margin-bottom: 32px;
 }
 .testimonial-content h3 {
@@ -674,8 +729,8 @@ p.card-heading {
     color: #ffffff;
 }
 .button.dark:hover {
-    color: #000000;
-    border: 1px solid #000000;
+    color: #171717;
+    border: 1px solid #171717;
     background: linear-gradient(54.32deg, #23153500 -5.81%, #743aa000 99.02%);
 }
 .button.dark-hover:hover {
@@ -683,8 +738,8 @@ p.card-heading {
     color: #ffffff;
 }
 .button.dark-hover {
-    color: #000000;
-    border: 1px solid #000000;
+    color: #171717;
+    border: 1px solid #171717;
     background: linear-gradient(54.32deg, #23153500 -5.81%, #743aa000 99.02%);
 }
 /*************************Blogs START******************************/ 

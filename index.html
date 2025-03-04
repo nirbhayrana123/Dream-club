@@ -12,8 +12,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
-
   <link rel="stylesheet" href="css/style.css">
 
 
@@ -25,16 +23,22 @@
     <div class="container big">
       <div class="topnavbar">
         <div class="logo-wareper">
-          <a href="#"><img src="./images/Logo.svg" alt="Logo"></a>
+          <a href="#"><img class="logowhite" src="./images/Logo.svg" alt="Logo"> 
+            <img class="logoblack" src="./images/logowhite.svg" alt="Logo"></a>
         </div>
         <div class="navebar">
           <ul class="navebar-list">
             <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
             <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Liquor</a></li>
-            <li class="nav-item"><a class="nav-link ml-3" href="#"><b>Log in</b></a></li>
-            <li class="nav-item"><button class="button button-custome">Join the Club</button></li>
+            <li class="nav-item"><a class="nav-link" href="#">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.7498 2.35419C12.2998 2.35419 10.9082 3.02919 9.99984 4.09585C9.0915 3.02919 7.69984 2.35419 6.24984 2.35419C3.68317 2.35419 1.6665 4.37085 1.6665 6.93752C1.6665 10.0875 4.49984 12.6542 8.7915 16.5542L9.99984 17.6459L11.2082 16.5459C15.4998 12.6542 18.3332 10.0875 18.3332 6.93752C18.3332 4.37085 16.3165 2.35419 13.7498 2.35419ZM10.0832 15.3125L9.99984 15.3959L9.9165 15.3125C5.94984 11.7209 3.33317 9.34585 3.33317 6.93752C3.33317 5.27085 4.58317 4.02085 6.24984 4.02085C7.53317 4.02085 8.78317 4.84585 9.22484 5.98752H10.7832C11.2165 4.84585 12.4665 4.02085 13.7498 4.02085C15.4165 4.02085 16.6665 5.27085 16.6665 6.93752C16.6665 9.34585 14.0498 11.7209 10.0832 15.3125Z" fill="white"/>
+                </svg>
+                
+              Liquor</a></li>
+            <li class="nav-item login"><a class="nav-link ml-3" href="#"><b>Log in</b></a></li>
+            <li class="nav-item"><a href="" class="button button-btn">Join the Club</a></li>
           </ul>
         </div>
         <button class="toggle-button"> <span class="one line"> </span><span class="tow line"></span> <span
@@ -580,76 +584,13 @@
             property of their respective owners.</p>
         </div>
       </div>
-
-
     </footer>
-
     <!-- FOOTER SECTION END -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./js/owl.carousel.js"></script>
-    <script src="js/custom.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
     <!-- Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-    <script>
-      $(document).ready(function () {
-        // First Slider Initialization
-        $(".owl-carousel.first-slider").owlCarousel({
-          items: 4,
-          margin: 20,
-          loop: true,
-          nav: true
-        });
-
-        // Second Slider Initialization
-        $(".owl-carousel.second-slider").owlCarousel({
-          items: 4,
-          margin: 20,
-          loop: true,
-          nav: true
-        });
-
-        // Third Slider with Different Configurations
-        $(".owl-carousel.third-slider").owlCarousel({
-          loop: true,
-          margin: 10,
-          nav: true,
-          center: true,
-          stagePadding: 50,
-          navText: [
-            '<i class="fas fa-chevron-left"></i>',
-            '<i class="fas fa-chevron-right"></i>'
-          ],
-          responsive: {
-            0: {
-              items: 1,
-              stagePadding: 10,
-              nav: false
-            },
-            600: {
-              items: 1.2,
-              stagePadding: 30,
-              nav: true
-            },
-            1000: {
-              items: 1.5,
-              stagePadding: 50,
-              nav: true
-            }
-          },
-          onTranslated: function () {
-            $(".owl-item").removeClass("active-slide left-slide right-slide");
-            $(".owl-item.center").addClass("active-slide");
-            $(".owl-item.active").not(".center").each(function (index) {
-              $(this).addClass(index === 0 ? "left-slide" : "right-slide");
-            });
-          }
-        });
-      });
-    </script> 
+    <script src="js/custom.js"></script>
 
 </body>
 
