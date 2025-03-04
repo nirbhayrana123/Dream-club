@@ -343,9 +343,7 @@ h4.margin-top {
     left: 32px;
     right: 0;
 }
-.hover_move {
-    margin-top: 25px;
-}
+ 
 .hover_move ul {
     padding-left: 0;
 }
@@ -400,9 +398,9 @@ h4.margin-top {
 .hover_move {
     margin-top: 25px;
     opacity: 0;
-    transition: .6s;
+    transition: 0.9s;
     position: relative;
-    bottom: -20px;
+    bottom: -67px;
 }
 
  h2 {
@@ -694,17 +692,30 @@ section.blogs {
     background: rgb(243 243 243);
     padding: 120px 0;
 }
+ 
+.blogs_slider .item  {
+    background-size: cover;
+    background-position: center; 
+    width: 100%;
+}
+.blogs_slider .item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%; 
+}
+.blogs_slider .item.red::after { 
+    background: linear-gradient(180deg, #7b1c1870 0%, #47100E 100%);
+}
 
-.home-demo .item {
-    background: linear-gradient(180deg, #173B35 0%, #0D231F 100%);
+.blogs_slider .item.green::after { 
+    background: linear-gradient(180deg, #173b35a6 0%, #0d231fc9 100%);
 }
-.item.red-bg {
-    background: linear-gradient(308deg, rgba(123, 28, 24, 0.9) 0%, rgba(71, 16, 14, 0.9) 100%);
+.blogs_slider .item.blue::after { 
+    background: linear-gradient(180deg, #072a428f 0%, #051827db 100%);
 }
-.item.blue-bg {
-    background: linear-gradient(180deg, #072A42 0%, #051827 100%);
-
-}
+ 
 .move-hover {
     flex-flow: column;
     justify-content: flex-end;
@@ -723,9 +734,12 @@ section.blogs {
     margin-right: auto;
 }
 .box {
-    padding: 24px;  
     position: relative;
     overflow: hidden;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    padding: 35px 24px;
 }
 .box:hover .move-hover {
     top: 0;
@@ -755,31 +769,15 @@ p.item-date {
     font-style: italic;
     font-family: DM Serif Displa;
     font-weight: 500;
-}
-img.image-1-1 { 
-    opacity: 8%;
-}
-
-img.blog-top {
-    position: absolute;
-    z-index: 2;
+} 
+img.blog-top {  
     inset: 0;
-    max-width: 27%;
-    margin: 0 auto;
-    top: 168px;
+    width: 36%!important;
+    margin: 0 auto; 
 }
-.home-demo.blogs .owl-nav {
-    display: none;
-}
-.home-demo.blogs .owl-dots {
-    display: none;
-}
+ 
 /**********************Explore gallery START***************************/
-
-.item.black {
-    background: #000000;
-}
-
+ 
 .item.black  img.image-1-1 {
     opacity: 80%;
     transition: 1s;
@@ -828,9 +826,11 @@ button.owl-next span,button.owl-prev span {
     margin-bottom: 13px;
     font-size: 65px;
 }
-
+.gallery .item.black {
+    background: #000000;
+}
 .item.black.down {
-    margin-top: 50%;
+    margin-top: 50%; 
 }
  
 /**********Newsletter***********/
