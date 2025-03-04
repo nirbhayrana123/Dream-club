@@ -4,31 +4,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Dram Club</title> 
-  <link rel="icon" href="./images/favi.svg" type="image/x-icon">
+  <title>The Dram Club</title>
+  <link rel="icon" href="./images/favi.png" type="image/x-icon">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="fonts/fonts.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
   <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 
 <body>
-
-
-  <!-- HEADER START -->
+  <!--------- HEADER START -------->
   <header>
-    <div class="container">
+    <div class="container big">
       <div class="topnavbar">
         <div class="logo-wareper">
           <a href="#"><img src="./images/Logo.svg" alt="Logo"></a>
         </div>
         <div class="navebar">
           <ul class="navebar-list">
-            <li class="nav-item"><a class="nav-link" href="#demos">Events</a></li>
-            <li class="nav-item"><a class="nav-link" href="#features">About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="#elements">Contact Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="#support">Liquor</a></li>
-            <li class="nav-item"><a class="nav-link" href="#reviews"><b>Log in</b></a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Liquor</a></li>
+            <li class="nav-item"><a class="nav-link ml-3" href="#"><b>Log in</b></a></li>
             <li class="nav-item"><button class="button button-custome">Join the Club</button></li>
           </ul>
         </div>
@@ -37,7 +42,7 @@
       </div>
     </div>
   </header>
-  <!--HEADER END-->
+  <!----------HEADER END---------->
   <main>
     <!-- BANNER SECTION START -->
     <section class="banner-top">
@@ -61,17 +66,17 @@
       </div>
     </section>
 
-    <!-- Upcoming events START -->
+    <!-------- Upcoming events START -------->
 
     <section class="Upcoming-events">
       <div class="container">
         <div class="flex1">
-          <div class=""> 
-            <h2>Upcoming Events</h2>
+          <div class="">
+            <h2>Upcoming events</h2>
             <p>Mark your calendar for our upcoming tastings, tours, and
               events.</p>
           </div>
-          <a href="#" class="button greys">All Events <i class="bi bi-chevron-right"></i></a>
+          <a href="#" class="button greys">All Events <i class="fas fa-chevron-right"></i></a>
 
         </div>
 
@@ -87,13 +92,12 @@
                   <br>whiskey with curated food pairings.
                 </p>
               </div>
-              <div class="Olive">
+              <div class="Olive li-box">
                 <ul>
-                  <li><i class="bi bi-calendar"></i><p> Tue, 25 Feb 2025</p></li>
-                  <li><i class="bi bi-geo-alt"></i><p> Olive Bandra,Mumbai</p></li> 
-              </ul>
-
-                <a href="#" class="button hover">Know More <i class="bi bi-box-arrow-up-right"></i></i></a>
+                  <li><i class="fas fa-calendar-week"></i> Tue, 25 Feb 2025</p></li>
+                  <li><i class="fas fa-map-marker-alt"></i><p> Olive Bandra,Mumbai</p></li>
+                </ul> 
+                <a href="#" class="button hover">Know More <i class="fas fa-external-link-alt"></i></a>
               </div>
             </div>
           </div>
@@ -106,23 +110,43 @@
               <div class="event-overlays">
                 <span class="event-time">In 12 days</span>
               </div>
-              <div class="Olives">
+              <div class="Olives li-box">
+                <div class="hover_move">
+                <ul>
+                  <li><i class="fas fa-calendar-week"></i> Tue, 25 Feb 2025</p></li>
+                  <li><i class="fas fa-map-marker-alt"></i><p> Olive Bandra,Mumbai</p></li>
+                </ul>
+              </div>
                 <h5>An Evening with Aberlour</h5>
                 <p>Get ready to take a Speyside sojourn with<br>
-                  Aberlour 12, 16, 18 YO.</p>
-              </div>
+                  Aberlour 12, 16, 18 YO.</p> 
+                <div class="hover_move">
+                <a href="#" class="button">Know More <i class="fas fa-external-link-alt"></i></a>
+                </div>
+ 
+              </div> 
             </div>
           </div>
+
           <div class="col-md-4">
             <div class="event-card">
               <img src="images/upcoming-img-3.jpg" alt="An Evening with Aberlour">
               <div class="event-overlays">
                 <span class="event-time">In 28 days</span>
               </div>
-              <div class="Olives">
+              <div class="Olives li-box">
+                <div class="hover_move">
+                  <ul>
+                    <li><i class="fas fa-calendar-week"></i> Tue, 25 Feb 2025</p></li>
+                    <li><i class="fas fa-map-marker-alt"></i><p> Olive Bandra,Mumbai</p></li>
+                  </ul>
+                </div>
                 <h5>An Evening with Aberlour</h5>
                 <p>Get ready to take a Speyside sojourn with<br>
                   Aberlour 12, 16, 18 YO.</p>
+                  <div class="hover_move">
+                    <a href="#" class="button">Know More <i class="fas fa-external-link-alt"></i></a>
+                    </div>
               </div>
             </div>
           </div>
@@ -132,10 +156,19 @@
               <div class="event-overlays">
                 <span class="event-time">In 1 month 12 days</span>
               </div>
-              <div class="Olives">
+              <div class="Olives li-box">
+                <div class="hover_move">
+                  <ul>
+                    <li><i class="fas fa-calendar-week"></i> Tue, 25 Feb 2025</p></li>
+                    <li><i class="fas fa-map-marker-alt"></i><p> Olive Bandra,Mumbai</p></li>
+                  </ul>
+                </div>
                 <h5>An Evening with Aberlour</h5>
                 <p>Get ready to take a Speyside sojourn with<br>
                   Aberlour 12, 16, 18 YO.</p>
+                  <div class="hover_move">
+                    <a href="#" class="button">Know More <i class="fas fa-external-link-alt"></i></a>
+                    </div>
               </div>
             </div>
           </div>
@@ -144,148 +177,393 @@
 
     </section>
 
-    <!-- Our Services -->
+    <!---------- Our Services -section-------->
 
     <section class="py-5 bg-color">
       <div class="container my-5">
-          <div class="services-heding">
-              <h2>Our Services</h2>
-              <p>The Dram Club is more than just whisky. We craft<br>
-                  experiences, create campaigns, and build <br>connections
-                  within the world
-                  of fine spirits.</p>
-          </div>
-          <div class="row g-4">
-              <div class="col-md-6">
-                  <div class="service-card">
-                      <div class="icon-shep">
-                          <img src="images/Star4.svg">
-                      </div>
-                      <img src="./images/services-img-2.jpg"
-                          alt="Social Media">
-                      <div class="overlay">
-                          <h4> Social Media <br>Digital
-                              Campaigns</h4>
-                      </div>
-                  </div>
+        <div class="services-heding">
+          <h2>Our Services</h2>
+          <p>The Dram Club is more than just whisky. We craft<br>
+            experiences, create campaigns, and build <br>connections
+            within the world
+            of fine spirits.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="service-card">
+              <div class="icon-shep">
+                <img src="images/Star4.svg">
               </div>
-              <div class="col-md-6">
-                  <div class="service-card">
-                      <div class="icon-vecter">
-                        <img src="images/Star1.svg">
-                      </div>
-                      <img src="./images/services-img-3.jpg"
-                          alt="Brand Partnerships">
-                      <div class="overlay">
-                          <h4> Brand Partnerships<br> &
-                              Consultation</h4>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-6 mt-top">
-                  <div class="service-card">
-                      <div class="icon-star">
-                        <img src="images/Star 2.svg">
-                      </div>
-                      <img src="./images/services-img-4.jpg"
-                          alt="Whisky Tastings">
-                      <div class="overlay"><h4>Bespoke Whisky<br>
-                              Tastings/Experiences</h4>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-6 mt-top">
-                  <div class="service-card">
-                      <div class="icon-shep-4">
-                        <img src="images/Star3.svg">
-                      </div>
-                      <img src="./images/services-img-5.jpg"
-                          alt="Distillery Tours">
-                      <div class="overlay">
-                          <h4>Distillery Tours<br> & Travels</h4>
-                      </div>
-                  </div>
-              </div>
-              <div class="button-row canter mt-6">
-                <a href="#" class="button black">Contact Us</a>
-                <a href="#" class="button black-hover">Join the Club</a>
-              </div> 
-              </div>
-          </div>
-      </section> 
-
-    <!-- Join Us -->
-    <section class="Upcoming-events">
-      <div class="container">
-        <h2>Join Us</h2>
-
-        <div class="bg-img" style="background-image: url('./images/Join-us.jpg'); "> 
-            <!-- Left Side Image -->
-            <div class="img-box">
-              <img src="images/component.png" alt="Whiskey Event" class="img-fluid rounded">
-            </div>
-
-            <!-- Right Side Content -->
-            <div class="box-canter">
-              <div class="card card-custom">
-                <a href="#"><img src="./images/prime.svg" alt="Logo"></a>
-                <p class="card-heading">Your passport to whiskey experiences like no other</p>
-                <ul class="list-unstyled">
-                  <li><i class="bi bi-calendar"></i><p>Discounted events</p> </li>
-                  <li><i class="bi bi-clock-fill"></i><p>Early bird access</p></li>
-                  <li><i class="bi bi-bag-check-fill"></i><p>Merchandise & goodies</p> </li>
-                  <li><i class="bi bi-shop"></i><p>Welcome Hamper</p> </li>
-                  <li><i class="bi bi-plus"></i><p>Much more</p> </li>
-                </ul>
-                <div class="d-flex gap-3">
-                  <button class="button dark">Join the Club</button>
-                  <button class="button dark-hover">Learn More</button>
-                </div>
+              <img src="./images/services-img-2.jpg" alt="Social Media">
+              <div class="overlay">
+                <h4> Social Media <br>Digital
+                  Campaigns</h4>
               </div>
             </div>
           </div>
-      
-
+          <div class="col-md-6">
+            <div class="service-card">
+              <div class="icon-vecter">
+                <img src="images/Star1.svg">
+              </div>
+              <img src="./images/services-img-3.jpg" alt="Brand Partnerships">
+              <div class="overlay">
+                <h4> Brand Partnerships<br> &
+                  Consultation</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mt-top">
+            <div class="service-card">
+              <div class="icon-star">
+                <img src="images/Star 2.svg">
+              </div>
+              <img src="./images/services-img-4.jpg" alt="Whisky Tastings">
+              <div class="overlay">
+                <h4>Bespoke Whisky<br>
+                  Tastings/Experiences</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mt-top">
+            <div class="service-card">
+              <div class="icon-shep-4">
+                <img src="images/Star3.svg">
+              </div>
+              <img src="./images/services-img-5.jpg" alt="Distillery Tours">
+              <div class="overlay">
+                <h4>Distillery Tours<br> & Travels</h4>
+              </div>
+            </div>
+          </div>
+          <div class="button-row canter mt-6">
+            <a href="#" class="button black">Contact Us</a>
+            <a href="#" class="button black-hover">Join the Club</a>
+          </div>
+        </div>
       </div>
-
     </section>
 
-    <!-- Founder’s Note -->
+    <!-------- Join Us section ----------->
+    <section class="Upcoming-events">
+      <div class="container">
+        <h2 class="mb-6">Join Us</h2>
+
+        <div class="bg-img" style="background-image: url('./images/Join-us.jpg'); ">
+          <!-- Left Side Image -->
+          <div class="img-box">
+            <img src="images/component.png" alt="Whiskey Event" class="img-fluid rounded">
+          </div>
+
+          <!-- Right Side Content -->
+          <div class="box-canter">
+            <div class="card card-custom">
+              <a href="#"><img src="./images/prime.svg" alt="Logo"></a>
+              <p class="card-heading">Your passport to whiskey experiences like no other</p>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-calendar-week"></i>
+                  <p>Discounted events</p>
+                </li>
+                <li><i class="fas fa-clock"></i>
+                  <p>Early bird access</p>
+                </li>
+                <li><i class="fas fa-shopping-bag"></i>
+                  <p>Merchandise & goodies</p>
+                </li>
+                <li><i class="fas fa-shopping-basket"></i>
+                  <p>Welcome Hamper</p>
+                </li>
+                <li><i class="fas fa-plus"></i>
+                  <p>Much more</p>
+                </li>
+              </ul>
+              <div class="d-flex gap-3">
+                <a href="#" class="button dark">Join the Club</a>
+                <a href="#" class="button dark-hover">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------- Blogs section-------------->
+    <section class="blogs">
+      <div class="container">
+        <div class="flex1">
+          <div class="">
+            <h2>Blogs</h2>
+            <p>Our Experts Share All</p>
+          </div>
+          <a href="#" class="button black-border">Read All Blogs <i class="fas fa-chevron-right"></i></a>
+        </div>
+      </div>
+      <div class="home-demo blogs">
+        <div class="owl-carousel first-slider">
+
+          <div class="item">
+            <div class="box _w-4">
+              <h5>Pass the Courvoisier:<br>
+                Cognac’s <span>Cool factor</span></h5>
+              <p class="item-date">July 12th 2023</p>
+              <img src="images/blog-slider.png" class="image-1-1">
+              <img src="images/blog-top-img.png" class="blog-top">
+              <div class="move-hover">
+                <p class="text-size-regular">Alexander, John Walker’s son concocted this masterpiece ‘Old Highland
+                  Whisky’ blend in 1867. He worked with the best malts from the four corners of Scotland and created a
+                  timeless, unmatched flavour profile. Over 150 years on, it has remained synonymous to celebrating a
+                  milestone and celebrating the good things in life..</p>
+                <a href="#" class="button">Continue Reading Blog <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item red-bg">
+            <div class="box _w-4">
+              <h5>Pass the Courvoisier:<br>
+                Cognac’s <span>Cool factor</span></h5>
+              <p class="item-date">July 12th 2023</p>
+              <img src="images/blog-slider.png" class="image-1-1">
+              <img src="images/blog-top-img.png" class="blog-top">
+              <div class="move-hover">
+                <p class="text-size-regular">Alexander, John Walker’s son concocted this masterpiece ‘Old Highland
+                  Whisky’ blend in 1867. He worked with the best malts from the four corners of Scotland and created a
+                  timeless, unmatched flavour profile. Over 150 years on, it has remained synonymous to celebrating a
+                  milestone and celebrating the good things in life..</p>
+                <a href="#" class="button">Continue Reading Blog <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item blue-bg">
+            <div class="box _w-4">
+              <h5>Pass the Courvoisier:<br>
+                Cognac’s <span>Cool factor</span></h5>
+              <p class="item-date">July 12th 2023</p>
+              <img src="images/blog-slider.png" class="image-1-1">
+              <img src="images/blog-top-img.png" class="blog-top">
+              <div class="move-hover">
+                <p class="text-size-regular">Alexander, John Walker’s son concocted this masterpiece ‘Old Highland
+                  Whisky’ blend in 1867. He worked with the best malts from the four corners of Scotland and created a
+                  timeless, unmatched flavour profile. Over 150 years on, it has remained synonymous to celebrating a
+                  milestone and celebrating the good things in life..</p>
+                <a href="#" class="button">Continue Reading Blog <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item ">
+            <div class="box _w-4">
+              <h5>Pass the Courvoisier:<br>
+                Cognac’s <span>Cool factor</span></h5>
+              <p class="item-date">July 12th 2023</p>
+              <img src="images/blog-slider.png" class="image-1-1">
+              <img src="images/blog-top-img.png" class="blog-top">
+              <div class="move-hover">
+                <p class="text-size-regular">Alexander, John Walker’s son concocted this masterpiece ‘Old Highland
+                  Whisky’ blend in 1867. He worked with the best malts from the four corners of Scotland and created a
+                  timeless, unmatched flavour profile. Over 150 years on, it has remained synonymous to celebrating a
+                  milestone and celebrating the good things in life..</p>
+                <a href="#" class="button">Continue Reading Blog <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item red-bg">
+            <div class="box _w-4">
+              <h5>Pass the Courvoisier:<br>
+                Cognac’s <span>Cool factor</span></h5>
+              <p class="item-date">July 12th 2023</p>
+              <img src="images/blog-slider.png" class="image-1-1">
+              <img src="images/blog-top-img.png" class="blog-top">
+              <div class="move-hover">
+                <p class="text-size-regular">Alexander, John Walker’s son concocted this masterpiece ‘Old Highland
+                  Whisky’ blend in 1867. He worked with the best malts from the four corners of Scotland and created a
+                  timeless, unmatched flavour profile. Over 150 years on, it has remained synonymous to celebrating a
+                  milestone and celebrating the good things in life..</p>
+                <a href="#" class="button">Continue Reading Blog <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item blue-bg">
+            <div class="box _w-4">
+              <h5>Pass the Courvoisier:<br>
+                Cognac’s <span>Cool factor</span></h5>
+              <p class="item-date">July 12th 2023</p>
+              <img src="images/blog-slider.png" class="image-1-1">
+              <img src="images/blog-top-img.png" class="blog-top">
+              <div class="move-hover">
+                <p class="text-size-regular">Alexander, John Walker’s son concocted this masterpiece ‘Old Highland
+                  Whisky’ blend in 1867. He worked with the best malts from the four corners of Scotland and created a
+                  timeless, unmatched flavour profile. Over 150 years on, it has remained synonymous to celebrating a
+                  milestone and celebrating the good things in life..</p>
+                <a href="#" class="button">Continue Reading Blog <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!--------- testimonial --------->
+    <section>
+      <div class="testimonial-section">
+        <h2>What our members have to say about us</h2>
+        <div class="owl-carousel third-slider">
+          <div class="testimonial-item">
+            <img src="./images/testmonials.jpg" alt="User">
+            <div class="testimonial-content">
+              <h3>Emily Carter</h3>
+              <p class="gray">Marketing Manager, Local Tech Company</p>
+              <p class="font-bold">"I've always enjoyed whisky, but this club has completely opened my eyes to a whole
+                new world of flavors. The curated tastings are fantastic, and I've discovered some truly exceptional
+                bottles I never would have found on my own."</p>
+            </div>
+
+          </div>
+          <div class="testimonial-item">
+            <img src="./images/testmonials.jpg" alt="User">
+            <div class="testimonial-content">
+              <h3>Emily Carter</h3>
+              <p class="gray">Marketing Manager, Local Tech Company</p>
+              <p class="font-bold">"I've always enjoyed whisky, but this club has completely opened my eyes to a whole
+                new world of flavors. The curated tastings are fantastic, and I've discovered some truly exceptional
+                bottles I never would have found on my own."</p>
+            </div>
+
+          </div>
+          <div class="testimonial-item">
+            <img src="./images/testmonials.jpg" alt="User">
+            <div class="testimonial-content">
+              <h3>Emily Carter</h3>
+              <p class="gray">Marketing Manager, Local Tech Company</p>
+              <p class="font-bold">"I've always enjoyed whisky, but this club has completely opened my eyes to a whole
+                new world of flavors. The curated tastings are fantastic, and I've discovered some truly exceptional
+                bottles I never would have found on my own."</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------- Founder’s Note --------->
     <section class="py-5 bg-color">
       <div class="container my-5">
-      <div class="row">
-          <div class="col-md-6">
-              <div class="founder">
-                  <img src="./images/faunder.jpg">
-              </div>
+        <div class="card_component">
+          <div class="col_1">
+            <div class="founder">
+              <img src="./images/faunder.jpg">
+            </div>
           </div>
-          <div class="col-md-6">
-              <div class="founder">
-                  <h2>Founder’s Note</h2>
-                  <p>"I've always enjoyed whisky, but this club has <br>completely opened my eyes to a whole new world <br>of flavors. The curated tastings are fantastic, and I've discovered some truly exceptional bottles<br> I never would have found on my own."</p>
-                  <p>"I've always enjoyed whisky, but this club has<br> completely opened my eyes to a whole new world<br> of flavors. The curated tastings are fantastic, and I've discovered some truly exceptional bottles <br>I never would have found on my own."</p>
-              </div>
-              </div>
+          <div class="col_2">
+            <div class="founder">
+              <h2>Founder’s Note</h2>
+              <p>"I've always enjoyed whisky, but this club has <br>completely opened my eyes to a whole new world
+                <br>of flavors. The curated tastings are fantastic, and I've discovered some truly exceptional
+                bottles<br> I never would have found on my own." <br>
+                <br>"I've always enjoyed whisky, but this club has<br> completely opened my eyes to a whole new world<br>
+                of flavors. The curated tastings are fantastic, and I've discovered some truly exceptional bottles <br>I
+                never would have found on my own."</p>
+            
+            </div>
           </div>
+        </div>
       </div>
-  </section>
+    </section>
 
+    <!--------------- Explore our stunning gallery section-------------->
+    <section class="blogs white-bg">
+      <div class="flex1 canter">
+        <h2>Explore our stunning gallery</h2>
+        <p>A curated collection of past events and images of premium spirits.</p>
+      </div>
 
+      <div class="home-demo">
+        <div class="owl-carousel second-slider">
 
+          <div class="item black">
+            <div class="box _w-4">
+              <img src="images/gallery1.jpg" class="image-1-1">
+              <div class="move-hover">
+                <h5>An Evening With Aberlour</h5>
+                <p class="text-size-regular">Alexander, John Walker’s son concocted this masterpiece ‘Old Highland
+                  Whisky’ blend in 1867. He worked with the best malts from the four corners of Scotland and created a
+                  timeless, unmatched flavour profile.</p>
+              </div>
+            </div>
+          </div>
 
+          <div class="item black down">
+            <div class="box _w-4">
+              <img src="images/gallery2.jpg" class="image-1-1">
+              <div class="move-hover">
+                <h5>An Evening With Aberlour</h5>
+                <p class="text-size-regular">Alexander, John Walker’s son concocted this masterpiece ‘Old Highland
+                  Whisky’ blend in 1867. He worked with the best malts from the four corners of Scotland and created a
+                  timeless, unmatched flavour profile.</p>
+              </div>
+            </div>
+          </div>
 
+          <div class="item black">
+            <div class="box _w-4">
+              <img src="images/gallery3.jpg" class="image-1-1">
+              <div class="move-hover">
+                <h5>An Evening With Aberlour</h5>
+                <p class="text-size-regular">Alexander, John Walker’s son concocted this masterpiece ‘Old Highland
+                  Whisky’ blend in 1867. He worked with the best malts from the four corners of Scotland and created a
+                  timeless, unmatched flavour profile.</p>
+              </div>
+            </div>
+          </div>
 
+          <div class="item black down">
+            <div class="box _w-4">
+              <img src="images/gallery4.jpg" class="image-1-1">
+              <div class="move-hover">
+                <h5>An Evening With Aberlour</h5>
+                <p class="text-size-regular">Alexander, John Walker’s son concocted this masterpiece ‘Old Highland
+                  Whisky’ blend in 1867. He worked with the best malts from the four corners of Scotland and created a
+                  timeless, unmatched flavour profile.</p>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+      </div>
+    </section>
 
-
-
-
-
-
-
-
-
-    <!-- FOOTER SECTION START -->
-
+    <!--------------- Newsletter-------------->
+    <section>
+      <div class="newsletter-section">
+        <div class="container">
+          <div class="newsletter-content">
+            <h2>Subscribe to our <span>Newsletter</span></h2>
+            <p>Never Miss a Dram! Sign up for our newsletter to <br>stay updated on events, blogs, and exclusive offers.
+            </p>
+            <form class="newsletter-form row g-2">
+              <div class="col-md-5">
+                <input type="text" class="form-control" placeholder="Name" required>
+              </div>
+              <div class="col-md-5">
+                <input type="email" class="form-control" placeholder="Email" required>
+              </div>
+              <div class="col-md-2">
+                <button type="submit" class="btn btn-light w-100">Subscribe</button>
+              </div>
+            </form>
+            <small class="d-block mt-3">By entering your email, you agree to our <a href="#" class="text-warning">Terms
+                of Use</a> and <a href="#" class="text-warning">Privacy Policy</a>, including receiving emails and
+              promotions.</small>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <!-- FOOTER SECTION START --> 
     <footer class="footer">
       <div class="container">
         <div class="footer-container">
@@ -359,7 +637,70 @@
     <!-- FOOTER SECTION END -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./js/owl.carousel.js"></script>
-    <script src="./js/custom.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // First Slider Initialization
+        $(".owl-carousel.first-slider").owlCarousel({
+          items: 4,
+          margin: 20,
+          loop: true,
+          nav: true
+        });
+
+        // Second Slider Initialization
+        $(".owl-carousel.second-slider").owlCarousel({
+          items: 4,
+          margin: 20,
+          loop: true,
+          nav: true
+        });
+
+        // Third Slider with Different Configurations
+        $(".owl-carousel.third-slider").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          center: true,
+          stagePadding: 50,
+          navText: [
+            '<i class="fas fa-chevron-left"></i>',
+            '<i class="fas fa-chevron-right"></i>'
+          ],
+          responsive: {
+            0: {
+              items: 1,
+              stagePadding: 10,
+              nav: false
+            },
+            600: {
+              items: 1.2,
+              stagePadding: 30,
+              nav: true
+            },
+            1000: {
+              items: 1.5,
+              stagePadding: 50,
+              nav: true
+            }
+          },
+          onTranslated: function () {
+            $(".owl-item").removeClass("active-slide left-slide right-slide");
+            $(".owl-item.center").addClass("active-slide");
+            $(".owl-item.active").not(".center").each(function (index) {
+              $(this).addClass(index === 0 ? "left-slide" : "right-slide");
+            });
+          }
+        });
+      });
+    </script> 
+
 </body>
 
 </html>
