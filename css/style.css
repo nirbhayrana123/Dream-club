@@ -417,11 +417,10 @@ section.Upcoming-events {
     width: 100%; 
     top: 0px;
 }
-.contentarea img.bg-image {
+.contentarea svg.bg-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    opacity: 0.7;
+    object-fit: cover; 
     position: absolute;
     left: 0;
     max-width: 625px;
@@ -512,16 +511,26 @@ h4.margin-top {
     margin-bottom: 60px;
     align-items: flex-start;
 }
-
 .bg-img {
-    padding: 60px 90px;
-    background-size: contain;
-    position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    gap: 40px;
 }
-
+.bg-img::after {
+    content: "";
+    background: linear-gradient(83.59deg, #231535 -8.32%, #743AA0 124.31%);
+    mix-blend-mode: multiply;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+ 
 .box-canter {
     max-width: 485px;
 }
@@ -531,16 +540,11 @@ h4.margin-top {
     z-index: 1;
 }
 
-.bg-img::after {
+.Join_row svg {
     position: absolute;
-    content: "";
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 100%;
+    inset: 0;
     height: 100%;
-    background: #100a14cf;
+    width: 100%;
 }
 
 .Olive ul {
@@ -609,11 +613,34 @@ a.button.black-hover {
     border: 1px solid #171717;
     color: #171717;
 }
-
+img.boxbg {
+    min-height: 584px;
+}
 .service-card {
     position: relative;
     transition: 1s;
 }
+.service-card::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    inset: 0;
+    width: 100%;
+    height: 100%; 
+}
+.service-card.on:hover::after { 
+    background: linear-gradient(180deg, rgba(7, 42, 66, 0.7) 0%, rgba(5, 24, 39, 0.7) 100%);
+}
+.service-card.tu:hover::after { 
+    background: linear-gradient(180deg, rgba(23, 59, 53, 0.7) 0%, rgba(13, 35, 31, 0.7) 100%);
+}
+.service-card.th:hover::after { 
+    background: linear-gradient(180deg, rgba(123, 28, 24, 0.7) 0%, rgba(71, 16, 14, 0.7) 100%);
+}
+.service-card.fr:hover::after { 
+    background: linear-gradient(180deg, rgba(7, 42, 66, 0.7) 0%, rgba(5, 24, 39, 0.7) 100%);
+}
+
 
 .service-card .icon-shep {
     position: absolute;
@@ -621,6 +648,7 @@ a.button.black-hover {
     top: -32px;
     width: 130px;
     height: 130px;
+    z-index: 2;
 }
 .icon-shep.two2 {
     right: -26px;
@@ -628,21 +656,64 @@ a.button.black-hover {
     top: auto;
     bottom: 53px;
 }
+.service-card:hover .icon-shep.two2 {
+    transform: rotate(-30deg);
+    width: 76%;
+    height: auto;
+    inset: 0;
+    margin: 0 auto;
+    top: -25px;
+}
+
 .icon-shep.four4 {
     right: -37px;
     left: auto;
     top: auto;
     bottom: 53px;
 }
+.service-card:hover .icon-shep.four4 {
+    transform: rotate(180deg);
+    width: 80%;
+    height: auto;
+    inset: 0;
+    margin: 0 auto;
+}
+.service-card:hover .overlay {
+    bottom: 25%;
+    color: #000000;
+    max-width: 415px;
+    margin: 0 auto;
+    right: 0;
+}
+.service-card .social-icons {
+    justify-content: center;
+    opacity: 0; 
+    margin-bottom: 11px;
+    gap: 11px;
+}
+.service-card p {
+    opacity: 0;
+    transition: 1s;
+}
+.service-card:hover p{
+    opacity: 1;
+}
+.service-card .social-icons a {
+    color: #000000; 
+}
+.service-card:hover .social-icons {
+    opacity: 1;
+}
+ 
 
 
 
 .service-card:hover svg path {
     fill: #ffffff;
 }
-.service-card:hover .icon-shep.one1 {
+.service-card:hover .icon-shep.one1,.service-card:hover .icon-shep.three3 {
     transform: rotate(90deg);
-    width: 60%;
+    width: 80%;
     height: auto;
     inset: 0;
     margin: 0 auto;
@@ -665,8 +736,8 @@ button.btn.btn-dark.btn-custom {
 }
 
  
-.icon-shep{
-    transition: 0.5s all ease;
+.icon-shep {
+    transition: 1.5s all ease;
 }
 service-card:hover .icon-shep {
     transform: rotate(-90deg);
@@ -689,6 +760,8 @@ service-card:hover .icon-shep {
     color: #fff;
     padding: 60px;
     text-align: center;
+    transition: 0.6s;
+    z-index: 2;
 }
 
 .btn-custom {
@@ -732,7 +805,7 @@ service-card:hover .icon-shep {
     margin-top: 120px;
 }
 
-/******************testimonial************/
+/******************testimonial************/ 
 p.gray {
     font-weight: 300;
     font-size: 16px;
@@ -751,10 +824,11 @@ p.gray {
 }
 
 .testimonial-item {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     display: flex;
-    align-items: start;
-    justify-content: center;
-    padding: 20px;
 }
 
 .testimonial-item img {
@@ -770,8 +844,7 @@ p.gray {
 
 .testimonial-content {
     max-width: 500px;
-    text-align: left;
-    background-color: #082539;
+    text-align: left; 
     padding: 60px 40px;
     height: 500px;
 }
@@ -818,10 +891,8 @@ p.font-bold {
 
 .testimonial-section .left-slide,
 .testimonial-section .right-slide {
-    filter: blur(5px);
-    /* More blur */
-    transform: scale(0.6);
-    /* Smaller size */
+    filter: blur(5px); 
+    transform: scale(0.6); 
     opacity: 0.4;
 }
 
@@ -834,7 +905,9 @@ p.font-bold {
     right: 200px;
     top: 250px;
 }
-
+.testimonial-section button.owl-next,.testimonial-section button.owl-prev {
+    background: transparent !important;
+}
 .testimonial-section button.owl-prev {
     position: absolute;
     left: 200px;
@@ -900,7 +973,7 @@ p.font-bold {
 
 .img-box {
     position: relative;
-    top: 87px;
+    top: 50px;
 }
 
 p.card-heading {
@@ -1118,6 +1191,16 @@ button.owl-prev {
     z-index: 1 !important;
     backdrop-filter: blur(44px) !important;
     background-color: #0000001F !important;
+    box-shadow: none !important;
+    outline: none !important;
+
+}
+.third-slider .owl-nav button.owl-prev, .third-slider .owl-nav button.owl-next {
+    background-color: transparent !important;
+    backdrop-filter: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
 }
 
 .owl-stage-outer {
@@ -1243,13 +1326,17 @@ form.newsletter-form.row.g-2 {
 }
 
 /*************************FOOTER START******************************/
+
+.footer .container {
+    position: relative;
+    z-index: 2;
+}
 .footer {
     color: white;
     padding: 64px 0px;
     text-align: left;
-    background: linear-gradient(180deg, #072A42 0%, #051827 100%);
-}
-
+    position: relative; 
+} 
 .footer-bottom p {
     font-weight: 400;
     font-size: 14px;
@@ -1262,7 +1349,7 @@ form.newsletter-form.row.g-2 {
     font-size: 12px;
     line-height: 14.4px;
     margin-bottom: 20px;
-    color: #ffffffc7;
+    color: #ffffff8a;
     letter-spacing: 1px;
 }
 
