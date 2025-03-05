@@ -7,7 +7,13 @@
 img {
     max-width: 100%;
 }
-
+.line_7 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;  
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+ }
 p {
     font-size: 17px;
     font-weight: 400;
@@ -435,6 +441,12 @@ font-size: 20px;
 line-height: 24px;
 letter-spacing: 0%;
 }
+span.event-time.ab {
+    position: absolute;
+    z-index: 1;
+    left: 32px;
+    top: 32px;
+}
 .event-time {
     color: black;
     font-weight: bold;
@@ -463,29 +475,36 @@ a.btn.btn-light.btn-sm {
 h4.margin-top {
     margin-top: 24px;
 }
-
+.event-card:hover .event-overlays {
+    opacity: 1;
+}
 .event-overlays {
     position: absolute;
     bottom: 0;
     left: 0px;
     width: 100%;
     padding: 32px;
-    background: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.9) 57%, #000000 100%),
+    linear-gradient(180deg, rgba(122, 28, 24, 0.4) 0%, rgba(72, 16, 14, 0.4) 100%);
     top: 0px;
+    opacity: 0;
+    transition: 1s;
 }
-
 .Olives {
     position: absolute;
-    bottom: 47px;
     left: 32px;
     right: 0;
+    bottom: -50px;
+    transition: 1s;
+    margin-bottom: 32px;
+}
+.event-card:hover .Olives {
+    bottom: 40px;
 }
 
 .hover_move ul {
     padding-left: 0;
 }
-
-
 
 .flex1 {
     display: flex;
@@ -539,8 +558,7 @@ h4.margin-top {
 .event-card:hover .hover_move {
     opacity: 1;
     bottom: 0;
-}
-
+}  
 .hover_move {
     margin-top: 25px;
     opacity: 0;
@@ -595,28 +613,13 @@ a.button.black-hover {
 
 .service-card .icon-shep {
     position: absolute;
-    left: -45px;
-    top: -21px; 
+    left: -71px;
+    top: -32px;
+    width: 130px;
+    height: 130px;
 }
 
-.service-card .icon-vecter {
-    position: absolute;
-    right: -11px;
-    bottom: 50px;
-}
-
-.service-card .icon-shep-4 {
-    position: absolute;
-    right: -60px;
-    bottom: 35px;
-}
-
-.service-card .icon-star {
-    position: absolute;
-    left: -56px;
-    top: -21px;
-}
-
+ 
 .col-md-6.mt-top {
     margin-top: 32px;
 }
@@ -633,20 +636,18 @@ button.btn.btn-dark.btn-custom {
     background-color: #000;
 }
 
-.service-card img {
-    width: 100%;
-    height: 667px;
-    object-fit: cover;
-    
-}
+ 
 .icon-shep{
     transition: 0.5s all ease;
 }
-.service-card:hover .icon-shep {
+service-card:hover .icon-shep {
     transform: rotate(-90deg);
-    left: 0;
-    top: 0;
+    inset: 0;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 .icon-shep img,.icon-star img,.icon-vecter img,.icon-shep-4 img{
     height: auto;
@@ -991,7 +992,8 @@ section.blogs {
 p.text-size-regular {
     color: #ffffff;
     text-align: left;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    font-size: 16px;
 }
 
 .box._w-4 h5 {
@@ -1027,6 +1029,10 @@ img.blog-top {
     display: none !important;
 }
 /**********************Explore gallery START***************************/
+.gallery .owl-nav.disabled {
+    display: flex !important;
+}
+
 .gallery .box::after {
     content: "";
     position: absolute;
@@ -1076,15 +1082,14 @@ button.owl-prev {
     width: 80px !important;
     height: 80px !important;
     border-radius: 100px !important;
-    border-width: 0.5px !important;
-    padding: 12px !important;
-    backdrop-filter: blur(44px) !important;
+    border-width: 0.5px !important; 
     border: 0.5px solid rgba(255, 255, 255, 0.5) !important;
     overflow: hidden !important;
     align-items: center !important;
     display: flex !important;
     z-index: 1 !important;
-
+    backdrop-filter: blur(44px) !important;
+    background-color: #0000001F !important;
 }
 
 .owl-stage-outer {
@@ -1097,13 +1102,12 @@ button.owl-prev {
     text-decoration: inherit;
 }
 
-button.owl-next span,
-button.owl-prev span {
+button.owl-next span, button.owl-prev span {
     color: #ffffff;
     display: flex;
     margin: 0 auto;
-    margin-bottom: 13px;
-    font-size: 65px;
+    margin-bottom: 28px;
+    font-size: 105px;
 }
 
 .gallery .item {
@@ -1127,7 +1131,7 @@ button.owl-prev span {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(0 0 0 / 68%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
 
 .newsletter-content {
