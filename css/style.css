@@ -588,7 +588,10 @@ a.button.black:hover {
     border: 1px solid #171717;
     color: #171717;
 }
-
+.service-card svg {
+    width: 100%;
+    height: 100%;
+}
 a.button.black {
     background-color: #171717;
     border: 1px solid #171717;
@@ -609,6 +612,7 @@ a.button.black-hover {
 
 .service-card {
     position: relative;
+    transition: 1s;
 }
 
 .service-card .icon-shep {
@@ -618,7 +622,31 @@ a.button.black-hover {
     width: 130px;
     height: 130px;
 }
+.icon-shep.two2 {
+    right: -26px;
+    left: auto;
+    top: auto;
+    bottom: 53px;
+}
+.icon-shep.four4 {
+    right: -37px;
+    left: auto;
+    top: auto;
+    bottom: 53px;
+}
 
+
+
+.service-card:hover svg path {
+    fill: #ffffff;
+}
+.service-card:hover .icon-shep.one1 {
+    transform: rotate(90deg);
+    width: 60%;
+    height: auto;
+    inset: 0;
+    margin: 0 auto;
+}
  
 .col-md-6.mt-top {
     margin-top: 32px;
