@@ -90,6 +90,15 @@ $(document).ready(function () {
             $("header").removeClass("scrolled"); 
         }
     });
+
+
+
+    $(".toggle-button").click(function () {
+      $(".toggle-button").toggleClass("active");
+    });
+
+
+
   });
 
 
