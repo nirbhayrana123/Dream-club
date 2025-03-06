@@ -91,3 +91,63 @@ $(document).ready(function () {
         }
     });
   });
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    if (document.querySelector(".slider-presta")) {
+        var offbeat = new Swiper(".slider-presta", {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            speed: 3000,
+            loop: true,
+         
+                delay: 200, // 2 seconds delay between slides
+                disableOnInteraction: false, // Autoplay na rukhe on user interaction
+           
+
+            allowTouchMove: false, // Disable manual dragging for smoother effect
+            freeMode: true, // Freeflow smooth scrolling
+            freeModeMomentum: false, // Remove momentum stopping effect
+            loopAdditionalSlides: 3, // Ensure smooth looping
+
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            breakpoints: {
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 20
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                480: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 10
+                }
+            },
+            on: {
+                slideChangeTransitionStart: function () {
+                    let slides = document.querySelectorAll('.swiper-slide');
+                    slides.forEach((slide, index) => {
+                        if (index % 2 === 0) {
+                            slide.style.transform = 'translateY(-20px)';
+                        } else {
+                            slide.style.transform = 'translateY(20px)';
+                        }
+                    });
+                },
+                slideChangeTransitionEnd: function () {
+                    document.querySelectorAll('.swiper-slide').forEach(slide => {
+                        slide.style.transform = 'translateY(0)';
+                    });
+                }
+            }
+        });
+
+        console.log("Swiper initialized with infinite autoplay:", offbeat);
+    }
+});
