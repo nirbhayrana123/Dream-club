@@ -1,19 +1,21 @@
 $(document).ready(function () {
     // First Slider Initialization
-    $(".owl-carousel.first-slider").owlCarousel({
+    $(".first-slider").owlCarousel({
       items: 3,
       margin: 20,
       loop: true,
-      nav: true,
+     autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
       responsive: {
         0: {
-          items: 1
+          items: 1.2
         },
-        600: {
-          items: 2
+        767: {
+          items: 1.2
         },
         1000: {
-          items: 3 
+          items: 3.2 
         }
       },
     });
@@ -27,10 +29,10 @@ $(document).ready(function () {
       nav: false,
       responsive: {
         0: {
-          items: 1
+          items: 1.2
         },
         600: {
-          items: 2
+          items: 2.2
         },
         1000: {
           items: 3 
@@ -51,6 +53,7 @@ $(document).ready(function () {
       margin: 10,
       nav: true,
       center: true,
+      dots: false,
       stagePadding: 50,
       navText: [
         '<i class="fas fa-chevron-left"></i>',
@@ -72,7 +75,8 @@ $(document).ready(function () {
           stagePadding: 50,
           nav: true
         }
-      },
+      }, 
+
       onTranslated: function () {
         $(".owl-item").removeClass("active-slide left-slide right-slide");
         $(".owl-item.center").addClass("active-slide");
@@ -80,7 +84,10 @@ $(document).ready(function () {
           $(this).addClass(index === 0 ? "left-slide" : "right-slide");
         });
       }
+
     });
+
+ 
 
     ///////////////header fixed////////////////
     $(window).scroll(function(){

@@ -110,7 +110,7 @@ ul {
   @media (min-width: 1024px) {
   
     .slider-offbeat .swiper-slide {
-      aspect-ratio: 81/146;
+      aspect-ratio: 81/100;
     }
     .slider-offbeat .slider-offbeat-next {
       padding: 0;
@@ -567,6 +567,7 @@ h4.margin-top {
     transition: 1s;
     margin-bottom: 32px;
     padding: 15px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 57%, rgba(0, 0, 0, 0.8) 100%);
 }
 .event-card:hover .Olives {
     bottom: 40px;
@@ -687,6 +688,7 @@ a.button.black-hover {
 }
 img.boxbg {
     min-height: 584px;
+    object-fit: cover;
 }
 .service-card {
     position: relative;
@@ -700,6 +702,23 @@ img.boxbg {
     width: 100%;
     height: 100%; 
 }
+
+.service-card.on.firstanimation::after {
+    content: "";
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 58.78%, rgba(0, 0, 0, 0.5) 100%);
+}
+.service-card.tu.secondanimation::after{
+    content: "";
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 58.78%, rgba(0, 0, 0, 0.5) 100%);
+}
+.service-card.th.thirdanimation::after {
+    content: "";
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 58.78%, rgba(0, 0, 0, 0.5) 100%);
+}
+.service-card.fr.fourthanimation::after {
+    content: "";
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 58.78%, rgba(0, 0, 0, 0.5) 100%);
+}
 .service-card.on:hover::after { 
     background: linear-gradient(180deg, rgba(7, 42, 66, 0.7) 0%, rgba(5, 24, 39, 0.7) 100%);
 }
@@ -712,6 +731,7 @@ img.boxbg {
 .service-card.fr:hover::after { 
     background: linear-gradient(180deg, rgba(7, 42, 66, 0.7) 0%, rgba(5, 24, 39, 0.7) 100%);
 }
+
 /*******************Card One ********************/
 .service-card .icon-shep {
     position: absolute;
@@ -1370,10 +1390,9 @@ service-card:hover .icon-shep {
 }
 
 .services-heding p {
-    color: #000;
-    font-family: Gilroy-Regular;
+    color: #000; 
     font-weight: 400;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 1.4em;
     letter-spacing: 0px;
 }
@@ -1499,9 +1518,7 @@ p.font-bold {
     top: 40%;
 }
 
-.testimonial-section .owl-dots {
-    display: none;
-}
+
 
 .testimonial-section .owl-nav i {
     font-size: 50px;
@@ -2187,6 +2204,96 @@ nav.topnavbar.navbar {
 .flexmobile {
     display: none;
 }
+testimonial-section .owl-dots{
+    display: none;
+}
+.slider-counter {
+    font-size: 20px;
+    color: #9D9D9D;
+    font-family: 'Gilroy';
+}
+
+/*****************************enent***************************/
+
+.filter-dropdown {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+select {
+    border: none;
+    outline: none;
+    color: rgba(157, 157, 157, 1);
+}
+.results {
+    font-size: 14px;
+}
+.filter-dropdown i.fas.fa-map-marker-alt {
+    color: rgba(157, 157, 157, 1);
+}
+.filter-dropdown i.far.fa-calendar{
+    color: rgba(157, 157, 157, 1);
+}
+bold {
+    font-weight: 600;
+}
+span.prime {
+    background-color: rgba(116, 58, 160, 1);
+    padding: 1px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+.d-flex.mt-3 {
+    justify-content: center;
+}
+.innterContents {
+    padding: 20px;
+}
+.banner-events h2 {
+    color: #fff;
+    font-size: 54px;
+}
+.banner-events span {
+    color: rgba(238, 210, 116, 1);
+}
+.banner-events p {
+    color: #fff;
+}
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+.showing a.buttons-results {
+    color: rgba(23, 23, 23, 1);
+}
+.evening li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.text-Olive {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0;
+}
+ul {
+    padding-left: 20px;
+    padding-bottom: 0;
+}
+
+
+
+
+
+
+
 
 /*============ Responsive styles================== */
 @media (max-width: 1400px) {
@@ -2226,9 +2333,7 @@ a.button.greys {
     font-size: 22px; 
 }
 
-img.boxbg { 
-    object-fit: cover;
-}
+
 p.card-heading { 
     font-size: 25px; 
 }
@@ -2241,6 +2346,8 @@ p.card-heading {
 
 }
 @media (max-width: 1200px) {
+  
+    
 .ul-li-row {
     
     gap: 100px;
@@ -2271,14 +2378,11 @@ section.blogs {
 
 
     .left-button {
-        display: flex
-    ;
+        display: flex ;
         align-items: center;
         gap: 10px;
     }
-
-
-
+    
 
     header.scrolled button.toggle-button span {
         background-color: #121256;
@@ -2633,7 +2737,19 @@ p.text-size-regular {
     section.blogs {
         padding: 50px 20px;
     }
-
+/******************event****************************/
+span.prime {
+    background-color: rgba(116, 58, 160, 1);
+    padding: 0px 5px;
+    font-size: 15px;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.filter {
+    margin-bottom: 20px;
+    gap: 16px;
+}
 }
 
 @media (max-width: 600px) {
