@@ -110,7 +110,7 @@ ul {
   @media (min-width: 1024px) {
   
     .slider-offbeat .swiper-slide {
-      aspect-ratio: 81/100;
+      aspect-ratio: 81/130;
     }
     .slider-offbeat .slider-offbeat-next {
       padding: 0;
@@ -181,7 +181,7 @@ header {
     padding: 10px 0px;
     left: 0;
     right: 0;
-    z-index: 9;
+    z-index: 99;
     transition: 0.1s allease;
 }
 
@@ -264,6 +264,7 @@ header.scrolled {
     background: #fff;
     padding: 10px 0px;
     box-shadow: 2px 2px 32px 0px rgba(0, 0, 0, 0.15);
+    z-index: 99;
 
 }
 
@@ -2129,7 +2130,7 @@ small.d-block.mt-3 {
     font-weight: 600;
 }
 
-span {
+.banner-left span {
     font-weight: 400;
     font-size: 54px;
 }
@@ -2445,8 +2446,31 @@ testimonial-section .owl-dots{
     color: #9D9D9D;
     font-family: 'Gilroy';
 }
+.flex-event {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.hovericon a {
+    color: #fff;
+    font-size: 20px;
+}
 
-/*****************************enent***************************/
+
+.gelaaryicon {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: none;
+}
+.gelaaryicon a {
+    font-size: 25px;
+    color: #fff;
+}
+.gelaaryicon a i.fas.fa-arrow-up {
+    transform: rotate(45deg);
+}
+/*****************************event page***************************/
 
 .filter-dropdown {
     display: flex;
@@ -2523,6 +2547,9 @@ ul {
 
 
 
+.swiper-slide p.text-size-regular i.fas.fa-map-marker-alt {
+    display: none;
+}
 
 
 
@@ -2537,7 +2564,7 @@ ul {
     max-width: 425px;
 }
 
-span {
+.banner-left  span {
     font-size: 40px;
 }
 .banner-left p { 
@@ -2608,8 +2635,17 @@ section.blogs {
 
 
 @media (max-width: 991px) {
-
-
+    .Olives { 
+        margin-bottom: 10px; 
+     }
+     .event-overlays { 
+        padding: 10px; 
+    }
+    
+    
+    .Olive.li-box .hovericon {
+        display: none;
+    }
     .left-button {
         display: flex ;
         align-items: center;
@@ -2835,7 +2871,60 @@ p.text-size-regular {
 }
 }
 @media (max-width: 768px) {
+    .Olive.li-box .hovericon {
+        display: block;
+    }
+    .innterContent { 
+        padding: 15px;
+    }
+    .gallery .box::after {
+        opacity: 1;
+    }
+    .gelaaryicon {
+        position: absolute;
+        top: 8px;
+        right: 15px;
+        display: block;
+        z-index: 9;
+    }
+    .swiper-slide p.text-size-regular {
+        display: flex;
+        align-items: center;
+    }
     
+.swiper-slide p.text-size-regular i.fas.fa-map-marker-alt {
+    display: block;
+    margin-right: 10px;
+}
+    .box .move-hover {
+        top: 0;
+    }
+    .Olive { 
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 0px 15px;
+    }
+    .event-overlay::after {
+        content: "";
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        background: linear-gradient(180deg, rgba(123, 28, 24, 0.9) 0%, rgba(71, 16, 14, 0.9) 100%);
+        mix-blend-mode: multiply;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+    }
+    .contentarea svg.bg-image {
+        display: none;
+    }
+    .contentarea {
+        max-width: 625px;
+        height: 100%;
+        position: relative;
+        z-index: 9;
+    }
     .testimonial-section .owl-item {
         transform: scale(0.8);
     }
@@ -2950,7 +3039,7 @@ p.text-size-regular {
     .bg-color {
         overflow-x: hidden;
     }
-    span {
+    .banner-left span {
         font-size: 28px;
     }
     .banner-left p {
