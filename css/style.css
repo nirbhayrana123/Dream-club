@@ -665,6 +665,7 @@ a.button.black:hover {
 .service-card svg {
     width: 100%;
     height: 100%;
+    pointer-events: none;
 }
 a.button.black {
     background-color: #171717;
@@ -710,8 +711,7 @@ img.boxbg {
 .service-card.fr:hover::after { 
     background: linear-gradient(180deg, rgba(7, 42, 66, 0.7) 0%, rgba(5, 24, 39, 0.7) 100%);
 }
-
-
+/*******************Card One ********************/
 .service-card .icon-shep {
     position: absolute;
     left: -71px;
@@ -719,6 +719,102 @@ img.boxbg {
     width: 130px;
     height: 130px;
     z-index: 2;
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    transition: transform 0.5s ease-in-out;
+}
+  .service-card:hover .icon-shep {animation: moveRotateScale 0.5s ease-in-out forwards;}
+  .service-card:not(:hover) .icon-shep {animation: moveRotateScaleReverse 0.5s ease-in-out forwards;}
+  @keyframes moveRotateScale {
+    0% {
+      transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+    100% {
+      transform: translate(350px, 260px) rotate(-90deg) scale(4.4);
+    }
+  }
+  @keyframes moveRotateScaleReverse {
+    0% {
+      transform: translate(350px, 260px) rotate(-90deg) scale(4.4);
+    }
+    100% {
+      transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+  }
+  /*************card second*************/
+  .secondanimation{ transform: translate(0, 0) rotate(0deg) scale(1); transition: transform 0.5s ease-in-out;  }
+  .secondanimation:hover .icon-shep {animation: moveRotateScale2 0.5s ease-in-out forwards;}
+  .secondanimation:not(:hover) .icon-shep {animation: moveRotateScaleReverse2 0.5s ease-in-out forwards;}
+  @keyframes moveRotateScale2 {
+      0% {
+        transform: translate(0, 0) rotate(0deg) scale(1);
+      }
+      100% {
+        transform: translate(-310px, -187px) rotate(-30deg) scale(4.2);
+      }
+    }
+    @keyframes moveRotateScaleReverse2 {
+      0% {
+        transform: translate(-310px, -187px) rotate(-30deg) scale(4.2);
+      }
+      100% {
+        transform: translate(0, 0) rotate(0deg) scale(1);
+      }
+    } 
+/*************card Third*************/
+.thirdanimation{ transform: translate(0, 0) rotate(0deg) scale(1); transition: transform 0.5s ease-in-out;}
+.thirdanimation:hover .icon-shep {animation: moveRotateScale3 0.5s ease-in-out forwards;}
+.thirdanimation:not(:hover) .icon-shep {animation: moveRotateScaleReverse3 0.5s ease-in-out forwards;}
+@keyframes moveRotateScale3 {
+    0% {
+      transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+    100% {
+      transform: translate(350px, 260px) rotate(180deg) scale(4.4);
+    }
+  }
+  @keyframes moveRotateScaleReverse3 {
+    0% {
+      transform: translate(350px, 260px) rotate(180deg) scale(4.4);
+    }
+    100% {
+      transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+  }
+/*************Third Fourth*************/
+.fourthanimation{
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    transition: transform 0.5s ease-in-out;
+}
+.fourthanimation:hover .icon-shep {animation: moveRotateScale4 0.5s ease-in-out forwards;}
+.fourthanimation:not(:hover) .icon-shep {animation: moveRotateScaleReverse4 0.5s ease-in-out forwards;}
+.icon-shep.four4 {
+    left: auto;
+    right: -60px;
+    top: auto;
+    bottom: 105px;
+}
+@keyframes moveRotateScale4 {
+    0% {
+      transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+    100% {
+      transform: translate(-310px, -170px) rotate(-180deg) scale(4.2);
+    }
+  }
+  @keyframes moveRotateScaleReverse4 {
+    0% {
+      transform: translate(-310px, -170px) rotate(-180deg) scale(4.2);
+    }
+    100% {
+      transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+  } 
+/*************Thirdend*************/
+
+/*************end************************/
+.overlayInner {
+    max-width: 320px;
+    margin: 0 auto;
 }
 .icon-shep.two2 {
     right: -26px;
@@ -726,14 +822,14 @@ img.boxbg {
     top: auto;
     bottom: 53px;
 }
-.service-card:hover .icon-shep.two2 {
-    transform: rotate(-30deg);
+/* .service-card:hover .icon-shep.two2 {
+    /* transform: rotate(-30deg);
     width: 76%;
     height: auto;
     inset: 0;
     margin: 0 auto;
-    top: -25px;
-}
+    top: -25px;  
+} */
 
 .icon-shep.four4 {
     right: -37px;
@@ -741,13 +837,13 @@ img.boxbg {
     top: auto;
     bottom: 53px;
 }
-.service-card:hover .icon-shep.four4 {
-    transform: rotate(180deg);
+/* .service-card:hover .icon-shep.four4 {
+    /* transform: rotate(180deg);
     width: 80%;
     height: auto;
     inset: 0;
-    margin: 0 auto;
-}
+    margin: 0 auto;  
+} */
 .service-card:hover .overlay {
     bottom: 25%;
     color: #000000;
@@ -781,14 +877,14 @@ img.boxbg {
 .service-card:hover svg path {
     fill: #ffffff;
 }
-.service-card:hover .icon-shep.one1,.service-card:hover .icon-shep.three3 {
+/* .service-card:hover .icon-shep.one1,.service-card:hover .icon-shep.three3 {
     transform: rotate(90deg);
     width: 80%;
     height: auto;
     inset: 0;
     margin: 0 auto;
 }
- 
+  */
 .col-md-6.mt-top {
     margin-top: 32px;
 }
@@ -873,6 +969,8 @@ service-card:hover .icon-shep {
 .bg-color {
     background-color: rgba(243, 243, 243, 1);
     margin-top: 120px;
+    overflow: hidden;
+
 }
 
 /******************testimonial************/ 
@@ -972,16 +1070,16 @@ p.font-bold {
 
 .testimonial-section button.owl-next {
     position: absolute;
-    right: 200px;
-    top: 250px;
+    right: -50px;
+    top: 40%;
 }
 .testimonial-section button.owl-next,.testimonial-section button.owl-prev {
     background: transparent !important;
 }
 .testimonial-section button.owl-prev {
     position: absolute;
-    left: 200px;
-    top: 250px;
+    left: 0px;
+    top: 40%;
 }
 
 .testimonial-section .owl-dots {
@@ -1397,6 +1495,16 @@ input.form-control::placeholder {
 form.newsletter-form.row.g-2 {
     margin-top: 32px;
     margin-bottom: 12px;
+}
+.testimonial-section .owl-nav {
+    max-width: 1080px;
+    position: relative;
+    background: red;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40%;
 }
 
 /*************************FOOTER START******************************/
