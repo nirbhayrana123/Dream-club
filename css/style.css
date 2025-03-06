@@ -1384,7 +1384,7 @@ service-card:hover .icon-shep {
 
 .bg-color {
     background-color: rgba(243, 243, 243, 1);
-    margin-top: 120px;
+    margin-top: 0px;
     overflow: hidden;
 
 }
