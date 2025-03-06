@@ -740,10 +740,102 @@ img.boxbg {
       transform: translate(0, 0) rotate(0deg) scale(1);
     }
   }
+  @media only screen and (max-width: 1400px) {
+    @keyframes moveRotateScale {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
+          transform: translate(280px, 260px) rotate(-90deg) scale(3.6);
+        }
+      }
+      @keyframes moveRotateScaleReverse {
+        0% {
+          transform: translate(280px, 260px) rotate(-90deg) scale(3.6);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      }
+  }
+  @media only screen and (max-width: 1200px) {
+    @keyframes moveRotateScale {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
+          transform: translate(230px, 260px) rotate(-90deg) scale(3);
+        }
+      }
+      @keyframes moveRotateScaleReverse {
+        0% {
+          transform: translate(230px, 260px) rotate(-90deg) scale(3);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      }
+  }
+  @media only screen and (max-width: 992px) {
+    @keyframes moveRotateScale {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
+          transform: translate(350px, 260px) rotate(-90deg) scale(4);
+        }
+      }
+      @keyframes moveRotateScaleReverse {
+        0% {
+          transform: translate(350px, 260px) rotate(-90deg) scale(4);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      }
+  }
+  @media only screen and (max-width: 767px) {
+    @keyframes moveRotateScale {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
+          transform: translate(200px, 290px) rotate(-90deg) scale(2.5);
+        }
+      }
+      @keyframes moveRotateScaleReverse {
+        0% {
+          transform: translate(200px, 290px) rotate(-90deg) scale(2.5);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      }
+      .service-card .icon-shep {  left: -14px;  top: -45px;  }
+  }
+  @media only screen and (max-width: 600px) {
+    @keyframes moveRotateScale {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
+          transform: translate(120px, 180px) rotate(-90deg) scale(2.5);
+        }
+      }
+      @keyframes moveRotateScaleReverse {
+        0% {
+          transform: translate(120px, 180px) rotate(-90deg) scale(2.5);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      }
+}
   /*************card second*************/
-  .secondanimation{ transform: translate(0, 0) rotate(0deg) scale(1); transition: transform 0.5s ease-in-out;  }
+  /* .secondanimation{ transform: translate(0, 0) rotate(0deg) scale(1); transition: transform 0.5s ease-in-out;  } */
   .secondanimation:hover .icon-shep {animation: moveRotateScale2 0.5s ease-in-out forwards;}
   .secondanimation:not(:hover) .icon-shep {animation: moveRotateScaleReverse2 0.5s ease-in-out forwards;}
+  .icon-shep.two2 {right: -26px; left: auto; top: auto; bottom: 53px;}
   @keyframes moveRotateScale2 {
       0% {
         transform: translate(0, 0) rotate(0deg) scale(1);
@@ -760,6 +852,116 @@ img.boxbg {
         transform: translate(0, 0) rotate(0deg) scale(1);
       }
     } 
+
+    @media only screen and (max-width: 1400px) {
+        @keyframes moveRotateScale2 {
+            0% {
+              transform: translate(0, 0) rotate(0deg) scale(1);
+            }
+            100% {
+              transform: translate(-240px, -187px) rotate(-30deg) scale(4.2);
+            }
+          }
+          @keyframes moveRotateScaleReverse2 {
+            0% {
+              transform: translate(-240px, -187px) rotate(-30deg) scale(4.2);
+            }
+            100% {
+              transform: translate(0, 0) rotate(0deg) scale(1);
+            }
+          } 
+     }
+     @media only screen and (max-width: 1199px) {
+        @keyframes moveRotateScale2 {
+            0% {
+              transform: translate(0, 0) rotate(0deg) scale(1);
+            }
+            100% {
+              transform: translate(-190px, -187px) rotate(-30deg) scale(3.5);
+            }
+          }
+          @keyframes moveRotateScaleReverse2 {
+            0% {
+              transform: translate(-190px, -187px) rotate(-30deg) scale(3.5);
+            }
+            100% {
+              transform: translate(0, 0) rotate(0deg) scale(1);
+            }
+          } 
+     }
+     @media only screen and (max-width: 992px) {
+        @keyframes moveRotateScale2 {
+            0% {
+              transform: translate(0, 0) rotate(0deg) scale(1);
+            }
+            100% {
+              transform: translate(-300px, -187px) rotate(-30deg) scale(3.5);
+            }
+          }
+          @keyframes moveRotateScaleReverse2 {
+            0% {
+              transform: translate(-300px, -187px) rotate(-30deg) scale(3.5);
+            }
+            100% {
+              transform: translate(0, 0) rotate(0deg) scale(1);
+            }
+          } 
+     }
+     @media only screen and (max-width: 767px) {
+        @keyframes moveRotateScale2 {
+            0% {
+              transform: translate(0, 0) rotate(0deg) scale(1);
+            }
+            100% {
+              transform: translate(-210px, -187px) rotate(-30deg) scale(3.5);
+            }
+          }
+          @keyframes moveRotateScaleReverse2 {
+            0% {
+              transform: translate(-210px, -187px) rotate(-30deg) scale(3.5);
+            }
+            100% {
+              transform: translate(0, 0) rotate(0deg) scale(1);
+            }
+          }  
+     }
+     @media only screen and (max-width: 600px) {
+    @keyframes moveRotateScale2 {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
+          transform: translate(-210px, -110px) rotate(-30deg) scale(3);
+        }
+      }
+      @keyframes moveRotateScaleReverse2 {
+        0% {
+          transform: translate(-210px, -110px) rotate(-30deg) scale(3);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      }  
+     }
+    @media only screen and (max-width: 490px) {
+      @keyframes moveRotateScale2 {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
+          transform: translate(-140px, -120px) rotate(-30deg) scale(2.5);
+        }
+      }
+      @keyframes moveRotateScaleReverse2 {
+        0% {
+          transform: translate(-140px, -120px) rotate(-30deg) scale(2.5);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      }  
+    }
+ 
 /*************card Third*************/
 .thirdanimation{ transform: translate(0, 0) rotate(0deg) scale(1); transition: transform 0.5s ease-in-out;}
 .thirdanimation:hover .icon-shep {animation: moveRotateScale3 0.5s ease-in-out forwards;}
@@ -780,6 +982,115 @@ img.boxbg {
       transform: translate(0, 0) rotate(0deg) scale(1);
     }
   }
+  @media only screen and (max-width: 1400px) {
+    @keyframes moveRotateScale3 {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
+          transform: translate(280px, 260px) rotate(180deg) scale(4);
+        }
+      }
+      @keyframes moveRotateScaleReverse3 {
+        0% {
+          transform: translate(280px, 260px) rotate(180deg) scale(4);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      }
+  }
+  @media only screen and (max-width: 1200px) {
+    @keyframes moveRotateScale3 {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
+          transform: translate(240px, 260px) rotate(180deg) scale(3.3);
+        }
+      }
+      @keyframes moveRotateScaleReverse3 {
+        0% {
+          transform: translate(240px, 260px) rotate(180deg) scale(3.3);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      }
+  }
+  @media only screen and (max-width: 992px) {
+    @keyframes moveRotateScale3 {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
+          transform: translate(350px, 260px) rotate(180deg) scale(3.3);
+        }
+      }
+      @keyframes moveRotateScaleReverse3 {
+        0% {
+          transform: translate(350px, 260px) rotate(180deg) scale(3.3);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      }
+  }
+  @media only screen and (max-width: 767px) {
+    @keyframes moveRotateScale3 {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
+          transform: translate(200px, 270px) rotate(180deg) scale(3);
+        }
+      }
+      @keyframes moveRotateScaleReverse3 {
+        0% {
+          transform: translate(200px, 270px) rotate(180deg) scale(3);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      }
+  }
+  @media only screen and (max-width: 576px) {
+    @keyframes moveRotateScale3 {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
+          transform: translate(190px, 190px) rotate(180deg) scale(3);
+        }
+      }
+      @keyframes moveRotateScaleReverse3 {
+        0% {
+          transform: translate(190px, 190px) rotate(180deg) scale(3);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      }
+  }
+  @media only screen and (max-width: 490px) {
+    @keyframes moveRotateScale3 {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
+          transform: translate(125px, 190px) rotate(180deg) scale(2.6);
+        }
+      }
+      @keyframes moveRotateScaleReverse3 {
+        0% {
+          transform: translate(125px, 190px) rotate(180deg) scale(2.6);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      }
+  }
+
 /*************Third Fourth*************/
 .fourthanimation{
     transform: translate(0, 0) rotate(0deg) scale(1);
@@ -809,6 +1120,116 @@ img.boxbg {
       transform: translate(0, 0) rotate(0deg) scale(1);
     }
   } 
+  @media only screen and (max-width: 1400px) {
+    @keyframes moveRotateScale4 {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
+          transform: translate(-250px, -170px) rotate(-180deg) scale(3.5);
+        }
+      }
+      @keyframes moveRotateScaleReverse4 {
+        0% {
+          transform: translate(-250px, -170px) rotate(-180deg) scale(3.5);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      } 
+  }
+  @media only screen and (max-width: 1200px) {
+    @keyframes moveRotateScale4 {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
+          transform: translate(-200px, -170px) rotate(-180deg) scale(3);
+        }
+      }
+      @keyframes moveRotateScaleReverse4 {
+        0% {
+          transform: translate(-200px, -170px) rotate(-180deg) scale(3);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      } 
+  }
+  @media only screen and (max-width: 992px) {
+    @keyframes moveRotateScale4 {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
+          transform: translate(-330px, -170px) rotate(-180deg) scale(3);
+        }
+      }
+      @keyframes moveRotateScaleReverse4 {
+        0% {
+          transform: translate(-330px, -170px) rotate(-180deg) scale(3);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      } 
+  }
+  @media only screen and (max-width: 767px) {
+    @keyframes moveRotateScale4 {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
+          transform: translate(-230px, -170px) rotate(-180deg) scale(3);
+        }
+      }
+      @keyframes moveRotateScaleReverse4 {
+        0% {
+          transform: translate(-230px, -170px) rotate(-180deg) scale(3);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      } 
+  }
+  @media only screen and (max-width: 576px) {
+    @keyframes moveRotateScale4 {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
+          transform: translate(-210px, -100px) rotate(-180deg) scale(3);
+        }
+      }
+      @keyframes moveRotateScaleReverse4 {
+        0% {
+          transform: translate(-210px, -100px) rotate(-180deg) scale(3);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      } 
+  }
+  @media only screen and (max-width: 490px) {
+    @keyframes moveRotateScale4 {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
+          transform: translate(-150px, -100px) rotate(-180deg) scale(2.5);
+        }
+      }
+      @keyframes moveRotateScaleReverse4 {
+        0% {
+          transform: translate(-150px, -100px) rotate(-180deg) scale(2.5);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      } 
+  }
+ 
+
 /*************Thirdend*************/
 
 /*************end************************/
@@ -816,12 +1237,7 @@ img.boxbg {
     max-width: 320px;
     margin: 0 auto;
 }
-.icon-shep.two2 {
-    right: -26px;
-    left: auto;
-    top: auto;
-    bottom: 53px;
-}
+
 /* .service-card:hover .icon-shep.two2 {
     /* transform: rotate(-30deg);
     width: 76%;
@@ -1870,13 +2286,13 @@ section.blogs {
     .service-card .overlay p {
         font-size: 13px;
     }
-    .service-card:hover .icon-shep.two2 {
+    /* .service-card:hover .icon-shep.two2 {
         width: 90%;
-    }
-    .service-card:hover .icon-shep.one1, .service-card:hover .icon-shep.three3 {
+    } */
+    /* .service-card:hover .icon-shep.one1, .service-card:hover .icon-shep.three3 {
        
         width: 90%;
-    }
+    } */
     .first-slider .owl-nav {
         display: none;
     }
