@@ -39,7 +39,7 @@ a {
 
 section.blogs.white-bg {
     background: #ffffff;
-    padding: 120px 20px;
+    padding: 120px 20px 0;
 }
 
 ul {
@@ -745,6 +745,7 @@ img.boxbg {
 }
   .service-card:hover .icon-shep {animation: moveRotateScale 0.5s ease-in-out forwards;}
   .service-card:not(:hover) .icon-shep {animation: moveRotateScaleReverse 0.5s ease-in-out forwards;}
+  .overlayInner { max-width: 320px; margin: 0 auto;}
   @keyframes moveRotateScale {
     0% {
       transform: translate(0, 0) rotate(0deg) scale(1);
@@ -852,11 +853,88 @@ img.boxbg {
         }
       }
 }
+@media only screen and (max-width: 490px) {
+    @keyframes moveRotateScale {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
+          transform: translate(145px, 180px) rotate(-90deg) scale(2.5);
+        }
+      }
+      @keyframes moveRotateScaleReverse {
+        0% {
+          transform: translate(145px, 180px) rotate(-90deg) scale(2.5);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      }
+      .overlayInner {  max-width: 210px; }
+}
+@media only screen and (max-width: 415px) {
+    @keyframes moveRotateScale {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
+          transform: translate(135px, 190px) rotate(-90deg) scale(2.5);
+        }
+      }
+      @keyframes moveRotateScaleReverse {
+        0% {
+          transform: translate(135px, 190px) rotate(-90deg) scale(2.5);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      }
+      .overlayInner {  max-width: 210px; }
+}
+@media only screen and (max-width: 391px) {
+    @keyframes moveRotateScale {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
+          transform: translate(125px, 190px) rotate(-90deg) scale(2.5);
+        }
+      }
+      @keyframes moveRotateScaleReverse {
+        0% {
+          transform: translate(125px, 190px) rotate(-90deg) scale(2.5);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      }
+      .overlayInner {  max-width: 210px; }
+}
+@media only screen and (max-width: 376px) {
+    @keyframes moveRotateScale {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
+          transform: translate(115px, 190px) rotate(-90deg) scale(2.5);
+        }
+      }
+      @keyframes moveRotateScaleReverse {
+        0% {
+          transform: translate(115px, 190px) rotate(-90deg) scale(2.5);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      }
+      .overlayInner {  max-width: 210px; }
+}
   /*************card second*************/
   /* .secondanimation{ transform: translate(0, 0) rotate(0deg) scale(1); transition: transform 0.5s ease-in-out;  } */
   .secondanimation:hover .icon-shep {animation: moveRotateScale2 0.5s ease-in-out forwards;}
   .secondanimation:not(:hover) .icon-shep {animation: moveRotateScaleReverse2 0.5s ease-in-out forwards;}
   .icon-shep.two2 {right: -26px; left: auto; top: auto; bottom: 53px;}
+  
   @keyframes moveRotateScale2 {
       0% {
         transform: translate(0, 0) rotate(0deg) scale(1);
@@ -970,19 +1048,72 @@ img.boxbg {
           transform: translate(0, 0) rotate(0deg) scale(1);
         }
         100% {
-          transform: translate(-140px, -120px) rotate(-30deg) scale(2.5);
+          transform: translate(-160px, -100px) rotate(-30deg) scale(2.5);
         }
       }
       @keyframes moveRotateScaleReverse2 {
         0% {
-          transform: translate(-140px, -120px) rotate(-30deg) scale(2.5);
+          transform: translate(-160px, -100px) rotate(-30deg) scale(2.5);
         }
         100% {
           transform: translate(0, 0) rotate(0deg) scale(1);
         }
       }  
     }
- 
+    @media only screen and (max-width: 415px) {
+        @keyframes moveRotateScale2 {
+          0% {
+            transform: translate(0, 0) rotate(0deg) scale(1);
+          }
+          100% {
+            transform: translate(-150px, -100px) rotate(-30deg) scale(2.5);
+          }
+        }
+        @keyframes moveRotateScaleReverse2 {
+          0% {
+            transform: translate(-150px, -100px) rotate(-30deg) scale(2.5);
+          }
+          100% {
+            transform: translate(0, 0) rotate(0deg) scale(1);
+          }
+        }  
+      }
+      @media only screen and (max-width: 391px) {
+        @keyframes moveRotateScale2 {
+          0% {
+            transform: translate(0, 0) rotate(0deg) scale(1);
+          }
+          100% {
+            transform: translate(-140px, -100px) rotate(-30deg) scale(2.5);
+          }
+        }
+        @keyframes moveRotateScaleReverse2 {
+          0% {
+            transform: translate(-140px, -100px) rotate(-30deg) scale(2.5);
+          }
+          100% {
+            transform: translate(0, 0) rotate(0deg) scale(1);
+          }
+        }  
+      }
+      @media only screen and (max-width: 376px) {
+        @keyframes moveRotateScale2 {
+          0% {
+            transform: translate(0, 0) rotate(0deg) scale(1);
+          }
+          100% {
+            transform: translate(-130px, -100px) rotate(-30deg) scale(2.5);
+          }
+        }
+        @keyframes moveRotateScaleReverse2 {
+          0% {
+            transform: translate(-130px, -100px) rotate(-30deg) scale(2.5);
+          }
+          100% {
+            transform: translate(0, 0) rotate(0deg) scale(1);
+          }
+        }  
+      }
 /*************card Third*************/
 .thirdanimation{ transform: translate(0, 0) rotate(0deg) scale(1); transition: transform 0.5s ease-in-out;}
 .thirdanimation:hover .icon-shep {animation: moveRotateScale3 0.5s ease-in-out forwards;}
@@ -1099,6 +1230,42 @@ img.boxbg {
           transform: translate(0, 0) rotate(0deg) scale(1);
         }
         100% {
+          transform: translate(145px, 190px) rotate(180deg) scale(2.6);
+        }
+      }
+      @keyframes moveRotateScaleReverse3 {
+        0% {
+          transform: translate(145px, 190px) rotate(180deg) scale(2.6);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      }
+  }
+  @media only screen and (max-width: 415px) {
+    @keyframes moveRotateScale3 {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
+          transform: translate(135px, 190px) rotate(180deg) scale(2.6);
+        }
+      }
+      @keyframes moveRotateScaleReverse3 {
+        0% {
+          transform: translate(135px, 190px) rotate(180deg) scale(2.6);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      }
+  }
+  @media only screen and (max-width: 391px) {
+    @keyframes moveRotateScale3 {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
           transform: translate(125px, 190px) rotate(180deg) scale(2.6);
         }
       }
@@ -1111,7 +1278,24 @@ img.boxbg {
         }
       }
   }
-
+  @media only screen and (max-width: 376px) {
+    @keyframes moveRotateScale3 {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
+          transform: translate(117px, 190px) rotate(180deg) scale(2.3);
+        }
+      }
+      @keyframes moveRotateScaleReverse3 {
+        0% {
+          transform: translate(117px, 190px) rotate(180deg) scale(2.3);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      }
+  }
 /*************Third Fourth*************/
 .fourthanimation{
     transform: translate(0, 0) rotate(0deg) scale(1);
@@ -1183,12 +1367,12 @@ img.boxbg {
           transform: translate(0, 0) rotate(0deg) scale(1);
         }
         100% {
-          transform: translate(-330px, -170px) rotate(-180deg) scale(3);
+          transform: translate(-310px, -170px) rotate(-180deg) scale(3);
         }
       }
       @keyframes moveRotateScaleReverse4 {
         0% {
-          transform: translate(-330px, -170px) rotate(-180deg) scale(3);
+          transform: translate(-310px, -170px) rotate(-180deg) scale(3);
         }
         100% {
           transform: translate(0, 0) rotate(0deg) scale(1);
@@ -1249,15 +1433,64 @@ img.boxbg {
         }
       } 
   }
- 
-
+  @media only screen and (max-width: 415px) {
+    @keyframes moveRotateScale4 {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
+          transform: translate(-160px, -100px) rotate(-180deg) scale(2.5);
+        }
+      }
+      @keyframes moveRotateScaleReverse4 {
+        0% {
+          transform: translate(-160px, -100px) rotate(-180deg) scale(2.5);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      } 
+  }
+  @media only screen and (max-width: 391px) {
+    @keyframes moveRotateScale4 {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
+          transform: translate(-150px, -100px) rotate(-180deg) scale(2.5);
+        }
+      }
+      @keyframes moveRotateScaleReverse4 {
+        0% {
+          transform: translate(-150px, -100px) rotate(-180deg) scale(2.5);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      } 
+  }
+  @media only screen and (max-width: 376px) {
+    @keyframes moveRotateScale4 {
+        0% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+        100% {
+          transform: translate(-140px, -100px) rotate(-180deg) scale(2.5);
+        }
+      }
+      @keyframes moveRotateScaleReverse4 {
+        0% {
+          transform: translate(-140px, -100px) rotate(-180deg) scale(2.5);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+      } 
+  }
 /*************Thirdend*************/
 
 /*************end************************/
-.overlayInner {
-    max-width: 320px;
-    margin: 0 auto;
-}
+
 
 /* .service-card:hover .icon-shep.two2 {
     /* transform: rotate(-30deg);
@@ -1404,7 +1637,7 @@ service-card:hover .icon-shep {
 
 .bg-color {
     background-color: rgba(243, 243, 243, 1);
-    margin-top: 120px;
+    margin-top: 0px;
     overflow: hidden;
 
 }
