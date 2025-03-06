@@ -1060,7 +1060,7 @@ p.font-bold {
 .testimonial-section .left-slide,
 .testimonial-section .right-slide {
     filter: blur(5px); 
-    transform: scale(0.6); 
+    transform: scale(0.7); 
     opacity: 0.4;
 }
 
@@ -1848,7 +1848,20 @@ section.blogs {
 
 
 @media (max-width: 991px) {
-
+    .toggle-button.active span.one.line {
+        transform: rotate(318deg);
+        top: 3px;
+        position: relative;
+    }
+    .toggle-button.active span.three.line {
+        transform: rotate(45deg);
+        position: relative;
+        top: -4px;
+    }
+    
+    .toggle-button.active span.tow.line {
+        display: none;
+    }
     .banner-left h1 {
         font-size: 36px;
     }
