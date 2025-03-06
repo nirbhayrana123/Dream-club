@@ -950,7 +950,7 @@ p.font-bold {
 
 .testimonial-section .owl-item {
     transition: all 0.3s ease-in-out;
-    filter: blur(0px);
+    filter: blur(5px);
     transform: scale(0.8);
 }
 
@@ -1617,7 +1617,9 @@ nav.topnavbar.navbar.navbar-expand-lg .navbar-collapse {
     padding-right: 58px;
 }
 
-
+.testimonial-section .owl-item.active.center {
+    filter: blur(0px);
+}
 
 
 /*============ Responsive styles================== */
@@ -1625,6 +1627,10 @@ nav.topnavbar.navbar.navbar-expand-lg .navbar-collapse {
 .banner-left h2 {
     font-size: 30px;
 }
+.box-canter {
+    max-width: 425px;
+}
+
 span {
     font-size: 40px;
 }
@@ -1704,8 +1710,8 @@ section.blogs {
         flex-direction: column;
         gap: 10px;
         background: #fff;
-        position: absolute;
-        top: 100%;
+        position: fixed;
+        top: 95px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         padding: 0;
         z-index: 1000;
@@ -1808,14 +1814,66 @@ section.blogs {
 }
 .accordion-item {
     background-color: transparent;
+    border-radius: 0 !important;
+    border: 0;
+    border-bottom: 1px solid #fff;
+}
+.accordion-header {
+    background-color: transparent;
+}
+ 
+.accordion-item button.accordion-button {
+    background-color: transparent;
+    border-radius: 0;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    padding-left: 0;
+    padding-right: 0;
+}
+.accordion-body {
+    color: #fff;
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
+.accordion-item button.accordion-button::after {
+    content: "";
+    background-image: url(../images/arroudoun.png);
+    width: 25px;
+    height: 19px;
+    background-size: cover;
 }
 
 
 }
 @media (max-width: 768px) {
+    .testimonial-section .owl-item { 
+        transform: scale(1);
+    }
+    .testimonial-item img { 
+        height: auto;
+        max-width: 100%;
+    }
+    .testimonial-item { 
+        flex-wrap: wrap;
+    }
+    .testimonial-content {
+        max-width: 100%;
+        text-align: left;
+        padding: 60px 40px;
+        height: auto;
+    }
+
+    .testimonial-section {
+        padding-top: 80px;
+    }
     
+    .testimonial-section h2 {
+        margin-bottom: 0;
+    }
     .testimonial-section .owl-item.active-slide { 
-        transform: scale(0.9);
+        transform: scale(1);
     }
     .navebar.active {
         display: flex;
@@ -1914,6 +1972,14 @@ section.blogs {
     .banner-left {
         width: 100%;
     }
+    .founder h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .founder p {
+        font-size: 16px;
+    }
+    
 }
 
 @media (max-width: 600px) {
@@ -1921,7 +1987,9 @@ section.blogs {
         padding: 10px;
         flex-wrap: wrap;
     }
-
+    .testimonial-content { 
+        padding: 50px 20px; 
+    }
     .testimonial-item img {
         max-width: 100%;
     }
@@ -1930,8 +1998,15 @@ section.blogs {
         font-size: 14px;
         padding: 8px 20px;
     }
-    
-
+    img.boxbg {
+        min-height: 425px;
+    }
+    .services-heding h2 {
+        font-size: 28px;
+    }
+    .services-heding p {
+        font-size: 16px;
+    }
 }
 
 

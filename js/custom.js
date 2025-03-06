@@ -93,61 +93,47 @@ $(document).ready(function () {
   });
 
 
-  document.addEventListener("DOMContentLoaded", function () {
-    if (document.querySelector(".slider-presta")) {
-        var offbeat = new Swiper(".slider-presta", {
-            slidesPerView: 3,
-            spaceBetween: 20,
-            speed: 3000,
-            loop: true,
-         
-                delay: 200, // 2 seconds delay between slides
-                disableOnInteraction: false, // Autoplay na rukhe on user interaction
-           
 
-            allowTouchMove: false, // Disable manual dragging for smoother effect
-            freeMode: true, // Freeflow smooth scrolling
-            freeModeMomentum: false, // Remove momentum stopping effect
-            loopAdditionalSlides: 3, // Ensure smooth looping
+document.addEventListener("DOMContentLoaded", function () {
+  if (document.querySelector(".slider-presta")) {
+      var offbeat = new Swiper(".slider-presta", {
+          slidesPerView: 3,
+          spaceBetween: 20,
+          speed: 1500, // Slide transition speed
+          loop: true, // Enable infinite loop
+           nav:true,
+          allowTouchMove: true, //  Allow manual dragging/swiping
+          freeMode: true, //  Freeflow smooth scrolling
+          freeModeMomentum: false, //  Remove momentum stopping effect
+          loopAdditionalSlides: 3, // Ensure smooth looping
 
+          navigation: {
+            nextEl: ".next-btn", // ✅ Fixed navigation
+            prevEl: ".prev-btn"
+        },
 
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev"
-            },
-            breakpoints: {
-                1024: {
-                    slidesPerView: 4,
-                    spaceBetween: 20
-                },
-                768: {
-                    slidesPerView: 3,
-                    spaceBetween: 20
-                },
-                480: {
-                    slidesPerView: 1.5,
-                    spaceBetween: 10
-                }
-            },
-            on: {
-                slideChangeTransitionStart: function () {
-                    let slides = document.querySelectorAll('.swiper-slide');
-                    slides.forEach((slide, index) => {
-                        if (index % 2 === 0) {
-                            slide.style.transform = 'translateY(-20px)';
-                        } else {
-                            slide.style.transform = 'translateY(20px)';
-                        }
-                    });
-                },
-                slideChangeTransitionEnd: function () {
-                    document.querySelectorAll('.swiper-slide').forEach(slide => {
-                        slide.style.transform = 'translateY(0)';
-                    });
-                }
-            }
-        });
+          breakpoints: {
+              1024: { slidesPerView: 3, spaceBetween: 20 },
+              768: { slidesPerView: 3, spaceBetween: 20 },
+              480: { slidesPerView: 2.5, spaceBetween: 10 },
+              0: { slidesPerView: 1.5, spaceBetween: 10 }
+          },
 
-        console.log("Swiper initialized with infinite autoplay:", offbeat);
-    }
+          on: {
+              slideChangeTransitionStart: function () {
+                  let slides = document.querySelectorAll('.swiper-slide');
+                  slides.forEach((slide, index) => {
+                      slide.style.transform = index % 2 === 0 ? 'translateY(-20px)' : 'translateY(20px)';
+                  });
+              },
+              slideChangeTransitionEnd: function () {
+                  document.querySelectorAll('.swiper-slide').forEach(slide => {
+                      slide.style.transform = 'translateY(0)';
+                  });
+              }
+          }
+      });
+
+      console.log(" Swiper initialized without autoplay.");
+  }
 });
