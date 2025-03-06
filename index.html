@@ -20,31 +20,37 @@
 <body>
   <!--------- HEADER START -------->
   <header>
-    <div class="container big">
-      <div class="topnavbar">
-        <div class="logo-wareper">
-          <a href="#"><img class="logowhite" src="./images/Logo.svg" alt="Logo"> 
+    <div class="container-fluid">
+      <nav class="topnavbar navbar navbar-expand-lg">
+        <div class="logo-wareper navbar-brand">
+          <a href="#"><img class="logowhite" src="./images/Logo.svg" alt="Logo">
             <img class="logoblack" src="./images/logowhite.svg" alt="Logo"></a>
         </div>
-        <div class="navebar">
-          <ul class="navebar-list">
+        <div class="navebar collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navebar-list navbar-nav">
             <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
             <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
             <li class="nav-item"><a class="nav-link" href="#">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13.7498 2.35419C12.2998 2.35419 10.9082 3.02919 9.99984 4.09585C9.0915 3.02919 7.69984 2.35419 6.24984 2.35419C3.68317 2.35419 1.6665 4.37085 1.6665 6.93752C1.6665 10.0875 4.49984 12.6542 8.7915 16.5542L9.99984 17.6459L11.2082 16.5459C15.4998 12.6542 18.3332 10.0875 18.3332 6.93752C18.3332 4.37085 16.3165 2.35419 13.7498 2.35419ZM10.0832 15.3125L9.99984 15.3959L9.9165 15.3125C5.94984 11.7209 3.33317 9.34585 3.33317 6.93752C3.33317 5.27085 4.58317 4.02085 6.24984 4.02085C7.53317 4.02085 8.78317 4.84585 9.22484 5.98752H10.7832C11.2165 4.84585 12.4665 4.02085 13.7498 4.02085C15.4165 4.02085 16.6665 5.27085 16.6665 6.93752C16.6665 9.34585 14.0498 11.7209 10.0832 15.3125Z" fill="white"/>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M13.7498 2.35419C12.2998 2.35419 10.9082 3.02919 9.99984 4.09585C9.0915 3.02919 7.69984 2.35419 6.24984 2.35419C3.68317 2.35419 1.6665 4.37085 1.6665 6.93752C1.6665 10.0875 4.49984 12.6542 8.7915 16.5542L9.99984 17.6459L11.2082 16.5459C15.4998 12.6542 18.3332 10.0875 18.3332 6.93752C18.3332 4.37085 16.3165 2.35419 13.7498 2.35419ZM10.0832 15.3125L9.99984 15.3959L9.9165 15.3125C5.94984 11.7209 3.33317 9.34585 3.33317 6.93752C3.33317 5.27085 4.58317 4.02085 6.24984 4.02085C7.53317 4.02085 8.78317 4.84585 9.22484 5.98752H10.7832C11.2165 4.84585 12.4665 4.02085 13.7498 4.02085C15.4165 4.02085 16.6665 5.27085 16.6665 6.93752C16.6665 9.34585 14.0498 11.7209 10.0832 15.3125Z"
+                    fill="white" />
                 </svg>
-                
-              Liquor</a></li>
-            <li class="nav-item login"><a class="nav-link ml-3" href="#"><b>Log in</b></a></li>
+
+                Liquor</a></li>
+            <li class="nav-item login"><a class="nav-link me-lg-3" href="#"><b>Log in</b></a></li>
             <li class="nav-item"><a href="" class="button button-btn">Join the Club</a></li>
           </ul>
         </div>
-        <button class="toggle-button"> <span class="one line"> </span><span class="tow line"></span> <span
-            class="three line"></span> </button>
+        <div class="left-button d-flex gap-3">        <a href="" class="button d-lg-none d-block button-btn">Join the Club</a>
+        <button class="toggle-button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span
+            class="one line"> </span><span class="tow line"></span> <span class="three line"></span> </button>
+          </div>
+
       </div>
-    </div>
+    </nav>
   </header>
   <!----------HEADER END---------->
   <main>
@@ -91,66 +97,78 @@
               <img src="images/upcoming-img-1.jpg" alt="All American Evening">
               <div class="event-overlay">
                 <div class="contentarea">
-                 
-                  <svg class="bg-image" width="565" height="500" viewBox="0 0 565 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                  <svg class="bg-image" width="565" height="500" viewBox="0 0 565 500" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <g style="mix-blend-mode:multiply">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M565 98.8421C565 162.902 515.722 218.27 461.729 244.5C515.722 270.73 565 326.098 565 390.158C565 432.555 548.697 471.145 522.018 500H293.159C278.486 484.582 266.339 466.923 257.5 448.729C248.661 466.923 236.514 484.582 221.841 500H-7.01849C-33.6972 471.145 -50 432.555 -50 390.158C-50 326.098 -0.722244 270.73 53.2712 244.5C-0.722244 218.27 -50 162.902 -50 98.8421C-50 61.6241 -37.4371 27.3403 -16.3205 0H231.577C241.939 12.5888 250.699 26.2714 257.5 40.271C264.301 26.2714 273.061 12.5888 283.423 0H531.32C552.437 27.3403 565 61.6241 565 98.8421Z" fill="url(#paint0_linear_531_4465)"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M565 98.8421C565 162.902 515.722 218.27 461.729 244.5C515.722 270.73 565 326.098 565 390.158C565 432.555 548.697 471.145 522.018 500H293.159C278.486 484.582 266.339 466.923 257.5 448.729C248.661 466.923 236.514 484.582 221.841 500H-7.01849C-33.6972 471.145 -50 432.555 -50 390.158C-50 326.098 -0.722244 270.73 53.2712 244.5C-0.722244 218.27 -50 162.902 -50 98.8421C-50 61.6241 -37.4371 27.3403 -16.3205 0H231.577C241.939 12.5888 250.699 26.2714 257.5 40.271C264.301 26.2714 273.061 12.5888 283.423 0H531.32C552.437 27.3403 565 61.6241 565 98.8421Z" fill="black" fill-opacity="0.2"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M565 98.8421C565 162.902 515.722 218.27 461.729 244.5C515.722 270.73 565 326.098 565 390.158C565 432.555 548.697 471.145 522.018 500H293.159C278.486 484.582 266.339 466.923 257.5 448.729C248.661 466.923 236.514 484.582 221.841 500H-7.01849C-33.6972 471.145 -50 432.555 -50 390.158C-50 326.098 -0.722244 270.73 53.2712 244.5C-0.722244 218.27 -50 162.902 -50 98.8421C-50 61.6241 -37.4371 27.3403 -16.3205 0H231.577C241.939 12.5888 250.699 26.2714 257.5 40.271C264.301 26.2714 273.061 12.5888 283.423 0H531.32C552.437 27.3403 565 61.6241 565 98.8421Z"
+                        fill="url(#paint0_linear_531_4465)" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M565 98.8421C565 162.902 515.722 218.27 461.729 244.5C515.722 270.73 565 326.098 565 390.158C565 432.555 548.697 471.145 522.018 500H293.159C278.486 484.582 266.339 466.923 257.5 448.729C248.661 466.923 236.514 484.582 221.841 500H-7.01849C-33.6972 471.145 -50 432.555 -50 390.158C-50 326.098 -0.722244 270.73 53.2712 244.5C-0.722244 218.27 -50 162.902 -50 98.8421C-50 61.6241 -37.4371 27.3403 -16.3205 0H231.577C241.939 12.5888 250.699 26.2714 257.5 40.271C264.301 26.2714 273.061 12.5888 283.423 0H531.32C552.437 27.3403 565 61.6241 565 98.8421Z"
+                        fill="black" fill-opacity="0.2" />
                     </g>
                     <defs>
-                    <linearGradient id="paint0_linear_531_4465" x1="257.5" y1="0" x2="257.5" y2="500" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#7B1C18"/>
-                    <stop offset="1" stop-color="#47100E"/>
-                    </linearGradient>
+                      <linearGradient id="paint0_linear_531_4465" x1="257.5" y1="0" x2="257.5" y2="500"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#7B1C18" />
+                        <stop offset="1" stop-color="#47100E" />
+                      </linearGradient>
                     </defs>
-                    </svg> 
- 
+                  </svg>
+
                   <div class="innterContent">
-                <span class="event-time">5 days to go</span>
-                <h4 class="margin-top">All American evening</h4>
-                <p>Join us for a guided tasting of America's finest
-                  <br>whiskey with curated food pairings.
-                </p>
-              </div>
-                <div class="Olive li-box">
-                  <ul>
-                    <li><i class="fas fa-calendar-week"></i> Tue, 25 Feb 2025</p></li>
-                    <li><i class="fas fa-map-marker-alt"></i><p> Olive Bandra,Mumbai</p></li>
-                  </ul> 
-                  <a href="#" class="button hover">Know More <i class="fas fa-external-link-alt"></i></a>
+                    <span class="event-time">5 days to go</span>
+                    <h4 class="margin-top">All American evening</h4>
+                    <p>Join us for a guided tasting of America's finest
+                      <br>whiskey with curated food pairings.
+                    </p>
+                  </div>
+                  <div class="Olive li-box">
+                    <ul>
+                      <li><i class="fas fa-calendar-week"></i> Tue, 25 Feb 2025</p>
+                      </li>
+                      <li><i class="fas fa-map-marker-alt"></i>
+                        <p> Olive Bandra,Mumbai</p>
+                      </li>
+                    </ul>
+                    <a href="#" class="button hover">Know More <i class="fas fa-external-link-alt"></i></a>
+                  </div>
                 </div>
               </div>
-            </div>
-              
+
             </div>
           </div>
         </div>
         <!-- Upcoming Events Grid -->
-        <div class="row">
-          <div class="col-md-4">
+        <div class="owl-carousel upcoming-events">
+          <div class="item">
             <div class="event-card">
               <img src="./images/upcoming-img-2.jpg" alt="An Evening with Aberlour">
               <span class="event-time ab">In 12 days</span>
               <div class="event-overlays"> </div>
               <div class="Olives li-box">
                 <div class="hover_move">
-                <ul>
-                  <li><i class="fas fa-calendar-week"></i> Tue, 25 Feb 2025</p></li>
-                  <li><i class="fas fa-map-marker-alt"></i><p> Olive Bandra,Mumbai</p></li>
-                </ul>
-              </div>
+                  <ul>
+                    <li><i class="fas fa-calendar-week"></i> Tue, 25 Feb 2025</p>
+                    </li>
+                    <li><i class="fas fa-map-marker-alt"></i>
+                      <p> Olive Bandra,Mumbai</p>
+                    </li>
+                  </ul>
+                </div>
                 <h5>An Evening with Aberlour</h5>
                 <p>Get ready to take a Speyside sojourn with<br>
-                  Aberlour 12, 16, 18 YO.</p> 
+                  Aberlour 12, 16, 18 YO.</p>
                 <div class="hover_move">
-                <a href="#" class="button">Know More <i class="fas fa-external-link-alt"></i></a>
+                  <a href="#" class="button">Know More <i class="fas fa-external-link-alt"></i></a>
                 </div>
- 
-              </div> 
+
+              </div>
             </div>
           </div>
 
-          <div class="col-md-4">
+          <div class="item">
             <div class="event-card">
               <img src="images/upcoming-img-3.jpg" alt="An Evening with Aberlour">
               <span class="event-time ab">In 28 days</span>
@@ -158,20 +176,23 @@
               <div class="Olives li-box">
                 <div class="hover_move">
                   <ul>
-                    <li><i class="fas fa-calendar-week"></i> Tue, 25 Feb 2025</p></li>
-                    <li><i class="fas fa-map-marker-alt"></i><p> Olive Bandra,Mumbai</p></li>
+                    <li><i class="fas fa-calendar-week"></i> Tue, 25 Feb 2025</p>
+                    </li>
+                    <li><i class="fas fa-map-marker-alt"></i>
+                      <p> Olive Bandra,Mumbai</p>
+                    </li>
                   </ul>
                 </div>
                 <h5>An Evening with Aberlour</h5>
                 <p>Get ready to take a Speyside sojourn with<br>
                   Aberlour 12, 16, 18 YO.</p>
-                  <div class="hover_move">
-                    <a href="#" class="button">Know More <i class="fas fa-external-link-alt"></i></a>
-                    </div>
+                <div class="hover_move">
+                  <a href="#" class="button">Know More <i class="fas fa-external-link-alt"></i></a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="item">
             <div class="event-card">
               <img src="images/upcoming-img-4.jpg" alt="An Evening with Aberlour">
               <span class="event-time ab">In 1 month 12 days</span>
@@ -179,16 +200,19 @@
               <div class="Olives li-box">
                 <div class="hover_move">
                   <ul>
-                    <li><i class="fas fa-calendar-week"></i> Tue, 25 Feb 2025</p></li>
-                    <li><i class="fas fa-map-marker-alt"></i><p> Olive Bandra,Mumbai</p></li>
+                    <li><i class="fas fa-calendar-week"></i> Tue, 25 Feb 2025</p>
+                    </li>
+                    <li><i class="fas fa-map-marker-alt"></i>
+                      <p> Olive Bandra,Mumbai</p>
+                    </li>
                   </ul>
                 </div>
                 <h5>An Evening with Aberlour</h5>
                 <p>Get ready to take a Speyside sojourn with<br>
                   Aberlour 12, 16, 18 YO.</p>
-                  <div class="hover_move">
-                    <a href="#" class="button">Know More <i class="fas fa-external-link-alt"></i></a>
-                    </div>
+                <div class="hover_move">
+                  <a href="#" class="button">Know More <i class="fas fa-external-link-alt"></i></a>
+                </div>
               </div>
             </div>
           </div>
@@ -211,8 +235,12 @@
         <div class="row g-4">
           <div class="col-md-6">
             <div class="service-card on">
-              <div class="icon-shep one1"> 
-                <svg width="149" height="149" viewBox="0 0 149 149" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M74.5 123.98C80.8549 137.061 94.2691 149 109.789 149C131.445 149 149 131.445 149 109.789C149 94.2692 137.061 80.8549 123.98 74.5C137.061 68.1451 149 54.7309 149 39.2105C149 17.5551 131.445 -7.6736e-07 109.789 -1.71395e-06C94.2691 -2.39236e-06 80.8549 11.9388 74.5 25.0202C68.1451 11.9388 54.7308 -4.12064e-06 39.2105 -4.79905e-06C17.5552 -5.74564e-06 -7.67359e-07 17.5551 -1.71395e-06 39.2105C-2.39236e-06 54.7308 11.9388 68.1451 25.0201 74.5C11.9388 80.8549 -4.12064e-06 94.2692 -4.79905e-06 109.789C-5.74564e-06 131.445 17.5552 149 39.2105 149C54.7308 149 68.1451 137.061 74.5 123.98Z" fill="#EED274"/> </svg>
+              <div class="icon-shep one1">
+                <svg width="149" height="149" viewBox="0 0 149 149" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M74.5 123.98C80.8549 137.061 94.2691 149 109.789 149C131.445 149 149 131.445 149 109.789C149 94.2692 137.061 80.8549 123.98 74.5C137.061 68.1451 149 54.7309 149 39.2105C149 17.5551 131.445 -7.6736e-07 109.789 -1.71395e-06C94.2691 -2.39236e-06 80.8549 11.9388 74.5 25.0202C68.1451 11.9388 54.7308 -4.12064e-06 39.2105 -4.79905e-06C17.5552 -5.74564e-06 -7.67359e-07 17.5551 -1.71395e-06 39.2105C-2.39236e-06 54.7308 11.9388 68.1451 25.0201 74.5C11.9388 80.8549 -4.12064e-06 94.2692 -4.79905e-06 109.789C-5.74564e-06 131.445 17.5552 149 39.2105 149C54.7308 149 68.1451 137.061 74.5 123.98Z"
+                    fill="#EED274" />
+                </svg>
               </div>
               <img src="./images/services-img-2.jpg" alt="Social Media" class="boxbg">
               <div class="overlay">
@@ -225,7 +253,7 @@
                 </div>
                 <h4>Social Media<br>
                   Digital Campaigns</h4>
-                  <p>From educational content to impactful brand campaigns, we help whisky brands shine online.</p>
+                <p>From educational content to impactful brand campaigns, we help whisky brands shine online.</p>
               </div>
             </div>
           </div>
@@ -234,26 +262,29 @@
             <div class="service-card tu">
               <div class="icon-shep two2">
                 <svg width="85" height="94" viewBox="0 0 85 94" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M74.6027 62.7363C75.686 57.1196 76.985 51.5547 78.5498 46.0507C79.735 41.8809 81.042 37.7492 82.5327 33.6792C82.8773 32.7379 83.4249 31.3159 84.0064 29.8266C85.4468 26.1382 83.9859 21.9555 80.5671 19.9816L47.945 1.14726C44.517 -0.831885 40.1522 0.00403067 37.6821 3.11217C37.6684 3.12933 37.6546 3.14648 37.6416 3.16343C35.2335 6.19088 32.6959 9.10816 30.0827 11.9586C24.9627 17.544 19.5375 22.8148 13.7801 27.7395C11.0637 30.0631 8.71472 32.7148 6.77147 35.7094C5.929 37.0075 5.21548 38.3923 4.48798 39.7612C3.55438 41.5183 2.8432 43.3735 2.28366 45.2783C-0.539241 54.885 0.266441 64.1831 4.70733 73.1256C7.58812 78.9273 11.7963 83.5912 17.1559 87.203C18.6303 88.1964 20.1856 89.0641 21.7955 89.834C23.7805 90.7831 25.8217 91.5826 27.9501 92.1299C39.1687 95.0161 49.6072 93.1971 59.2091 86.6863C63.7771 83.5893 67.3812 79.5515 70.1459 74.7775C70.8626 73.5394 71.4703 72.2345 72.0694 70.9336C73.2744 68.3152 74.059 65.5583 74.6032 62.7366L74.6027 62.7363Z" fill="url(#paint0_linear_2711_8721)"/>
+                  <path
+                    d="M74.6027 62.7363C75.686 57.1196 76.985 51.5547 78.5498 46.0507C79.735 41.8809 81.042 37.7492 82.5327 33.6792C82.8773 32.7379 83.4249 31.3159 84.0064 29.8266C85.4468 26.1382 83.9859 21.9555 80.5671 19.9816L47.945 1.14726C44.517 -0.831885 40.1522 0.00403067 37.6821 3.11217C37.6684 3.12933 37.6546 3.14648 37.6416 3.16343C35.2335 6.19088 32.6959 9.10816 30.0827 11.9586C24.9627 17.544 19.5375 22.8148 13.7801 27.7395C11.0637 30.0631 8.71472 32.7148 6.77147 35.7094C5.929 37.0075 5.21548 38.3923 4.48798 39.7612C3.55438 41.5183 2.8432 43.3735 2.28366 45.2783C-0.539241 54.885 0.266441 64.1831 4.70733 73.1256C7.58812 78.9273 11.7963 83.5912 17.1559 87.203C18.6303 88.1964 20.1856 89.0641 21.7955 89.834C23.7805 90.7831 25.8217 91.5826 27.9501 92.1299C39.1687 95.0161 49.6072 93.1971 59.2091 86.6863C63.7771 83.5893 67.3812 79.5515 70.1459 74.7775C70.8626 73.5394 71.4703 72.2345 72.0694 70.9336C73.2744 68.3152 74.059 65.5583 74.6032 62.7366L74.6027 62.7363Z"
+                    fill="url(#paint0_linear_2711_8721)" />
                   <defs>
-                  <linearGradient id="paint0_linear_2711_8721" x1="64.2392" y1="10.5547" x2="19.2392" y2="88.497" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#EED274"/>
-                  <stop offset="1" stop-color="#C49C44"/>
-                  </linearGradient>
+                    <linearGradient id="paint0_linear_2711_8721" x1="64.2392" y1="10.5547" x2="19.2392" y2="88.497"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#EED274" />
+                      <stop offset="1" stop-color="#C49C44" />
+                    </linearGradient>
                   </defs>
-                  </svg>
-                  
-                       </div>
+                </svg>
+
+              </div>
               <img src="./images/services-img-3.jpg" alt="Brand Partnerships" class="boxbg">
               <div class="overlay">
                 <div class="social-icons">
                   <img src="images/handshake.svg">
-                    
+
                 </div>
                 <h4>Brand Partnerships<br>
                   & Consultation</h4>
-                  <p>Collaborate with us for creative 
-                    brand-building solutions.</p>
+                <p>Collaborate with us for creative
+                  brand-building solutions.</p>
               </div>
             </div>
           </div>
@@ -262,9 +293,11 @@
             <div class="service-card th">
               <div class="icon-shep three3">
                 <svg width="151" height="157" viewBox="0 0 151 157" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M90.4837 151.391C81.6634 158.225 69.3366 158.225 60.5163 151.391C56.0234 147.91 50.4587 146.102 44.7779 146.277C33.6252 146.621 23.6527 139.376 20.5337 128.663C18.9449 123.206 15.5058 118.472 10.8068 115.275C1.58184 108.998 -2.22733 97.2746 1.54636 86.7742C3.4686 81.4255 3.46861 75.5745 1.54636 70.2258C-2.22733 59.7254 1.58184 48.002 10.8068 41.7251C15.5058 38.5278 18.945 33.7942 20.5337 28.3372C23.6527 17.6241 33.6252 10.3786 44.7779 10.7228C50.4587 10.8981 56.0234 9.09003 60.5163 5.60906C69.3366 -1.22475 81.6634 -1.22475 90.4837 5.60906C94.9766 9.09004 100.541 10.8981 106.222 10.7228C117.375 10.3786 127.347 17.6241 130.466 28.3372C132.055 33.7942 135.494 38.5278 140.193 41.7251C149.418 48.002 153.227 59.7254 149.454 70.2258C147.531 75.5745 147.531 81.4255 149.454 86.7742C153.227 97.2746 149.418 108.998 140.193 115.275C135.494 118.472 132.055 123.206 130.466 128.663C127.347 139.376 117.375 146.621 106.222 146.277C100.541 146.102 94.9766 147.91 90.4837 151.391Z" fill="#EED274"/>
-                  </svg>
-                       </div>
+                  <path
+                    d="M90.4837 151.391C81.6634 158.225 69.3366 158.225 60.5163 151.391C56.0234 147.91 50.4587 146.102 44.7779 146.277C33.6252 146.621 23.6527 139.376 20.5337 128.663C18.9449 123.206 15.5058 118.472 10.8068 115.275C1.58184 108.998 -2.22733 97.2746 1.54636 86.7742C3.4686 81.4255 3.46861 75.5745 1.54636 70.2258C-2.22733 59.7254 1.58184 48.002 10.8068 41.7251C15.5058 38.5278 18.945 33.7942 20.5337 28.3372C23.6527 17.6241 33.6252 10.3786 44.7779 10.7228C50.4587 10.8981 56.0234 9.09003 60.5163 5.60906C69.3366 -1.22475 81.6634 -1.22475 90.4837 5.60906C94.9766 9.09004 100.541 10.8981 106.222 10.7228C117.375 10.3786 127.347 17.6241 130.466 28.3372C132.055 33.7942 135.494 38.5278 140.193 41.7251C149.418 48.002 153.227 59.7254 149.454 70.2258C147.531 75.5745 147.531 81.4255 149.454 86.7742C153.227 97.2746 149.418 108.998 140.193 115.275C135.494 118.472 132.055 123.206 130.466 128.663C127.347 139.376 117.375 146.621 106.222 146.277C100.541 146.102 94.9766 147.91 90.4837 151.391Z"
+                    fill="#EED274" />
+                </svg>
+              </div>
               <img src="./images/services-img-4.jpg" alt="Whisky Tastings" class="boxbg">
               <div class="overlay">
                 <div class="social-icons">
@@ -272,8 +305,8 @@
                 </div>
                 <h4>Bespoke Whisky<br>
                   Tastings/Experiences</h4>
-                  <p>Tailored whisky experiences for 
-                    private and corporate events.</p>
+                <p>Tailored whisky experiences for
+                  private and corporate events.</p>
               </div>
             </div>
           </div>
@@ -282,18 +315,20 @@
             <div class="service-card fr">
               <div class="icon-shep four4">
                 <svg width="116" height="116" viewBox="0 0 116 116" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M37.6051 2.04491C18.101 5.49511 5.84923 11.7618 1.6245 20.4225C-0.206217 24.2952 -0.558277 34.4345 0.920378 41.687C3.52563 54.3612 10.3556 70.0631 18.8755 82.9485C25.8463 93.5807 38.6613 106.748 46.4066 111.325C49.364 113.085 53.3849 115.025 58.0325 115.025C62.5632 115.197 65.9812 113.085 68.9385 111.325C76.1206 107.1 89.6397 93.2991 96.0472 83.6526C104.708 70.6264 111.82 54.2908 114.425 41.687C115.833 34.5049 115.551 24.2952 113.721 20.5633C109.496 11.6914 97.2442 5.4247 77.4584 2.04491C68.9385 0.636673 45.7729 0.566261 37.6051 2.04491Z" fill="#EED274"/>
-                  </svg> 
-                     </div>
+                  <path
+                    d="M37.6051 2.04491C18.101 5.49511 5.84923 11.7618 1.6245 20.4225C-0.206217 24.2952 -0.558277 34.4345 0.920378 41.687C3.52563 54.3612 10.3556 70.0631 18.8755 82.9485C25.8463 93.5807 38.6613 106.748 46.4066 111.325C49.364 113.085 53.3849 115.025 58.0325 115.025C62.5632 115.197 65.9812 113.085 68.9385 111.325C76.1206 107.1 89.6397 93.2991 96.0472 83.6526C104.708 70.6264 111.82 54.2908 114.425 41.687C115.833 34.5049 115.551 24.2952 113.721 20.5633C109.496 11.6914 97.2442 5.4247 77.4584 2.04491C68.9385 0.636673 45.7729 0.566261 37.6051 2.04491Z"
+                    fill="#EED274" />
+                </svg>
+              </div>
               <img src="./images/services-img-5.jpg" alt="Distillery Tours" class="boxbg">
               <div class="overlay">
                 <div class="social-icons">
                   <img src="images/apartment.svg">
                 </div>
-                 <h4>Distillery<br>
+                <h4>Distillery<br>
                   Tours & Travels</h4>
-                  <p>Join us for curated journeys to the 
-                    finest distilleries around the globe</p>
+                <p>Join us for curated journeys to the
+                  finest distilleries around the globe</p>
               </div>
             </div>
           </div>
@@ -311,10 +346,10 @@
       <div class="container">
         <h2 class="mb-6">Join Us</h2>
 
-        <div class="bg-img" style="background-image: url('./images/Join-us.jpg');">    
+        <div class="bg-img" style="background-image: url('./images/Join-us.jpg');">
           <div class="img-box">
             <img src="images/component.png" alt="Whiskey Event" class="img-fluid rounded">
-          </div>  
+          </div>
           <div class="box-canter">
             <div class="card card-custom">
               <a href="#"><img src="./images/prime.svg" alt="Logo"></a>
@@ -341,8 +376,8 @@
                 <a href="#" class="button dark-hover">Learn More</a>
               </div>
             </div>
-          </div>   
-           </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -360,16 +395,17 @@
 
 
       <div class="home-demo blogs_slider">
-        <div class="owl-carousel first-slider"> 
+        <div class="owl-carousel first-slider">
 
-          <div class="item green" style="background-image: url('./images/blog-slider.jpg'); "> 
+          <div class="item green" style="background-image: url('./images/blog-slider.jpg'); ">
             <div class="box _w-4">
               <h5>Pass the Courvoisier:<br>
                 Cognac’s <span>Cool factor</span></h5>
               <p class="item-date">July 12th 2023</p>
               <img src="images/blog-top-img.png" class="blog-top">
               <div class="move-hover">
-                <p class="text-size-regular line_7">Alexander, John Walker’s son concocted this masterpiece ‘Old Highland
+                <p class="text-size-regular line_7">Alexander, John Walker’s son concocted this masterpiece ‘Old
+                  Highland
                   Whisky’ blend in 1867. He worked with the best malts from the four corners of Scotland and created a
                   timeless, unmatched flavour profile. Over 150 years on, it has remained synonymous to celebrating a
                   milestone and celebrating the good things in life..</p>
@@ -378,30 +414,15 @@
             </div>
           </div>
 
-          <div class="item red" style="background-image: url('./images/blog-slider.jpg'); "> 
+          <div class="item red" style="background-image: url('./images/blog-slider.jpg'); ">
             <div class="box _w-4">
               <h5>Pass the Courvoisier:<br>
                 Cognac’s <span>Cool factor</span></h5>
-              <p class="item-date">July 12th 2023</p> 
+              <p class="item-date">July 12th 2023</p>
               <img src="images/blog-top-img.png" class="blog-top">
               <div class="move-hover">
-                <p class="text-size-regular line_7">Alexander, John Walker’s son concocted this masterpiece ‘Old Highland
-                  Whisky’ blend in 1867. He worked with the best malts from the four corners of Scotland and created a
-                  timeless, unmatched flavour profile. Over 150 years on, it has remained synonymous to celebrating a
-                  milestone and celebrating the good things in life..</p>
-                <a href="#" class="button">Continue Reading Blog <i class="fas fa-chevron-right"></i></a>
-              </div>
-            </div>
-          </div> 
-
-          <div class="item blue" style="background-image: url('./images/blog-slider.jpg'); "> 
-            <div class="box _w-4">
-              <h5>Pass the Courvoisier:<br>
-                Cognac’s <span>Cool factor</span></h5>
-              <p class="item-date">July 12th 2023</p> 
-              <img src="images/blog-top-img.png" class="blog-top">
-              <div class="move-hover">
-                <p class="text-size-regular line_7">Alexander, John Walker’s son concocted this masterpiece ‘Old Highland
+                <p class="text-size-regular line_7">Alexander, John Walker’s son concocted this masterpiece ‘Old
+                  Highland
                   Whisky’ blend in 1867. He worked with the best malts from the four corners of Scotland and created a
                   timeless, unmatched flavour profile. Over 150 years on, it has remained synonymous to celebrating a
                   milestone and celebrating the good things in life..</p>
@@ -409,9 +430,26 @@
               </div>
             </div>
           </div>
- 
-   
-        </div>  
+
+          <div class="item blue" style="background-image: url('./images/blog-slider.jpg'); ">
+            <div class="box _w-4">
+              <h5>Pass the Courvoisier:<br>
+                Cognac’s <span>Cool factor</span></h5>
+              <p class="item-date">July 12th 2023</p>
+              <img src="images/blog-top-img.png" class="blog-top">
+              <div class="move-hover">
+                <p class="text-size-regular line_7">Alexander, John Walker’s son concocted this masterpiece ‘Old
+                  Highland
+                  Whisky’ blend in 1867. He worked with the best malts from the four corners of Scotland and created a
+                  timeless, unmatched flavour profile. Over 150 years on, it has remained synonymous to celebrating a
+                  milestone and celebrating the good things in life..</p>
+                <a href="#" class="button">Continue Reading Blog <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
       </div>
     </section>
 
@@ -473,10 +511,12 @@
               <p>"I've always enjoyed whisky, but this club has <br>completely opened my eyes to a whole new world
                 <br>of flavors. The curated tastings are fantastic, and I've discovered some truly exceptional
                 bottles<br> I never would have found on my own." <br>
-                <br>"I've always enjoyed whisky, but this club has<br> completely opened my eyes to a whole new world<br>
+                <br>"I've always enjoyed whisky, but this club has<br> completely opened my eyes to a whole new
+                world<br>
                 of flavors. The curated tastings are fantastic, and I've discovered some truly exceptional bottles <br>I
-                never would have found on my own."</p>
-            
+                never would have found on my own."
+              </p>
+
             </div>
           </div>
         </div>
@@ -536,9 +576,9 @@
               </div>
             </div>
           </div>
-  
+
         </div>
-      </div> 
+      </div>
     </section>
 
     <!--------------- Newsletter-------------->
@@ -566,8 +606,10 @@
           </div>
         </div>
       </div>
-    </section> 
-    <!-- FOOTER SECTION START --> 
+    </section>
+    <!-- FOOTER SECTION START -->
+     </main>
+
     <footer class="footer" style="background-image: url('./images/footer-bg.png'); ">
       <div class="container">
         <div class="footer-container">
@@ -637,7 +679,7 @@
     </footer>
     <!-- FOOTER SECTION END -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
     <!-- Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>

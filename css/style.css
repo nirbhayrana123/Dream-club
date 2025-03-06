@@ -50,14 +50,14 @@ ul {
     margin-bottom: 60px;
 }
 
-.container.big {
-    max-width: 1520px;
+
+@media (min-width:1400px) {
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+    } 
 }
 
-.container {
-    max-width: 1400px;
-    margin: 0 auto;
-}
 
 a.nav-link.ml-3 {
     margin-left: 30px;
@@ -130,6 +130,7 @@ a.button.greys:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0;
 }
 
 .navebar ul {
@@ -146,7 +147,7 @@ a.button.greys:hover {
     text-decoration: none;
     font-family: 'Gilroy';
     color: #ffffff;
-    padding: 13px 15px;
+    padding: 13px 15px!important;
 }
 
 a.button-btn {
@@ -299,7 +300,7 @@ a.button.black-border {
     border: 1px solid #17171700;
 }
 
-rgba(0, 0, 0, 0) a.button.hover {
+ a.button.hover {
     background-color: #322d2d00;
     color: #ffffff;
 }
@@ -1335,8 +1336,11 @@ form.newsletter-form.row.g-2 {
     color: white;
     padding: 64px 0px;
     text-align: left;
-    position: relative; 
-} 
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .footer-bottom p {
     font-weight: 400;
     font-size: 14px;
@@ -1439,27 +1443,177 @@ form.newsletter-form.row.g-2 {
     margin-top: 65px;
     padding-right: 58px;
 }
-
+nav.topnavbar.navbar.navbar-expand-lg .navbar-collapse {
+    justify-content: end !important;
+}
+.navbar-expand-lg .navbar-collapse {
+    flex-basis: auto!important;
+}
 /*============ Responsive styles================== */
+@media (max-width: 1400px) {
+.banner-left h2 {
+    font-size: 30px;
+}
+span {
+    font-size: 40px;
+}
+.banner-left p { 
+    font-size: 15px; 
+}
 
-@media (max-width: 768px) {
+.button {
+    padding: 10px 22px; 
+    font-size: 15px; 
+}
+
+h2 { 
+    font-size: 35px; 
+}
+
+p {
+    font-size: 15px; 
+}
+a.button.greys { 
+    padding: 12px 22px;
+}
+.services-heding h2 {
+    font-size: 35px; 
+}
+.services-heding p { 
+    font-size: 22px; 
+}
+
+img.boxbg { 
+    object-fit: cover;
+}
+p.card-heading { 
+    font-size: 25px; 
+}
+.founder h2 {
+    font-size: 40px;
+}
+.founder p {
+    font-size: 20px;
+}
+
+}
+@media (max-width: 1200px) {
+.ul-li-row {
+    
+    gap: 100px;
+}
+section.Upcoming-events {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.bg-color {
+    margin-top: 70px;
+}
+.card-custom {
+    padding: 20px 30px;
+}
+.bg-img {
+    padding: 28px;
+}
+section.blogs {
+    padding: 50px 0;
+}
+.service-card .overlay {
+    padding: 45px;
+}
+}
+
+
+@media (max-width: 991px) {
+    .banner-left h1 {
+        font-size: 36px;
+    }
     .navebar {
-        display: none;
         flex-direction: column;
         gap: 10px;
         background: #fff;
         position: absolute;
-        top: 60px;
-        right: 15px;
+        top: 100%;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        padding: 15px;
+        padding: 0;
         z-index: 1000;
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+    .banner-left p {
+        font-size: 16px;
+    }
+    .navebar ul {
+        align-items: start;
+    }
+    
+    .button-custome,
+    .button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    button.toggle-button{
+       display: block; 
+    }
+    .navebar ul.navebar-list {
+        flex-direction: column;
+        padding: 0;
+    }
+    .navebar li.nav-item {
+        width: 100%;
+        display: block;
+        border-bottom: 1px solid #E6E6E7;
     }
 
+    .navebar ul li a{
+        color: #171717;
+    }
+    .navebar ul.navebar-list li.nav-item:last-child {
+        display: none;
+    }
+    .banner-left {
+        width: 80%;
+    }
+    .banner-main {
+        padding: 21px 0px;
+    }
+    .service-card .overlay h4 {
+        font-size: 18px;
+    }
+    .service-card .overlay p {
+        font-size: 13px;
+    }
+    .service-card:hover .icon-shep.two2 {
+        width: 90%;
+    }
+    .service-card:hover .icon-shep.one1, .service-card:hover .icon-shep.three3 {
+       
+        width: 90%;
+    }
+    .first-slider .owl-nav {
+        display: none;
+    }
+    .ul-li-row {
+        padding-top: 29px;
+    }
+    .left-button a.button {
+        margin: 0;
+        line-height: 2;
+    }
+
+}
+@media (max-width: 768px) {
+    
+    .testimonial-section .owl-item.active-slide { 
+        transform: scale(0.9);
+    }
     .navebar.active {
         display: flex;
     }
-
+    section.blogs.white-bg.gallery .flex1.canter {
+        flex-direction: column;
+    }
     .toggle-button {
         display: flex;
     }
@@ -1484,11 +1638,73 @@ form.newsletter-form.row.g-2 {
     .button-custome,
     .button {
         margin: 10px 0;
+        text-align: center;
+    }
+    .banner-left h2 {
+        font-size: 28px;
+    }
+    .banner {
+        align-items: end;
+    }
+    .flex1 {
+        flex-direction: column;
+    }
+    a.button.greys {
+        display: none;
+    }
+    .services-heding {
+        flex-direction: column;
+    }
+    a.button.black {
+        text-align: center;
+    }
+    .bg-img {
+        flex-direction: column;
+    }
+    .img-box { 
+        order: 2;
+    }
+    section.blogs .flex1 {
+        display: flex    ;
+        flex-direction: row;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    .testimonial-section {
+        text-align: left;
+    }
+    .testimonial-section h2 {
+        margin-bottom: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .card_component {
+        display: flex ;
+        flex-wrap: wrap;
+    }
+    .card_component .col_1 {
+        order: 2;
+    }
+    .newsletter-content p {
+        font-size: 16px;
+    }
+    .container{
+        padding: 0px 20px;
+    }
+    .bg-color {
+        overflow-x: hidden;
+    }
+    span {
+        font-size: 28px;
+    }
+    .banner-left p {
+        font-size: 17px;
+        display: none;
+    }
+    .banner-left {
         width: 100%;
     }
-
-
-
 }
 
 @media (max-width: 600px) {
@@ -1500,29 +1716,29 @@ form.newsletter-form.row.g-2 {
     .testimonial-item img {
         max-width: 100%;
     }
-
-}
-
-@media (max-width: 1024px) {
-    .banner-left h1 {
-        font-size: 36px;
-    }
-
-    .banner-left p {
-        font-size: 16px;
-    }
-
-    .button-custome,
-    .button {
+    
+    .button-custome, .button {
         font-size: 14px;
-        padding: 8px 16px;
+        padding: 8px 20px;
     }
+    
+
 }
+
+
 
 
 @media (max-width: 480px) {
+   
+    .card-custom {
+        padding: 15px 15px;
+    }
     .banner {
         padding: 60px 10px;
+    }
+    .button-custome, .button {
+        font-size: 12px;
+        padding: 8px 22px;
     }
 
     .banner-left h4 {
@@ -1541,11 +1757,7 @@ form.newsletter-form.row.g-2 {
         font-size: 17px;
     }
 
-    .button-custome,
-    .button {
-        font-size: 20px;
-        padding: 12px 30px;
-    }
+    
 
     .button-tow {
         display: flex;

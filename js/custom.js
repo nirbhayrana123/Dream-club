@@ -1,12 +1,42 @@
 $(document).ready(function () {
     // First Slider Initialization
     $(".owl-carousel.first-slider").owlCarousel({
-      items: 4,
+      items: 3,
       margin: 20,
       loop: true,
-      nav: true
+      nav: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3 
+        }
+      },
     });
+     ///upcomingslider
 
+
+     $(".upcoming-events").owlCarousel({
+      items: 3,
+      margin: 20,
+      loop: true,
+      nav: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3 
+        }
+      },
+    });
     // Second Slider Initialization
     $(".owl-carousel.second-slider").owlCarousel({
       items: 4,
