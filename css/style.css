@@ -166,7 +166,7 @@ a.button.hover {
 
 button.toggle-button {
     display: none;
-    background-color: #282568;
+    background-color: transparent;
     border: none;
     padding: 3px;
     border-radius: 30px;
@@ -561,11 +561,12 @@ h4.margin-top {
 }
 .Olives {
     position: absolute;
-    left: 32px;
+    left: 0;
     right: 0;
     bottom: -50px;
     transition: 1s;
     margin-bottom: 32px;
+    padding: 15px;
 }
 .event-card:hover .Olives {
     bottom: 40px;
@@ -1913,9 +1914,8 @@ form.newsletter-form.row.g-2 {
     margin-bottom: 12px;
 }
 .testimonial-section .owl-nav {
-    max-width: 1080px;
+    max-width: 70%;
     position: relative;
-    background: red;
     margin: 0 auto;
     position: absolute;
     left: 0;
@@ -2040,10 +2040,10 @@ form.newsletter-form.row.g-2 {
     margin-top: 65px;
     padding-right: 58px;
 }
-nav.topnavbar.navbar.navbar-expand-lg .navbar-collapse {
+nav.topnavbar.navbar {
     justify-content: end !important;
 }
-.navbar-expand-lg .navbar-collapse {
+nav.topnavbar.navbar {
     flex-basis: auto!important;
 }
 
@@ -2085,7 +2085,9 @@ nav.topnavbar.navbar.navbar-expand-lg .navbar-collapse {
 .btn-wrap button.next-btn {
     right: 0;
 }
-
+.left-button {
+    display: none;
+}
 
 
 /*******************************footerbottom**************/
@@ -2182,7 +2184,9 @@ nav.topnavbar.navbar.navbar-expand-lg .navbar-collapse {
 .testimonial-section .owl-item.active.center {
     filter: blur(0px);
 }
-
+.flexmobile {
+    display: none;
+}
 
 /*============ Responsive styles================== */
 @media (max-width: 1400px) {
@@ -2264,6 +2268,46 @@ section.blogs {
 
 
 @media (max-width: 991px) {
+
+
+    .left-button {
+        display: flex
+    ;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+
+
+    header.scrolled button.toggle-button span {
+        background-color: #121256;
+    }
+    .logo-wareper img {
+        width: 60px;
+    }
+    .leftcord {
+        display: flex;
+        align-items: center;
+        gap: 17px;
+    }
+    .leftcord .button {
+        background-color: #051827;
+        color: #fff !important;
+    }
+    .leftcord button.toggle-button span {
+        background-color: #121256;
+    }
+
+
+    .flexmobile {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 13px;
+        width: 100%;
+    }
+
+    
     .toggle-button.active span.one.line {
         transform: rotate(318deg);
         top: 3px;
@@ -2286,14 +2330,25 @@ section.blogs {
         gap: 10px;
         background: #fff;
         position: fixed;
-        top: 95px;
+        top: 0px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         padding: 0;
         z-index: 1000;
         width: 100%;
-        left: 0;
+        left: auto;
+        right: -100%;
+        transition: 0.5s;
+        display: block!important;
+        height: 100%;
+    }
+    .navebar.active {
         right: 0;
     }
+    .navebar.navbar-collapse.active {
+        right: 0;
+        transition: 0.5s;
+    }
+    
     .banner-left p {
         font-size: 16px;
     }
@@ -2312,6 +2367,7 @@ section.blogs {
     .navebar ul.navebar-list {
         flex-direction: column;
         padding: 0;
+        width: 100%;
     }
     .navebar li.nav-item {
         width: 100%;
@@ -2352,7 +2408,11 @@ section.blogs {
     }
     .left-button a.button {
         margin: 0;
-        line-height: 2;
+        line-height: 1.5;
+        height: 38px !important; 
+    }
+    .left-button {
+        align-items: center;
     }
 .ul-li-row {
     display: none;
@@ -2405,6 +2465,8 @@ section.blogs {
     font-weight: 700;
     padding-left: 0;
     padding-right: 0;
+    outline: none;
+    box-shadow: none
 }
 .accordion-body {
     color: #fff;
@@ -2419,12 +2481,26 @@ section.blogs {
     height: 19px;
     background-size: cover;
 }
-
-
+p.text-size-regular {
+    font-size: 14px;
+}
+.box._w-4 h5 {
+    font-size: 16px;
+}
+.gallery .move-hover {
+    align-items: start;
+    justify-content: end;
+    padding: 15px;
+    text-align: left;
+}
+.blogs_slider .item {
+    height: 460px;
+}
 }
 @media (max-width: 768px) {
-    .testimonial-section .owl-item { 
-        transform: scale(1);
+    
+    .testimonial-section .owl-item {
+        transform: scale(0.8);
     }
     .testimonial-item img { 
         height: auto;
@@ -2554,10 +2630,17 @@ section.blogs {
     .founder p {
         font-size: 16px;
     }
-    
+    section.blogs {
+        padding: 50px 20px;
+    }
+
 }
 
 @media (max-width: 600px) {
+    .banner {
+        padding: 0px 0px;
+    }
+
     .testimonial-item {
         padding: 10px;
         flex-wrap: wrap;
@@ -2582,19 +2665,52 @@ section.blogs {
     .services-heding p {
         font-size: 16px;
     }
+    .button-row a.button {
+        width: 49%;
+    }
+    .event-card:hover .Olives {
+        bottom: 0;
+    }
+    section.Upcoming-events {
+        padding-bottom: 0px;
+    }
+    .box-canter img {
+        width: 100px;
+    }
+    section.blogs {
+        padding: 80px 20px;
+    }
+    section.blogs.white-bg {
+        padding: 90px 20px;
+        padding-bottom: 0;
+    }
+    
+    p.text-size-regular {
+        margin-bottom: 10px;
+    }
+    .newsletter-content p br {
+        display: none;
+    }
+    .flexx { 
+        flex-direction: column;
+        gap: 0;
+    }
+    .flexx p {
+        margin-bottom: 0;
+    }
 }
 
 
 
 
 @media (max-width: 480px) {
-   
+    .testimonial-section .owl-item { 
+        transform: scale(1);
+    }
     .card-custom {
         padding: 15px 15px;
     }
-    .banner {
-        padding: 60px 10px;
-    }
+   
     .button-custome, .button {
         font-size: 12px;
         padding: 8px 22px;
@@ -2616,12 +2732,17 @@ section.blogs {
         font-size: 17px;
     }
 
-    
+    .btn-wrap button.prev-btn, .btn-wrap button.next-btn { 
+        width: 40px;
+        height: 40px; 
+    }
 
     .button-tow {
         display: flex;
         flex-wrap: wrap;
     }
 
-
+    .testimonial-section .owl-nav {
+        max-width: 87%;
+    }
 }

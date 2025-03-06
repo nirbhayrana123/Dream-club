@@ -94,7 +94,7 @@ $(document).ready(function () {
 
 
     $(".toggle-button").click(function () {
-      $(".toggle-button").toggleClass("active");
+      $(".toggle-button, .navebar ").toggleClass("active");
     });
 
 
