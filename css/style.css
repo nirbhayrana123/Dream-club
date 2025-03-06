@@ -21,6 +21,9 @@ img {
           line-clamp: 2; 
   -webkit-box-orient: vertical;
 }
+.row { 
+  --bs-gutter-y: 1.5rem;
+}
 p {
     font-size: 17px;
     font-weight: 400;
@@ -64,10 +67,7 @@ ul {
         margin: 0 auto;
     } 
 }
-
-/****************************************************/
-
-
+  
 .slider-offbeat .swiper-slide {
     width: 183.333px;
     margin-right: 10px;
@@ -139,7 +139,7 @@ a.nav-link.ml-3 {
     margin-left: 30px;
 }
 
-/**********************header********************************/
+/**********************HEADER********************************/
 button.toggle-button span.line {
     background-color: #fff;
     width: 28px;
@@ -307,7 +307,7 @@ header.scrolled .navebar ul li.login:hover a {
     background: #171717;
     color: #fff;
 }
-/**********************header end********************************/
+/**********************HEADER END********************************/
 
 ul.list-unstyled li {
     display: flex;
@@ -322,7 +322,7 @@ ul.list-unstyled li {
     margin-top: 30px;
 }
 
-/**********************banner********************************/
+/**********************BANNER********************************/
 .banner {
     height: 100vh;
     background-size: cover;
@@ -466,7 +466,7 @@ a.button.greys:hover {
     font-size: 17px;
 }
 
-/************Upcoming events START***************/
+/************UPCOMING EVENTS START***************/
 
 section.Upcoming-events {
     padding-top: 100px;
@@ -518,11 +518,12 @@ font-size: 20px;
 line-height: 24px; 
 }
 span.event-time.ab {
-    position: absolute;
-    z-index: 1;
-    left: 32px;
-    top: 32px;
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+  top: 20px;
 }
+
 .event-time {
     color: black;
     font-weight: bold;
@@ -573,7 +574,7 @@ h4.margin-top {
     bottom: -50px;
     transition: 1s;
     margin-bottom: 30px;
-    padding: 15px;
+    padding: 20px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 57%, rgba(0, 0, 0, 0.8) 100%);
 }
 .event-card:hover .Olives {
@@ -661,7 +662,7 @@ h2 {
     display: block;
 }
 
-/*************services*************/
+/*************SERVICES*************/
 .button-row.canter {
     justify-content: center;
 }
@@ -739,7 +740,7 @@ img.boxbg {
     background: linear-gradient(180deg, rgba(7, 42, 66, 0.7) 0%, rgba(5, 24, 39, 0.7) 100%);
 }
 
-/*******************Card One ********************/
+/*******************CARD ONE ********************/
 .service-card .icon-shep {
     position: absolute;
     left: -71px;
@@ -936,7 +937,7 @@ img.boxbg {
       }
       .overlayInner {  max-width: 210px; }
 }
-  /*************card second*************/
+  /*************CARD SECOND*************/
   /* .secondanimation{ transform: translate(0, 0) rotate(0deg) scale(1); transition: transform 0.5s ease-in-out;  } */
   .secondanimation:hover .icon-shep {animation: moveRotateScale2 0.5s ease-in-out forwards;}
   .secondanimation:not(:hover) .icon-shep {animation: moveRotateScaleReverse2 0.5s ease-in-out forwards;}
@@ -1121,7 +1122,7 @@ img.boxbg {
           }
         }  
       }
-/*************card Third*************/
+/*************CARD THIRD*************/
 .thirdanimation{ transform: translate(0, 0) rotate(0deg) scale(1); transition: transform 0.5s ease-in-out;}
 .thirdanimation:hover .icon-shep {animation: moveRotateScale3 0.5s ease-in-out forwards;}
 .thirdanimation:not(:hover) .icon-shep {animation: moveRotateScaleReverse3 0.5s ease-in-out forwards;}
@@ -1303,7 +1304,7 @@ img.boxbg {
         }
       }
   }
-/*************Third Fourth*************/
+/*************THIRD FOURTH*************/
 .fourthanimation{
     transform: translate(0, 0) rotate(0deg) scale(1);
     transition: transform 0.5s ease-in-out;
@@ -1494,10 +1495,7 @@ img.boxbg {
         }
       } 
   }
-/*************Thirdend*************/
-
-/*************end************************/
-
+/*************THIRDEND*************/ 
 
 /* .service-card:hover .icon-shep.two2 {
     /* transform: rotate(-30deg);
@@ -1547,10 +1545,7 @@ img.boxbg {
 .service-card:hover .social-icons {
     opacity: 1;
 }
- 
-
-
-
+  
 .service-card:hover svg path {
     fill: #ffffff;
 }
@@ -1649,7 +1644,7 @@ service-card:hover .icon-shep {
 
 }
 
-/******************testimonial************/ 
+/******************TESTIMONIAL*********************/ 
 p.gray {
     font-weight: 300;
     font-size: 16px;
@@ -1757,9 +1752,6 @@ p.font-bold {
     left: 0px;
     top: 40%;
 }
-
-
-
 .testimonial-section .owl-nav i {
     font-size: 50px;
 }
@@ -1770,7 +1762,7 @@ p.font-bold {
     text-decoration: none;
 }
 
-/*******************Founder’s Note************/
+/*******************FOUNDER’S NOTE************/
 .card_component {
     gap: 60px;
     grid-template-rows: auto;
@@ -1796,7 +1788,7 @@ p.font-bold {
     margin-bottom: 60px;
 }
 
-/*************************join-us START******************************/
+/*************************JOIN-US START******************************/
 .join-us {
     width: 100%;
     padding: 220px 0;
@@ -1846,7 +1838,7 @@ p.card-heading {
     background: linear-gradient(54.32deg, #23153500 -5.81%, #743aa000 99.02%);
 }
 
-/*************************Blogs START******************************/
+/*************************BLOGS START******************************/
 
 .blogs_slider .box:hover::after {
     opacity: 1;
@@ -1976,7 +1968,7 @@ img.blog-top {
 .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
     display: none !important;
 }
-/**********************Explore gallery START***************************/
+/**********************EXPLORE GALLERY START***************************/
 .gallery .owl-nav.disabled {
     display: flex !important;
 }
@@ -2072,7 +2064,7 @@ button.owl-next span, button.owl-prev span {
 }
 
   
-/**********Newsletter***********/
+/**********NEWSLETTER***********/
 .newsletter-section {
     background: url(../images/newselert.jpg) center / cover no-repeat;
     color: white;
@@ -2179,6 +2171,83 @@ form.newsletter-form.row.g-2 {
     right: 0;
     top: 40%;
 }
+
+/***********************DISCOVER LIQOURS START***************************/
+main.discover-liqours .banner-top::after {
+   content: "";
+   position: absolute;
+   inset: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 26%, rgba(0, 0, 0, 0) 100%);
+   z-index: 0;
+}
+main.discover-liqours .banner-top .banner-upcoming {
+  z-index: 1;
+  position: relative;
+}
+
+main.discover-liqours .blogs_slider .item {
+  height: 513px;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*************************FOOTER START******************************/
 
@@ -2347,7 +2416,7 @@ nav.topnavbar.navbar {
 }
 
 
-/*******************************footerbottom**************/
+/*******************************FOOTER-BOTTOM**************/
 
 .footer-bottom p {
     font-weight: 400;
@@ -2476,7 +2545,7 @@ testimonial-section .owl-dots{
 .gelaaryicon a i.fas.fa-arrow-up {
     transform: rotate(45deg);
 }
-/*****************************event page***************************/
+/*****************************EVENT PAGE***************************/
 
 .filter-dropdown {
     display: flex;
@@ -2501,14 +2570,7 @@ select {
 bold {
     font-weight: 600;
 }
-span.prime {
-    background-color: rgba(116, 58, 160, 1);
-    padding: 1px 10px;
-    font-size: 20px;
-    border-radius: 5px;
-    letter-spacing: 3px;
-    font-weight: 500;
-}
+
 .d-flex.mt-3 {
     justify-content: center;
 }
@@ -2575,7 +2637,7 @@ ul {
 }
 
 
-/*************************Savings on upcoming events START******************************/
+/*************************SAVINGS ON UPCOMING EVENTS START******************************/
 .event-card.savings_events .Olives.li-box {
     margin-bottom: 60px;
 }
@@ -2667,10 +2729,13 @@ p.per-year {
   opacity: 0.9;
 }
 .dram-prime .banner-main {
-  width: 75%;
+  width: 100%;
 }
 .dram-prime .banner_img, .dram-prime .banner-left {
-  width: 50%;
+  width: 40%;
+}
+.dram-prime .banner-left {
+  padding-left: 50px;
 }
 .dram-prime .banner {
   max-height: 650px;
@@ -2777,7 +2842,7 @@ section.the-club.bg-color.mt-0 {
 
 
 
-/*============ Responsive styles================== */
+/*============ RESPONSIVE STYLES================== */
 @media (max-width: 1400px) {
 .banner-left h2 {
     font-size: 30px;
@@ -3091,6 +3156,12 @@ p.text-size-regular {
 .blogs_slider .item {
     height: 460px;
 }
+
+
+/***********************dram prime*****************/
+
+
+
 }
 @media (max-width: 768px) {
     .Olive.li-box .hovericon {
