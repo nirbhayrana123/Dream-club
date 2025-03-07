@@ -14,6 +14,13 @@ img {
             line-clamp: 2; 
     -webkit-box-orient: vertical;
  }
+ .line_3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;  
+          line-clamp: 2; 
+  -webkit-box-orient: vertical;
+}
 p {
     font-size: 17px;
     font-weight: 400;
@@ -2568,6 +2575,205 @@ ul {
 }
 
 
+/*************************Savings on upcoming events START******************************/
+.event-card.savings_events .Olives.li-box {
+    margin-bottom: 60px;
+}
+.event-card.savings_events:hover .Olives {
+    bottom: -24px;
+}
+span.event-time.ab.blackbg {
+    background: #000000B2;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+}
+.les img {
+    height: auto;
+}
+.les {
+    position: absolute;
+    width: 160px;
+    right: 10px;
+    top: 0px;
+    z-index: 9;
+}
+.row.mb-4.gap_2 {
+    --bs-gutter-x: 60px;
+}
+.row.mb-4.gap_2 .col-6 {
+    position: relative;
+}
+ul.pl-0 {
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+.event-card.savings_events:hover .hover_move {
+    max-height: 75px;
+}
+.event-card.savings_events .hover_move {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    max-height: 0px;
+}
+.Join-ussection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+.Join-ussection {
+    color: white;
+    padding: 80px 0;
+    position: relative;
+    min-height: 625px;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: 100% 60%;
+}
+.Join-ussection .newsletter-content {
+    max-width: none;
+}
+  a.button.dark.white-hover:hover {
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+.event-card.savings_events .event-overlays {
+    top: auto;
+    height: 50%;
+    opacity: 1;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 57%, rgba(0, 0, 0, 0.8) 100%);
+}
+.event-card.savings_events:hover .event-overlays {
+    top: auto;
+    height: 100%;
+    opacity: 1;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 57%, rgba(0, 0, 0, 0.8) 100%);
+}
+p.per-year {
+  font-family: Gilroy-Regular;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+.dram-prime .banner.example-box::before {
+  background: linear-gradient(83.59deg, #231535 -8.32%, #743AA0 124.31%);
+  mix-blend-mode: multiply;
+  opacity: 0.9;
+}
+.dram-prime .banner-main {
+  width: 75%;
+}
+.dram-prime .banner_img, .dram-prime .banner-left {
+  width: 50%;
+}
+.dram-prime .banner {
+  max-height: 650px;
+}
+.the-club p {
+  text-align: end;
+}
+.the-club .services-heding {
+  justify-content: space-between;
+}
+section.the-club.bg-color.mt-0 {
+  padding-bottom: 172px;
+  padding-top: 120px;
+}
+.season_tabs {
+  position: relative;
+  min-height: 360px;
+  clear: both;
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+}
+.season_tab {
+  float: left;
+  clear: both;
+  width: 284px;
+  gap: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.season_tab label {
+  vertical-align: middle;
+  position: relative;
+  left: 0;
+  font-weight: 400;
+  font-size: 24px;
+  color: #6C6C6C;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  min-width: 345px;
+  align-items: center;
+}
+.season_tab [type=radio] {
+  display: none;
+}
+.season_content {
+  position: absolute;
+  top: 0;
+  left: 286px;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 36px;
+  border: 1px solid #ccc;
+}
+.season_content span {
+  animation: 0.5s ease-out 0s 1 slideInFromTop;
+}
+[type=radio]:checked ~ label {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 100%;
+  color: #45276F;
+}
+[type=radio]:checked ~ label path {
+  fill: #45276F;
+}
+[type=radio]:checked ~ label ~ .season_content {
+  z-index: 1;
+}
+.text-section p {
+  text-align: left;
+}
+.season_content {
+  display: flex;
+  max-width: 945px;
+  background: white;
+  border: none;
+  margin-left: auto;
+}
+.text-section {
+  width: 50%;
+  padding: 24px;
+  text-align: left;
+}
+.text-section img {
+  width: 38px;
+  margin-bottom: 32px;
+}
+.image-section {
+  width: 50%;
+  position: relative;
+  left: 72px;
+  max-width: 414px;
+  min-height: 437px;
+}
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 
 
