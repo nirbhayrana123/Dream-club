@@ -2446,13 +2446,14 @@ testimonial-section .owl-dots{
     font-family: 'Gilroy';
 }
 
-/*****************************enent***************************/
+/*****************************event page***************************/
 
 .filter-dropdown {
     display: flex;
     gap: 15px;
     align-items: center;
 }
+
 select {
     border: none;
     outline: none;
@@ -2489,7 +2490,10 @@ span.prime {
     font-size: 54px;
 }
 .banner-events span {
-    color: rgba(238, 210, 116, 1);
+  color: rgba(238, 210, 116, 1);
+  font-style: italic;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
 }
 .banner-events p {
     color: #fff;
@@ -2521,7 +2525,20 @@ ul {
     padding-bottom: 0;
 }
 
-
+.banners {
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+}
+.explors-mb {
+  margin-bottom: 160px;
+}
+.blockmobile {
+  display: none;
+}
 
 
 
@@ -2538,7 +2555,7 @@ ul {
 }
 
 span {
-    font-size: 40px;
+  font-size: 54px;
 }
 .banner-left p { 
     font-size: 15px; 
@@ -2970,7 +2987,7 @@ p.text-size-regular {
     section.blogs {
         padding: 50px 20px;
     }
-/******************event****************************/
+/******************event page****************************/
 span.prime {
     background-color: rgba(116, 58, 160, 1);
     padding: 0px 5px;
@@ -2982,6 +2999,22 @@ span.prime {
 .filter {
     margin-bottom: 20px;
     gap: 16px;
+}
+.banner-events h2 {
+  font-size: 28px;
+}
+.explors-mb {
+  margin-bottom: 90px;
+}
+.blockmobile {
+  color: #fff;
+  text-align: center;
+  display: block;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+.blockdextop {
+  display: none;
 }
 }
 
