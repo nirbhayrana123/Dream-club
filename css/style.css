@@ -2696,7 +2696,7 @@ span.selected_items {
  
 .selected_item_box {
   width: 100%;
-  height: 400px; 
+  /* height: 400px; */
   position: relative;
 }
 
@@ -2708,17 +2708,17 @@ span.selected_items {
   position: relative;
 }
 
-.selected_item_box.one {  background: #CF3B0033; }
+/* .selected_item_box.one {  background: #CF3B0033; }
 .selected_item_box.two {  background: #CBD90233; }
 .selected_item_box.three {  background: #11131533; }
 .selected_item_box.four {  background: #C95C8333; }
 .selected_item_box.five {  background: #04304833; }
-.selected_item_box.six {  background: #AC32001F; } 
+.selected_item_box.six {  background: #AC32001F; } */
  
- img.aberlour {
+/* img.aberlour {
   position: absolute;
   top: -85px;
-}  
+} */
  
 .aberlour_content {
   margin-top: 20px; 
@@ -2763,15 +2763,12 @@ section.details {
 .product_container {
   display: flex;
   background: white; 
-  flex-wrap: wrap;
 }
 .product-details {
   flex: 1;
   padding-right: 20px;
 }
-.mobile-on {
-  display: none;
-}
+ 
 .price { 
   color: #333; 
   font-weight: 400;
@@ -2816,11 +2813,11 @@ h3.tasting-notes2 {
   max-width: 540px;
 }
 
-main.discover-liqours.details button.carousel-control-prev {
+button.carousel-control-prev {
   left: -70px;
 }
 
-main.discover-liqours.details .carousel-control-next {
+.carousel-control-next {
   right: -70px;
 }
 
@@ -2931,7 +2928,14 @@ main.discover-liqours.details .row.mt_8 .col-4 {
 .owl-carousel.first-slider.pt-10.owl-loaded.owl-drag .owl-stage-outer {
   padding-top: 130px;
 }
-  
+
+
+
+
+
+
+
+
 /*************************FOOTER START******************************/
 
 .footer .container {
@@ -3620,6 +3624,9 @@ section.the-club.bg-color.mt-0 {
   position: relative;
 }
 
+
+
+
 /**********tabs******************/
 .tab-content {
   background-color: #fff;
@@ -3681,6 +3688,7 @@ a.nav-link.active path {
   display: none;
 }
 
+
 /**************tabs end*****************/
 
 /****************my bar*******************/
@@ -3691,23 +3699,9 @@ a.nav-link.active path {
   margin-bottom: 80px;
 }
 
-.scotch .table-img:nth-child(3n)::after {
-  content: "";
-  background-image: url(../images/frnichar.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 205px;
-  position: absolute;
-  background-size: cover;
-  left: 0;
-  z-index: -1;
-  bottom: -92px;
-}
- img.aberlour.fchar {
- img.aberlour.fchar {
+/* img.aberlour.fchar {
   top: 200px;
-} 
+} */
 .selected_item_box.one.frini {
   padding: 20px 20px;
 }
@@ -3854,15 +3848,6 @@ ul.list-unstyled img.percent3 {
   .scotch .table-img:nth-child(3n)::after {
     bottom: -65px;
 }
-
-
-main.discover-liqours.details .carousel-control-next {
-    right: 0px;
-}
-main.discover-liqours.details button.carousel-control-prev {
-  left: 0;
-}
-
 
 }
 
@@ -4245,80 +4230,15 @@ main.discover-liqours.details button.carousel-control-prev {
 
 
 
-
-
-
-
-/*********details*********/
-img.aberlour {
-max-width: 70%;
-margin: 0 auto;
-}
-
-a.button.black.width_3 {
-    width: 100%;
-}
-
-.reviews-card { 
-  padding: 20px; 
-}
-.reviews-content {
-  flex: auto;
-}
-.product-details { 
-  padding-right: 0px;
-}
-.decorative-shape { 
-  top: 18px;
-  right: 25px;
-  width: 172px;
-}
-
-section.details {
-  padding: 100px 0;
-}
-header.black_nav button.toggle-button span.line {
-  background-color: #000000; 
-}
-.reviews-card {
-  flex-wrap: wrap;
-}
-.reviews-content h2 {
-  font-size: 28px; 
-}
-
-main.discover-liqours.details section.Upcoming-events {
-  padding-bottom: 60px;
-}
-.product-image {
-  order: 1;
-}
-.product-details {
-  order: 2;
-}
-
-.mobile-on {
-  display: block;
-}
-
-.product-details h2,.product-details p.price {
-  display: none;
-}
-
-
-
-
 }
 
 /***********************Dram prime css end*****************/
 
 @media (max-width: 767px) {
-
-  
   .Olive.li-box .hovericon {
     display: block;
   }
- 
+
   .innterContent {
     padding: 15px;
   }
@@ -4693,16 +4613,6 @@ main.discover-liqours .blogs_slider .item {
 }
 
 @media (max-width: 600px) {
-  .first-slider {
-    padding-left: 20px;
-  }
-  
-  .selected_item_box { 
-    height: 240px; 
-  }
-  img.aberlour {
-    max-width: 100%; 
-}
   .banner {
     padding: 0px 0px;
   }
