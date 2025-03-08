@@ -2207,7 +2207,7 @@ p.text-size-regular.line_7.barrel {
   gap: 10px;
 }
 
-main.discover-liqours .move-hover {
+.collections_slider .move-hover {
   top: 164px;
 }
 
@@ -2396,6 +2396,10 @@ span.selected_items {
 
 .row.mt_8 {
   margin-top: 120px;
+  --bs-gutter-y: 14.5rem;
+}
+.row.mt_8 .col-4 {
+  position: relative;
 }
 
 .selected_item_box.one {  background: #CF3B0033; }
@@ -2407,11 +2411,11 @@ span.selected_items {
  
 img.aberlour {
   position: absolute;
-  top: -75px;
+  top: -85px;
 }
  
 .aberlour_content {
-  margin-top: 20px;
+  margin-top: 20px; 
 }
 .aberlour_content h5 {
   font-weight: 600;
@@ -2421,10 +2425,49 @@ img.aberlour {
   margin-top: 10px;
 }
 
+img.like-icons {
+  position: absolute;
+  right: 20px;
+  z-index: 1;
+  top: 10px;
+}
 
-
-
-
+/*************************DETAILS START******************************/
+section.details {
+  padding: 150px 0;
+}
+.product_container {
+  display: flex;
+  background: white; 
+}
+.product-details {
+  flex: 1;
+  padding-right: 20px;
+}
+ 
+.price { 
+  color: #333; 
+  font-weight: 400;
+  font-size: 32px;  
+  margin: 20px 0;
+}
+.fav-btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.tasting-notes .notes {
+  display: flex;
+  gap: 10px;
+}
+.note {
+  background: #eee;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
 
 
 
