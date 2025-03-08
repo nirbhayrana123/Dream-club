@@ -43,6 +43,24 @@ a {
   font-family: 'Gilroy';
 }
 
+header.black_nav a.nav-link {
+  color: #171717;
+}
+
+header.black_nav .button-btn {
+  background-color: #051827;
+  color: #fff !important;
+}
+header.black_nav .navebar ul li a svg path {
+  fill: #051827;
+}
+
+
+
+
+
+
+
 .font-famly {
   font-family: 'Gilroy';
 }
@@ -2721,12 +2739,30 @@ img.like-icons {
   right: 20px;
   z-index: 1;
   top: 10px;
+  max-width: 25px;
+}
+ul.list-unstyled img.percent3 {
+  max-width: 19px;
+  min-width: 19px;
+}
+ul.list-unstyled li p {
+  display: flex;
+  gap: 10px;
 }
 
 /*************************DETAILS START******************************/
 section.details {
   padding: 150px 0;
 }
+
+.product-image {
+  max-width: 530px;
+}
+.product-image button i {
+  color: #CECECE;
+  font-size: 30px;
+}
+
 .product_container {
   display: flex;
   background: white; 
@@ -2742,39 +2778,153 @@ section.details {
   font-size: 32px;  
   margin: 20px 0;
 }
-.fav-btn {
-  background: black;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-}
+ 
 .tasting-notes .notes {
   display: flex;
-  gap: 10px;
+  gap: 12px;
 }
-.note {
-  background: #eee;
-  padding: 5px 10px;
-  border-radius: 5px;
+.tasting-notes .notes img {
+  width: 120px;
+  height: 120px;
+}
+.rating {
+  margin: 32px 0;
+}
+.tasting-notes .notes p {
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 7px;
+}
+p.people-added {
+  margin-top: 23px;
 }
 
+h3.tasting-notes2 {
+  margin-top: 32px;
+  margin-bottom: 18px;
+  font-weight: 700;
+  font-size: 16px;
+}
 
+.description {
+  max-width: 540px;
+}
 
+button.carousel-control-prev {
+  left: -70px;
+}
 
+.carousel-control-next {
+  right: -70px;
+}
 
+ /*****************REVIWS START**********************/
 
+ .reviews-section {
+  min-height: 713px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 120px 0px;
+}
+.reviews-section::after {
+  content: "";
+  background: #072539B2;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
 
+.reviews-content {
+  position: relative;
+  z-index: 2; 
+}
+.reviews-content h2 {
+  font-size: 50px;
+  text-align: center;
+  color: white;
+}
 
+.reviews-card {
+  max-width: 875px;
+  width: 100%;
+  background: white;
+  padding: 80px 100px;
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 60px;
+}
 
+img.user-img {
+  width: 83px;
+  height: 83px;
+  object-fit: cover;
+}
+a.button.black.width_3 {
+  width: 391px;
+  display: inline-block;
+  text-align: center;
+}
+.decorative-shape {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.decorative-shape {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+.reviews_star {
+  margin-bottom: 10px;
+}
 
+.reviews_star p {
+  font-weight: 600;
+  font-size: 18px;
+}
+.reviews-content {
+  flex: 1;
+}
+.reviews-text {
+  margin-top: 5px;
+  color: #333;
+  font-weight: 400;
+  font-size: 18px;
+  margin-right: 5%;
+}
+.author {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.reviews-section button i {
+  color: #ffffff;
+  font-size: 50px;
+}
+.carousel-control-next, .carousel-control-prev {
+  opacity: 1;
+}
 
+.reviews-section button.carousel-control-prev {
+  left: 0;
+}
 
+.reviews-section .carousel-control-next {
+  right: 0;
+}
+main.discover-liqours.details .row.mt_8 .col-4 {
+  margin-top: 20px;
+  margin-bottom: 140px;
+}
 
-
-
-
+.owl-carousel.first-slider.pt-10.owl-loaded.owl-drag .owl-stage-outer {
+  padding-top: 130px;
+}
 
 
 
