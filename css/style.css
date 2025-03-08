@@ -2696,10 +2696,11 @@ span.selected_items {
  
 .selected_item_box {
   width: 100%;
-  /* height: 400px; */
   position: relative;
 }
-
+.jackdinelser .selected_item_box { 
+   height: 400px;  
+}
 .row.mt_8 {
   margin-top: 0;
   --bs-gutter-y: 14.5rem;
@@ -2708,17 +2709,17 @@ span.selected_items {
   position: relative;
 }
 
-/* .selected_item_box.one {  background: #CF3B0033; }
-.selected_item_box.two {  background: #CBD90233; }
-.selected_item_box.three {  background: #11131533; }
-.selected_item_box.four {  background: #C95C8333; }
-.selected_item_box.five {  background: #04304833; }
-.selected_item_box.six {  background: #AC32001F; } */
+.jackdinelser .selected_item_box.one {  background: #CF3B0033; }
+.jackdinelser .selected_item_box.two {  background: #CBD90233; }
+.jackdinelser .selected_item_box.three {  background: #11131533; }
+.jackdinelser .selected_item_box.four {  background: #C95C8333; }
+.jackdinelser .selected_item_box.five {  background: #04304833; }
+.jackdinelser .selected_item_box.six {  background: #AC32001F; }
  
-/* img.aberlour {
+.jackdinelser img.aberlour {
   position: absolute;
   top: -85px;
-} */
+}
  
 .aberlour_content {
   margin-top: 20px; 
@@ -4613,6 +4614,9 @@ main.discover-liqours .blogs_slider .item {
 }
 
 @media (max-width: 600px) {
+  .first-slider{
+    padding-left: 15px;
+  }
   .banner {
     padding: 0px 0px;
   }
