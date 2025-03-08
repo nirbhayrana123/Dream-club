@@ -2534,6 +2534,10 @@ main.discover-liqours .blogs_slider .box::after {
 
 section.teb_section {
   padding: 80px 0;
+ 
+}
+.bg-gre{
+  background-color: rgba(243, 243, 243, 1);
 }
 
  
@@ -2699,7 +2703,7 @@ span.selected_items {
  
 .selected_item_box {
   width: 100%;
-  height: 400px;
+  /* height: 400px; */
   position: relative;
 }
 
@@ -2711,17 +2715,17 @@ span.selected_items {
   position: relative;
 }
 
-.selected_item_box.one {  background: #CF3B0033; }
+/* .selected_item_box.one {  background: #CF3B0033; }
 .selected_item_box.two {  background: #CBD90233; }
 .selected_item_box.three {  background: #11131533; }
 .selected_item_box.four {  background: #C95C8333; }
 .selected_item_box.five {  background: #04304833; }
-.selected_item_box.six {  background: #AC32001F; }
+.selected_item_box.six {  background: #AC32001F; } */
  
-img.aberlour {
+/* img.aberlour {
   position: absolute;
   top: -85px;
-}
+} */
  
 .aberlour_content {
   margin-top: 20px; 
@@ -3690,16 +3694,31 @@ a.nav-link.active path {
 
 /****************my bar*******************/
 
-
-img.aberlour.fchar {
-  top: 200px;
+.row.scotch {
+  margin-bottom: 100px;
+  position: relative;
 }
+
+.scotch .table-img:nth-child(3n)::after {
+  content: "";
+  background-image: url(../images/frnichar.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 205px;
+  position: absolute;
+  background-size: cover;
+  left: 0;
+  z-index: -1;
+  bottom: -92px;
+}
+/* img.aberlour.fchar {
+  top: 200px;
+} */
 .selected_item_box.one.frini {
   padding: 20px 20px;
 }
-.img-frinchar {
-  margin-top: 70px;
-}
+
 ul.list-unstyled img.percent3 {
   max-width: 19px;
   min-width: 19px;
@@ -3716,40 +3735,53 @@ ul.list-unstyled img.percent3 {
   font-size: 27px;
   color: rgba(139, 35, 29, 1);
 }
-.scotch .selected_item_box.one.frini.bg-schot {
+.scotch .selected_item_box.one.frini.bg-schot::before {
   background-color: rgba(172, 50, 0, 0.12);
 }
-.scotch .selected_item_box.one.frini.bg-pinksd {
+.scotch .selected_item_box.one.frini.bg-pinksd::before {
   background-color: rgba(4, 48, 72, 0.2);
 }
-.scotch .selected_item_box.one.frini.bg-lisdg {
+.scotch .selected_item_box.one.frini.bg-lisdg::before {
   background-color: rgba(201, 92, 131, 0.2);
 }
-.scotch .selected_item_box.one.frini.bg-because {
+.scotch .selected_item_box.one.frini.bg-because::before {
   background-color: rgba(203, 217, 2, 0.2);
 }
-.scotch .selected_item_box.one.frini.bg-because2 {
+.scotch .selected_item_box.one.frini.bg-because2::before {
   background-color: rgba(245, 216, 204, 0.4);
 }
-.scotch .selected_item_box.one.frini.bg-because3 {
+.scotch .selected_item_box.one.frini.bg-because3::before {
   background-color: rgba(207, 208, 208, 0.4);
 }
-.scotch .selected_item_box.one.frini.bg-because4 {
+.scotch .selected_item_box.one.frini.bg-because4::before {
   background-color: rgba(172, 50, 0, 0.12);
 }
-.scotch .selected_item_box.one.frini.bg-because5 {
+.scotch .selected_item_box.one.frini.bg-because5::before {
   background-color: rgba(4, 48, 72, 0.2);
 }
-.scotch .selected_item_box.one.frini.bg-because6 {
+.scotch .selected_item_box.one.frini.bg-because6::before {
   background-color: rgba(201, 92, 131, 0.2);
 }
 
- 
+section.jack-daniels {
+  padding: 100px 0px;
+}
 
 
 
-
-
+.scotch .selected_item_box::before {
+  content: "";
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.img-frinchar {
+  display: none;
+}
 
 
 
@@ -4409,6 +4441,24 @@ ul.list-unstyled img.percent3 {
   section.blogs {
     padding: 50px 20px;
   }
+  /**************my bar*********************/
+  .img-frinchar {
+    display: block;
+}
+  .scotch .table-img:nth-child(3n)::after {
+    content: "";
+    background-image: url(../images/frnichar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 202px;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    bottom: -60px;
+    background-size: contain;
+}
+  
 
   /******************event page****************************/
   span.prime {
