@@ -3359,7 +3359,7 @@ ul {
 }
 
 .banners {
-  height: 450px;
+  min-height: 450px;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -3495,7 +3495,7 @@ p.per-year {
 
 .dram-prime .banner_img,
 .dram-prime .banner-left {
-  width: 40%;
+  width: 43%;
 }
 
 .dram-prime .banner-left {
@@ -3746,8 +3746,12 @@ ul.list-unstyled img.percent3 {
 .Upcoming-events .col-12.col-md-6 {
   margin-bottom: 20px;
 }
- 
-
+.blogs.explors-mb.white-bg {
+  margin-bottom: 0;
+}
+.teb_section .row.mt_8 {
+  margin-top: 0px;
+}
 
 
 
@@ -4183,7 +4187,7 @@ ul.list-unstyled img.percent3 {
 
 /***********************Dram prime css end*****************/
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .Olive.li-box .hovericon {
     display: block;
   }
@@ -4499,12 +4503,31 @@ section.the-club.bg-color.mt-0 {
 .dram-prime .banner {
   height: 500px;
 }
-
-
-
-
-
-
+.Join-ussection {  min-height: 333px; }
+.banners {
+  min-height: 358px; 
+}
+main.discover-liqours .blogs_slider .item {
+  height: 390px;
+}
+.serach_tab_canter { 
+  flex-wrap: wrap;
+}
+.underline-tabs .nav-tabs { 
+  width: 100%;
+}
+.serach_tab_canter { 
+  width: 100%;
+}
+.serach-filter {
+  width: 100%;
+}
+.search-bar {
+  max-width: 100%; 
+}
+.bottlings .search-bar {
+  display: none;
+}
 }
 
 @media (max-width: 600px) {
