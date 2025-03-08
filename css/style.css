@@ -46,6 +46,9 @@ a {
 header.black_nav a.nav-link {
   color: #171717;
 }
+header.black_nav a.nav-link:hover {
+  color: #171717;
+}
 
 header.black_nav .button-btn {
   background-color: #051827;
@@ -2591,10 +2594,6 @@ h4.tabs_img_heading {
   margin-top: 5px;
   margin-bottom: 0;
 }
-.tabs_img_box:hover img {
-  width: 180px;
-  height: 180px;
-}
 
 .tabs_img_box img {
   width: 150px;
@@ -2603,22 +2602,16 @@ h4.tabs_img_heading {
 }
 .tabs_img_box {
  transition: 0.5s;
+ padding: 12px;
 }
 .tabs_img_box:hover h4.tabs_img_heading {
-  color: #ffffff;
-  font-weight: 400;
-  font-size: 16px;
+  color: #ffffff; 
 }
 .tabs_img_box:hover {
   background: #8B231D;
-  padding: 12px;
-}
 
-.flexx_box {
-  display: flex;
-  gap: 12px;
-  justify-content: space-between;
 }
+ 
 .bottlings h4 {
   margin-bottom: 0;
   font-weight: 700;
@@ -2708,7 +2701,7 @@ span.selected_items {
 }
 
 .row.mt_8 {
-  margin-top: 120px;
+  margin-top: 0;
   --bs-gutter-y: 14.5rem;
 }
 .row.mt_8 .col-4 {
@@ -2782,7 +2775,10 @@ section.details {
   font-size: 32px;  
   margin: 20px 0;
 }
- 
+img.percent3.top-2 {
+  position: relative;
+  top: -6px;
+}
 .tasting-notes .notes {
   display: flex;
   gap: 12px;
@@ -2793,6 +2789,9 @@ section.details {
 }
 .rating {
   margin: 32px 0;
+}
+img.percent3.mr-2 {
+  margin-left: 13px;
 }
 .tasting-notes .notes p {
   font-weight: 400;
@@ -3629,10 +3628,10 @@ section.the-club.bg-color.mt-0 {
 
 
 /**********tabs******************/
-
 .tab-content {
   background-color: #fff;
   height: auto;
+  margin-bottom: 50px;
 }
 
 .nav-link.active {

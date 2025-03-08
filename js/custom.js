@@ -22,6 +22,26 @@ $(document).ready(function () {
      ///upcomingslider
 
 
+     $(".select-slider").owlCarousel({
+      items: 9,
+      margin: 0,
+      loop: true,
+     autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+      responsive: {
+        0: {
+          items: 1.2
+        },
+        767: {
+          items: 1.2
+        },
+        1000: {
+          items: 9 
+        }
+      },
+    });
+
      $(".upcoming-events").owlCarousel({
       items: 3,
       margin: 20,
