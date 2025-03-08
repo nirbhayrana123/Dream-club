@@ -67,10 +67,7 @@ ul {
     margin: 0 auto;
   }
 }
-
-/****************************************************/
-
-
+  
 .slider-offbeat .swiper-slide {
   width: 183.333px;
   margin-right: 10px;
@@ -152,7 +149,7 @@ a.nav-link.ml-3 {
   margin-left: 30px;
 }
 
-/**********************header********************************/
+/**********************HEADER********************************/
 button.toggle-button span.line {
   background-color: #fff;
   width: 28px;
@@ -321,8 +318,7 @@ header.scrolled .navebar ul li.login:hover a {
   background: #171717;
   color: #fff;
 }
-
-/**********************header end********************************/
+/**********************HEADER END********************************/
 
 ul.list-unstyled li {
   display: flex;
@@ -337,7 +333,7 @@ ul.list-unstyled li {
   margin-top: 30px;
 }
 
-/**********************banner********************************/
+/**********************BANNER********************************/
 .banner {
   height: 100vh;
   background-size: cover;
@@ -482,7 +478,7 @@ a.button.greys:hover {
   font-size: 17px;
 }
 
-/************Upcoming events START***************/
+/************UPCOMING EVENTS START***************/
 
 section.Upcoming-events {
   padding-top: 100px;
@@ -692,7 +688,7 @@ h2 {
   display: block;
 }
 
-/*************services*************/
+/*************SERVICES*************/
 .button-row.canter {
   justify-content: center;
 }
@@ -782,7 +778,7 @@ img.boxbg {
   background: linear-gradient(180deg, rgba(7, 42, 66, 0.7) 0%, rgba(5, 24, 39, 0.7) 100%);
 }
 
-/*******************Card One ********************/
+/*******************CARD ONE ********************/
 .service-card .icon-shep {
   position: absolute;
   left: -71px;
@@ -2030,9 +2026,6 @@ p.font-bold {
   left: 0px;
   top: 40%;
 }
-
-
-
 .testimonial-section .owl-nav i {
   font-size: 50px;
 }
@@ -2043,7 +2036,7 @@ p.font-bold {
   text-decoration: none;
 }
 
-/*******************Founder’s Note************/
+/*******************FOUNDER’S NOTE************/
 .card_component {
   gap: 60px;
   grid-template-rows: auto;
@@ -2069,7 +2062,7 @@ p.font-bold {
   margin-bottom: 60px;
 }
 
-/*************************join-us START******************************/
+/*************************JOIN-US START******************************/
 .join-us {
   width: 100%;
   padding: 220px 0;
@@ -2119,7 +2112,7 @@ p.card-heading {
   background: linear-gradient(54.32deg, #23153500 -5.81%, #743aa000 99.02%);
 }
 
-/*************************Blogs START******************************/
+/*************************BLOGS START******************************/
 
 .blogs_slider .box:hover::after {
   opacity: 1;
@@ -2470,6 +2463,283 @@ form.newsletter-form.row.g-2 {
   top: 40%;
 }
 
+/***********************DISCOVER LIQOURS START***************************/
+main.discover-liqours .banner-top::after {
+   content: "";
+   position: absolute;
+   inset: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 26%, rgba(0, 0, 0, 0) 100%);
+   z-index: 0;
+}
+main.discover-liqours .banner-top .banner-upcoming {
+  z-index: 1;
+  position: relative;
+}
+
+main.discover-liqours .blogs_slider .item {
+  height: 513px;
+}
+
+main.discover-liqours .blogs_slider .item.green::after {
+  height: 25%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 72.5%, rgba(0, 0, 0, 0.8) 93%);
+  top: auto;
+}
+
+.barrel-img {
+  max-width: 20px;
+}
+ 
+p.text-size-regular.line_7.barrel {
+  font-size: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+main.discover-liqours .move-hover {
+  top: 164px;
+}
+
+main.discover-liqours .move-hover h5 {
+   margin-bottom: 20px;
+   font-size: 28px;
+}
+
+main.discover-liqours .blogs_slider .box::after { 
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgb(0 0 0 / 41%) 57%, #000000f5 100%), linear-gradient(180deg, rgba(122, 28, 24, 0.4) 0%, rgba(72, 16, 14, 0.4) 100%);
+}
+
+
+/***********TEB START**************/
+
+section.teb_section {
+  padding: 80px 0;
+}
+
+ 
+
+.underline-tabs .nav-link {
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: 1rem 1.5rem;
+  margin-bottom: -2px;
+  font-weight: 500;
+  color: #6c757d;
+  transition: all 0.3s ease;
+}
+
+.underline-tabs .nav-link.active {
+  border-bottom-color: #0A0A0A;
+  color: #0A0A0A;
+  font-weight: 700;
+}
+
+/* Content Animation */
+.tab-pane.fade {
+  transition: all 0.2s ease-out;
+}
+
+.tab-pane.fade.show {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.underline-tabs .nav-tabs {
+  border-bottom: 1px solid #e9ecef;
+  display: inline-flex;
+  margin-bottom: 60px;
+}
+
+h4.tabs_img_heading {
+  font-weight: 400;
+  font-size: 14px;
+  color: #072539;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.tabs_img_box:hover img {
+  width: 180px;
+  height: 180px;
+}
+
+.tabs_img_box img {
+  width: 150px;
+  height: 150px;
+  transition: 0.5s;
+}
+.tabs_img_box {
+ transition: 0.5s;
+}
+.tabs_img_box:hover h4.tabs_img_heading {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+}
+.tabs_img_box:hover {
+  background: #8B231D;
+  padding: 12px;
+}
+
+.flexx_box {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+.bottlings h4 {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 20px;
+}
+.selected_row .serach-filter {
+  width: 100px;
+}
+.selected_row .search-bar .input-group { 
+  border-bottom: 0px solid #CECECE;
+}
+span.selected_items {
+  font-weight: 400;
+  font-size: 20px;
+  color: #171717;
+}
+.selected_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.bottlings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+ 
+
+/***********SEARCH START**************/
+
+.search-bar {
+  max-width: 250px;
+  margin-left: auto;
+}
+
+.search-bar .input-group {
+  overflow: hidden;
+  border-bottom: 1px solid #CECECE;
+}
+
+.search-bar .form-control {
+  border: none; 
+}
+
+.search-bar .btn {
+  border: none;
+  padding: 10px 20px;
+}
+ 
+.serach-filter input.form-control {
+  color: #9D9D9D !important;
+  padding: 15px 0px; 
+}
+
+.serach-filter ::placeholder {
+  color: #9D9D9D !important;
+  opacity: 1; 
+}
+.serach-filter .btn {
+  color: #9D9D9D;
+  background-color: #00000000; 
+  padding-right: 0;
+}
+.serach-filter .btn:hover {
+  color: #464646;
+  background-color: #00000000; 
+}
+
+.serach-filter .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+  color: #9D9D9D;
+  background-color: #0000;
+  border-color: #0000;
+}
+
+.serach_tab_canter {
+  display: flex;
+  justify-content: space-between;
+}
+ 
+.selected_item_box {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.row.mt_8 {
+  margin-top: 120px;
+}
+
+.selected_item_box.one {  background: #CF3B0033; }
+.selected_item_box.two {  background: #CBD90233; }
+.selected_item_box.three {  background: #11131533; }
+.selected_item_box.four {  background: #C95C8333; }
+.selected_item_box.five {  background: #04304833; }
+.selected_item_box.six {  background: #AC32001F; }
+ 
+img.aberlour {
+  position: absolute;
+  top: -75px;
+}
+ 
+.aberlour_content {
+  margin-top: 20px;
+}
+.aberlour_content h5 {
+  font-weight: 600;
+  font-size: 20px;
+}
+.aberlour_content ul.list-unstyled {
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*************************FOOTER START******************************/
 
 .footer .container {
@@ -2646,7 +2916,7 @@ nav.topnavbar.navbar {
 }
 
 
-/*******************************footerbottom**************/
+/*******************************FOOTER-BOTTOM**************/
 
 .footer-bottom p {
   font-weight: 400;
@@ -3239,7 +3509,7 @@ a.nav-link.active path {
 
 
 
-/*============ Responsive styles================== */
+/*============ RESPONSIVE STYLES================== */
 @media (max-width: 1400px) {
   .banner-left h2 {
     font-size: 30px;
@@ -3655,6 +3925,12 @@ a.nav-link.active path {
   font-size: 19px;
   padding: 10px 0px;
 }
+
+
+/***********************dram prime*****************/
+
+
+
 }
 
 /***********************Dram prime css end*****************/
