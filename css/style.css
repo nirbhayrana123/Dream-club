@@ -3478,7 +3478,7 @@ section.the-club.bg-color.mt-0 {
 
 .tab-content {
   background-color: #fff;
-  height: 430px;
+  height: auto;
 }
 
 .nav-link.active {
@@ -3535,13 +3535,66 @@ a.nav-link.active path {
   display: none;
 }
 
+
 /**************tabs end*****************/
 
+/****************my bar*******************/
 
 
+img.aberlour.fchar {
+  top: 200px;
+}
+.selected_item_box.one.frini {
+  padding: 20px 20px;
+}
+.img-frinchar {
+  margin-top: 70px;
+}
+ul.list-unstyled img.percent3 {
+  max-width: 19px;
+  min-width: 19px;
+}
+.selected_items {
+  margin-bottom: 60px;
+}
+.hart {
+  position: absolute;
+  right: 22px;
+  top: 34px;
+}
+.hart a {
+  font-size: 27px;
+  color: rgba(139, 35, 29, 1);
+}
+.scotch .selected_item_box.one.frini.bg-schot {
+  background-color: rgba(172, 50, 0, 0.12);
+}
+.scotch .selected_item_box.one.frini.bg-pinksd {
+  background-color: rgba(4, 48, 72, 0.2);
+}
+.scotch .selected_item_box.one.frini.bg-lisdg {
+  background-color: rgba(201, 92, 131, 0.2);
+}
+.scotch .selected_item_box.one.frini.bg-because {
+  background-color: rgba(203, 217, 2, 0.2);
+}
+.scotch .selected_item_box.one.frini.bg-because2 {
+  background-color: rgba(245, 216, 204, 0.4);
+}
+.scotch .selected_item_box.one.frini.bg-because3 {
+  background-color: rgba(207, 208, 208, 0.4);
+}
+.scotch .selected_item_box.one.frini.bg-because4 {
+  background-color: rgba(172, 50, 0, 0.12);
+}
+.scotch .selected_item_box.one.frini.bg-because5 {
+  background-color: rgba(4, 48, 72, 0.2);
+}
+.scotch .selected_item_box.one.frini.bg-because6 {
+  background-color: rgba(201, 92, 131, 0.2);
+}
 
-
-
+ 
 
 
 
