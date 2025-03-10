@@ -3788,6 +3788,238 @@ ul.list-unstyled img.percent3 {
 }
 
 
+/************about us css*******************/
+section.we-started { 
+  padding-bottom: 120px;
+}
+.professionals {
+  padding: 50px 0px;
+}
+
+.strars {
+  position: absolute;
+  top: 445px;
+  left: -111px;
+  width: 29%;
+}
+.streder {
+  position: relative;
+}
+.professionals span {
+  color: rgba(238, 210, 116, 1);
+  font-style: italic;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+}
+.professionals p {
+  font-size: 24px;
+  line-height: 34px;
+}
+.streder img {
+  width: 95%;
+}
+img.top {
+  margin-top: 87px;
+}
+.stats-section {
+  background: linear-gradient(to bottom, #7d0d0d, #3d0303);
+  color: white;
+  padding: 40px 0;
+}
+.stats-box {
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+.stats-box:last-child {
+  border-right: none;
+}
+.stats-number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+ 
+
+.clint-logo  img:hover, .awards-logos img:hover {
+  opacity: 1;
+}
+.clint-logo2  img:hover, .awards-logos img:hover {
+  opacity: 1;
+}
+.clint-logo img {
+  max-width: 200px;
+  margin: 10px;
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
+}
+.clint-logo2 img {
+  max-width: 200px;
+  margin: 10px;
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
+}
+.clint-logo {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 60px 0px;
+}
+.clients-section h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+section.banner-top {
+  margin-bottom: 120px;
+}
+h2.text-center {
+  margin-bottom: 60px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0;
+  padding-bottom: 120px;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #a0a0a0;
+  margin: 0 10px;
+}
+.divider-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #0f2d25; /* Dark Green */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.divider-icon::before {
+  content: "✤";
+  color: white;
+  font-size: 14px;
+  position: absolute;
+}
+.jone-dy-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contant-text-suwati {
+  width: 46%;
+}.team-card 
+img { 
+  width: 100%;
+}
+.jone-dy-img img {
+  width: 46%;
+}
+h2.meet-our {
+  text-align: center;
+  padding: 120px 0px;
+}
+.team-main-card {
+  display: flex;
+  align-items: center;
+  padding: 120px 0px;
+  justify-content: space-between;
+}
+.team-card {
+  width: 32%;
+}
+.team-info {
+  padding-top: 32px;
+}
+.contant-text-suwati h5 {
+  font-size: 19px;
+  color: rgba(108, 108, 108, 1);
+  font-weight: 400;
+}
+.contant-text-suwati h3 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+section.values h2 {
+  font-size: 45px;
+  margin-bottom: 60px;
+}
+.values-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.value-card {
+  background: #f4f4f4;
+  padding: 32px;
+  width: 33%;
+  text-align: left;
+  position: relative;
+  height: 300px;
+}
+.value-card h3 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.value-card p {
+  font-size: 20px;
+  color: rgba(59, 59, 59, 1);
+  line-height: 30px;
+}
+.appreciation-icon {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  width: 70px;
+}
+section.values {
+  padding: 120px 0px;
+}
+ 
+
+.Marquees{
+	overflow-x: hidden;
+}
+.Marquee{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200vw;
+  height: 13vh;
+}
+.marquee{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  height: 11vh;
+  width: 12.5vw; 
+  margin: 10px; 
+}
+
+ 
+.FirstRow{
+animation: Scroll 60s linear infinite;}
+.SecondRow{
+  animation: Scroll 60s linear infinite;
+  animation-direction: reverse;
+}
+@keyframes Scroll {
+    0% {transform: translateX(-50vw);
+        -webkit-transform: translateX(-50vw);}
+      100% {transform: translateX(50vw);
+          -webkit-transform: translateX(50vw);}
+
+      }
+/*************about us end******************/
+
+
 
 
 
@@ -3850,6 +4082,19 @@ ul.list-unstyled img.percent3 {
     bottom: -65px;
 }
 
+/*******************about css**************/
+
+.strars {
+  top: 350px;
+}
+img.top {
+  margin-top: 35px;
+}
+.professionals p {
+  font-size: 20px;
+}
+
+
 }
 
 @media (max-width: 1200px) {
@@ -3884,7 +4129,25 @@ ul.list-unstyled img.percent3 {
   .service-card .overlay {
     padding: 45px;
   }
+/***************about css***************/
+ 
+
+.strars {
+  top: 340px;
+  left: -80px;
+  width: 115px;
 }
+
+img.top {
+  margin-top: 0px;
+}
+.professionals p {
+  font-size: 18px;
+}
+}
+
+
+
 
 /***********************Dram prime css*****************/
 @media (max-width: 1024px) {
@@ -3924,7 +4187,19 @@ ul.list-unstyled img.percent3 {
     height: 140px;
     bottom: -41px;
 }
-  /***********************Dram prime css end*****************/
+  /***********************about css*****************/
+  .professionals p {
+    font-size: 18px;
+}
+img.top {
+  margin-top: 0px;
+}
+.strars {
+  left: -64px;
+  top: 330px;
+  width: 100px;
+}
+
 
 }
 
@@ -4227,10 +4502,57 @@ ul.list-unstyled img.percent3 {
   bottom: -1px;
 }
 
-/***********************dram prime*****************/
+/***********************about css*****************/
+.streder img {
+  order: 2;
+}
+.streder {
+  display: flex;
+  flex-wrap: wrap;
+}
+.professionals { 
+  order: 1;
+}
+
+.streder img {
+  width: 100%;
+}
+img.top {
+  margin-top: 22px;
+}
+.strars {
+  left: 112px;
+  top: -70px;
+  width: 160px;
+}
+.img-top {
+  width: 100%;
+}
+.contant-text-suwati h5 {
+  font-size: 15px; 
+}
+h2.meet-our { 
+  padding: 50px 0px;
+}
+.team-main-card {
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px 0px;
+}
+.team-card {
+  width: 46%;
+}
+.values-grid {
+  flex-wrap: wrap;
+}
+.value-card {
+  width: 48%;
+}
 
 
-
+section.banner-top {
+  margin-bottom: 50px;
+}
 }
 
 /***********************Dram prime css end*****************/
@@ -4610,6 +4932,77 @@ main.discover-liqours .blogs_slider .item {
 .bottlings .search-bar {
   display: none;
 }
+/***********************about css***************/
+.strars {
+  top: -27px;
+  width: 90px;
+  left: 50px;
+}
+.stats-box {
+  border-right: none; 
+  padding-bottom: 20px;
+}
+.stats-box:last-child {
+  border-bottom: none;
+}
+section.we-started {
+  padding-bottom: 30px;
+}
+.jone-dy-img img {
+  width: 100%;
+}
+.contant-text-suwati {
+  width: 100%;
+}
+.jone-dy-img img {
+  width: 100%;
+  order: 1;
+}
+.contant-text-suwati {
+  margin-top: 32px;
+}
+.jone-dy-img { 
+  flex-wrap: wrap;
+}
+.team-card {
+  width: 100%;
+}
+.team-info h4 {
+  font-size: 32px;
+  font-weight: 500;
+}
+.mt-6 {
+  padding-bottom: 30px;
+}
+.value-card {
+  width: 100%;
+}
+section.values {
+  padding: 60px 0px;
+}
+section.values h2 {
+  font-size: 28px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.mt-6 {
+  margin-top: 0px;
+}
+
+.Marquee {
+  width: 500vw;
+  height: 7vh;
+}
+.marquee {
+  height: auto;
+  width: 100%;
+}
+.marquee.Item img {
+  width: 100%;
+}
+.divider {
+  padding-bottom: 40px;
+}
 
 }
 
@@ -4693,6 +5086,7 @@ main.discover-liqours .blogs_slider .item {
   .flexx p {
     margin-bottom: 0;
   }
+ 
 }
 
 @media (max-width: 480px) {
