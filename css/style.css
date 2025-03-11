@@ -2769,7 +2769,9 @@ section.details {
   flex: 1;
   padding-right: 20px;
 }
- 
+.mobile-on {
+  display: none;
+}
 .price { 
   color: #333; 
   font-weight: 400;
@@ -2931,12 +2933,77 @@ main.discover-liqours.details .row.mt_8 .col-4 {
 }
 
 
+/**************************Connect with Us*********************/
+.contact-us {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact_content {
+  width: 45%;
+}
+.form-container {
+  width: 45%;
+}
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  gap: 32px;
+}
+.full-w {
+  width: 100%;
+}
+.full-w input, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 0;
+  border: 0;
+  padding-left: 0;
+  border-bottom: 0.5px solid #6C6C6C;
+  color: #6C6C6C;
+  font-weight: 400;
+  font-size: 16px;
+  outline: none !important;
+}
+.full-w.margin-bottom-40 {
+  margin-bottom: 40px;
+}
 
+textarea {
+  height: 156px;
+  resize: none;
+  background-color: #F3F3F3;
+  border: 0;
+  padding: 10px;
+}
+ 
+.submit-btn {
+  width: 100%;
+  background-color: #072539;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 18px;
+}
+.submit-btn:hover {
+  background-color: #072539ea;
+}
 
-
-
-
-
+.contact_content span {
+  color: #C49B41;
+  font-style: italic;
+  font-family: DM Serif Displa;
+  font-weight: 500;
+}
+.contact_content h2 {
+  font-size: 44px;
+  line-height: 1.3em;
+  color: #000000;
+}
 /*************************FOOTER START******************************/
 
 .footer .container {
