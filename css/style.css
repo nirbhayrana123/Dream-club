@@ -46,6 +46,7 @@ a {
 header.black_nav a.nav-link {
   color: #171717;
 }
+
 header.black_nav a.nav-link:hover {
   color: #171717;
 }
@@ -54,6 +55,7 @@ header.black_nav .button-btn {
   background-color: #051827;
   color: #fff !important;
 }
+
 header.black_nav .navebar ul li a svg path {
   fill: #051827;
 }
@@ -88,7 +90,7 @@ ul {
     margin: 0 auto;
   }
 }
-  
+
 .slider-offbeat .swiper-slide {
   width: 183.333px;
   margin-right: 10px;
@@ -339,6 +341,7 @@ header.scrolled .navebar ul li.login:hover a {
   background: #171717;
   color: #fff;
 }
+
 /**********************HEADER END********************************/
 
 ul.list-unstyled li {
@@ -2047,6 +2050,7 @@ p.font-bold {
   left: 0px;
   top: 40%;
 }
+
 .testimonial-section .owl-nav i {
   font-size: 50px;
 }
@@ -2486,14 +2490,15 @@ form.newsletter-form.row.g-2 {
 
 /***********************DISCOVER LIQOURS START***************************/
 main.discover-liqours .banner-top::after {
-   content: "";
-   position: absolute;
-   inset: 0;
-   width: 100%;
-   height: 100%;
-   background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 26%, rgba(0, 0, 0, 0) 100%);
-   z-index: 0;
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 26%, rgba(0, 0, 0, 0) 100%);
+  z-index: 0;
 }
+
 main.discover-liqours .banner-top .banner-upcoming {
   z-index: 1;
   position: relative;
@@ -2512,7 +2517,7 @@ main.discover-liqours .blogs_slider .item.green::after {
 .barrel-img {
   max-width: 20px;
 }
- 
+
 p.text-size-regular.line_7.barrel {
   font-size: 20px;
   display: flex;
@@ -2524,11 +2529,11 @@ p.text-size-regular.line_7.barrel {
 }
 
 main.discover-liqours .move-hover h5 {
-   margin-bottom: 20px;
-   font-size: 28px;
+  margin-bottom: 20px;
+  font-size: 28px;
 }
 
-main.discover-liqours .blogs_slider .box::after { 
+main.discover-liqours .blogs_slider .box::after {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgb(0 0 0 / 41%) 57%, #000000f5 100%), linear-gradient(180deg, rgba(122, 28, 24, 0.4) 0%, rgba(72, 16, 14, 0.4) 100%);
 }
 
@@ -2537,13 +2542,14 @@ main.discover-liqours .blogs_slider .box::after {
 
 section.teb_section {
   padding: 80px 0;
- 
+
 }
-.bg-gre{
+
+.bg-gre {
   background-color: rgba(243, 243, 243, 1);
 }
 
- 
+
 
 .underline-tabs .nav-link {
   border: none;
@@ -2572,15 +2578,16 @@ section.teb_section {
 
 @keyframes fadeIn {
   from {
-      opacity: 0;
-      transform: translateY(10px);
+    opacity: 0;
+    transform: translateY(10px);
   }
 
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
+
 .underline-tabs .nav-tabs {
   border-bottom: 1px solid #e9ecef;
   display: inline-flex;
@@ -2600,34 +2607,41 @@ h4.tabs_img_heading {
   height: 150px;
   transition: 0.5s;
 }
+
 .tabs_img_box {
- transition: 0.5s;
- padding: 12px;
+  transition: 0.5s;
+  padding: 12px;
 }
+
 .tabs_img_box:hover h4.tabs_img_heading {
-  color: #ffffff; 
+  color: #ffffff;
 }
+
 .tabs_img_box:hover {
   background: #8B231D;
 
 }
- 
+
 .bottlings h4 {
   margin-bottom: 0;
   font-weight: 700;
   font-size: 20px;
 }
+
 .selected_row .serach-filter {
   width: 100px;
 }
-.selected_row .search-bar .input-group { 
+
+.selected_row .search-bar .input-group {
   border-bottom: 0px solid #CECECE;
 }
+
 span.selected_items {
   font-weight: 400;
   font-size: 20px;
   color: #171717;
 }
+
 .selected_row {
   display: flex;
   align-items: center;
@@ -2641,7 +2655,7 @@ span.selected_items {
   justify-content: space-between;
   gap: 20px;
 }
- 
+
 
 /***********SEARCH START**************/
 
@@ -2656,34 +2670,40 @@ span.selected_items {
 }
 
 .search-bar .form-control {
-  border: none; 
+  border: none;
 }
 
 .search-bar .btn {
   border: none;
   padding: 10px 20px;
 }
- 
+
 .serach-filter input.form-control {
   color: #9D9D9D !important;
-  padding: 15px 0px; 
+  padding: 15px 0px;
 }
 
 .serach-filter ::placeholder {
   color: #9D9D9D !important;
-  opacity: 1; 
-}
-.serach-filter .btn {
-  color: #9D9D9D;
-  background-color: #00000000; 
-  padding-right: 0;
-}
-.serach-filter .btn:hover {
-  color: #464646;
-  background-color: #00000000; 
+  opacity: 1;
 }
 
-.serach-filter .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+.serach-filter .btn {
+  color: #9D9D9D;
+  background-color: #00000000;
+  padding-right: 0;
+}
+
+.serach-filter .btn:hover {
+  color: #464646;
+  background-color: #00000000;
+}
+
+.serach-filter .btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
   color: #9D9D9D;
   background-color: #0000;
   border-color: #0000;
@@ -2693,41 +2713,63 @@ span.selected_items {
   display: flex;
   justify-content: space-between;
 }
- 
+
 .selected_item_box {
   width: 100%;
   position: relative;
 }
-.jackdinelser .selected_item_box { 
-   height: 400px;  
+
+.jackdinelser .selected_item_box {
+  height: 400px;
 }
+
 .row.mt_8 {
   margin-top: 0;
   --bs-gutter-y: 14.5rem;
 }
+
 .row.mt_8 .col-4 {
   position: relative;
 }
 
-.jackdinelser .selected_item_box.one {  background: #CF3B0033; }
-.jackdinelser .selected_item_box.two {  background: #CBD90233; }
-.jackdinelser .selected_item_box.three {  background: #11131533; }
-.jackdinelser .selected_item_box.four {  background: #C95C8333; }
-.jackdinelser .selected_item_box.five {  background: #04304833; }
-.jackdinelser .selected_item_box.six {  background: #AC32001F; }
- 
+.jackdinelser .selected_item_box.one {
+  background: #CF3B0033;
+}
+
+.jackdinelser .selected_item_box.two {
+  background: #CBD90233;
+}
+
+.jackdinelser .selected_item_box.three {
+  background: #11131533;
+}
+
+.jackdinelser .selected_item_box.four {
+  background: #C95C8333;
+}
+
+.jackdinelser .selected_item_box.five {
+  background: #04304833;
+}
+
+.jackdinelser .selected_item_box.six {
+  background: #AC32001F;
+}
+
 .jackdinelser img.aberlour {
   position: absolute;
   top: -85px;
 }
- 
+
 .aberlour_content {
-  margin-top: 20px; 
+  margin-top: 20px;
 }
+
 .aberlour_content h5 {
   font-weight: 600;
   font-size: 20px;
 }
+
 .aberlour_content ul.list-unstyled {
   margin-top: 10px;
 }
@@ -2739,10 +2781,12 @@ img.like-icons {
   top: 10px;
   max-width: 25px;
 }
+
 ul.list-unstyled img.percent3 {
   max-width: 19px;
   min-width: 19px;
 }
+
 ul.list-unstyled li p {
   display: flex;
   gap: 10px;
@@ -2756,6 +2800,7 @@ section.details {
 .product-image {
   max-width: 530px;
 }
+
 .product-image button i {
   color: #CECECE;
   font-size: 30px;
@@ -2763,44 +2808,54 @@ section.details {
 
 .product_container {
   display: flex;
-  background: white; 
+  background: white;
 }
+
 .product-details {
   flex: 1;
   padding-right: 20px;
 }
+
 .mobile-on {
   display: none;
 }
-.price { 
-  color: #333; 
+
+.price {
+  color: #333;
   font-weight: 400;
-  font-size: 32px;  
+  font-size: 32px;
   margin: 20px 0;
 }
+
 img.percent3.top-2 {
   position: relative;
   top: -6px;
 }
+
 .tasting-notes .notes {
   display: flex;
   gap: 12px;
 }
+
 .tasting-notes .notes img {
   width: 120px;
   height: 120px;
 }
+
 .rating {
   margin: 32px 0;
 }
+
 img.percent3.mr-2 {
   margin-left: 13px;
 }
+
 .tasting-notes .notes p {
   font-weight: 400;
   font-size: 12px;
   margin-top: 7px;
 }
+
 p.people-added {
   margin-top: 23px;
 }
@@ -2824,15 +2879,16 @@ button.carousel-control-prev {
   right: -70px;
 }
 
- /*****************REVIWS START**********************/
+/*****************REVIWS START**********************/
 
- .reviews-section {
+.reviews-section {
   min-height: 713px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   padding: 120px 0px;
 }
+
 .reviews-section::after {
   content: "";
   background: #072539B2;
@@ -2845,8 +2901,9 @@ button.carousel-control-prev {
 
 .reviews-content {
   position: relative;
-  z-index: 2; 
+  z-index: 2;
 }
+
 .reviews-content h2 {
   font-size: 50px;
   text-align: center;
@@ -2871,21 +2928,25 @@ img.user-img {
   height: 83px;
   object-fit: cover;
 }
+
 a.button.black.width_3 {
   width: 391px;
   display: inline-block;
   text-align: center;
 }
+
 .decorative-shape {
   position: absolute;
   top: 20px;
   right: 20px;
 }
+
 .decorative-shape {
   position: absolute;
   top: 50px;
   right: 50px;
 }
+
 .reviews_star {
   margin-bottom: 10px;
 }
@@ -2894,9 +2955,11 @@ a.button.black.width_3 {
   font-weight: 600;
   font-size: 18px;
 }
+
 .reviews-content {
   flex: 1;
 }
+
 .reviews-text {
   margin-top: 5px;
   color: #333;
@@ -2904,15 +2967,19 @@ a.button.black.width_3 {
   font-size: 18px;
   margin-right: 5%;
 }
+
 .author {
   font-weight: bold;
   margin-top: 10px;
 }
+
 .reviews-section button i {
   color: #ffffff;
   font-size: 50px;
 }
-.carousel-control-next, .carousel-control-prev {
+
+.carousel-control-next,
+.carousel-control-prev {
   opacity: 1;
 }
 
@@ -2923,6 +2990,7 @@ a.button.black.width_3 {
 .reviews-section .carousel-control-next {
   right: 0;
 }
+
 main.discover-liqours.details .row.mt_8 .col-4 {
   margin-top: 20px;
   margin-bottom: 140px;
@@ -2940,22 +3008,28 @@ main.discover-liqours.details .row.mt_8 .col-4 {
   justify-content: space-between;
   align-items: center;
 }
+
 .contact_content {
   width: 45%;
 }
+
 .form-container {
   width: 45%;
 }
+
 .form-group {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
   gap: 32px;
 }
+
 .full-w {
   width: 100%;
 }
-.full-w input, textarea {
+
+.full-w input,
+textarea {
   width: 100%;
   padding: 10px;
   border-radius: 0;
@@ -2967,6 +3041,7 @@ main.discover-liqours.details .row.mt_8 .col-4 {
   font-size: 16px;
   outline: none !important;
 }
+
 .full-w.margin-bottom-40 {
   margin-bottom: 40px;
 }
@@ -2978,7 +3053,7 @@ textarea {
   border: 0;
   padding: 10px;
 }
- 
+
 .submit-btn {
   width: 100%;
   background-color: #072539;
@@ -2989,6 +3064,7 @@ textarea {
   font-weight: 400;
   font-size: 18px;
 }
+
 .submit-btn:hover {
   background-color: #072539ea;
 }
@@ -2999,11 +3075,13 @@ textarea {
   font-family: DM Serif Displa;
   font-weight: 500;
 }
+
 .contact_content h2 {
   font-size: 44px;
   line-height: 1.3em;
   color: #000000;
 }
+
 /*************************FOOTER START******************************/
 
 .footer .container {
@@ -3778,18 +3856,22 @@ ul.list-unstyled img.percent3 {
   max-width: 19px;
   min-width: 19px;
 }
+
 .selected_items {
   margin-bottom: 60px;
 }
+
 .hart {
   position: absolute;
   right: 22px;
   top: 34px;
 }
+
 .hart a {
   font-size: 27px;
   color: rgba(139, 35, 29, 1);
 }
+
 .scotch .selected_item_box::before {
   background-color: rgba(172, 50, 0, 0.12);
   content: "";
@@ -3801,42 +3883,53 @@ ul.list-unstyled img.percent3 {
   right: 0;
   z-index: -1;
 }
+
 .scotch .selected_item_box.one.frini.bg-pinksd::before {
   background-color: rgba(4, 48, 72, 0.2);
 }
+
 .scotch .selected_item_box.one.frini.bg-lisdg::before {
   background-color: rgba(201, 92, 131, 0.2);
 }
+
 .scotch .selected_item_box.one.frini.bg-because::before {
   background-color: rgba(203, 217, 2, 0.2);
 }
+
 .scotch .selected_item_box.one.frini.bg-because2::before {
   background-color: rgba(245, 216, 204, 0.4);
 }
+
 .scotch .selected_item_box.one.frini.bg-because3::before {
   background-color: rgba(207, 208, 208, 0.4);
 }
+
 .scotch .selected_item_box.one.frini.bg-because4::before {
   background-color: rgba(172, 50, 0, 0.12);
 }
+
 .scotch .selected_item_box.one.frini.bg-because5::before {
   background-color: rgba(4, 48, 72, 0.2);
 }
+
 .scotch .selected_item_box.one.frini.bg-because6::before {
   background-color: rgba(201, 92, 131, 0.2);
 }
+
 .Upcoming-events .col-12.col-md-6 {
   margin-bottom: 20px;
 }
+
 .blogs.explors-mb.white-bg {
   margin-bottom: 0;
 }
+
 .teb_section .row.mt_8 {
   margin-top: 0px;
 }
 
 
-.jack-daniels .scotch .col-lg-4:nth-child(3n) .selected_item_box::after{
+.jack-daniels .scotch .col-lg-4:nth-child(3n) .selected_item_box::after {
   content: "";
   background-image: url(../images/frnichar.png);
   background-repeat: no-repeat;
@@ -3856,9 +3949,10 @@ ul.list-unstyled img.percent3 {
 
 
 /************about us css*******************/
-section.we-started { 
+section.we-started {
   padding-bottom: 120px;
 }
+
 .professionals {
   padding: 50px 0px;
 }
@@ -3869,74 +3963,92 @@ section.we-started {
   left: -111px;
   width: 29%;
 }
+
 .streder {
   position: relative;
 }
+
 .professionals span {
   color: rgba(238, 210, 116, 1);
   font-style: italic;
   font-family: "DM Serif Display", serif;
   font-weight: 400;
 }
+
 .professionals p {
   font-size: 24px;
   line-height: 34px;
 }
+
 .streder img {
   width: 95%;
 }
+
 img.top {
   margin-top: 87px;
 }
+
 .stats-section {
   background: linear-gradient(to bottom, #7d0d0d, #3d0303);
   color: white;
   padding: 40px 0;
 }
+
 .stats-box {
   text-align: center;
   border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
+
 .stats-box:last-child {
   border-right: none;
 }
+
 .stats-number {
   font-size: 2rem;
   font-weight: bold;
 }
- 
 
-.clint-logo  img:hover, .awards-logos img:hover {
+
+.clint-logo img:hover,
+.awards-logos img:hover {
   opacity: 1;
 }
-.clint-logo2  img:hover, .awards-logos img:hover {
+
+.clint-logo2 img:hover,
+.awards-logos img:hover {
   opacity: 1;
 }
+
 .clint-logo img {
   max-width: 200px;
   margin: 10px;
   opacity: 0.7;
   transition: 0.3s ease-in-out;
 }
+
 .clint-logo2 img {
   max-width: 200px;
   margin: 10px;
   opacity: 0.7;
   transition: 0.3s ease-in-out;
 }
+
 .clint-logo {
   display: flex;
   align-items: center;
   justify-content: end;
   padding: 60px 0px;
 }
+
 .clients-section h2 {
   text-align: center;
   padding-bottom: 30px;
 }
+
 section.banner-top {
   margin-bottom: 120px;
 }
+
 h2.text-center {
   margin-bottom: 60px;
 }
@@ -3949,6 +4061,7 @@ h2.text-center {
   margin: 20px 0;
   padding-bottom: 120px;
 }
+
 .divider::before,
 .divider::after {
   content: "";
@@ -3956,57 +4069,70 @@ h2.text-center {
   border-bottom: 1px solid #a0a0a0;
   margin: 0 10px;
 }
+
 .divider-icon {
   width: 20px;
   height: 20px;
-  background-color: #0f2d25; /* Dark Green */
+  background-color: #0f2d25;
+  /* Dark Green */
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
+
 .divider-icon::before {
   content: "✤";
   color: white;
   font-size: 14px;
   position: absolute;
 }
+
 .jone-dy-img {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .contant-text-suwati {
   width: 46%;
-}.team-card 
-img { 
+}
+
+.team-card img {
   width: 100%;
 }
+
 .jone-dy-img img {
   width: 46%;
 }
+
 h2.meet-our {
   text-align: center;
   padding: 120px 0px;
 }
+
 .team-main-card {
   display: flex;
   align-items: center;
   padding: 120px 0px;
   justify-content: space-between;
 }
+
 .team-card {
   width: 32%;
 }
+
 .team-info {
   padding-top: 32px;
 }
+
 .contant-text-suwati h5 {
   font-size: 19px;
   color: rgba(108, 108, 108, 1);
   font-weight: 400;
 }
+
 .contant-text-suwati h3 {
   font-size: 32px;
   font-weight: bold;
@@ -4017,11 +4143,13 @@ section.values h2 {
   font-size: 45px;
   margin-bottom: 60px;
 }
+
 .values-grid {
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
+
 .value-card {
   background: #f4f4f4;
   padding: 32px;
@@ -4030,64 +4158,347 @@ section.values h2 {
   position: relative;
   height: 300px;
 }
+
 .value-card h3 {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 10px;
 }
+
 .value-card p {
   font-size: 20px;
   color: rgba(59, 59, 59, 1);
   line-height: 30px;
 }
+
 .appreciation-icon {
   position: absolute;
   bottom: 30px;
   right: 40px;
   width: 70px;
 }
+
 section.values {
   padding: 120px 0px;
 }
- 
 
-.Marquees{
-	overflow-x: hidden;
+
+.Marquees {
+  overflow-x: hidden;
 }
-.Marquee{
+
+.Marquee {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 200vw;
   height: 13vh;
 }
-.marquee{
+
+.marquee {
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   height: 11vh;
-  width: 12.5vw; 
-  margin: 10px; 
+  width: 12.5vw;
+  margin: 10px;
 }
 
- 
-.FirstRow{
-animation: Scroll 60s linear infinite;}
-.SecondRow{
+
+.FirstRow {
+  animation: Scroll 60s linear infinite;
+}
+
+.SecondRow {
   animation: Scroll 60s linear infinite;
   animation-direction: reverse;
 }
-@keyframes Scroll {
-    0% {transform: translateX(-50vw);
-        -webkit-transform: translateX(-50vw);}
-      100% {transform: translateX(50vw);
-          -webkit-transform: translateX(50vw);}
 
-      }
+@keyframes Scroll {
+  0% {
+    transform: translateX(-50vw);
+    -webkit-transform: translateX(-50vw);
+  }
+
+  100% {
+    transform: translateX(50vw);
+    -webkit-transform: translateX(50vw);
+  }
+
+}
+
 /*************about us end******************/
 
+/*********************contact css*************************/
+.bottal-img-conact {
+  position: absolute;
+  bottom: -188px;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+.bottal-img-conact img {
+  width: 100%;
+}
+
+.main-contact-us {
+  padding: 100px 0;
+  position: relative;
+  padding-bottom: 200px;
+}
+
+.informetion-contact {
+  display: flex;
+  align-items: center;
+}
+
+.contact_content p {
+  padding: 20px 0px;
+}
+
+p.right {
+  margin-right: 20px;
+}
+
+.informetion-contact a {
+  font-size: 16px;
+  color: rgba(59, 59, 59, 1);
+}
+
+.informetion-contact i.far.fa-envelope {
+  margin-right: 12px;
+}
+
+.informetion-contact i.fas.fa-phone-alt {
+  margin-right: 10px;
+}
+
+/********************blogs css**********/
+.featured {
+  padding: 0;
+}
 
 
+.aricles-all {
+  display: flex;
+  align-items: center;
+}
+
+.Category-allsecat {
+  margin-right: 30px;
+}
+
+span.cool-fooler {
+  color: rgba(238, 210, 116, 1);
+}
+
+.pass-courvoisier {
+  padding: 24px;
+}
+
+.sipsip-cool {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cognacs-all {
+  width: 32%;
+}
+
+.innter-factor {
+  position: absolute;
+  z-index: 1;
+  left: 32px;
+  top: 32px;
+}
+
+.right {
+  width: 50%;
+}
+
+.sections-who {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sections-who .right {
+  color: #fff;
+}
+
+.sections-who .right p {
+  padding-bottom: 40px;
+}
+
+.right a.button.black {
+  background-color: #fff;
+  color: #000;
+}
+
+.right h2 {
+  color: #fff;
+}
+
+.left {
+  position: absolute;
+  left: 55px;
+  bottom: -45px;
+}
+
+.section-featured {
+  background-color: rgba(243, 243, 243, 1);
+  padding: 100px 0px;
+}
+
+.section-featured h2 {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+section.banner-top.bottom-0 {
+  margin-bottom: 0;
+}
+
+.featured-slider .owl-item.active {
+  transform: scale(0.9);
+}
+
+.featured-slider .owl-item.cloned.active {
+  transform: scale(0.9);
+}
+
+.featured-slider .owl-item.active.center {
+  transform: scale(1);
+}
+
+.featured-slider .owl-item.cloned {
+  transform: scale(0.8);
+}
+
+
+
+/****************my booking*********************/
+.dfa-n {
+  display: none;
+}
+.sidebar {
+  width: 350px;
+  background: white;
+  padding: 50px 20px;
+  box-shadow: 3px 7px 13px 1px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: -4px; 
+}
+ 
+.user-name h4 {
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.mains-user {  
+  display: flex;
+  align-items: center;
+}
+.user-name {
+  margin-left: 20px;
+}
+.profile {
+  position: relative;
+  padding-bottom: 20px;
+}
+.logo-wareper img {
+  width: 60px;
+}
+.profile img {
+  width: 110px;
+}
+
+.edit-icon {
+  position: absolute;
+  bottom: 15px;
+  right: 105px;
+  background: white;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.profile p {
+  font-size: 14px;
+  color: #777;
+  margin-top: 5px;
+}
+.user-name p {
+  font-size: 16px;
+}
+.menu {
+  margin-top: 20px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.menu-item i {
+  width: 20px;
+  margin-right: 10px;
+  color: #6b2ac9;
+}
+
+.menu-item:hover {
+  background: #f0f0f0;
+}
+
+.highlight {
+  background: #fff5cc;
+  font-weight: bold;
+}
+
+.membership {
+  font-size: 14px;
+  color: #555;
+  margin-top: 20px;
+  padding: 10px;
+  border-top: 2px solid #f0f0f0;
+}
+
+.logout {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 16px;
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.logout i {
+  margin-right: 10px;
+}
+.profile-header{
+  box-shadow: 2px 2px 32px 0px rgba(0, 0, 0, 0.15); 
+}
 
 
 /*============ RESPONSIVE STYLES================== */
@@ -4145,22 +4556,29 @@ animation: Scroll 60s linear infinite;}
   .founder p {
     font-size: 20px;
   }
+
   .scotch .table-img:nth-child(3n)::after {
     bottom: -65px;
-}
+  }
 
-/*******************about css**************/
+  /*******************about css**************/
 
-.strars {
-  top: 350px;
-}
-img.top {
-  margin-top: 35px;
-}
-.professionals p {
-  font-size: 20px;
-}
+  .strars {
+    top: 350px;
+  }
 
+  img.top {
+    margin-top: 35px;
+  }
+
+  .professionals p {
+    font-size: 20px;
+  }
+
+  /**************blog listing **************/
+  .right {
+    width: 45%;
+  }
 
 }
 
@@ -4196,21 +4614,46 @@ img.top {
   .service-card .overlay {
     padding: 45px;
   }
-/***************about css***************/
- 
 
-.strars {
-  top: 340px;
-  left: -80px;
-  width: 115px;
-}
+  /***************about css***************/
+  .strars {
+    top: 340px;
+    left: -80px;
+    width: 115px;
+  }
 
-img.top {
-  margin-top: 0px;
-}
-.professionals p {
-  font-size: 18px;
-}
+  img.top {
+    margin-top: 0px;
+  }
+
+  .professionals p {
+    font-size: 18px;
+  }
+
+  /**************contact css***************/
+  .bottal-img-conact {
+    bottom: -150px;
+  }
+
+  .main-contact-us {
+    padding-bottom: 150px;
+  }
+
+  /********************blog listing****************/
+
+  .cognacs-all {
+    width: 48%;
+  }
+
+  .left {
+    left: 55px;
+    bottom: -40px;
+    width: 44%;
+  }
+
+  .sections-who {
+    height: 400px;
+  }
 }
 
 
@@ -4250,22 +4693,61 @@ img.top {
   .the-club ul.nav-pills li a.nav-link {
     font-size: 20px;
   }
+
   .scotch .table-img:nth-child(3n)::after {
     height: 140px;
     bottom: -41px;
-}
+  }
+
   /***********************about css*****************/
   .professionals p {
     font-size: 18px;
-}
-img.top {
-  margin-top: 0px;
-}
-.strars {
-  left: -64px;
-  top: 330px;
-  width: 100px;
-}
+  }
+
+  img.top {
+    margin-top: 0px;
+  }
+
+  .strars {
+    left: -64px;
+    top: 330px;
+    width: 100px;
+  }
+
+  /*******contact css***************/
+  .bottal-img-conact {
+    bottom: -124px;
+  }
+
+  .main-contact-us {
+    padding-bottom: 120px;
+  }
+
+  /*************blog listing ************/
+  .right {
+    width: 46%;
+  }
+
+  .left img {
+    width: 80%;
+  }
+
+  .sections-who {
+    height: 380px;
+  }
+
+  .cognacs-all {
+    width: 48%;
+  }
+
+
+
+
+
+
+
+
+
 
 
 }
@@ -4540,86 +5022,150 @@ img.top {
     height: 460px;
   }
 
-/***********************Dram prime css*****************/
+  /***********************Dram prime css*****************/
 
-.image-rights img {
-  width: 188px;
-  height: 290px;
-  object-fit: cover;
-}
-.text-section {
-  width: 63%;
-  padding: 30px 29px;
-}
-.the-club ul.nav-pills li a.nav-link {
-  font-size: 19px;
-  padding: 10px 0px;
-}
-.jack-daniels .scotch .selected_item_box::after {
-  content: "";
-  background-image: url(../images/frnichar.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 107px;
-  position: absolute;
-  background-size: cover;
-  right: 0px;
-  z-index: -1;
-  bottom: -1px;
-}
+  .image-rights img {
+    width: 188px;
+    height: 290px;
+    object-fit: cover;
+  }
 
-/***********************about css*****************/
-.streder img {
-  order: 2;
-}
-.streder {
-  display: flex;
-  flex-wrap: wrap;
-}
-.professionals { 
-  order: 1;
-}
+  .text-section {
+    width: 63%;
+    padding: 30px 29px;
+  }
 
-.streder img {
-  width: 100%;
-}
-img.top {
-  margin-top: 22px;
-}
-.strars {
-  left: 112px;
-  top: -70px;
-  width: 160px;
-}
-.img-top {
-  width: 100%;
-}
-.contant-text-suwati h5 {
-  font-size: 15px; 
-}
-h2.meet-our { 
-  padding: 50px 0px;
-}
-.team-main-card {
-  flex-wrap: wrap;
-  gap: 30px;
-  padding: 50px 0px;
-}
-.team-card {
-  width: 46%;
-}
-.values-grid {
-  flex-wrap: wrap;
-}
-.value-card {
-  width: 48%;
-}
+  .the-club ul.nav-pills li a.nav-link {
+    font-size: 19px;
+    padding: 10px 0px;
+  }
+
+  .jack-daniels .scotch .selected_item_box::after {
+    content: "";
+    background-image: url(../images/frnichar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 107px;
+    position: absolute;
+    background-size: cover;
+    right: 0px;
+    z-index: -1;
+    bottom: -1px;
+  }
+
+  /***********************about css*****************/
+  .streder img {
+    order: 2;
+  }
+
+  .streder {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .professionals {
+    order: 1;
+  }
+
+  .streder img {
+    width: 100%;
+  }
+
+  img.top {
+    margin-top: 22px;
+  }
+
+  .strars {
+    left: 112px;
+    top: -70px;
+    width: 160px;
+  }
+
+  .img-top {
+    width: 100%;
+  }
+
+  .contant-text-suwati h5 {
+    font-size: 15px;
+  }
+
+  h2.meet-our {
+    padding: 50px 0px;
+  }
+
+  .team-main-card {
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px 0px;
+  }
+
+  .team-card {
+    width: 46%;
+  }
+
+  .values-grid {
+    flex-wrap: wrap;
+  }
+
+  .value-card {
+    width: 48%;
+  }
+
+  section.banner-top {
+    margin-bottom: 50px;
+  }
+
+  /**************contact css****************/
+  .contact-us {
+    padding: 30px 0px;
+  }
+
+  .bottal-img-conact {
+    bottom: -100px;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  .contact_content {
+    width: 100%;
+  }
+
+  .contact-us {
+    flex-wrap: wrap;
+  }
+
+  /****************blog listing******************/
+  .cognacs-all {
+    width: 100%;
+  }
+
+  .sections-who {
+    height: 920px;
+    display: block;
+    padding: 50px 69px;
+  }
+
+  .left {
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: -50px;
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .row.mb-4 {
+    gap: 20px;
+  }
 
 
-section.banner-top {
-  margin-bottom: 50px;
-}
+
 }
 
 /***********************Dram prime css end*****************/
@@ -4636,6 +5182,7 @@ section.banner-top {
   .gallery .box::after {
     opacity: 1;
   }
+
   .gelaaryicon {
     position: absolute;
     top: 8px;
@@ -4852,11 +5399,13 @@ section.banner-top {
   section.blogs {
     padding: 50px 20px;
   }
+
   /**************my bar*********************/
   .img-frinchar {
     display: block;
-}
-.jack-daniels .scotch .col-lg-4 .selected_item_box::after {
+  }
+
+  .jack-daniels .scotch .col-lg-4 .selected_item_box::after {
     content: "";
     background-image: url(../images/frnichar.png);
     background-repeat: no-repeat;
@@ -4868,24 +5417,27 @@ section.banner-top {
     z-index: -1;
     bottom: -70px;
     background-size: cover;
-}
-.jack-daniels .scotch .col-lg-4:nth-child(odd) .selected_item_box::after {
-  background-position: right;
-  width: 115%;
-  height: 144px;
-  left: -25px;
-}
-.jack-daniels .scotch .col-lg-4:nth-child(even) .selected_item_box::after {
-  background-position: left;
-  width: 115%;
-  height: 160px;
-  left: auto;
-  right: -25px;
-  bottom: -52px;
-}
-.scotch .selected_item_box::before {
-  height: 330px;
-}
+  }
+
+  .jack-daniels .scotch .col-lg-4:nth-child(odd) .selected_item_box::after {
+    background-position: right;
+    width: 115%;
+    height: 144px;
+    left: -25px;
+  }
+
+  .jack-daniels .scotch .col-lg-4:nth-child(even) .selected_item_box::after {
+    background-position: left;
+    width: 115%;
+    height: 160px;
+    left: auto;
+    right: -25px;
+    bottom: -52px;
+  }
+
+  .scotch .selected_item_box::before {
+    height: 330px;
+  }
 
   /******************event page****************************/
   span.prime {
@@ -4932,151 +5484,232 @@ section.banner-top {
   .services-heding.club-jion {
     display: block;
     margin-bottom: 30px;
-}
+  }
 
   .services-heding {
     display: none;
-}
+  }
 
   .services-heding.club-jion p {
     text-align: left;
   }
+
   .image-rights img {
     width: 100%;
-}
-.image-rights {
-  right: 0;
-  top: 0px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.text-section {
-  width: 100%;
-  padding: 30px 0px;
-}
-.tab-content {
-  height: auto;
-}
-.bgtab-color {
-  background-color: #fff;
-  padding: 30px;
-}
-section.the-club.bg-color.mt-0 {
-  padding: 60px 0px;
-}
+  }
 
-.dram-prime .banner-left {
-  padding-left: 30px;
-  padding-top: 30px;
-}
-.dram-prime .banner {
-  height: 500px;
-}
-.Join-ussection {  min-height: 333px; }
-.banners {
-  min-height: 358px; 
-}
-main.discover-liqours .blogs_slider .item {
-  height: 390px;
-}
-.serach_tab_canter { 
-  flex-wrap: wrap;
-}
-.underline-tabs .nav-tabs { 
-  width: 100%;
-}
-.serach_tab_canter { 
-  width: 100%;
-}
-.serach-filter {
-  width: 100%;
-}
-.search-bar {
-  max-width: 100%; 
-}
-.bottlings .search-bar {
-  display: none;
-}
-/***********************about css***************/
-.strars {
-  top: -27px;
-  width: 90px;
-  left: 50px;
-}
-.stats-box {
-  border-right: none; 
-  padding-bottom: 20px;
-}
-.stats-box:last-child {
-  border-bottom: none;
-}
-section.we-started {
-  padding-bottom: 30px;
-}
-.jone-dy-img img {
-  width: 100%;
-}
-.contant-text-suwati {
-  width: 100%;
-}
-.jone-dy-img img {
-  width: 100%;
-  order: 1;
-}
-.contant-text-suwati {
-  margin-top: 32px;
-}
-.jone-dy-img { 
-  flex-wrap: wrap;
-}
-.team-card {
-  width: 100%;
-}
-.team-info h4 {
-  font-size: 32px;
-  font-weight: 500;
-}
-.mt-6 {
-  padding-bottom: 30px;
-}
-.value-card {
-  width: 100%;
-}
-section.values {
-  padding: 60px 0px;
-}
-section.values h2 {
-  font-size: 28px;
-  margin-bottom: 60px;
-  text-align: center;
-}
-.mt-6 {
-  margin-top: 0px;
-}
+  .image-rights {
+    right: 0;
+    top: 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.Marquee {
-  width: 500vw;
-  height: 7vh;
-}
-.marquee {
-  height: auto;
-  width: 100%;
-}
-.marquee.Item img {
-  width: 100%;
-}
-.divider {
-  padding-bottom: 40px;
-}
+  .text-section {
+    width: 100%;
+    padding: 30px 0px;
+  }
+
+  .tab-content {
+    height: auto;
+  }
+
+  .bgtab-color {
+    background-color: #fff;
+    padding: 30px;
+  }
+
+  section.the-club.bg-color.mt-0 {
+    padding: 60px 0px;
+  }
+
+  .dram-prime .banner-left {
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+
+  .dram-prime .banner {
+    height: 500px;
+  }
+
+  .Join-ussection {
+    min-height: 333px;
+  }
+
+  .banners {
+    min-height: 358px;
+  }
+
+  main.discover-liqours .blogs_slider .item {
+    height: 390px;
+  }
+
+  .serach_tab_canter {
+    flex-wrap: wrap;
+  }
+
+  .underline-tabs .nav-tabs {
+    width: 100%;
+  }
+
+  .serach_tab_canter {
+    width: 100%;
+  }
+
+  .serach-filter {
+    width: 100%;
+  }
+
+  .search-bar {
+    max-width: 100%;
+  }
+
+  .bottlings .search-bar {
+    display: none;
+  }
+
+  /***********************about css***************/
+  .strars {
+    top: -27px;
+    width: 90px;
+    left: 50px;
+  }
+
+  .stats-box {
+    border-right: none;
+    padding-bottom: 20px;
+  }
+
+  .stats-box:last-child {
+    border-bottom: none;
+  }
+
+  section.we-started {
+    padding-bottom: 30px;
+  }
+
+  .jone-dy-img img {
+    width: 100%;
+  }
+
+  .contant-text-suwati {
+    width: 100%;
+  }
+
+  .jone-dy-img img {
+    width: 100%;
+    order: 1;
+  }
+
+  .contant-text-suwati {
+    margin-top: 32px;
+  }
+
+  .jone-dy-img {
+    flex-wrap: wrap;
+  }
+
+  .team-card {
+    width: 100%;
+  }
+
+  .team-info h4 {
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  .mt-6 {
+    padding-bottom: 30px;
+  }
+
+  .value-card {
+    width: 100%;
+  }
+
+  section.values {
+    padding: 60px 0px;
+  }
+
+  section.values h2 {
+    font-size: 28px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  .mt-6 {
+    margin-top: 0px;
+  }
+
+  .Marquee {
+    width: 500vw;
+    height: 7vh;
+  }
+
+  .marquee {
+    height: auto;
+    width: 100%;
+  }
+
+  .marquee.Item img {
+    width: 100%;
+  }
+
+  .divider {
+    padding-bottom: 40px;
+  }
+
+  /**********contact css***************/
+
+  .bottal-img-conact {
+    bottom: -46px;
+  }
+
+  .main-contact-us {
+    padding-bottom: 60px;
+  }
+
+  .contact_content p {
+    padding: 15px 0px;
+  }
+
+  .informetion-contact {
+    flex-wrap: wrap;
+  }
+
+  .form-group {
+    flex-wrap: wrap;
+  }
+
+  /***************blog listing**********/
+
+  .sections-who {
+    padding: 24px 15px;
+    min-height: 535px;
+    height: auto;
+  }
+
+  section.Upcoming-events {
+    padding-bottom: 70px;
+  }
+
+  .sections-who .right p {
+    padding-bottom: 20px;
+  }
+
+  section.Upcoming-events {
+    padding-bottom: 60px;
+  }
+
 
 }
 
 @media (max-width: 600px) {
-  .first-slider{
+  .first-slider {
     padding-left: 15px;
   }
+
   .banner {
     padding: 0px 0px;
   }
@@ -5120,9 +5753,7 @@ section.values h2 {
     bottom: 0;
   }
 
-  section.Upcoming-events {
-    padding-bottom: 0px;
-  }
+
 
   .box-canter img {
     width: 100px;
@@ -5153,7 +5784,7 @@ section.values h2 {
   .flexx p {
     margin-bottom: 0;
   }
- 
+
 }
 
 @media (max-width: 480px) {

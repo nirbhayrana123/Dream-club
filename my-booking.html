@@ -22,7 +22,7 @@
   </head>
   <body>
     <!--------- HEADER START -------->
-    <header class="black_nav">
+    <header class="black_nav profile-header">
       <div class="container-fluid">
         <div class="topnavbar">
           <div class="logo-wareper">
@@ -60,12 +60,10 @@
                     <path
                       d="M13.7498 2.35419C12.2998 2.35419 10.9082 3.02919 9.99984 4.09585C9.0915 3.02919 7.69984 2.35419 6.24984 2.35419C3.68317 2.35419 1.6665 4.37085 1.6665 6.93752C1.6665 10.0875 4.49984 12.6542 8.7915 16.5542L9.99984 17.6459L11.2082 16.5459C15.4998 12.6542 18.3332 10.0875 18.3332 6.93752C18.3332 4.37085 16.3165 2.35419 13.7498 2.35419ZM10.0832 15.3125L9.99984 15.3959L9.9165 15.3125C5.94984 11.7209 3.33317 9.34585 3.33317 6.93752C3.33317 5.27085 4.58317 4.02085 6.24984 4.02085C7.53317 4.02085 8.78317 4.84585 9.22484 5.98752H10.7832C11.2165 4.84585 12.4665 4.02085 13.7498 4.02085C15.4165 4.02085 16.6665 5.27085 16.6665 6.93752C16.6665 9.34585 14.0498 11.7209 10.0832 15.3125Z"
                       fill="white" />
-                  </svg>
-
-                  My Bar</a></li>
-              <li class="nav-item login"><a class="nav-link me-lg-3"
-                  href="#"><b>Log in</b></a></li>
-              <li class="nav-item"><a href class="button button-btn">Join the
+                  </svg> My Bar</a></li> 
+                  <li class="nav-item"><a class="nav-link" href="mybar.html">
+                  <img src="./images/profile-img.png"> Profile</a></li>
+              <li class="nav-item"><a href class="button button-btn dfa-n">Join the
                   Club</a></li>
             </ul>
           </div>
@@ -82,60 +80,54 @@
     <!----------HEADER END---------->
 
     <main class="main-contact-us">
-      <main class="main-contact-us">
-        <div class="container">
-          <div class="contact-us">
-            <div class="contact_content">
-              <h2><span>Connect </span>with Us</h2>
-              <p>Join our community of passionate whisky lovers – where every dram
-                tells a story, and every member adds to our collective
-                experience.</p>
-                <div class="informetion-contact">
-                  <p class="right"><i class="fas fa-phone-alt" class="lefts"></i> <a href="tel:+911234567890">+91-12-3456 7890</a></p>
-                  <p><i class="far fa-envelope" class="lefts"></i> <a href="mailto:admin@thedramclub.in">admin@thedramclub.in</a></p>
-                </div>
+      <div class="sidebar">
+        <div class="mains-user">
+        <div class="profile">
+            <img src="./images/Star 2.png" alt="Profile Picture">
             </div>
-            <div class="form-container">
-              <form>
-                <div class="form-group">
-                  <div class="full-w">
-                    <input type="text" id="full-name" placeholder="Full Name*"
-                      required>
-  
-                  </div>
-                  <div class="full-w">
-                    <input type="text" id="company" placeholder="Company">
-                  </div>
-                </div>
-  
-                <div class="form-group">
-                  <div class="full-w">
-                    <input type="email" id="email" placeholder="Email ID*"
-                      required>
-                  </div>
-                  <div class="full-w">
-                    <input type="tel" id="mobile" placeholder="Mobile Number*"
-                      required>
-                  </div>
-                </div>
-  
-                <div class="full-w margin-bottom-40">
-                  <textarea id="message"
-                    placeholder="Drop a message here & we’ll get back to you promptly!"></textarea>
-                </div>
-  
-                <button type="submit" class="submit-btn">Submit</button>
-              </form>
+            <div class="user-name">
+            <span class="edit-icon"><i class="fas fa-pencil-alt"></i></span>
+            <svg width="93" height="29" viewBox="0 0 93 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_5417_17286" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="93" height="29">
+              <path d="M87.8564 28.3625H4.92195C2.20362 28.3625 0 26.1587 0 23.4404V5.55949C0 2.84113 2.20362 0.637482 4.92195 0.637482H87.8564C90.5747 0.637482 92.7783 2.84113 92.7783 5.55949V23.4404C92.7783 26.1587 90.5747 28.3625 87.8564 28.3625Z" fill="white"/>
+              </mask>
+              <g mask="url(#mask0_5417_17286)">
+              <path d="M87.8564 28.3625H4.92195C2.20362 28.3625 0 26.1587 0 23.4404V5.55949C0 2.84113 2.20362 0.637482 4.92195 0.637482H87.8564C90.5747 0.637482 92.7783 2.84113 92.7783 5.55949V23.4404C92.7783 26.1587 90.5747 28.3625 87.8564 28.3625Z" fill="url(#paint0_linear_5417_17286)"/>
+              </g>
+              <path d="M16.3204 12.6359C16.2237 12.9534 16.065 13.2637 15.8446 13.5669C15.6238 13.8705 15.3203 14.1151 14.9342 14.3013C14.548 14.4876 14.0582 14.5806 13.4654 14.5806H11.2724V8.9946H13.5895C14.1275 8.9946 14.5789 9.08093 14.9446 9.25331C15.3099 9.42584 15.6067 9.64637 15.8342 9.91535C16.0618 10.1843 16.2237 10.4811 16.3204 10.8049C16.4167 11.1291 16.4653 11.443 16.4653 11.7463C16.4653 12.0223 16.4167 12.3187 16.3204 12.6359ZM17.8409 9.2016C17.4201 8.51207 16.8237 7.98452 16.0514 7.61882C15.2788 7.25354 14.3479 7.07061 13.2584 7.07061H9.26562V22.0285H11.2724V16.5461H13.4861C14.3963 16.5461 15.1686 16.4048 15.8031 16.122C16.4374 15.8395 16.9514 15.4671 17.3446 15.0048C17.7375 14.5427 18.0237 14.0256 18.203 13.453C18.3821 12.8809 18.472 12.2981 18.472 11.7048C18.472 10.7257 18.2616 9.89141 17.8409 9.2016Z" fill="white"/>
+              <path d="M28.8587 14.5806H26.6864V8.9946H29.0036C29.5276 8.9946 29.9723 9.08449 30.338 9.26357C30.7033 9.44308 31.0001 9.67415 31.2276 9.95666C31.4552 10.2396 31.6206 10.5395 31.7241 10.8566C31.8275 11.174 31.8793 11.4845 31.8793 11.7876C31.8793 12.0912 31.8308 12.4015 31.7344 12.7186C31.6379 13.036 31.4792 13.3361 31.2586 13.6186C31.0378 13.9015 30.7311 14.1326 30.338 14.3117C29.945 14.491 29.4516 14.5806 28.8587 14.5806ZM35.2308 22.0285L31.488 16.0081C32.038 15.7384 32.4897 15.3975 32.8413 14.9841C33.2343 14.5221 33.517 14.0085 33.6895 13.4428C33.8619 12.8773 33.9482 12.2981 33.9482 11.7048C33.9482 10.96 33.8137 10.298 33.5447 9.71875C33.2758 9.13948 32.9034 8.65325 32.4275 8.26019C31.9517 7.86713 31.3931 7.57066 30.7517 7.37064C30.1104 7.17077 29.4102 7.07061 28.6518 7.07061H24.6797V22.0285H26.6864V16.5254H28.9002C29.0638 16.5254 29.2214 16.5197 29.3761 16.5113L32.9136 22.0285H35.2308Z" fill="white"/>
+              <path d="M41.418 7.07061V22.0285H43.4247V7.07061H41.418Z" fill="white"/>
+              <path d="M65.6864 6.59478L58.2072 17.054L50.8528 6.59478H50.832V22.0285H52.7768V12.6213L58.1764 20.1459H58.2179L63.7003 12.3656V22.0285H65.7072V6.59478H65.6864Z" fill="white"/>
+              <path d="M73.1133 7.07061H82.837V8.9946H75.1202V13.5462H82.0094V15.491H75.1202V20.1046H83.1266V22.0285H73.1133V7.07061Z" fill="white"/>
+              <defs>
+              <linearGradient id="paint0_linear_5417_17286" x1="-6.3396" y1="-5.32694" x2="113.582" y2="39.7648" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#231535"/>
+              <stop offset="1" stop-color="#743AA0"/>
+              </linearGradient>
+              </defs>
+              </svg>
+              
+            <h4>Neha Sharma</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Bangalore, India <i class="fas fa-pencil-alt"></i></p>
             </div>
-           
           </div>
-          <div class="bottal-img-conact">
-            <img src="./images/contact-usbg-img.png" alt="">
-          </div>
+        <div class="menu">
+            <a href="#" class="menu-item highlight"><i class="fas fa-ticket-alt"></i> My Bookings</a>
+            <a href="#" class="menu-item"><i class="fas fa-user"></i> My Details</a>
+            <a href="#" class="menu-item"><i class="fas fa-heart"></i> My Bar</a>
+            <a href="#" class="menu-item"><i class="fas fa-star"></i> My Reviews</a>
+            <a href="#" class="menu-item"><i class="fas fa-credit-card"></i> Payment Details</a>
+            <a href="#" class="menu-item"><i class="fas fa-cog"></i> Settings</a>
         </div>
-  
-      </main>
 
+        <div class="membership">
+            Membership expires on <strong>24 May, 2025</strong><br>
+            Membership ID: <strong>21423</strong>
+        </div>
+
+        <a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </div>
+  </div>
     </main>
 
     <footer class="footer"
@@ -259,10 +251,16 @@
       </div>
     </footer>
     <!-- FOOTER SECTION END -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      defer></script>
+    <!-- Owl Carousel JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/custom.js"></script>
 
   </body>
