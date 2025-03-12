@@ -2984,8 +2984,7 @@ textarea {
   background-color: #072539;
   color: white;
   padding: 10px;
-  border: none;
-  border-radius: 4px;
+  border: none; 
   font-weight: 400;
   font-size: 18px;
 }
@@ -4049,7 +4048,7 @@ section.values h2 {
 section.values {
   padding: 120px 0px;
 }
- 
+  
 
 .Marquees{
 	overflow-x: hidden;
@@ -4084,7 +4083,345 @@ animation: Scroll 60s linear infinite;}
           -webkit-transform: translateX(50vw);}
 
       }
-/*************about us end******************/
+/*************sign-up ******************/
+.sign-up {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+.sign-up-slider {
+  width: 50%;
+  position: relative;
+}
+.sign-up-slider .img-carter-slider {
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0px 1.76px 58.06px 0px #00000014;
+  backdrop-filter: blur(48.82799530029297px);
+  box-shadow: 0px 1.63px 21.97px 0px #E426461F;
+  width: 90%;
+  margin: 0 auto; 
+  color: #ffffff;
+  background: #00000014;
+  bottom: 32px;
+  left: 0;
+  right: 0;
+  padding: 32px;
+}
+p.emily-carter {
+  margin-top: 10px;
+  font-weight: 700;
+}
+p.font-normal {
+  font-size: 14px;
+  font-weight: 300;
+}
+.sign-up button.carousel-control-next {
+  top: auto;
+  color: #ffffff;
+  bottom: 50px;
+  right: 50px;
+  width: 25px;
+}
+
+.sign-up button.carousel-control-prev {
+  top: auto;
+  color: #ffffff;
+  bottom: 50px;
+  right: 100px;
+  width: 25px;
+  left: auto;
+}
+
+h3.Sign-h3 {
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #000000;
+}
+.sign-up_content {
+  width: 455px;
+  margin: 0 auto;
+}
+.logo-wareper.sign-logo {
+  position: absolute;
+  left: 32px;
+  top: 32px;
+}
+main.signup {
+  position: relative;
+}
+
+.social-login {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.social-login button { 
+  border: 1px solid #CECECE;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #00ffff00;
+  font-weight: 500;
+  font-size: 18px;
+  gap: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider {
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #888;
+}
+.sign-up_content input {
+  width: 100%;
+  padding: 18px 0;
+  margin-bottom: 24px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #6C6C6C;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6C6C6C;
+}
+ 
+.sign-up_content .terms {
+  font-size: 11px;
+  margin-top: 10px;
+  color: #666;
+}
+.sign-up_content .terms a {
+  color: #002d5b;
+  text-decoration: none;
+}
+.signup-link {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+}
+.signup-link a {
+  color: #072539;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+button.google {
+  min-width: 70%;
+}
+button.apple {
+  width: 15%;
+}
+button.facebook {
+  width: 15%;
+}
+/*============ BLOG DETAILS START================== */
+
+main.blog-details .banners.example-box {
+  background: linear-gradient(180deg, #072A42 0%, #051827 100%);
+}
+
+main.blog-details .banner-upcoming {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+img.blog-details-banner {
+  position: relative;
+  top: 74px;
+}
+
+main.blog-details .banners {
+  min-height: 480px; 
+}
+a.button.gry-bt {
+  border: none;
+  color: #ffffff;
+  backdrop-filter: blur(4px);
+  background: #FFFFFF1F;
+}
+
+p.content-left-p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #9D9D9D; 
+  margin-bottom: 30px;
+}
+p.content-left-p.red { 
+  color: #8B231D;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.blog-content-left {
+  min-width: 300px;
+}
+.blog-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto;
+}
+section.blog-details-content {
+  padding: 100px 0px;
+}
+
+h4.bold-hg {
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 30px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+h4.bold-hg i {
+  margin-right: 4px;
+  font-size: 13px;
+}
+.blog_imgage {
+  width: 100%;
+  margin: 60px 0px;
+}
+.blog-content-right li {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  gap: 5px;
+  padding-left: 15px; 
+}
+
+a.button.pink {
+  background: #8B231D1F;
+  backdrop-filter: blur(4px);
+}
+
+.border_bottom {
+  border-bottom: 1px solid #CECECE;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.next-post-row {
+  display: flex;
+  justify-content: space-between;
+}
+.blog-content-right .social-icons i {
+  color: #6C6C6C;
+}
+
+.blog-content-right .social-icons{
+  margin-top: 40px;
+}
+
+/*============ EVENTES DETAILS START================== */
+section.event-detail {
+  padding-bottom: 100px;
+}
+main.blog-details.eventsdetail .banners.example-box {
+  background: linear-gradient(180deg, #15332e 0%, #15332e 100%);
+}
+
+.event-row {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -246px;
+}
+
+.evening-img::after {
+  content: "";
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 57%, rgba(0, 0, 0, 0.8) 100%);
+  z-index: 1;
+  position: absolute;
+  inset: 0;
+}
+.evening-img {
+  width: 100%;
+  height: 457px;
+  display: flex;
+  align-items: end;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 33px;
+  padding-bottom: 55px;
+  position: relative;
+}
+.gap-20 {
+  position: relative;
+  z-index: 2;
+}
+.event-column1 { width: 55%;}
+.event-column2 { width: 40%;}
+
+.evening-img h3 {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 42px;
+  color: #ffffff;
+}
+
+h4.bold-hg spen {
+  color: #C49B41;
+  font-weight: 400;
+  font-style: italic;
+}
+.maps iframe {
+  width: 100%;
+  border-radius: 15px;
+  height: 100%;
+  min-height: 180px;
+}
+.map-row {
+  display: flex;
+  width: 100%;
+  gap: 25px;
+  padding-top: 50px;
+  border-top: 1px solid #ccc;
+  margin-top: 50px;
+}
+.map-row h4.bold-hg {
+  margin-top: 0;
+}
+.map-row .maps {
+  width: 50%;
+}
+
+.maps-url {
+  width: 50%;
+}
+
+.maps-url p {
+  margin-bottom: 30px;
+}
+
+.maps-url img {
+  width: 11px;
+  margin-left: 8px;
+}
+.maps-url a {
+  color: #5856D6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -4313,7 +4650,6 @@ img.top {
   .leftcord button.toggle-button span {
     background-color: #121256;
   }
-
 
   .flexmobile {
     display: flex;
