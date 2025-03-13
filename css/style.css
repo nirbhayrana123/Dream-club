@@ -2106,7 +2106,7 @@ p.font-bold {
 
 .img-box {
   position: relative;
-  top: 50px;
+  top: 100px;
 }
 
 p.card-heading {
@@ -4794,7 +4794,6 @@ h5.posted {
 }
 .form-control {
   border: none;
-  border-bottom: 1px solid #ccc;
   border-radius: 0;
   padding-left: 0;
   background-color: transparent;
@@ -4974,7 +4973,6 @@ h5.posted {
 }
 .event-card {
   border: 1px solid rgba(231, 231, 231, 1);
-  padding: 30px 20px;
   margin-bottom: 20px;
   background: #fff;
   align-items: center;
@@ -5020,7 +5018,6 @@ h5.posted {
   right: 290px;
 }
 .event-card h5 {
-  color: #000;
   font-size: 24px;
   margin-bottom: 16px;
 }
@@ -5033,7 +5030,6 @@ a.btn.btn-dark.mt-2 {
   color: #000;
 }
 .event-card p {
-  color: #000;
   font-size: 14px;
   line-height: 30px;
 }
@@ -5049,9 +5045,8 @@ a.btn.btn-dark.mt-2 {
   margin-bottom: 32px;
   font-size: 24px;
 }
-img.img-fluid {
-  height: 230px;
-  width: 70%;
+img.img-fluid { 
+  width: 100%;
 }
 .bordr {
   border-top: 1px solid #ccc;
@@ -5079,9 +5074,35 @@ a.Guests.mt-2 {
   display: none;
 }
 
+.header-signup {
+  display: none;
+}
+.signup section.banner-top {
+  display: none;
+}
+
 /*********tab*******************/
-
-
+/********event ********/
+.box-tour {
+  background-color: #fff;
+  width: 100%;
+  padding: 30px 20px;
+  box-shadow: 0px 1px 60px 0px rgba(0, 0, 0, 0.12);
+}
+.dalmore-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.proseed-book {
+  margin-top: 80px;
+}
+.event-sher-tour {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 /*============ RESPONSIVE STYLES================== */
 @media (max-width: 1400px) {
   .banner-left h2 {
@@ -5357,6 +5378,34 @@ a.btn.btn-dark.mt-2 {
 }
 
 @media (max-width: 991px) {
+
+
+  /**********sing up*************/
+
+  .sign-up_content {
+    width: 100%; 
+    margin-top: 160px;
+}
+.sign-up {
+  flex-wrap: wrap;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 60px;
+}
+.sign-up-slider {
+  width: 100%; 
+}
+.header-signup { 
+  display: block;
+}
+.signup section.banner-top { 
+  display: block;
+}
+.sign-up_content {
+  margin-top: 0px;
+}
+
+/*************end sing up*****************/
 
   .bg-booking-banner { 
     display: block;
@@ -5822,7 +5871,31 @@ a.btn.btn-dark.mt-2 {
 /***********************Dram prime css end*****************/
 
 @media (max-width: 767px) {
+/***************sing up*********************/
+.header-signup .jion-d-nones {
+  display: none !important;
+}
+h3.Sign-h3 { 
+  text-align: center;
+}
+.social-login {
+  flex-wrap: wrap;
+}
+button.google {
+  min-width: 100%;
+}
+button.apple {
+  width: 49%;
+}
+button.facebook {
+  width: 48%;
+}
+.sign-up-slider {
+  display: none;
+}
 
+
+/******end sing up******************/
   .sidebar {
     margin-top: 0px;
 }
