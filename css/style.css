@@ -3775,11 +3775,11 @@ section.the-club.bg-color.mt-0 {
 
 /**********tabs******************/
 .tab-content {
-  background-color: #fff;
   height: auto;
-  margin-bottom: 50px;
 }
-
+.img-the-dram {
+  margin-right: 20px;
+}
 .nav-link.active {
   font-weight: bold;
   color: purple !important;
@@ -4388,7 +4388,14 @@ section.banner-top.bottom-0 {
 
 
 /****************my booking*********************/
-
+.account-items {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 24px;
+}
+.account-contant {
+  margin-top: 16px;
+} 
 .form-group label {
   font-weight: bold;
   font-size: 14px;
@@ -4566,8 +4573,12 @@ h5.posted {
   padding: 10px;
   font-size: 16px;
   color: #333;
-  text-decoration: none; 
+  text-decoration: none;
   transition: background 0.3s;
+  width: 100%;
+  border: none;
+  margin: 10px 0px;
+  background-color: transparent;
 }
 
 .menu-item i {
@@ -4576,11 +4587,9 @@ h5.posted {
   color: #6b2ac9;
 }
 
-.menu-item:hover {
-  background: #f0f0f0;
-}
 
-.highlight {
+
+.menu-item.active {
   background: #fff5cc;
   font-weight: bold;
 }
@@ -4741,6 +4750,12 @@ a.Guests.mt-2 {
 .bg-booking {
   margin-top: 94px;
 }
+.bg-booking-banner {
+  display: none;
+}
+
+/*********tab*******************/
+
 
 /*============ RESPONSIVE STYLES================== */
 @media (max-width: 1400px) {
@@ -5017,6 +5032,23 @@ a.btn.btn-dark.mt-2 {
 }
 
 @media (max-width: 991px) {
+
+  .bg-booking-banner { 
+    display: block;
+    margin-top: 69px;
+}
+.seved-contnt {
+  display: block;
+}
+.bg-booking {
+  display: none;
+}
+.edit-icon { 
+  top: 488px;
+  left: 318px; 
+}
+
+
 /*********reviews*****************/
   .really-contant {
     width: 100%;
@@ -5458,7 +5490,7 @@ a.btn.btn-dark.mt-2 {
   .row.mb-4 {
     gap: 20px;
   }
-
+  
 
 
 }
@@ -5466,6 +5498,28 @@ a.btn.btn-dark.mt-2 {
 /***********************Dram prime css end*****************/
 
 @media (max-width: 767px) {
+
+  .sidebar {
+    margin-top: 0px;
+}
+.user-name {
+  margin-left: 20px;
+  text-align: left;
+}
+.edit-icon {
+  top: 92px;
+  left: 80px;
+}
+.mains-user {
+  position: relative;
+}
+.seved-contnt h2 {
+  color: #fff;
+  font-size: 30px;
+}
+br {
+  display: none;
+}
 
   button.toggle-button span.line {
     background-color: #000000;
