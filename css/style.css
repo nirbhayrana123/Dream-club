@@ -5182,6 +5182,15 @@ a.btn.btn-dark.mt-2 {
 .passes-custom {
   margin-bottom: 16px;
 }
+.Guests-buttan i.far.fa-user {
+  margin-right: 9px;
+}
+.Guests-buttan i.fas.fa-chevron-right {
+  margin-left: 9px;
+}
+.menu-item i.fas.fa-external-link-alt {
+  margin-left: 10px;
+}
 .passes-custom svg {
   margin-right: 10px;
 }
