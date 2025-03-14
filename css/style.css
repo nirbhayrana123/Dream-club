@@ -4437,7 +4437,7 @@ a.button.gry-bt {
   color: rgba(139, 35, 29, 1);
   font-size: 18px;
 }
-.tab-content {
+.tab-contents {
   flex-grow: 1;
   padding-left: 20px;
   width: 70%;
@@ -4459,9 +4459,21 @@ p.content-left-p.red {
   font-weight: 700;
   font-size: 18px;
 }
-.tab-content p {
+.tab-contents p {
   margin-bottom: 20px;
   line-height: 150%;
+}
+a.downlods {
+  color: rgba(108, 108, 108, 1);
+  text-decoration: underline;
+}
+p.color-bookings {
+  color: rgba(108, 108, 108, 1);
+  font-size: 14px;
+}
+.banra-time p {
+  font-size: 16px;
+  color: rgba(23, 23, 23, 1);
 }
 .blog-content-left {
   min-width: 300px;
@@ -4523,6 +4535,9 @@ a.button.pink {
   border-bottom: 1px solid #CECECE;
   margin-top: 40px;
   width: 100%;
+}
+.social-icons.grey-colors i {
+  color: rgba(108, 108, 108, 1);
 }
 
 .next-post-row {
@@ -4905,6 +4920,9 @@ h5.posted {
 .forms-group input.form-control {
   color: #979797 !important;
   padding: 20px 0px;
+}
+input.form-control.border-1 {
+  border-bottom: 1px solid;
 }
 .account-item {
   border-bottom: 1px solid #ddd;
