@@ -93,7 +93,7 @@
                 </h2>
                 <p>18 July, 2021</p>
               <div class="button-row my-4">
-                <a href="#" class="button gry-bt">Liquors</a>
+                <a href="#" class="button gry-bt liquors">Liquors</a>
               </div>
               <div class="social-icons">
                 <a href="#"><i class="fab fa-instagram"></i></a>
@@ -114,28 +114,26 @@
       <section class="blog-details-content"> 
        <div class="container">
            <div class="blog-content">
-            <div class="blog-content-left">
-               <p class="content-left-p">CONTENTS</p>
-               <p class="content-left-p red">A Gift from the Gods</p>
-               <p class="content-left-p">Getting to Know Jose Cuervo</p>
-               <p class="content-left-p">The Mistake That Made Margarita</p>
-               <p class="content-left-p">Tequila, Only If It’s From Mexico</p>
-               <p class="content-left-p">The most common types of Tequila</p>  
-            </div>
-
-
-            <div class="blog-content-right">
-               <p>George Clooney, The Rock, Nick Jonas, Rita Ora, Backstreet Boys, Justin Timberlake and Carlos Santana walked into a bar…  Now wouldn’t you want to be at that bar?! Even as we replay this fantasy in our minds over and over again, these fine celebrities do have one thing in common (if not a favourite bar) – they all own tequila brands. For once it would seem that the trend setters have turned trend chasers, as tequila is well on its way to becoming the fastest growing spirit of the decade.  Tequila is no longer the ugh-inspiring, salt and lime hugging, hangover-inducing, party drink at 3am. It is in fact the latest tipple to be ‘premiumised’ following a strong global interest in this distilled spirit that comes from an agave plant in Mexico. Now how did this come to be?</p>
+            <div class=" tabs">
+              <button class=" tab-link active" onclick="openTab(event, 'tab1')">CONTENTS</button>
+              <button class=" tab-link" onclick="openTab(event, 'tab2')">A Gift from the Gods</button>
+              <button class=" tab-link" onclick="openTab(event, 'tab3')">Getting to Know Jose Cuervo</button>
+              <button class=" tab-link" onclick="openTab(event, 'tab3')">The Mistake That Made Margarita</button>
+              <button class="tab-link" onclick="openTab(event, 'tab4')">Tequila, Only If It’s From Mexico</button>
+              <button class="tab-link" onclick="openTab(event, 'tab5')">The most common types of Tequila</button>
+          </div>
+          <div class="tab-content">
+            <div id="tab1" class="content active"> 
+              <p>George Clooney, The Rock, Nick Jonas, Rita Ora, Backstreet Boys, Justin Timberlake and Carlos Santana walked into a bar…  Now wouldn’t you want to be at that bar?! Even as we replay this fantasy in our minds over and over again, these fine celebrities do have one thing in common (if not a favourite bar) – they all own tequila brands. For once it would seem that the trend setters have turned trend chasers, as tequila is well on its way to becoming the fastest growing spirit of the decade.  Tequila is no longer the ugh-inspiring, salt and lime hugging, hangover-inducing, party drink at 3am. It is in fact the latest tipple to be ‘premiumised’ following a strong global interest in this distilled spirit that comes from an agave plant in Mexico. Now how did this come to be?</p>
     
-                <h4 class="bold-hg">A Gift from the Gods</h4>
-               <p>Tequila gets its name from a town in its birthplace of Jalisco in Mexico. But tequila didn’t  quite start out as tequila. A few centuries ago a thunderstorm struck the agave plants of Jalisco, causing a fire. Just as the native Aztecs began to panic they noticed that the blazing plants were giving off sweet and pleasant fumes. They found a way to ferment and distil agave and thus was born a beautiful, milky white potion – pulque. They considered it a true gift from the gods and so worshipped not one but two gods – Mayahuel and Patecatl – in gratitude. </p>
+              <h4 class="bold-hg">A Gift from the Gods</h4>
+             <p>Tequila gets its name from a town in its birthplace of Jalisco in Mexico. But tequila didn’t  quite start out as tequila. A few centuries ago a thunderstorm struck the agave plants of Jalisco, causing a fire. Just as the native Aztecs began to panic they noticed that the blazing plants were giving off sweet and pleasant fumes. They found a way to ferment and distil agave and thus was born a beautiful, milky white potion – pulque. They considered it a true gift from the gods and so worshipped not one but two gods – Mayahuel and Patecatl – in gratitude. </p>
 
-               <h4 class="bold-hg">Getting to Know Jose Cuervos</h4> 
-               <p>It was all fun and games until the Spanish invasion of the 1500s. The Spaniards arrived with their stash of brandy, which ran out soon enough, and so something had to be done for their daily libations. The invaders used their distillation know-how (with some primitive mud stills) on the locally grown agave and in no time, tequila was born. Three Spaniards, in fact, can be credited with introducing this Aztec spirit to the world. <br>
-                Marquis of Altamira is responsible for turning pulque into tequila at the first large-scale distillery of that time. Don Jose Antonio de Cuervo was the first one to produce tequila commercially. In 1758 he established a blue agave farm in the town of Tequila and literally created  the tequila industry from scratch. And like all “good” business people, he took advantage of the Prohibition and along with his employee Don Sauza was the first one to smuggle the spirit to the USA in 1893. His sales skyrocketed during World War II when spirits from Europe were scarce and so tequila became the go to drink for America.
-               </p>
-        
-                <div class="blog_imgage"><img src="images/blog-img-2.jpg"></div>
+             <h4 class="bold-hg">Getting to Know Jose Cuervos</h4> 
+             <p>It was all fun and games until the Spanish invasion of the 1500s. The Spaniards arrived with their stash of brandy, which ran out soon enough, and so something had to be done for their daily libations. The invaders used their distillation know-how (with some primitive mud stills) on the locally grown agave and in no time, tequila was born. Three Spaniards, in fact, can be credited with introducing this Aztec spirit to the world. <br>
+              Marquis of Altamira is responsible for turning pulque into tequila at the first large-scale distillery of that time. Don Jose Antonio de Cuervo was the first one to produce tequila commercially. In 1758 he established a blue agave farm in the town of Tequila and literally created  the tequila industry from scratch. And like all “good” business people, he took advantage of the Prohibition and along with his employee Don Sauza was the first one to smuggle the spirit to the USA in 1893. His sales skyrocketed during World War II when spirits from Europe were scarce and so tequila became the go to drink for America.
+             </p>
+             <div class="blog_imgage"><img src="images/blog-img-2.jpg"></div>
 
                 <h4 class="bold-hg">The Mistake That Made Margarita</h4> 
                 <p>Thousands went thirty as the US Prohibition stretched on for over a decade. The ingenious among them crossed the border to well-stocked bars in Mexico. One of the more popular spots in Tijuana was run by an Irishman, Madden. He was especially popular for his delicious signature cocktail, one that he created by accident!<br><br>
@@ -151,18 +149,19 @@
 
 
 
+                <div class="joven-age">
                 <h4 class="bold-hg">The most common types of tequila are:</h4> 
-                <li>• Plata <p> - un-aged Blanco or Silver Tequila</p></li> 
-                <li>• Joven <p> - un-aged Blanco tequila that’s blended with Añejo or golden colouring</p></li> 
-                <li>• Reposado <p> - aged in wood barrels for up to one year</p></li> 
-                <li>• Añejo <p> - aged in wood barrels for one to three years</p></li> 
-                <li>• Extra Añejo <p> - aged in wood barrels for at least three years</p></li> 
-                
+                <li><span>Plata</span>  - un-aged Blanco or Silver Tequila </li> 
+                <li><span>Joven</span>  - un-aged Blanco tequila that’s blended with Añejo or golden colouring </li> 
+                <li><span>Reposado</span>  - aged in wood barrels for up to one year </li> 
+                <li><span>Añejo</span> - aged in wood barrels for one to three years </li> 
+                <li><span>Extra Añejo</span>  - aged in wood barrels for at least three years </li> 
+              </div>
                 <p><br><br>We will continue our tequila explorations next week too and will leave you with a little drink for thought… before you dismiss tequila is “just” a party shot, consider the fact that tequila is one of just three spirits to be recognised with a denomination of origin, alongside cognac and whisky. It certainly seem to  be the time to sit back and sip the spirit.</p>
                
                 <div class="button-row mt-5">
-                  <a href="#" class="button pink">Tequila</a>
-                  <a href="#" class="button pink">Agave</a>
+                  <a href="#" class="button pink liquors">Tequila</a>
+                  <a href="#" class="button pink liquors">Agave</a>
                 </div>
 
              <div class="border_bottom"></div>
@@ -188,14 +187,29 @@
               <a href="#"><i class="fas fa-link"></i></a> 
               <a href="#"><i class="fas fa-share-alt"></i></a> 
             </div>
- 
             </div>
-  
+
+
+            <div id="tab2" class="content">
+              <h4 class="bold-hg">A Gift from the Gods</h4>
+            </div>
+            <div id="tab3" class="content">
+              <h4 class="bold-hg">Getting to Know Jose Cuervo</h4>
+            </div>
+            <div id="tab4" class="content">
+              <h4 class="bold-hg">The Mistake That Made Margarita</h4>
+            </div>
+            <div id="tab5" class="content">
+              <h4 class="bold-hg">Tequila, Only If It’s From Mexico</h4>
+            </div>
+        </div>
+
+            
            </div> 
        </div>  
       </section>
-
- 
+       
+   
 
       <!--------------- Blogs section-------------->
        <section class="blogs">
@@ -493,7 +507,14 @@
     <script
       src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/custom.js"></script>
-
+    <script>
+      function openTab(event, tabId) {
+          document.querySelectorAll('.content').forEach(tab => tab.classList.remove('active'));
+          document.querySelectorAll('.tab-link').forEach(tab => tab.classList.remove('active'));
+          document.getElementById(tabId).classList.add('active');
+          event.currentTarget.classList.add('active');
+      }
+  </script>
   </body>
 
 </html>

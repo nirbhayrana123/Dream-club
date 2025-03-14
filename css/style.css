@@ -392,7 +392,7 @@ a {
 }
 
 .button {
-  padding: 12px 30px;
+  padding: 19px 30px;
   background-color: #ffffff;
   border: 1px solid #FFFFFF66;
   color: #171717;
@@ -505,8 +505,7 @@ a.button.greys:hover {
 /************UPCOMING EVENTS START***************/
 
 section.Upcoming-events {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 }
 
 .event-card {
@@ -3953,7 +3952,7 @@ section.we-started {
 }
 
 .professionals {
-  padding: 50px 0px;
+  padding-top: 50px;
 }
 
 .strars {
@@ -3968,10 +3967,10 @@ section.we-started {
 }
 
 .professionals span {
-  color: rgba(238, 210, 116, 1);
+  color: rgba(196, 155, 65, 1);
   font-style: italic;
   font-family: "DM Serif Display", serif;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .professionals p {
@@ -3984,7 +3983,7 @@ section.we-started {
 }
 
 img.top {
-  margin-top: 87px;
+  margin-top: 133px;
 }
 
 .stats-section {
@@ -4003,7 +4002,7 @@ img.top {
 }
 
 .stats-number {
-  font-size: 2rem;
+  font-size: 40px;
   font-weight: bold;
 }
 
@@ -4095,9 +4094,12 @@ h2.text-center {
 }
 
 .contant-text-suwati {
-  width: 46%;
+  width: 49%;
 }
-
+.contant-text-suwati p {
+  font-size: 20px;
+  line-height: 30px;
+}
 .team-card img {
   width: 100%;
 }
@@ -4108,16 +4110,23 @@ h2.text-center {
 
 h2.meet-our {
   text-align: center;
-  padding: 120px 0px;
+  padding-top: 120px;
+  padding-bottom: 48px;
 }
 
 .team-main-card {
   display: flex;
   align-items: center;
-  padding: 120px 0px;
+  padding-top: 24px;
   justify-content: space-between;
+  padding-bottom: 120px;
 }
-
+.team-info h4 {
+  font-size: 32px;
+  font-weight: 600;
+  color: rgba(16, 46, 79, 1);
+  padding: 12px 0px;
+}
 .team-card {
   width: 32%;
 }
@@ -4127,9 +4136,9 @@ h2.meet-our {
 }
 
 .contant-text-suwati h5 {
-  font-size: 19px;
+  font-size: 20px;
   color: rgba(108, 108, 108, 1);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .contant-text-suwati h3 {
@@ -4161,13 +4170,14 @@ section.values h2 {
 .value-card h3 {
   font-size: 32px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .value-card p {
-  font-size: 20px;
+  font-size: 16px;
   color: rgba(59, 59, 59, 1);
-  line-height: 30px;
+  line-height: 150%;
+  font-weight: 400;
 }
 
 .appreciation-icon {
@@ -4180,12 +4190,8 @@ section.values h2 {
 section.values {
   padding: 120px 0px;
 }
-  
 
 
-.Marquees {
-  overflow-x: hidden;
-}
 
 .Marquee {
   display: flex;
@@ -4193,6 +4199,15 @@ section.values {
   justify-content: center;
   width: 200vw;
   height: 13vh;
+}
+
+.Marquee {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px; /* Space between items */
+  min-width: 100%;
+  white-space: nowrap;
 }
 
 .marquee {
@@ -4204,7 +4219,6 @@ section.values {
   margin: 10px;
 }
 
-
 .FirstRow {
   animation: Scroll 60s linear infinite;
 }
@@ -4212,6 +4226,30 @@ section.values {
 .SecondRow {
   animation: Scroll 60s linear infinite;
   animation-direction: reverse;
+}
+
+@keyframes Scroll {
+  from { transform: translateX(20%); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes ScrollReverse {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(20%); }
+}
+
+.Marquees {
+  overflow-x: hidden;
+}
+
+
+.team-info p {
+  font-size: 20px;
+  line-height: 30px;
+}
+p.role {
+  color: rgba(108, 108, 108, 1);
+  font-weight: 500;
 }
 
 /*************sign-up ******************/
@@ -4356,7 +4394,10 @@ button.facebook {
 main.blog-details .banners.example-box {
   background: linear-gradient(180deg, #072A42 0%, #051827 100%);
 }
-
+a.liquors {
+  padding: 9px 25px;
+  font-size: 12px;
+}
 main.blog-details .banner-upcoming {
   display: flex;
   gap: 60px;
@@ -4376,7 +4417,37 @@ a.button.gry-bt {
   backdrop-filter: blur(4px);
   background: #FFFFFF1F;
 }
-
+.tabs {
+  width: 305px;
+  padding-right: 20px;
+}
+.tabs button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: none;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+  color: #666;
+}
+.tabs button.active {
+  font-weight: bold;
+  color: rgba(139, 35, 29, 1);
+  font-size: 18px;
+}
+.tab-content {
+  flex-grow: 1;
+  padding-left: 20px;
+  width: 70%;
+}
+.content {
+  display: none;
+}
+.content.active {
+  display: block;
+}
 p.content-left-p {
   font-weight: 500;
   font-size: 14px;
@@ -4388,27 +4459,43 @@ p.content-left-p.red {
   font-weight: 700;
   font-size: 18px;
 }
-
+.tab-content p {
+  margin-bottom: 20px;
+  line-height: 150%;
+}
 .blog-content-left {
   min-width: 300px;
 }
 .blog-content {
   display: flex;
   justify-content: space-between;
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
 }
 section.blog-details-content {
-  padding: 100px 0px;
+  padding-bottom: 100px;
+  padding-top: 50px;
 }
-
+.joven-age span {
+  font-weight: 500;
+}
+.joven-age li {
+  font-size: 18px;
+  line-height: 150%;
+}
+.blog_imgage img {
+  width: 100%;
+}
 h4.bold-hg {
   font-weight: 700;
-  font-size: 18px;
-  margin-top: 30px;
+  font-size: 20px;
   display: flex;
   gap: 5px;
   align-items: center;
+  margin-bottom: 12px;
+}
+.heding-titles-ready {
+  padding: 70px 0px;
 }
 
 h4.bold-hg i {
@@ -4441,6 +4528,7 @@ a.button.pink {
 .next-post-row {
   display: flex;
   justify-content: space-between;
+  margin-top: 32px;
 }
 .blog-content-right .social-icons i {
   color: #6C6C6C;
@@ -4450,6 +4538,8 @@ a.button.pink {
   margin-top: 40px;
 }
 
+
+
 /*============ EVENTES DETAILS START================== */
 section.event-detail {
   padding-bottom: 100px;
@@ -4457,12 +4547,14 @@ section.event-detail {
 main.blog-details.eventsdetail .banners.example-box {
   background: linear-gradient(180deg, #15332e 0%, #15332e 100%);
 }
-
+.mobail-event {
+  display: none;
+}
 .event-row {
   display: flex;
   justify-content: space-between;
   position: relative;
-  top: -246px;
+  top: -330px;
 }
 
 .evening-img::after {
@@ -4504,7 +4596,6 @@ h4.bold-hg spen {
 }
 .maps iframe {
   width: 100%;
-  border-radius: 15px;
   height: 100%;
   min-height: 180px;
 }
@@ -4537,12 +4628,45 @@ h4.bold-hg spen {
 }
 .maps-url a {
   color: #5856D6;
+  font-size: 19.6px;
+  text-decoration: underline;
 }
 
+/************faq*****************/
+.faq-container {
+  width: 60%;
+  margin: auto;
+}
+.faq-item {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.faq-title {
+  background: rgba(243, 243, 243, 1);
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+.faq-content {
+  display: none;
+  padding: 15px;
+  background: rgba(243, 243, 243, 1);
+}
+.faq-title span {
+  font-size: 20px;
+}
+.faq {
+  margin-top: 56px;
+}
+/****************end faq*************/
 
 
-
-
+ 
 
 
 
@@ -5015,14 +5139,14 @@ h5.posted {
   color: #000;
   display: flex;
   position: absolute;
-  right: 290px;
+  right: 325px;
 }
 .event-card h5 {
   font-size: 24px;
   margin-bottom: 16px;
 }
 a.btn.btn-dark.mt-2 {
-  width: 70%;
+  width: 71%;
   border: 1px solid rgba(108, 108, 108, 1);
   border-radius: 0;
   padding: 12px 0px;
@@ -5086,7 +5210,7 @@ a.Guests.mt-2 {
 .box-tour {
   background-color: #fff;
   width: 100%;
-  padding: 30px 20px;
+  padding: 32px 32px;
   box-shadow: 0px 1px 60px 0px rgba(0, 0, 0, 0.12);
 }
 .dalmore-logo {
@@ -5100,11 +5224,105 @@ a.Guests.mt-2 {
 }
 .event-sher-tour {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
+ul.Distillery-event-book li {
+  display: flex;
+  align-items: center;
+  padding: 5px 0px;
+}
+
+.Distillery-event-book i {
+  margin-right: 10px;
+}
+ul.Distillery-event-book {
+  padding: 24px 0px;
+  border-bottom: 1px solid rgba(206, 206, 206, 1);
+}
+.rupees-book spam {
+  color: rgba(196, 155, 65, 1);
+  font-weight: 700;
+}
+.rupees-book i {
+  font-size: 32px;
+}
+.rupees-book strong {
+  font-size: 32px;
+}
+a.btn.mt-4.book-proseed {
+  width: 100%;
+  border: 1px solid rgba(108, 108, 108, 1);
+  border-radius: 0;
+  padding: 19px 0px;
+  background-color: rgba(23, 23, 23, 1);
+  color: #fdfdfd;
+  font-size: 18px;
+}
+.an-events-cards {
+  background-color: #fff;
+  padding: 32px;
+}
+.an-events-cards h5 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/*************slider*********************/
+.connoisseur-item {
+  display: flex;
+  align-items: center;
+}
+.connoisseur-item {
+  background-image: url('../images/Component 82.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  height: 200px;
+}
+.connoisseur-item h3 {
+  color: #fff;
+  margin-left: 20px;
+}
+.connoisseur-slider {
+  background-color: rgba(7, 37, 57, 1);
+  padding: 32px;
+  width: 100%;
+}
+.amet-contant p {
+  color: #fff;
+}
+.amet-contant {
+  padding: 25px 0px;
+}
+.slid-bg-color {
+  padding-left: 32px;
+  background-color: rgba(231, 231, 231, 1);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-bottom: 55px;
+}
+.event-sher-tour h4 {
+  font-size: 26px;
+  font-weight: 600;
+}
+.connoisseur-item img.slide-imgs {
+  width: 30%;
+}
+.slid-bg-color .owl-nav {
+  display: none;
+}
+.navebar ul li.nav-item {
+  padding-left: 20px;
+}
+
+/****************slider end*****************/
 /*============ RESPONSIVE STYLES================== */
 @media (max-width: 1400px) {
+
+  .professionals {
+    padding: 50px 0;
+  }
   .banner-left h2 {
     font-size: 30px;
   }
@@ -5185,6 +5403,11 @@ a.Guests.mt-2 {
 }
 
 @media (max-width: 1200px) {
+
+  .evening-img h3 {
+    font-size: 32px; 
+}
+
 /**********reviwes****************/
 .user-name {
   margin-left: 0;
@@ -5272,12 +5495,23 @@ justify-content: center;
 /***********************Dram prime css*****************/
 @media (max-width: 1024px) {
 
+  /********************events-detail****************************/
+  .evening-img h3 {
+    font-size: 32px; 
+}
+
+
+
+  /********************events-detail****************************/
+
+
+
+
   .dram-prime .banner_img,
   .dram-prime .banner-left {
     width: 100%;
     text-align: left;
   }
-
   .text-section {
     width: 57%;
     padding: 40px 47px;
@@ -5323,6 +5557,18 @@ justify-content: center;
     top: 330px;
     width: 100px;
   }
+  .professionals {
+    padding: 50px 0px;
+}
+section.Upcoming-events {
+  padding-bottom: 140px;
+}
+.team-card {
+  width: 48%;
+}
+.team-main-card {
+  flex-wrap: wrap;
+}
 
   /*******contact css***************/
   .bottal-img-conact {
@@ -5379,7 +5625,20 @@ a.btn.btn-dark.mt-2 {
 
 @media (max-width: 991px) {
 
-
+.dalmore-logo.mobail-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.event-row {
+  flex-wrap: wrap;
+}
+.event-column1 {
+  width: 100%;
+}
+.event-column2 {
+  width: 100%;
+}
   /**********sing up*************/
 
   .sign-up_content {
@@ -5755,10 +6014,31 @@ a.btn.btn-dark.mt-2 {
   }
 
   /***********************about css*****************/
+  .contant-text-suwati {
+    width: 100%;
+    order: 2;
+    margin-top: 32px;
+}
+.jone-dy-img img {
+  width: 100%;
+}
+.team-main-card {
+  flex-wrap: wrap;
+}
+.team-card {
+  width: 100%;
+}
+.jone-dy-img {
+  flex-wrap: wrap;
+}
   .streder img {
     order: 2;
   }
-
+  .professionals span {
+    color: rgba(7, 37, 57, 1);
+    font-style: normal;
+    font-size: 28px;
+}
   .streder {
     display: flex;
     flex-wrap: wrap;
@@ -5767,7 +6047,9 @@ a.btn.btn-dark.mt-2 {
   .professionals {
     order: 1;
   }
-
+  h2.section-heading {
+    font-size: 28px;
+}
   .streder img {
     width: 100%;
   }
@@ -5793,6 +6075,9 @@ a.btn.btn-dark.mt-2 {
   h2.meet-our {
     padding: 50px 0px;
   }
+  br {
+    display: none;
+}
 
   .team-main-card {
     flex-wrap: wrap;
@@ -5800,9 +6085,7 @@ a.btn.btn-dark.mt-2 {
     padding: 50px 0px;
   }
 
-  .team-card {
-    width: 46%;
-  }
+ 
 
   .values-grid {
     flex-wrap: wrap;
@@ -5871,6 +6154,11 @@ a.btn.btn-dark.mt-2 {
 /***********************Dram prime css end*****************/
 
 @media (max-width: 767px) {
+
+
+  .event-row {
+    top: -360px;
+}
 /***************sing up*********************/
 .header-signup .jion-d-nones {
   display: none !important;
@@ -5918,8 +6206,8 @@ br {
   display: none;
 }
 
-  button.toggle-button span.line {
-    background-color: #000000;
+button.toggle-button span.line {
+  background-color: #ffffff;
 }
   .Olive.li-box .hovericon {
     display: block;
@@ -6326,7 +6614,7 @@ br {
     width: 90px;
     left: 50px;
   }
-
+ 
   .stats-box {
     border-right: none;
     padding-bottom: 20px;
@@ -6449,8 +6737,8 @@ br {
   }
 
   section.Upcoming-events {
-    padding-bottom: 60px;
-  }
+    padding-bottom: 120px;
+}
 
 
 }
