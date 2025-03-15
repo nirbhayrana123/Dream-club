@@ -3510,6 +3510,7 @@ ul {
   display: flex;
   align-items: center;
   padding-top: 40px;
+  position: relative;
 }
 
 .explors-mb {
@@ -4264,8 +4265,9 @@ p.role {
   align-items: center;
 }
 .sign-up-slider {
-  width: 50%;
+  width:60%;
   position: relative;
+  min-height: 100vh;
 }
 .sign-up-slider .img-carter-slider {
   position: absolute;
@@ -4277,7 +4279,7 @@ p.role {
   margin: 0 auto; 
   color: #ffffff;
   background: #00000014;
-  bottom: 32px;
+  bottom: 70px;
   left: 0;
   right: 0;
   padding: 32px;
@@ -4313,10 +4315,7 @@ h3.Sign-h3 {
     margin-bottom: 25px;
     color: #000000;
 }
-.sign-up_content {
-  width: 455px;
-  margin: 0 auto;
-}
+ 
 .logo-wareper.sign-logo {
   position: absolute;
   left: 32px;
@@ -4369,8 +4368,9 @@ main.signup {
   color: #666;
 }
 .sign-up_content .terms a {
-  color: #002d5b;
+  color: #6C6C6C;
   text-decoration: none;
+  border-bottom: 1px solid;
 }
 .signup-link {
   margin-top: 10px;
@@ -4382,8 +4382,18 @@ main.signup {
   color: #072539;
   font-weight: bold;
   text-decoration: none;
+  border-bottom: 1px solid;
 }
-
+.bannerbg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 button.google {
   min-width: 70%;
 }
@@ -4393,6 +4403,7 @@ button.apple {
 button.facebook {
   width: 15%;
 }
+ 
 /*============ BLOG DETAILS START================== */
 
 main.blog-details .banners.example-box {
