@@ -392,7 +392,7 @@ a {
 }
 
 .button {
-  padding: 19px 30px;
+  padding: 15px 30px;
   background-color: #ffffff;
   border: 1px solid #FFFFFF66;
   color: #171717;
@@ -2437,7 +2437,7 @@ small.d-block.mt-3 {
 
 .newsletter-form button {
   border-radius: 0px;
-  padding: 15px 18px;
+  padding: 14px 18px;
   font-size: 15px;
   font-weight: 600;
 }
@@ -2498,7 +2498,7 @@ main.discover-liqours .banner-top::after {
 }
 
 main.discover-liqours .banner-top .banner-upcoming {
-  z-index: 999;
+  z-index: 9;
   position: relative;
 }
 
@@ -2539,10 +2539,14 @@ main.discover-liqours .blogs_slider .box::after {
 /***********TEB START**************/
 
 section.teb_section {
-  padding: 80px 0;
-
+  padding-top: 80px;
 }
-
+.selected-resultsw h4 {
+  font-size: 20px;
+  padding: 60px 0px;
+  color: rgba(23, 23, 23, 1);
+  font-weight: 400;
+}
 .bg-gre {
   background-color: rgba(243, 243, 243, 1);
 }
@@ -2588,8 +2592,7 @@ section.teb_section {
 
 .underline-tabs .nav-tabs {
   border-bottom: 1px solid #e9ecef;
-  display: inline-flex;
-  margin-bottom: 60px;
+  display: inline-flex; 
 }
 
 h4.tabs_img_heading {
@@ -2644,15 +2647,10 @@ span.selected_items {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
-.bottlings {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
+
 
 
 /***********SEARCH START**************/
@@ -2710,6 +2708,7 @@ span.selected_items {
 .serach_tab_canter {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 60px;
 }
 
 .selected_item_box {
@@ -3854,9 +3853,7 @@ ul.list-unstyled img.percent3 {
   min-width: 19px;
 }
 
-.selected_items {
-  margin-bottom: 60px;
-}
+
 
 .hart {
   position: absolute;
@@ -3976,7 +3973,15 @@ section.we-started {
   font-size: 24px;
   line-height: 34px;
 }
+.strars img:hover {
+  transform: rotate(360deg);
+  cursor: pointer;
+}
 
+.strars img {
+  width: 95%;
+  transition: transform 6.5s ease-in-out;
+}
 .streder img {
   width: 95%;
 }
@@ -5346,7 +5351,17 @@ a.btn.mt-4.book-proseed {
 .contactinfo {
   margin-right: 30px;
 }
-
+.coming-pt {
+  padding-top: 120px;
+}
+section.all-articsrd {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+select {
+  padding-right: 12px;
+  color: rgba(23, 23, 23, 1);
+}
 /****************slider end*****************/
 /*============ RESPONSIVE STYLES================== */
 @media (max-width: 1400px) {
@@ -5458,7 +5473,7 @@ justify-content: center;
     padding-top: 50px;
     padding-bottom: 50px;
   }
-
+ 
   .bg-color {
     margin-top: 70px;
   }
@@ -5589,7 +5604,7 @@ justify-content: center;
     width: 100px;
   }
   .professionals {
-    padding: 50px 0px;
+    padding-bottom: 32px;
 }
 section.Upcoming-events {
   padding-bottom: 140px;
@@ -6189,8 +6204,13 @@ section.we-started {
 /***********************Dram prime css end*****************/
 
 @media (max-width: 767px) {
-
-
+  p.card-heading {
+    font-size: 20px;
+}
+.professionals p {
+  font-size: 16px;
+  line-height: 150%;
+}
   .event-row {
     top: -360px;
 }
@@ -6744,13 +6764,17 @@ button.toggle-button span.line {
   }
 
   .contact_content p {
-    padding: 15px 0px;
-  }
-
-  .informetion-contact {
-    flex-wrap: wrap;
-  }
-
+    padding: 32px 0px;
+    font-size: 16px;
+    line-height: 150%;
+}
+.informetion-contact {
+  flex-wrap: wrap;
+  padding-bottom: 32px;
+}
+.contactinfo { 
+  margin-bottom: 12px;
+}
   .form-group {
     flex-wrap: wrap;
   }
