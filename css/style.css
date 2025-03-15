@@ -1907,7 +1907,7 @@ service-card:hover .icon-shep {
 .services-heding {
   display: flex;
   align-items: start;
-  justify-content: stretch;
+  justify-content: space-between;
   margin-bottom: 75px;
 }
 
@@ -3878,9 +3878,7 @@ section.the-club.bg-color.mt-0 {
 .tab-content {
   height: auto;
 }
-.img-the-dram {
-  margin-right: 20px;
-}
+
 .nav-link.active {
   font-weight: bold;
   color: purple !important;
@@ -4362,6 +4360,66 @@ p.role {
 }
 
 /*************sign-up ******************/
+.singin-slider .owl-dots {
+  position: absolute;
+  bottom: 0px;
+}
+.singin-slider button.owl-prev {
+  width: 20px !important;
+  height: 20px !important;
+  background-color: transparent !important;
+  border: 0px !important;
+  backdrop-filter: none !important;
+}
+.singin-slider button.owl-next {
+  width: 20px !important;
+  height: 20px !important;
+  background-color: transparent !important;
+  border: 0px !important;
+  backdrop-filter: none !important;
+}
+.owl-carousel .owl-dot {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.4)!important;
+  margin: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background 0.3s;
+}
+.owl-carousel .owl-dot.active {
+  background: #ffffff!important;
+}
+.singin-slider .owl-nav {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-top: 16px;
+}
+
+button.submit-btn.stared-get {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.4);
+}
+.mostright p {
+  color: rgba(108, 108, 108, 1);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.mostright {
+  padding-bottom: 24px;
+}
+.mostright span {
+  margin-right: 10px;
+}
+.email-chandge a {
+  color: rgba(23, 23, 23, 1);
+  font-size: 11px;
+}
+.email-chandge span {
+color: rgba(88, 86, 214, 1);
+}
 .sign-up {
   display: flex;
   justify-content: space-between;
@@ -4611,6 +4669,7 @@ p.color-bookings {
   justify-content: space-between;
   max-width: 90%;
   margin: 0 auto;
+  position: relative;
 }
 section.blog-details-content {
   padding-bottom: 100px;
@@ -4652,7 +4711,9 @@ h4.bold-hg i {
   align-items: center;
   font-weight: 700;
   gap: 5px;
-  padding-left: 15px; 
+  padding-left: 0px; 
+  line-height: 1.7;
+  position: relative;
 }
 
 a.button.pink {
@@ -4697,6 +4758,7 @@ a.button.pink {
   font-size: 14px; 
   position: sticky;
   top: 50px;
+  height: 240px;
 
 }
 
@@ -4715,7 +4777,8 @@ main.blog-details.eventsdetail .banners.example-box {
   display: flex;
   justify-content: space-between;
   position: relative;
-  top: -330px;
+  margin-top: -330px;
+  flex-wrap: wrap;
 }
 
 .evening-img::after {
@@ -4799,10 +4862,11 @@ h4.bold-hg spen {
   margin: auto;
 }
 .faq-item {
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   margin-bottom: 10px;
   border-radius: 5px;
   overflow: hidden;
+  transition: 0.5s all ease;
 }
 .faq-title {
   background: rgba(243, 243, 243, 1);
@@ -5118,7 +5182,9 @@ input.form-control.border-1 {
   padding: 50px 20px;
   box-shadow: 3px 7px 13px 1px rgba(0, 0, 0, 0.1);
   margin-top: 95px;
-  height: 100%;
+  height: calc(100% - 95px);
+  position: relative;
+  min-height: 800px;
 }
  
 .user-name h4 {
@@ -5145,15 +5211,15 @@ input.form-control.border-1 {
 }
 
 .edit-icon {
-  position: absolute; 
+  position: absolute;
   border-radius: 50%;
   padding: 5px;
   font-size: 12px;
   width: 30px;
   cursor: pointer;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  top: 230px;
-  left: 98px;
+  top: 144px;
+  left: 87px;
   height: 30px;
   display: flex;
   justify-content: center;
@@ -5182,8 +5248,8 @@ input.form-control.border-1 {
 .menu-item {
   display: flex;
   align-items: center;
-  padding: 10px;
-  font-size: 16px;
+  padding: 16px;
+  font-size: 18px;
   color: #333;
   text-decoration: none;
   transition: background 0.3s;
@@ -5211,6 +5277,8 @@ input.form-control.border-1 {
   color: #555;
   margin-top: 20px;
   padding: 10px;
+  position: absolute;
+  bottom: 0;
 }
 .past-dropdowan h6 {
   font-size: 24px;
@@ -5255,9 +5323,20 @@ input.form-control.border-1 {
   color: rgba(238, 210, 116, 1);
   margin-right: 25px;
   font-style: italic;
+  font-family: DM Serif Display;
 }
 .seved-contnt p {
   color: #fff;
+  font-size: 16px;
+  line-height: 120%;
+}
+.account-items i.fas.fa-chevron-down {
+  font-size: 20px;
+  margin-left: 12px;
+  color: rgba(0, 0, 0, 1);
+}
+.membership svg {
+  margin-right: 10px;
 }
 .event-card {
   border: 1px solid rgba(231, 231, 231, 1);
@@ -5296,11 +5375,12 @@ input.form-control.border-1 {
   margin-left: 10px;
   font-size: 13px;
 }
-.sher-icon i {
+.sher-icon svg {
   color: #000;
   display: flex;
   position: absolute;
-  right: 325px;
+  right: 297px;
+  top: 42px;
 }
 .event-card h5 {
   font-size: 24px;
@@ -5437,6 +5517,7 @@ a.btn.mt-4.book-proseed {
 .an-events-cards {
   background-color: #fff;
   padding: 32px;
+  position: relative;
 }
 .an-events-cards h5 {
   margin-bottom: 10px;
@@ -5560,6 +5641,56 @@ section.Upcoming-events {
 }
 .newsletter-form input::placeholder {
   color: #CECECE;   
+}
+.blog-content-right li b {
+  font-weight: 600;
+}
+.blog-content-right li::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 43%;
+  width: 4px;
+  height: 4px;
+  background: #5f5e5e;
+  border-radius: 10px;
+}
+
+.slid-bg-color .owl-nav {
+  display: block;
+}
+.slid-bg-color button.owl-prev, .slid-bg-color button.owl-next {
+  position: absolute;
+  top: 40%;
+  left: -0px;
+  background: none !important;
+  backdrop-filter: none !important;
+  border: none !important
+}
+ 
+.slid-bg-color button.owl-next {
+  left: auto;
+  right: -10px;
+}
+.slid-bg-color button.owl-next span,.slid-bg-color button.owl-prev span { 
+  font-size: 75px;
+}
+.left-event-content {
+  display: flex;  
+  justify-content: space-between;
+  position: relative;
+}
+.sign-in.hide {
+  display: none;
+}
+.signup-header header{
+  display: none;
+}
+.signuplogo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 200px;
 }
 /****************slider end*****************/
 
@@ -6398,8 +6529,22 @@ section.we-started {
   .row.mb-4 {
     gap: 20px;
   }
-  
-
+  .banner-events h2 { 
+    font-size: 30px;
+}
+img.blog-details-banner { 
+  width: 40%;
+}
+main.blog-details .banner-upcoming { 
+  gap: 30px; 
+}
+.social-icons { 
+  gap: 10px;
+  justify-content: flex-start;
+}
+.left-event-content { 
+  flex-wrap: wrap;
+}
 
 }
 
@@ -6414,9 +6559,17 @@ section.we-started {
   line-height: 150%;
 }
   .event-row {
-    top: -360px;
+    margin-top: -360px;
 }
 /***************sing up*********************/
+.sign-up {
+  margin-top: 390px;
+}
+.bannerbg {
+  width: 100%;
+  height: 350px;
+  top: 0;
+}
 .header-signup .jion-d-nones {
   display: none !important;
 }
@@ -7002,6 +7155,50 @@ button.toggle-button span.line {
 }
 main.discover-liqours .banner-top::after { 
   background: linear-gradient(90deg, rgb(0 0 0 / 48%) 26%, rgb(0 0 0 / 33%) 100%);
+}
+main.blog-details .banner-upcoming { 
+  flex-wrap: wrap;
+}
+.banner-events {
+  order: 1;        padding-top: 100px;
+}
+img.blog-details-banner { 
+  order: 2;width: 100%; 
+}
+.blog-content {  
+  max-width: 100%; 
+  flex-wrap: wrap;
+}
+.blog-content-left ul, .blog-content-left h4 {
+  padding-left: 0;
+}
+.blog-content-left {  
+  position: relative;
+  top: 0;
+}
+.blog-content-right li b { 
+  min-width: 100px;
+}
+.proseed-book {
+  margin-top: 0;
+}
+.slid-bg-color {
+  padding-left: 0; 
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.map-row { 
+  flex-wrap: wrap;
+}
+.maps-url, .map-row .maps {
+  width: 100%;
+}
+.signup-header header{
+  display: block;
+}
+.signuplogo { 
+  display: none;
 }
 
 }
