@@ -4617,7 +4617,8 @@ main.blog-details.eventsdetail .banners.example-box {
   display: flex;
   justify-content: space-between;
   position: relative;
-  top: -330px;
+  margin-top: -330px;
+  flex-wrap: wrap;
 }
 
 .evening-img::after {
@@ -4701,10 +4702,11 @@ h4.bold-hg spen {
   margin: auto;
 }
 .faq-item {
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   margin-bottom: 10px;
   border-radius: 5px;
   overflow: hidden;
+  transition: 0.5s all ease;
 }
 .faq-title {
   background: rgba(243, 243, 243, 1);
@@ -5475,6 +5477,31 @@ section.Upcoming-events {
   height: 4px;
   background: #5f5e5e;
   border-radius: 10px;
+}
+
+.slid-bg-color .owl-nav {
+  display: block;
+}
+.slid-bg-color button.owl-prev, .slid-bg-color button.owl-next {
+  position: absolute;
+  top: 40%;
+  left: -0px;
+  background: none !important;
+  backdrop-filter: none !important;
+  border: none !important
+}
+ 
+.slid-bg-color button.owl-next {
+  left: auto;
+  right: -10px;
+}
+.slid-bg-color button.owl-next span,.slid-bg-color button.owl-prev span { 
+  font-size: 75px;
+}
+.left-event-content {
+  display: flex;  
+  justify-content: space-between;
+  position: relative;
 }
 /****************slider end*****************/
 
@@ -6324,6 +6351,10 @@ main.blog-details .banner-upcoming {
   gap: 10px;
   justify-content: flex-start;
 }
+.left-event-content { 
+  flex-wrap: wrap;
+}
+
 }
 
 /***********************Dram prime css end*****************/
@@ -6337,7 +6368,7 @@ main.blog-details .banner-upcoming {
   line-height: 150%;
 }
   .event-row {
-    top: -360px;
+    margin-top: -360px;
 }
 /***************sing up*********************/
 .header-signup .jion-d-nones {
@@ -6948,6 +6979,21 @@ img.blog-details-banner {
 }
 .blog-content-right li b { 
   min-width: 100px;
+}
+.proseed-book {
+  margin-top: 0;
+}
+.slid-bg-color {
+  padding-left: 0; 
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.map-row { 
+  flex-wrap: wrap;
+}
+.maps-url, .map-row .maps {
+  width: 100%;
 }
 }
 
