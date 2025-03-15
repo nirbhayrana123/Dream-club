@@ -20,8 +20,6 @@ $(document).ready(function () {
       },
     });
      ///upcomingslider
-
-
      $(".select-slider").owlCarousel({
       items: 9,
       margin: 0,
@@ -41,7 +39,6 @@ $(document).ready(function () {
         }
       },
     });
-
      $(".upcoming-events").owlCarousel({
       items: 3,
       margin: 20,
@@ -66,7 +63,6 @@ $(document).ready(function () {
       loop: true,
       nav: true
     });
-
     // Third Slider with Different Configurations
     $(".owl-carousel.third-slider").owlCarousel({
       loop: true,
@@ -106,30 +102,64 @@ $(document).ready(function () {
       }
 
     });
-
- 
-
-    ///////////////header fixed////////////////
-    $(window).scroll(function(){
+    $(".featured-slider").owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      dots:false,
+      autoplay:true,
+      autoplayTimeout:3000,
+      autoplayHoverPause:true,
+      center:true,
+      responsive:{
+        0:{ items:1.5 },
+        480:{ items:1.5, center:true,  },
+        768:{ items:2.5, center:true },
+        1024:{ items:3.5, center:true },
+        1200:{ items:3.5, center:true }
+      }
+    });
+    $(".toggle-button").click(function () {
+      $(".toggle-button, .navebar ").toggleClass("active");
+    });
+    //////////////////Know your Connoisseur/////////////////////
+      $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          dots: false,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: true,
+          responsive: {
+              0: { items: 1 },
+              600: { items: 1. },
+              1000: { items: 1.1 }
+          }
+      });
+      $(".owl-carousel2").owlCarousel({ 
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: { items: 1 },
+            600: { items: 1 },
+            1000: { items: 1 }  
+        }
+    });
+  });
+ ///////////////header fixed////////////////
+      $(window).scroll(function(){
         if ($(window).scrollTop() > 350) { 
             $("header").addClass("scrolled"); 
         } else { 
             $("header").removeClass("scrolled"); 
         }
     });
-
-
-
-    $(".toggle-button").click(function () {
-      $(".toggle-button, .navebar ").toggleClass("active");
-    });
-
-
-
-  });
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
   if (document.querySelector(".slider-presta")) {
       var offbeat = new Swiper(".slider-presta", {
@@ -172,4 +202,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       console.log(" Swiper initialized without autoplay.");
   }
+
 });
+
+
+
