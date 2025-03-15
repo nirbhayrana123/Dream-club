@@ -158,10 +158,32 @@ $(document).ready(function () {
         }
     });
   });
-  
+  //////////////sing in////////////////////
 
 
-  });
+  $(".singin-slider").owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    smartSpeed: 800,
+    nav: true,
+    dots: true,
+    navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+    responsive: {
+        0: { items: 1 },
+        600: { items: 1 },
+        1000: { items: 1 }
+    },
+    onInitialized: function () {
+        console.log("Owl Carousel Initialized");
+    }
+});
+
+
+
+});
+
 
 
 
