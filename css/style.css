@@ -3776,9 +3776,7 @@ section.the-club.bg-color.mt-0 {
 .tab-content {
   height: auto;
 }
-.img-the-dram {
-  margin-right: 20px;
-}
+
 .nav-link.active {
   font-weight: bold;
   color: purple !important;
@@ -5082,7 +5080,9 @@ input.form-control.border-1 {
   padding: 50px 20px;
   box-shadow: 3px 7px 13px 1px rgba(0, 0, 0, 0.1);
   margin-top: 95px;
-  height: 100%;
+  height: calc(100% - 95px);
+  position: relative;
+  min-height: 800px;
 }
  
 .user-name h4 {
@@ -5109,15 +5109,15 @@ input.form-control.border-1 {
 }
 
 .edit-icon {
-  position: absolute; 
+  position: absolute;
   border-radius: 50%;
   padding: 5px;
   font-size: 12px;
   width: 30px;
   cursor: pointer;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  top: 230px;
-  left: 98px;
+  top: 144px;
+  left: 87px;
   height: 30px;
   display: flex;
   justify-content: center;
@@ -5146,8 +5146,8 @@ input.form-control.border-1 {
 .menu-item {
   display: flex;
   align-items: center;
-  padding: 10px;
-  font-size: 16px;
+  padding: 16px;
+  font-size: 18px;
   color: #333;
   text-decoration: none;
   transition: background 0.3s;
@@ -5175,6 +5175,8 @@ input.form-control.border-1 {
   color: #555;
   margin-top: 20px;
   padding: 10px;
+  position: absolute;
+  bottom: 0;
 }
 .past-dropdowan h6 {
   font-size: 24px;
@@ -5219,9 +5221,20 @@ input.form-control.border-1 {
   color: rgba(238, 210, 116, 1);
   margin-right: 25px;
   font-style: italic;
+  font-family: DM Serif Display;
 }
 .seved-contnt p {
   color: #fff;
+  font-size: 16px;
+  line-height: 120%;
+}
+.account-items i.fas.fa-chevron-down {
+  font-size: 20px;
+  margin-left: 12px;
+  color: rgba(0, 0, 0, 1);
+}
+.membership svg {
+  margin-right: 10px;
 }
 .event-card {
   border: 1px solid rgba(231, 231, 231, 1);
@@ -5260,11 +5273,12 @@ input.form-control.border-1 {
   margin-left: 10px;
   font-size: 13px;
 }
-.sher-icon i {
+.sher-icon svg {
   color: #000;
   display: flex;
   position: absolute;
-  right: 325px;
+  right: 297px;
+  top: 42px;
 }
 .event-card h5 {
   font-size: 24px;
@@ -5401,6 +5415,7 @@ a.btn.mt-4.book-proseed {
 .an-events-cards {
   background-color: #fff;
   padding: 32px;
+  position: relative;
 }
 .an-events-cards h5 {
   margin-bottom: 10px;

@@ -123,7 +123,7 @@ $(document).ready(function () {
     $(".toggle-button, .navebar ").toggleClass("active");
   });
   //////////////////Know your Connoisseur/////////////////////
-  $(".owl-carousel").owlCarousel({
+  $(".owl-carousel.eventdetails").owlCarousel({
     loop: true,
     margin: 10,
     nav: true,
