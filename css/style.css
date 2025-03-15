@@ -1907,7 +1907,7 @@ service-card:hover .icon-shep {
 .services-heding {
   display: flex;
   align-items: start;
-  justify-content: stretch;
+  justify-content: space-between;
   margin-bottom: 75px;
 }
 
@@ -5563,6 +5563,18 @@ section.Upcoming-events {
   justify-content: space-between;
   position: relative;
 }
+.sign-in.hide {
+  display: none;
+}
+.signup-header header{
+  display: none;
+}
+.signuplogo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 200px;
+}
 /****************slider end*****************/
 
 /*============ RESPONSIVE STYLES================== */
@@ -7063,6 +7075,13 @@ img.blog-details-banner {
 .maps-url, .map-row .maps {
   width: 100%;
 }
+.signup-header header{
+  display: block;
+}
+.signuplogo { 
+  display: none;
+}
+
 }
 
 @media (max-width: 600px) {
