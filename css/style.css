@@ -4264,7 +4264,14 @@ p.role {
   position: absolute;
   bottom: 0px;
 }
-.singin-slider button.owl-prev , button.owl-next{
+.singin-slider button.owl-prev {
+  width: 20px !important;
+  height: 20px !important;
+  background-color: transparent !important;
+  border: 0px !important;
+  backdrop-filter: none !important;
+}
+.singin-slider button.owl-next {
   width: 20px !important;
   height: 20px !important;
   background-color: transparent !important;
