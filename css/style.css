@@ -1907,7 +1907,7 @@ service-card:hover .icon-shep {
 .services-heding {
   display: flex;
   align-items: start;
-  justify-content: stretch;
+  justify-content: space-between;
   margin-bottom: 75px;
 }
 
