@@ -4509,6 +4509,7 @@ p.color-bookings {
   justify-content: space-between;
   max-width: 90%;
   margin: 0 auto;
+  position: relative;
 }
 section.blog-details-content {
   padding-bottom: 100px;
@@ -4550,7 +4551,9 @@ h4.bold-hg i {
   align-items: center;
   font-weight: 700;
   gap: 5px;
-  padding-left: 15px; 
+  padding-left: 0px; 
+  line-height: 1.7;
+  position: relative;
 }
 
 a.button.pink {
@@ -4595,6 +4598,7 @@ a.button.pink {
   font-size: 14px; 
   position: sticky;
   top: 50px;
+  height: 240px;
 
 }
 
@@ -5459,6 +5463,19 @@ section.Upcoming-events {
 .newsletter-form input::placeholder {
   color: #CECECE;   
 }
+.blog-content-right li b {
+  font-weight: 600;
+}
+.blog-content-right li::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 43%;
+  width: 4px;
+  height: 4px;
+  background: #5f5e5e;
+  border-radius: 10px;
+}
 /****************slider end*****************/
 
 /*============ RESPONSIVE STYLES================== */
@@ -6294,9 +6311,19 @@ section.we-started {
   .row.mb-4 {
     gap: 20px;
   }
-  
-
-
+  .banner-events h2 { 
+    font-size: 30px;
+}
+img.blog-details-banner { 
+  width: 40%;
+}
+main.blog-details .banner-upcoming { 
+  gap: 30px; 
+}
+.social-icons { 
+  gap: 10px;
+  justify-content: flex-start;
+}
 }
 
 /***********************Dram prime css end*****************/
@@ -6899,7 +6926,29 @@ button.toggle-button span.line {
 main.discover-liqours .banner-top::after { 
   background: linear-gradient(90deg, rgb(0 0 0 / 48%) 26%, rgb(0 0 0 / 33%) 100%);
 }
-
+main.blog-details .banner-upcoming { 
+  flex-wrap: wrap;
+}
+.banner-events {
+  order: 1;        padding-top: 100px;
+}
+img.blog-details-banner { 
+  order: 2;width: 100%; 
+}
+.blog-content {  
+  max-width: 100%; 
+  flex-wrap: wrap;
+}
+.blog-content-left ul, .blog-content-left h4 {
+  padding-left: 0;
+}
+.blog-content-left {  
+  position: relative;
+  top: 0;
+}
+.blog-content-right li b { 
+  min-width: 100px;
+}
 }
 
 @media (max-width: 600px) {
