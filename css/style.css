@@ -4260,6 +4260,59 @@ p.role {
 }
 
 /*************sign-up ******************/
+.singin-slider .owl-dots {
+  position: absolute;
+  bottom: 0px;
+}
+.singin-slider button.owl-prev , button.owl-next{
+  width: 20px !important;
+  height: 20px !important;
+  background-color: transparent !important;
+  border: 0px !important;
+  backdrop-filter: none !important;
+}
+.owl-carousel .owl-dot {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.4)!important;
+  margin: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background 0.3s;
+}
+.owl-carousel .owl-dot.active {
+  background: #ffffff!important;
+}
+.singin-slider .owl-nav {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-top: 16px;
+}
+
+button.submit-btn.stared-get {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.4);
+}
+.mostright p {
+  color: rgba(108, 108, 108, 1);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.mostright {
+  padding-bottom: 24px;
+}
+.mostright span {
+  margin-right: 10px;
+}
+.email-chandge a {
+  color: rgba(23, 23, 23, 1);
+  font-size: 11px;
+}
+.email-chandge span {
+color: rgba(88, 86, 214, 1);
+}
 .sign-up {
   display: flex;
   justify-content: space-between;
@@ -6371,6 +6424,14 @@ main.blog-details .banner-upcoming {
     margin-top: -360px;
 }
 /***************sing up*********************/
+.sign-up {
+  margin-top: 390px;
+}
+.bannerbg {
+  width: 100%;
+  height: 350px;
+  top: 0;
+}
 .header-signup .jion-d-nones {
   display: none !important;
 }
