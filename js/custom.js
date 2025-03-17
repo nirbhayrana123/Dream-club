@@ -112,7 +112,7 @@ $(document).ready(function () {
     autoplayHoverPause: true,
     center: true,
     responsive: {
-      0: { items: 1.5 },
+      0: { items: 1.2 },
       480: { items: 1.5, center: true, },
       768: { items: 2.5, center: true },
       1024: { items: 3.5, center: true },
@@ -251,4 +251,31 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+document.querySelectorAll('.menu-item').forEach(button => {
+  button.addEventListener('click', function () {
+    const targetId = this.getAttribute('data-bs-target');
+
+    // Remove 'open' class from all tabs
+    document.querySelectorAll('.tab-pane').forEach(tab => {
+      tab.classList.remove('open');
+    });
+
+    // Add 'open' class to the target tab
+    document.querySelector(targetId)?.classList.add('open');
+
+    // Add 'open' class to .bg-booking
+    document.querySelector('.bg-booking')?.classList.add('open');
+  });
+});
+
+// Select all .backintabs buttons and add event listener
+document.querySelectorAll('.backintabs').forEach(button => {
+  button.addEventListener('click', function () {
+    // Find the closest parent .tab-pane and remove 'open' class from it
+    this.closest('.tab-pane')?.classList.remove('open');
+
+    // Remove 'open' class from .bg-booking
+    document.querySelector('.bg-booking')?.classList.remove('open');
+  });
+});
 

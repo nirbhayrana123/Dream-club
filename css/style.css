@@ -2633,6 +2633,7 @@ h4.tabs_img_heading {
 
 .selected_row .serach-filter {
   width: 100px;
+  margin-left: 20px;
 }
 
 .selected_row .search-bar .input-group {
@@ -3046,7 +3047,7 @@ textarea {
 }
 
 textarea {
-  height: 156px;
+  min-height: 156px;
   resize: none;
   background-color: #F3F3F3;
   border: 0;
@@ -3075,7 +3076,7 @@ textarea {
 }
 
 .contact_content h2 {
-  font-size: 51px|;
+  font-size: 51px;
   line-height: 1.3em;
   color: #000000;
 }
@@ -4855,12 +4856,11 @@ p.right {
 .aricles-all {
   display: flex;
   align-items: center;
+  gap: 32px;
 }
-
-.Category-allsecat {
-  margin-right: 30px;
+.Category-allsecat select {
+  border: none;
 }
-
 span.cool-fooler {
   color: rgba(238, 210, 116, 1);
 }
@@ -5403,7 +5403,7 @@ ul.Distillery-event-book {
 .rupees-book strong {
   font-size: 32px;
 }
-a.btn.mt-4.book-proseed {
+.book-proseed {
   width: 100%;
   border: 1px solid rgba(108, 108, 108, 1);
   border-radius: 0;
@@ -5411,6 +5411,7 @@ a.btn.mt-4.book-proseed {
   background-color: rgba(23, 23, 23, 1);
   color: #fdfdfd;
   font-size: 18px;
+  text-align: center;
 }
 .an-events-cards {
   background-color: #fff;
@@ -5506,10 +5507,7 @@ select {
 .featured-slider .owl-nav {
   display: none;
 }
-.all-articsrd .flex1>div h2, .all-articsrd .flex1>div {
-  width: 100%;
-  text-align: center;
-}
+
 .blog-content-left h4 {
   padding-left: 18px;
   font-size: 16px;
@@ -5591,7 +5589,189 @@ section.Upcoming-events {
   width: 200px;
 }
 /****************slider end*****************/
+/****************Event-Deitale2 start*****************/
+.event-detail2 p {
+  color: white;
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+.event-detail2 h3 {
+  color: #fff;
+  font-size: 42px;
+  margin-bottom: 32px;
+}
+ 
+.ticat-conatn {
+  border-bottom: 1px solid rgba(206, 206, 206, 1);
+  padding-bottom: 12px;
+}
+.ticat-conatn p {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 12px;
+  font-size: 18px;
+}
+span.dram-deitale2 {
+  color: rgba(52, 199, 89, 1);
+  font-weight: 500;
+}
+.guest-deitaile2 h6 {
+  padding: 7px 0px;
+  margin-bottom: 0;
+  color: rgba(52, 199, 89, 1);
+}
+.guest-deitaile2 h5 {
+  color: rgba(35, 35, 35, 1);
+  font-size: 18px;
+  padding-top: 12px;
+  font-weight: 400;
+}
+.coupon-label {
+  font-size: 24px;
+  font-weight: bold;
+}
+.coupon-box {
+  display: flex;
+  align-items: center;
+  background-color: rgba(52, 199, 89, 0.2);
+  padding: 10px;
+  margin-top: 10px;
+  width: 60%;
+}
+.coupon-code {
+  flex-grow: 1;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+.check-icon {
+  font-size: 20px;
+  color: #333;
+}
+.apply-btn {
+  margin-top: 10px;  
+  border: 1px solid #333;
+  background-color: white;
+  cursor: pointer;
+  padding: 12px 50px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 35%;
+}
+ 
+.success-message {
+  color: rgba(52, 199, 89, 1);
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+.apply-btan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.coupan-deitale2 {
+  margin-top: 24px;
+}
+p.rupees-book {
+  font-size: 22px; 
+}
+span.\35 color {
+  color: rgba(157, 157, 157, 1);
+}
 
+.header-jane-doe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(243, 243, 243, 1);
+  color: white;
+  padding: 15px;
+  width: 100%;
+}
+.dropdown h5 {
+  background: transparent;
+  border: none;
+  color: #020202;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+.dropdown {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.dropdown h5{
+  margin: 0;
+}
+.delete-icon {
+  cursor: pointer;
+  font-size: 18px;
+}
+ 
+.form-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.form-group div {
+  width: 48%;
+}
+textarea.textareainput {
+  padding: 20px;
+  min-height: 116px;
+  background: #FFFFFF;
+  width: 100%;
+  border-radius: 0px;
+  font-size: 14px;
+}
+.mbfullw {
+  margin-bottom: 25px;
+}
+label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+}
+.bold-lable {
+  font-weight: bold;
+}
+.form {
+  background-color: #f3f3f3;
+  margin-top: 30px;
+  padding: 20px;
+}
+input, select {
+  width: 100%; 
+  border-bottom: 1px solid #ccc;
+  border-radius: 0px;
+  font-size: 14px;
+  background-color: transparent;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  outline: none;
+}
+.backtab {
+display: none;
+}
+.bottlings {
+  display: flex;
+  align-items: center;
+}
+.proseed-book.deitaile2 {
+  margin-top: 20px;
+}
+/**************** End Event-Deitale2*****************/
 /*============ RESPONSIVE STYLES================== */
 @media (max-width: 1400px) {
 
@@ -5774,6 +5954,9 @@ justify-content: center;
   .evening-img h3 {
     font-size: 32px; 
 }
+.sidebar {
+  min-height: 850px;
+}
 
 
 
@@ -5903,7 +6086,72 @@ section.we-started {
 }
 
 @media (max-width: 991px) {
+  a.button.black.width_3 {
+    width: 100%; 
+}
+.upcoming-bookings {
+  display: none;
+}
+.tasting-notes .notes img {
+  width: 100%;
+  height: auto;
+}
+.note {
+  width: 100%;
+}
+  .product-details p.price {
+    display: none;
+}
+.product-details h2 {
+  display: none;
+}
+.product-image {
+  max-width: 100%;
+  width: 100%;
+}
+.details .carousel-control-prev {
+  left: 0;
+}
+.details .carousel-control-next {
+  right: 0;
+}
+.product-image .carousel-item img{
+  width: 100%;
+}
+  .product_container {
+    flex-wrap: wrap;
+}
+.product-details { 
+  order: 2;
+}
+.mobile-on {
+  display: block;
+}
+  .backtab {
+    padding: 20px;
+    background-color: #fff;
+    display: block;
+}
 
+button.backintabs {
+  font-family: 'Gilroy-Bold';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #171717;
+  width: 100%;
+  text-align: left;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+  .img-the-dram {
+    margin-right: 20px;
+}
 .dalmore-logo.mobail-top {
   display: flex;
   justify-content: space-between;
@@ -5955,12 +6203,22 @@ section.we-started {
 .bg-booking {
   display: none;
 }
+.bg-booking.open {
+  display: block;
+}
 .edit-icon { 
   top: 488px;
   left: 318px; 
 }
 
-
+.tab-content .tab-pane.show.active.open {
+  position: absolute;
+  top: 70px;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
 /*********reviews*****************/
   .really-contant {
     width: 100%;
@@ -5968,6 +6226,7 @@ section.we-started {
 }
 .main-from {
   padding: 32px 32px;
+  background-color: #fff;
 }
 .m-reviews {
   width: 100%;
@@ -6450,12 +6709,37 @@ main.blog-details .banner-upcoming {
   p.card-heading {
     font-size: 20px;
 }
+.sher-icon {
+  display: none;
+}
+.Guests-buttan {
+  display: none;
+}
+p.color-bookings {
+  margin-bottom: 15px;
+}
+.an-events-cards h5 {
+  font-size: 18px;
+}
+.an-events-cards {
+  padding: 32px 16px;
+}
+img.goto-img {
+  width: 100%;
+}
+
+.my-revies {
+  padding: 32px 15px; 
+}
 .professionals p {
   font-size: 16px;
   line-height: 150%;
 }
   .event-row {
     margin-top: -360px;
+}
+.dalmore-logo {
+  display: none;
 }
 /***************sing up*********************/
 .sign-up {
@@ -6513,7 +6797,7 @@ br {
 }
 
 button.toggle-button span.line {
-  background-color: #ffffff;
+  background-color: #000000;
 }
   .Olive.li-box .hovericon {
     display: block;
@@ -6877,6 +7161,10 @@ button.toggle-button span.line {
   .dram-prime .banner {
     height: 500px;
   }
+  .contact_content h2 {
+    font-size: 28px;
+}
+
 
   .Join-ussection {
     min-height: 333px;
@@ -7026,9 +7314,15 @@ button.toggle-button span.line {
 .contactinfo { 
   margin-bottom: 12px;
 }
-  .form-group {
+  /* .form-group {
     flex-wrap: wrap;
-  }
+  } */
+  .box-tour {
+    padding: 32px 14px;
+}
+.ticat-conatn p {
+  width: 100%;
+}
 
   /***************blog listing**********/
 
@@ -7103,7 +7397,9 @@ img.blog-details-banner {
   .first-slider {
     padding-left: 15px;
   }
-
+  .signup-link { 
+    font-size: 13px; 
+}
   .banner {
     padding: 0px 0px;
   }
@@ -7120,12 +7416,19 @@ img.blog-details-banner {
   .testimonial-item img {
     max-width: 100%;
   }
-
+  .sign-up {
+    padding-left: 0px;
+    padding-right: 0px;
+}
   .button-custome,
   .button {
     font-size: 14px;
     padding: 8px 20px;
   }
+  .social-login button {
+    font-size: 15px;
+}
+
 
   img.boxbg {
     min-height: 425px;
@@ -7178,7 +7481,49 @@ img.blog-details-banner {
   .flexx p {
     margin-bottom: 0;
   }
+  .apply-btn {
+    padding: 10px 18px;
+    font-size: 15px;
 
+}
+.coupon-code {
+  font-size: 15px;
+}
+.check-icon {
+  font-size: 15px;
+}
+.event-detail2 p {
+  font-size: 18px;
+}
+.event-detail2 h3 {
+  font-size: 32px;
+}
+.form-title {
+  font-size: 26px; 
+}
+
+.book-proseed { 
+  padding: 12px 0px; 
+} 
+.rupees-book i {
+  font-size: 24px;
+} 
+.rupees-book strong {
+  font-size: 24px;
+}
+.ticat-conatn p {
+  font-size: 15px;
+  font-weight: 400;
+}
+.ticat-conatn {
+  padding-bottom: 0;
+}
+.mobile-bg {
+  background-color: #f3f3f3;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 }
 
 @media (max-width: 480px) {
