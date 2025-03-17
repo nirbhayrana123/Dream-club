@@ -3081,6 +3081,108 @@ textarea {
   color: #000000;
 }
 
+/***********************success*****************/  
+.page-wrapper {
+  padding: 7rem 0;
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+}
+.success-wrapper {
+  background: #F3F3F3;
+  width: 100%;
+  max-width: 442px;
+  border-radius: 5px;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.success-icon {
+  text-align: center;
+  padding: 30px;
+}
+
+.success-icon img {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto;
+}
+
+.success-icon h4 {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.dashed-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.circle-white {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 100px;
+  margin: -15px;
+}
+.dashed {
+  border-bottom: 1px dashed #9D9D9D;
+  width: 80%;
+}
+
+ul.booking-id {
+  padding-top: 30px;
+  padding-left: 0;
+  width: 70%;
+  margin: 0 auto;
+}
+
+ul.booking-id li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  font-weight: 700;
+}
+ul.booking-id li.border-b {
+  border-bottom: 1px solid #9D9D9D;
+  padding-top: 40px;
+}
+a.download-invoice {
+  margin-top: 20px;
+  border: 1px solid #000;
+  padding: 13px 14px;
+  color: #000000;
+  width: 196px;
+  display: inline-block; 
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+a.download-invoice i {
+  margin-right: 5px;
+}
+
+.button-rows {
+  display: inline-grid;
+  width: 100%;
+}
+.button-rows a.download-invoice {
+  width: 100%;
+}
+
+a.download-invoice.black {
+  background: #000000;
+  color: #fff;
+}
+
+
+
+
+
 /*************************FOOTER START******************************/
 
 .footer .container {
@@ -6000,6 +6102,8 @@ justify-content: center;
     height: 140px;
     bottom: -41px;
   }
+
+ 
 
   /***********************about css*****************/
   .professionals p {
