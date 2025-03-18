@@ -4061,7 +4061,27 @@ section.we-started {
   left: -111px;
   width: 29%;
 }
+.value-card:hover p {
+  color: #fff;
+}
+.value-card:hover h3 {
+  color: #fff;
+}
+.values-grid .value-card:hover {
+  transition: background-color 0.3s ease-in-out;
+}
 
+.values-grid .value-card:first-child:hover {
+  background-color: rgba(20, 51, 46, 1);
+}
+
+.values-grid .value-card:nth-child(2):hover {
+  background-color: rgba(139, 35, 29, 1);
+}
+
+.values-grid .value-card:nth-child(3):hover {
+  background-color: rgba(7, 37, 57, 1);
+}
 .streder {
   position: relative;
 }
@@ -4273,6 +4293,7 @@ section.values h2 {
   text-align: left;
   position: relative;
   height: 300px;
+  overflow: hidden;
 }
 
 .value-card h3 {
@@ -4298,6 +4319,48 @@ section.values h2 {
 section.values {
   padding: 120px 0px;
 }
+.links-colors a {
+  color: #fff;
+  font-size: 18px;
+}
+
+
+.values-grid .value-card:nth-child(3):hover .appreciation {
+  animation: moveRotateScaleappreciation 0.5s ease-in-out forwards;
+}
+.values-grid .value-card:nth-child(3)not:hover .appreciation {
+  animation: moveRotateScaleReverseappreciation 0.5s ease-in-out forwards;
+}
+
+
+
+
+@keyframes moveRotateScaleappreciation {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+
+  100% {
+    transform: translate(-84px, 416px) rotate(-76deg) scale(2.2);
+  }
+}
+
+@keyframes moveRotateScaleReverseappreciation {
+  0% {
+    transform: translate(-84px, 416px) rotate(-76deg) scale(2.2);
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+}
+
+
+
+
+
+
+
 
 
 
@@ -5873,6 +5936,8 @@ display: none;
 .proseed-book.deitaile2 {
   margin-top: 20px;
 }
+
+
 /**************** End Event-Deitale2*****************/
 /*============ RESPONSIVE STYLES================== */
 @media (max-width: 1400px) {
@@ -5943,6 +6008,7 @@ display: none;
   .strars {
     top: 350px;
   }
+ 
 
   img.top {
     margin-top: 35px;
@@ -6799,7 +6865,6 @@ main.blog-details .banner-upcoming {
 }
 .social-icons { 
   gap: 10px;
-  justify-content: flex-start;
 }
 .left-event-content { 
   flex-wrap: wrap;
