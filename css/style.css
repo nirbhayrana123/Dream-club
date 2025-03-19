@@ -83,7 +83,33 @@ ul {
 .mb-6 {
   margin-bottom: 60px;
 }
+/*****************profile***************/
+ 
+.profile-image {
+  position: relative;
+  display: inline-block;
+} 
+ 
+.file-input {
+  display: none;
+}
+.profile-menu {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
+ 
+ 
+
+
+/********************profile*************************/
 
 @media (min-width:1400px) {
   .container {
@@ -4074,14 +4100,34 @@ section.we-started {
 .values-grid .value-card:first-child:hover {
   background-color: rgba(20, 51, 46, 1);
 }
+.values-grid .value-card:first-child:hover .appreciation {
+  animation: moveRotateScaleappreciation 0.5s ease-in-out forwards;
+}
+.values-grid .value-card:first-child:hover .appreciation {
+  animation: moveRotateScaleReverseappreciation 0.5s ease-in-out forwards;
+}
 
 .values-grid .value-card:nth-child(2):hover {
   background-color: rgba(139, 35, 29, 1);
+}
+.values-grid .value-card:nth-child(2):hover .appreciation {
+  animation: moveRotateScaleappreciation 0.5s ease-in-out forwards;
+}
+.values-grid .value-card:nth-child(2)not:hover .appreciation {
+  animation: moveRotateScaleReverseappreciation 0.5s ease-in-out forwards;
 }
 
 .values-grid .value-card:nth-child(3):hover {
   background-color: rgba(7, 37, 57, 1);
 }
+
+.values-grid .value-card:nth-child(3):hover .appreciation {
+  animation: moveRotateScaleappreciation 0.5s ease-in-out forwards;
+}
+.values-grid .value-card:nth-child(3)not:hover .appreciation {
+  animation: moveRotateScaleReverseappreciation 0.5s ease-in-out forwards;
+}
+
 .streder {
   position: relative;
 }
@@ -4325,12 +4371,7 @@ section.values {
 }
 
 
-.values-grid .value-card:nth-child(3):hover .appreciation {
-  animation: moveRotateScaleappreciation 0.5s ease-in-out forwards;
-}
-.values-grid .value-card:nth-child(3)not:hover .appreciation {
-  animation: moveRotateScaleReverseappreciation 0.5s ease-in-out forwards;
-}
+
 
 
 
@@ -4356,7 +4397,9 @@ section.values {
 }
 
 
-
+.value-card:hover path {
+  fill: rgba(255, 255, 255, 0.1);
+}
 
 
 
