@@ -106,8 +106,45 @@ ul {
 }
 
  
- 
+.selected-resultsw.here {
+  text-align: center;
+  padding: 120px 0px;
+}
+.views-btans {
+  text-align: center;
+  padding-bottom: 60px;
+}
+.selected-resultsw.here {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 32px;
+}
+.selected-resultsw.here h2 {
+  color: rgba(108, 108, 108, 1);
+}
+.row.scotch {
+  text-align: center;
+}
 
+.jack-daniels .scotch .col-lg-4:nth-child(3n) .pulsh-box::after {
+  content: "";
+  background-image: url(../images/frnichar.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300%;
+  height: 107px;
+  position: absolute;
+  background-size: cover;
+  right: 0px;
+  z-index: -1;
+  bottom: -200px;
+}
+section.teb_section.jackdinelser.bg-gre.mts-top {
+  margin-top: 200px;
+}
+
+
+ 
 
 /********************profile*************************/
 
@@ -1961,8 +1998,11 @@ service-card:hover .icon-shep {
 .bg-color {
   background-color: rgba(243, 243, 243, 1);
   margin-top: 0px;
-  overflow: hidden;
-
+}
+.w-fulls li.nav-item a.nav-link {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 /******************testimonial************/
@@ -3943,11 +3983,16 @@ a.nav-link.active path {
 .image-rights {
   position: absolute;
   right: -40px;
-  top: 35px;
+  top: 95px;
 }
 
 .season_flexs {
   position: relative;
+  background-color: #ffffff;
+  margin-bottom: 80px;
+}
+.image-rights img {
+  width: 335px;
 }
 
 .text-section {
@@ -5313,9 +5358,31 @@ input.form-control.border-1 {
   width: 60px;
 }
 .profile img {
-  width: 110px;
+  width: 120px;
+  max-width: 120px;
+  height: 120px;
+  max-height: 120px;
+  object-fit: cover;
+  border-radius: 100%;
 }
-
+.profile::after {
+  content: "";
+  background-image: url(../images/cicails.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  z-index: 0;
+  inset: 0;
+  top: -6px;
+}
+.sticky-div {
+  top: 88px;
+  height: 420px;
+  position: sticky;
+}
 .edit-icon {
   position: absolute;
   border-radius: 50%;
@@ -5979,7 +6046,30 @@ display: none;
 .proseed-book.deitaile2 {
   margin-top: 20px;
 }
-
+.profile_pic a.nav-link {
+  display: flex;
+  align-items: center;
+}
+.profile_pic a.nav-link figure::after {
+  content: "";
+  background-image: url(../images/profilebg.svg);
+  width: 120%;
+  height: 120%;
+  background-size: cover;
+  position: absolute;
+  top: -11px;
+  left: -5px;
+}
+.profile_pic a.nav-link figure {
+  margin-bottom: 0;
+  margin-right: 10px;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  padding: 0;
+  margin-top: -4px;
+}
 
 /**************** End Event-Deitale2*****************/
 /*============ RESPONSIVE STYLES================== */
@@ -6916,7 +7006,13 @@ main.blog-details .banner-upcoming {
 }
 
 /***********************Dram prime css end*****************/
-
+@media (max-width: 768px) {
+  .sticky-div {
+    top: 0;
+    height: auto;
+    position: relative;
+}
+}
 @media (max-width: 767px) {
   p.card-heading {
     font-size: 20px;

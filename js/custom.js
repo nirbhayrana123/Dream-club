@@ -199,7 +199,23 @@ $(document).ready(function () {
 //////////////sing in////////////////////
 
 
+$(window).scroll(function() {
+  var windscroll = $(window).scrollTop();
+  if (windscroll >= 100) {
+    $('.season_flexs').each(function(i) { 
+      if ($(this).position().top <= windscroll - 0) {
+        $('.w-fulls li.nav-item a.nav-link.active').removeClass('active');
+        $('.w-fulls li.nav-item a.nav-link').eq(i).addClass('active');
+      }
+    });
 
+  } else {
+
+    $('.w-fulls li.nav-item a.nav-link.active').removeClass('active');
+    $('.w-fulls li.nav-item a.nav-link:first').addClass('active');
+  }
+
+  }).scroll();
 
 
 
