@@ -4921,11 +4921,8 @@ main.blog-details.eventsdetail .banners.example-box {
   display: none;
 }
 .event-row {
-  display: flex;
-  justify-content: space-between;
   position: relative;
   margin-top: -330px;
-  flex-wrap: wrap;
 }
 
 .evening-img::after {
