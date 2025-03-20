@@ -6053,12 +6053,12 @@ display: none;
 .profile_pic a.nav-link figure::after {
   content: "";
   background-image: url(../images/profilebg.svg);
-  width: 120%;
-  height: 120%;
+  width: 130%;
+  height: 130%;
   background-size: cover;
   position: absolute;
-  top: -11px;
-  left: -5px;
+  top: -7px;
+  left: -8px;
 }
 .profile_pic a.nav-link figure {
   margin-bottom: 0;
