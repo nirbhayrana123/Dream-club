@@ -1,4 +1,19 @@
 $(document).ready(function () {
+
+  $(".dropdown-toggleerd").click(function(e){
+    e.preventDefault();
+    $(".dropdown-menuesa").slideToggle(200);
+    $(".dropdownses").toggleClass("open");
+});
+// Dropdown ko close karne ke liye jab bahar click ho
+$(document).click(function(e){
+    if (!$(e.target).closest(".dropdownses").length) {
+        $(".dropdown-menuesa").slideUp(200);
+        $(".dropdownses").removeClass("open");
+    }
+});
+
+
   // First Slider Initialization
   $(".first-slider").owlCarousel({
     items: 3,

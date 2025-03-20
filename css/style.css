@@ -44,11 +44,11 @@ a {
   transition: 0.5s all ease;
 }
 
-header.black_nav a.nav-link {
+header.black_nav .navebar ul li a.nav-link {
   color: #171717;
 }
 
-header.black_nav a.nav-link:hover {
+header.black_nav .navebar ul li a.nav-link:hover {
   color: #171717;
 }
 
@@ -60,11 +60,6 @@ header.black_nav .button-btn {
 header.black_nav .navebar ul li a svg path {
   fill: #051827;
 }
-
-
-
-
-
 
 
 .font-famly {
@@ -306,7 +301,7 @@ a.button.greys:hover {
   padding: 0;
 }
 
-.navebar ul {
+.navebar ul.navebar-list {
   list-style: none;
   display: flex;
   align-items: center;
@@ -314,7 +309,7 @@ a.button.greys:hover {
   margin: 0;
 }
 
-.navebar ul li a {
+.navebar ul.navebar-list li a {
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;
@@ -328,7 +323,7 @@ a.button-btn {
   font-weight: bold !important;
 }
 
-.navebar ul li a b {
+.navebar ul.navebar-list li a b {
   font-weight: bold;
 }
 
@@ -337,7 +332,7 @@ a.button-btn {
   font-weight: bold;
 }
 
-.navebar ul li.login:hover a {
+.navebar ul.navebar-list li.login:hover a {
   background-color: #ffffffeb;
   color: #171717;
 
@@ -357,7 +352,7 @@ a.button-btn {
   margin-left: 15px;
 }
 
-.navebar ul li a:hover {
+.navebar ul.navebar-list li a:hover {
   color: #fff;
   opacity: 0.9;
 }
@@ -372,7 +367,7 @@ header.scrolled {
 
 }
 
-header.scrolled .navebar ul li a {
+header.scrolled .navebar ul.navebar-list li a {
   color: #171717;
 }
 
@@ -393,7 +388,7 @@ header.scrolled .button-btn {
   color: #fff !important;
 }
 
-header.scrolled .navebar ul li a svg path {
+header.scrolled .navebar ul.navebar-list li a svg path {
   fill: #051827;
 }
 
@@ -401,7 +396,7 @@ header.scrolled .logo-wareper {
   width: 80px;
 }
 
-header.scrolled .navebar ul li.login:hover a {
+header.scrolled .navebar ul.navebar-list li.login:hover a {
   background: #171717;
   color: #fff;
 }
@@ -5332,7 +5327,7 @@ input.form-control.border-1 {
   background: white;
   padding: 50px 20px;
   box-shadow: 3px 7px 13px 1px rgba(0, 0, 0, 0.1);
-  margin-top: 95px;
+  margin-top: 103px;
   height: calc(100% - 95px);
   position: relative;
   min-height: 800px;
@@ -5620,7 +5615,7 @@ a.Guests.mt-2 {
   margin-top: 16px;
 }
 .bg-booking {
-  margin-top: 94px;
+  margin-top: 103px;
 }
 .bg-booking-banner {
   display: none;
@@ -5742,7 +5737,7 @@ ul.Distillery-event-book {
 .slid-bg-color .owl-nav {
   display: none;
 }
-.navebar ul li.nav-item {
+.navebar ul.navebar-list li.nav-item {
   padding-left: 20px;
 }
 .contactinfo {
@@ -6071,6 +6066,56 @@ display: none;
   margin-top: -4px;
 }
 
+/***********************profile*******************/
+
+.dropdown-menuesa {
+  display: none;
+  position: absolute;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  z-index: 1000;
+  padding: 10px 0;
+  right: 0;
+}
+.dropdown-menuesa li {
+  list-style: none;
+}
+.dropdown-menuesa a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+}
+.dropdown-menuesa a:hover {
+  background: #F1F1F1;
+}
+.dropdownses {
+  position: relative;
+}
+.dropdownses.open .dropdown-menuesa {
+  display: block;
+}
+ .dropdownses.open .dropdown-menuesa {
+  flex-direction: column;
+  justify-content: start;
+}
+ .dropdown-menuesa li {
+  list-style: none;
+  line-height: normal;
+  width: 100%;
+}
+ .dropdown-menuesa li a.dropdown-item {
+  color: #000;
+  padding: 7px 13px !important;
+  border-bottom: 1px solid #ccc;
+}
+.dropdown-menuesa li a.dropdown-item {
+  color: #000 !important;
+}
+/**************************profile end****************/
+
 /**************** End Event-Deitale2*****************/
 /*============ RESPONSIVE STYLES================== */
 @media (max-width: 1400px) {
@@ -6389,6 +6434,11 @@ section.we-started {
 }
 
 @media (max-width: 991px) {
+
+  li.nav-item.dropdownses.profile_pic {
+    display: none;
+}
+
   a.button.black.width_3 {
     width: 100%; 
 }
@@ -6655,7 +6705,7 @@ button.backintabs {
     font-size: 16px;
   }
 
-  .navebar ul {
+  .navebar ul.navebar-listl {
     align-items: start;
   }
 
@@ -6681,7 +6731,7 @@ button.backintabs {
     border-bottom: 1px solid #E6E6E7;
   }
 
-  .navebar ul li a {
+  .navebar ul.navebar-list li a {
     color: #171717;
   }
 
