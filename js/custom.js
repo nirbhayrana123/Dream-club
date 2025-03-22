@@ -243,25 +243,33 @@ $(window).scroll(function() {
 
 
 /////////////////counting///////////////
-document.addEventListener("DOMContentLoaded", function () {
-  const counters = document.querySelectorAll('.stats-number');
-  counters.forEach(counter => {
-      let target = +counter.getAttribute('data-target');
-      let count = 0;
-      let speed = target / 100; // Speed control
 
-      function updateCount() {
-          if (count < target) {
-              count += speed;
-              counter.innerText = Math.ceil(count);
-              requestAnimationFrame(updateCount);
-          } else {
-              counter.innerText = target; // Ensure exact value
+const counters = document.querySelectorAll('.stats-number');
+  let observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              let counter = entry.target;
+              let target = +counter.getAttribute('data-target');
+              let count = 0;
+              let speed = target / 100; // Speed control
+
+              function updateCount() {
+                  if (count < target) {
+                      count += speed;
+                      counter.innerText = Math.ceil(count);
+                      requestAnimationFrame(updateCount);
+                  } else {
+                      counter.innerText = target; // Ensure exact value
+                  }
+              }
+
+              updateCount();
+              observer.unobserve(counter); 
           }
-      }
-      updateCount();
-  });
-});
+      });
+  }, { threshold: 0.5 }); 
+
+  counters.forEach(counter => observer.observe(counter));
 
 
 document.addEventListener("DOMContentLoaded", function () {
