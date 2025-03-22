@@ -211,6 +211,14 @@ $(document).click(function(e){
     }
   });
 });
+
+////////////////////////cricle/////////////
+window.addEventListener("scroll", function () {
+  let scrollValue = window.scrollY;
+  document.querySelector(".circle").style.transform =
+    `translate(-50%, -50%) rotate(${scrollValue}deg)`;
+ });
+///////////////////////end cricle/////////
 //////////////sing in////////////////////
 
 
@@ -234,6 +242,26 @@ $(window).scroll(function() {
 
 
 
+/////////////////counting///////////////
+document.addEventListener("DOMContentLoaded", function () {
+  const counters = document.querySelectorAll('.stats-number');
+  counters.forEach(counter => {
+      let target = +counter.getAttribute('data-target');
+      let count = 0;
+      let speed = target / 100; // Speed control
+
+      function updateCount() {
+          if (count < target) {
+              count += speed;
+              counter.innerText = Math.ceil(count);
+              requestAnimationFrame(updateCount);
+          } else {
+              counter.innerText = target; // Ensure exact value
+          }
+      }
+      updateCount();
+  });
+});
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -322,4 +350,4 @@ document.querySelectorAll('.backintabs').forEach(button => {
       reader.readAsDataURL(file);
   }
 });
-/////////////////
+

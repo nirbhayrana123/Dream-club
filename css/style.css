@@ -4183,10 +4183,7 @@ section.we-started {
   font-size: 24px;
   line-height: 34px;
 }
-.strars img:hover {
-  transform: rotate(360deg);
-  cursor: pointer;
-}
+ 
 
 .strars img {
   width: 95%;
@@ -6114,6 +6111,21 @@ display: none;
 /**************************profile end****************/
 
 /**************** End Event-Deitale2*****************/
+
+body {
+  height: 200vh; /* Scroll ke liye extra height */
+  margin: 0;
+}
+
+.circle {   
+  top: 50%;
+  left: -5%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transition: transform 1s linear;
+}
+
+
+
 /*============ RESPONSIVE STYLES================== */
 @media (max-width: 1400px) {
 
