@@ -363,7 +363,7 @@ header.scrolled {
   background: #fff;
   padding: 10px 0px;
   box-shadow: 2px 2px 32px 0px rgba(0, 0, 0, 0.15);
-  z-index: 99;
+  z-index: 9999;
 
 }
 
@@ -2924,7 +2924,9 @@ img.like-icons {
   top: 10px;
   max-width: 25px;
 }
-
+.respectiveicon {
+  position: relative;
+}
 ul.list-unstyled img.percent3 {
   max-width: 19px;
   min-width: 19px;
@@ -3098,7 +3100,11 @@ a.button.black.width_3 {
   font-weight: 600;
   font-size: 18px;
 }
-
+.reviews_star {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 .reviews-content {
   flex: 1;
 }
@@ -3675,11 +3681,7 @@ select {
   font-size: 14px;
 }
 
-.filter-dropdown i.fas.fa-map-marker-alt {
-  color: rgba(157, 157, 157, 1);
-}
-
-.filter-dropdown i.far.fa-calendar {
+.filter-dropdown i.fas {
   color: rgba(157, 157, 157, 1);
 }
 
@@ -3773,7 +3775,24 @@ ul {
   display: none;
 }
 
-
+.rimen span.bg-prim {
+  background: linear-gradient(83.59deg, #231535 -8.32%, #743AA0 124.31%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  padding: 2px 7px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 3.5px;
+  color: #fff;
+  margin-left: 5px;
+}
+span.rimen i.far.fa-question-circle {
+  font-size: 18px;
+  margin-left: 10px;
+}
+.event-sher-tour a {
+  color: #000;
+}
 /*************************Dram prime css******************************/
 .event-card.savings_events .Olives.li-box {
   margin-bottom: 60px;
@@ -4996,6 +5015,11 @@ main.blog-details.eventsdetail .banners.example-box {
 .event-row {
   position: relative;
   margin-top: -330px;
+
+}
+.res{
+  display: flex;
+  justify-content: space-between;
 }
 
 .evening-img::after {
@@ -5028,6 +5052,17 @@ main.blog-details.eventsdetail .banners.example-box {
   font-weight: 500;
   font-size: 42px;
   color: #ffffff;
+}
+.bg-prime {
+  background: linear-gradient(83.59deg, #231535 -8.32%, #743AA0 124.31%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  padding: 2px 7px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 3.5px;
+  color: #fff;
+  margin-left: 5px;
 }
 
 h4.bold-hg spen {
@@ -5477,7 +5512,15 @@ input.form-control.border-1 {
   margin-top: 5px;
 }
 .user-name p {
-  font-size: 16px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+.sher-icon {
+  text-align: left; 
+}
+.sher-icon a{ 
+  color: #000;
 }
 .menu {
   margin-top: 20px;
@@ -6341,9 +6384,9 @@ justify-content: center;
 
   /***************about css***************/
   .strars {
-    top: 340px;
-    left: -80px;
-    width: 115px;
+    top: 365px;
+    left: -23px;
+     width: 115px;
   }
 
   img.top {
@@ -6449,10 +6492,10 @@ justify-content: center;
   }
 
   .strars {
-    left: -64px;
-    top: 330px;
+    left: -27px;
+    top: 365px;
     width: 100px;
-  }
+}
   .professionals {
     padding-bottom: 32px;
 }
@@ -7041,7 +7084,7 @@ button.backintabs {
 
   .strars {
     left: 112px;
-    top: -70px;
+    top: 12px;
     width: 160px;
   }
 
@@ -7652,10 +7695,10 @@ button.toggle-button span.line {
 
   /***********************about css***************/
   .strars {
-    top: -27px;
+    top: 7px;
     width: 90px;
-    left: 50px;
-  }
+    left: 65px;
+}
  
   .stats-box {
     border-right: none;
@@ -7838,10 +7881,21 @@ img.blog-details-banner {
 .signuplogo { 
   display: none;
 }
-
+.reviews-card { 
+  padding: 30px 18px; 
+  gap: 15px; 
+  flex-wrap: wrap;
+}
+.reviews-content {
+  flex: 100%;
+}
 }
 
 @media (max-width: 600px) {
+  .hart { 
+    right: 15px;
+    top: 7px;
+}
   .first-slider {
     padding-left: 15px;
   }
