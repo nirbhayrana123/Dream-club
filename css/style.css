@@ -406,8 +406,12 @@ header.scrolled .navebar ul.navebar-list li.login:hover a {
 ul.list-unstyled li {
   display: flex;
   gap: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   align-items: center;
+}
+.list-unstyled p {
+  font-weight: 600;
+  color: rgba(108, 108, 108, 1);
 }
 
 .list-unstyled {
@@ -425,7 +429,10 @@ ul.list-unstyled li {
   align-items: center;
   padding-top: 100px;
 }
-
+.fintest-main {
+  padding-left: 60px;
+  padding-right: 60px;
+}
 .ul-li-row ul {
   padding: 0;
 }
@@ -2752,6 +2759,7 @@ h4.tabs_img_heading {
   width: 150px;
   height: 150px;
   transition: 0.5s;
+  object-fit: cover;
 }
 
 .tabs_img_box {
@@ -2911,6 +2919,7 @@ span.selected_items {
 .aberlour_content h5 {
   font-weight: 600;
   font-size: 20px;
+  text-align: left;
 }
 
 .aberlour_content ul.list-unstyled {
@@ -3816,7 +3825,7 @@ span.event-time.ab.blackbg {
 .les {
   position: absolute;
   width: 160px;
-  right: 10px;
+  right: 11px;
   top: 0px;
   z-index: 9;
 }
@@ -3863,6 +3872,7 @@ ul.pl-0 {
   align-items: center;
   background-repeat: no-repeat;
   background-position: 100% 60%;
+  background-size: cover;
 }
 
 .Join-ussection .newsletter-content {
@@ -5162,6 +5172,8 @@ h4.bold-hg spen {
   width: 100%;
   left: 0;
   right: 0;
+  height: 390px;
+    overflow: hidden;
 }
 
 .bottal-img-conact img {
@@ -6232,7 +6244,7 @@ display: none;
 /**************** End Event-Deitale2*****************/
 
 body {
-  height: 200vh; /* Scroll ke liye extra height */
+  /*height: 200vh;  Scroll ke liye extra height */
   margin: 0;
 }
 
