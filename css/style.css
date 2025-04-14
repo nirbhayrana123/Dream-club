@@ -3990,7 +3990,7 @@ p.per-year {
   justify-content: end;
 }
 section.the-club.bg-color.mt-0 {
-  padding-bottom: 172px;
+  padding-bottom: 120px;
   padding-top: 120px;
 }
 
@@ -4482,7 +4482,6 @@ h2.text-center {
 
 h2.meet-our {
   text-align: center;
-  padding-top: 120px;
   padding-bottom: 48px;
 }
 
@@ -5518,7 +5517,7 @@ input.form-control.border-1 {
   padding-bottom: 20px;
 }
 .logo-wareper img {
-  width: 98px;
+  width: 90px;
 }
 .profile img {
   width: 120px;
@@ -5542,9 +5541,9 @@ input.form-control.border-1 {
   top: -6px;
 }
 .sticky-div {
-  top: 88px;
-  height: 420px;
-  position: sticky;
+    top: 240px;
+    height: 540px;
+    position: sticky;
 }
 .edit-icon {
   position: absolute;
@@ -6402,7 +6401,7 @@ body {
     padding: 20px 25px; 
 }
 .logo-wareper img {
-  width: 80px;
+  width: 70px;
 }
 header.scrolled { 
   padding: 20px 25px; 
@@ -7267,9 +7266,7 @@ section.patservices.bg-color{
     font-size: 15px;
   }
 
-  h2.meet-our {
-    padding: 50px 0px;
-  }
+  
   br {
     display: none;
 }
