@@ -3842,12 +3842,10 @@ span.rimen i.far.fa-question-circle {
   color: #000;
 }
 /*************************Dram prime css******************************/
-.event-card.savings_events .Olives.li-box {
-  margin-bottom: 23px;
-}
+
 
 .event-card.savings_events:hover .Olives {
-  bottom: -24px;
+  bottom: 0px;
 }
 
 span.event-time.ab.blackbg {
@@ -4280,6 +4278,7 @@ ul.list-unstyled img.percent3 {
 /************about us css*******************/
 section.we-started {
   padding-bottom: 120px;
+  padding-top: 120px;
 }
 
 .professionals {
@@ -4430,7 +4429,7 @@ h2.text-center {
   justify-content: center;
   width: 100%;
   margin: 20px 0;
-  padding-bottom: 120px;
+  padding-bottom: 0px;
 }
 
 .divider::before,
@@ -6453,6 +6452,12 @@ section.all-articsrd {
 .sign-up-slider {
   width: 50%;
 }
+section.values {
+  padding: 100px 0px;
+}
+section.we-started{
+  padding: 100px 0px;
+}
 }
 
 @media (max-width: 1200px) {
@@ -6689,6 +6694,12 @@ section.we-started {
 }
 
 @media (max-width: 991px) {
+  section.values {
+    padding: 80px 0px;
+}
+section.we-started{
+  padding: 80px 0px;
+}
   .section-featured {
     padding: 80px 0px;
   }
@@ -7966,7 +7977,7 @@ padding: 20px 15px;
   }
 
   .divider {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
 
   /**********contact css***************/
