@@ -3717,14 +3717,15 @@ span.prime {
 
 .banner-events h2 {
   color: #fff;
-  font-size: 54px;
+  font-size: 51px;
 }
 
 .banner-events span {
-  color: rgba(238, 210, 116, 1);
-  font-style: italic;
-  font-family: "DM Serif Displayy", serif;
-  font-weight: 600;
+    color: rgba(238, 210, 116, 1);
+    font-style: italic;
+    font-family: "DM Serif Displayy", serif;
+    font-weight: 600;
+    font-size: 54px;
 }
 
 .banner-events p {
@@ -3804,7 +3805,7 @@ span.rimen i.far.fa-question-circle {
 }
 /*************************Dram prime css******************************/
 .event-card.savings_events .Olives.li-box {
-  margin-bottom: 60px;
+  margin-bottom: 23px;
 }
 
 .event-card.savings_events:hover .Olives {
@@ -3825,11 +3826,18 @@ span.event-time.ab.blackbg {
 .les {
   position: absolute;
   width: 160px;
-  right: 11px;
+  right: 12.5px;
   top: 0px;
   z-index: 9;
 }
-
+.les h4 {
+  position: absolute;
+  top: 13px;
+  left: 32px;
+  color: #ffffff;
+  font-weight: 700;
+  border-bottom: 3px solid #C49C44;
+}
 .row.mb-4.gap_2 {
   --bs-gutter-x: 60px;
 }
@@ -3845,8 +3853,14 @@ ul.pl-0 {
 
 .event-card.savings_events:hover .hover_move {
   max-height: 75px;
+  margin-top: 12px;
 }
-
+footer.footer.bg-color-gr {
+  background-color: #171717;
+}
+footer.footer.bg-color-gr h5 { 
+  color: #ffffff85; 
+}
 .event-card.savings_events .hover_move {
   margin-top: 0px;
   margin-bottom: 15px;
@@ -3936,7 +3950,9 @@ p.per-year {
 .the-club .services-heding {
   justify-content: space-between;
 }
-
+.services-heding.leftaline {
+  justify-content: end;
+}
 section.the-club.bg-color.mt-0 {
   padding-bottom: 172px;
   padding-top: 120px;
@@ -5677,7 +5693,7 @@ input.form-control.border-1 {
 }
 .event-card h5 {
   font-size: 24px;
-  margin-bottom: 16px;
+  margin-bottom: 0px;
 }
 a.btn.btn-dark.mt-2 {
   width: 71%;
