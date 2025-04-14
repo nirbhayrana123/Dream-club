@@ -8091,6 +8091,13 @@ img.blog-details-banner {
     padding-left: 20px;
     padding-right: 20px;
 }
+p.font-bold {
+    font-size: 15px;
+    line-height: 25px;
+}
+.testimonial-content p {
+    font-size: 14px;
+}
 }
 
 @media (max-width: 600px) {
