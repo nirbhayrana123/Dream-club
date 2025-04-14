@@ -24,10 +24,10 @@ img {
   -webkit-box-orient: vertical;
 }
 
-p,li{
-  font-size: 17px;
+p{
+  font-size: 20px;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 150%;
   font-family: 'Gilroy';
   margin-bottom: 0;
 }
@@ -64,11 +64,6 @@ header.black_nav .navebar ul li a svg path {
 
 .font-famly {
   font-family: 'Gilroy';
-}
-
-section.blogs.white-bg {
-  background: #ffffff;
-  padding: 120px 20px 0;
 }
 
 ul {
@@ -277,7 +272,7 @@ button.toggle-button {
 
 header {
   position: absolute;
-  padding: 10px 0px;
+  padding: 30px 30px;
   left: 0;
   right: 0;
   z-index: 99;
@@ -361,7 +356,7 @@ header.scrolled {
   position: fixed;
   top: 0;
   background: #fff;
-  padding: 10px 0px;
+  padding: 30px 30px;
   box-shadow: 2px 2px 32px 0px rgba(0, 0, 0, 0.15);
   z-index: 9999;
 
@@ -406,18 +401,22 @@ header.scrolled .navebar ul.navebar-list li.login:hover a {
 ul.list-unstyled li {
   display: flex;
   gap: 10px;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
   align-items: center;
 }
 .list-unstyled p {
-  font-weight: 600;
+  font-weight: 400;
   color: rgba(108, 108, 108, 1);
+  font-weight: 400;
 }
-
+.join-events {
+  padding: 120px 0px;
+}
 .list-unstyled {
   padding-left: 0;
   list-style: none;
-  margin-top: 30px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 /**********************BANNER********************************/
@@ -430,8 +429,8 @@ ul.list-unstyled li {
   padding-top: 100px;
 }
 .fintest-main {
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 130px;
+  padding-right: 130px;
 }
 .ul-li-row ul {
   padding: 0;
@@ -463,9 +462,9 @@ a {
   border: 1px solid #FFFFFF66;
   color: #171717;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 18px;
   transition: 0.6s;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 a.button.black-border:hover {
@@ -492,6 +491,7 @@ a.button.greys {
   background-color: #F3F3F3;
   border: 1px solid #F3F3F3;
   padding: 14px 30px;
+  font-weight: 700;
 }
 
 a.button.greys:hover {
@@ -508,7 +508,7 @@ a.button.greys:hover {
   display: flex;
   align-items: center;
   justify-content: start;
-  padding: 195px 0px;
+  padding: 145px 0px;
   position: relative;
   z-index: 3;
 }
@@ -523,21 +523,21 @@ a.button.greys:hover {
 .banner-left {
   text-align: left;
   color: #fff;
-  width: 44%;
+  width: 50%;
   position: relative;
 }
 
 .banner-left p {
   padding-bottom: 35px;
   padding-top: 15px;
-  font-size: 18px;
-  line-height: 1.8em;
+  font-size: 24px;
+  line-height: 130%;
   color: #e7e7e7;
 }
 
 .banner-left h2 {
   font-size: 44px;
-  line-height: 1.3em;
+  line-height: 100%;
   color: #ffffff;
 }
 
@@ -545,7 +545,6 @@ a.button.greys:hover {
   color: #EED274;
   font-style: italic;
   font-family: DM Serif Display;
-  font-weight: 500;
 }
 
 .button-custome i.fa.fa-shopping-cart {
@@ -570,9 +569,7 @@ a.button.greys:hover {
 
 /************UPCOMING EVENTS START***************/
 
-section.Upcoming-events {
-  padding-bottom: 200px;
-}
+
 
 .event-card {
   position: relative;
@@ -612,11 +609,13 @@ section.Upcoming-events {
   position: relative;
   padding: 58px;
 }
-
-.Olives p {
+.hover_move ul {
+  margin-bottom: 24px;
+}
+.event-card .Olives p {
   font-weight: 400;
   font-size: 14px;
-  line-height: 16.8px;
+  line-height: 120%;
 }
 
 .Olives h5 {
@@ -640,6 +639,8 @@ span.event-time.ab {
   background: linear-gradient(180deg, #EED274 0%, #C49C44 100%);
   padding-bottom: 8px;
   font-size: 16px;
+  font-family: 'Gilroy';
+  font-weight: 700;
 }
 
 .Olive {
@@ -659,6 +660,9 @@ a.btn.btn-light.btn-sm {
 
 h4.margin-top {
   margin-top: 24px;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 120%;
 }
 
 .event-card:hover .event-overlays {
@@ -684,11 +688,19 @@ h4.margin-top {
   right: 0;
   bottom: -50px;
   transition: 1s;
-  margin-bottom: 30px;
-  padding: 15px;
+  padding: 32px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 57%, rgba(0, 0, 0, 0.8) 100%);
 }
-
+.hover_move .button{
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  min-width: 128px;
+  max-width: 180px;
+  justify-content: center;
+  text-align: center;
+}
 .event-card:hover .Olives {
   bottom: 0px;
 }
@@ -700,20 +712,22 @@ h4.margin-top {
 .flex1 {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
   align-items: flex-start;
 }
 
 .bg-img {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: space-between;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   width: 100%;
   height: 100%;
   gap: 40px;
+  padding: 60px;
+  padding-bottom: 0;
 }
 
 .bg-img::after {
@@ -723,6 +737,9 @@ h4.margin-top {
   position: absolute;
   height: 100%;
   width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .box-canter {
@@ -748,11 +765,17 @@ h4.margin-top {
 
 .li-box li {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
-
+.event-card .hover_move li p {
+  font-size: 14px;
+  line-height: 100%;
+}
+.hovericon {
+  display: none;
+}
 .event-card:hover .hover_move {
   opacity: 1;
   bottom: 0;
@@ -768,7 +791,7 @@ h4.margin-top {
 
 h2 {
   font-weight: 600;
-  font-size: 50px;
+  font-size: 51px;
   color: rgba(7, 37, 57, 1);
 }
 
@@ -781,7 +804,9 @@ h2 {
 .button-row.canter {
   justify-content: center;
 }
-
+.patservices{
+  padding: 120px 0px;
+}
 a.button.black:hover {
   background-color: #17171700;
   border: 1px solid #171717;
@@ -2055,9 +2080,12 @@ service-card:hover .icon-shep {
   display: flex;
   align-items: start;
   justify-content: space-between;
-  margin-bottom: 75px;
+  padding-bottom: 60px;
 }
-
+.service-card .overlay h4 {
+  font-weight: 700;
+  line-height: 120%;
+}
 .mt-6 {
   margin-top: 60px;
 }
@@ -2065,17 +2093,21 @@ service-card:hover .icon-shep {
 .mb-6 {
   margin-bottom: 60px;
 }
-
+.service-card .overlay p {
+  font-size: 16px;
+  line-height: 100%;
+  color: #171717;
+}
 .services-heding p {
-  color: #000;
+  color: #171717;
   font-weight: 400;
-  font-size: 28px;
+  font-size: 32px;
   line-height: 1.4em;
   letter-spacing: 0px;
 }
 
 .services-heding h2 {
-  font-size: 50px;
+  font-size: 51px;
   color: rgba(7, 37, 57, 1);
 }
 
@@ -2159,7 +2191,7 @@ p.font-bold {
 .testimonial-section {
   text-align: center;
   position: relative;
-  padding-top: 120px;
+  padding: 120px 0px;
 }
 
 .testimonial-section .owl-item {
@@ -2236,7 +2268,9 @@ p.font-bold {
   line-height: 52px;
   margin-bottom: 60px;
 }
-
+.founderesd {
+  padding: 120px 0px;
+}
 /*************************JOIN-US START******************************/
 .join-us {
   width: 100%;
@@ -2244,25 +2278,26 @@ p.font-bold {
 }
 
 .box-canter img {
-  margin-bottom: 25px;
+  margin-bottom: 32px;
 }
 
 .card-custom {
   background: white;
-  padding: 35px 60px;
+  padding: 32px 50px;
   border-radius: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .img-box {
   position: relative;
-  top: 100px;
+  top: 0px;
+  width: 700px;
 }
 
-p.card-heading {
+h5.card-heading {
   font-weight: bold;
-  font-size: 28px;
-  line-height: 33.6px;
+  font-size: 24px;
+  line-height: 120%;
 }
 
 .button.dark {
@@ -2349,7 +2384,7 @@ section.blogs {
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 24px;
+  padding: 32px;
   transition: all 1s;
   display: flex;
   position: absolute;
@@ -2383,9 +2418,9 @@ p.text-size-regular {
 }
 
 .box._w-4 h5 {
-  font-weight: 500;
-  font-size: 23px;
-  line-height: 1.5em;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
   letter-spacing: 0px;
   color: #ffffff;
 }
@@ -2394,16 +2429,16 @@ p.item-date {
   color: rgb(157 157 157);
   font-weight: 400;
   font-size: 16px;
-  line-height: 19.2px;
+  line-height: 100%;
   letter-spacing: 0px;
 }
 
 .box._w-4 h5 span {
-  font-size: 23px;
+  font-size: 28px;
   color: #EED274;
   font-style: italic;
   font-family: DM Serif Display;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .swiper-slide .box._w-4 {
@@ -2461,7 +2496,9 @@ img.blog-top {
   align-items: center;
   justify-content: center;
 }
-
+.explore-you.gallery {
+  padding: 120px 0px 20px 0px;
+}
 section.blogs.white-bg .owl-nav.disabled {
   display: block;
 }
@@ -2533,9 +2570,8 @@ button.owl-prev span {
 .newsletter-section {
   background: url(../images/newselert.jpg) center / cover no-repeat;
   color: white;
-  padding: 80px 0;
-  position: relative;
-  min-height: 481px;
+  padding: 120px 0;
+  position: relative; 
 }
 
 .newsletter-section::before {
@@ -2564,6 +2600,7 @@ input.form-control {
   font-style: italic;
   font-family: DM Serif Display;
   font-weight: 500;
+  font-size: 54px;
 }
 
 small.d-block.mt-3 {
@@ -2595,7 +2632,7 @@ small.d-block.mt-3 {
 
 .banner-left span {
   font-weight: 400;
-  font-size: 54px;
+  font-size: 47px;
 }
 
 .text-warning {
@@ -2691,7 +2728,7 @@ main.discover-liqours .blogs_slider .box::after {
 /***********TEB START**************/
 
 section.teb_section {
-  padding-top: 80px;
+  padding: 120px 0px;
 }
 .selected-resultsw h4 {
   font-size: 20px;
@@ -2948,7 +2985,7 @@ ul.list-unstyled li p {
 
 /*************************DETAILS START******************************/
 section.details {
-  padding: 150px 0;
+  padding: 120px 0;
 }
 
 .product-image {
@@ -3035,8 +3072,7 @@ button.carousel-control-prev {
 
 /*****************REVIWS START**********************/
 
-.reviews-section {
-  min-height: 713px;
+.reviews-section { 
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -3717,7 +3753,7 @@ span.prime {
 
 .banner-events h2 {
   color: #fff;
-  font-size: 54px;
+  font-size: 51px;
 }
 
 .banner-events span {
@@ -3725,10 +3761,13 @@ span.prime {
   font-style: italic;
   font-family: "DM Serif Displayy", serif;
   font-weight: 600;
+  font-size: 54px;
 }
 
 .banner-events p {
   color: #fff;
+  font-size: 18px;
+  line-height: 150%;
 }
 
 .filter {
@@ -3803,9 +3842,7 @@ span.rimen i.far.fa-question-circle {
   color: #000;
 }
 /*************************Dram prime css******************************/
-.event-card.savings_events .Olives.li-box {
-  margin-bottom: 60px;
-}
+
 
 .event-card.savings_events:hover .Olives {
   bottom: -24px;
@@ -4364,9 +4401,7 @@ img.top {
   padding-bottom: 30px;
 }
 
-section.banner-top {
-  margin-bottom: 120px;
-}
+
 
 h2.text-center {
   margin-bottom: 60px;
@@ -4921,8 +4956,8 @@ p.color-bookings {
   position: relative;
 }
 section.blog-details-content {
-  padding-bottom: 100px;
-  padding-top: 50px;
+  padding-bottom: 120px;
+  padding-top: 120px;
 }
 .joven-age span {
   font-weight: 500;
@@ -5294,7 +5329,7 @@ span.cool-fooler {
 
 .section-featured {
   background-color: rgba(243, 243, 243, 1);
-  padding: 100px 0px;
+  padding: 120px 0px;
 }
 
 .section-featured h2 {
@@ -5444,10 +5479,10 @@ input.form-control.border-1 {
   background: white;
   padding: 50px 20px;
   box-shadow: 3px 7px 13px 1px rgba(0, 0, 0, 0.1);
-  margin-top: 103px;
+  margin-top: 124px;
   height: calc(100% - 95px);
   position: relative;
-  min-height: 800px;
+  min-height: 120px;
 }
  
 .user-name h4 {
@@ -5467,7 +5502,7 @@ input.form-control.border-1 {
   padding-bottom: 20px;
 }
 .logo-wareper img {
-  width: 60px;
+  width: 98px;
 }
 .profile img {
   width: 120px;
@@ -5571,7 +5606,7 @@ input.form-control.border-1 {
   margin-top: 20px;
   padding: 10px;
   position: absolute;
-  bottom: 0;
+  bottom: 25px;
 }
 .past-dropdowan h6 {
   font-size: 24px;
@@ -5675,10 +5710,7 @@ input.form-control.border-1 {
   right: 297px;
   top: 42px;
 }
-.event-card h5 {
-  font-size: 24px;
-  margin-bottom: 16px;
-}
+
 a.btn.btn-dark.mt-2 {
   width: 71%;
   border: 1px solid rgba(108, 108, 108, 1);
@@ -5688,8 +5720,9 @@ a.btn.btn-dark.mt-2 {
   color: #000;
 }
 .event-card p {
-  font-size: 14px;
-  line-height: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
 }
 .passes-custom a {
   background-color: rgba(238, 210, 116, 1);
@@ -5740,7 +5773,7 @@ a.Guests.mt-2 {
   margin-top: 16px;
 }
 .bg-booking {
-  margin-top: 103px;
+  margin-top: 124px;
 }
 .bg-booking-banner {
   display: none;
@@ -5928,7 +5961,8 @@ a.button.pink:hover {
   font-size: 14px;
 }
 section.Upcoming-events { 
-  padding-top: 80px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .newsletter-form input::placeholder {
   color: #CECECE;   
@@ -6269,7 +6303,7 @@ body {
     padding: 50px 0;
   }
   .banner-left h2 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .box-canter {
@@ -6310,8 +6344,8 @@ body {
   }
 
 
-  p.card-heading {
-    font-size: 25px;
+  h5.card-heading {
+    font-size: 22px;
   }
 
   .founder h2 {
@@ -6345,7 +6379,60 @@ body {
   .right {
     width: 45%;
   }
-
+  header { 
+    padding: 20px 25px; 
+}
+.logo-wareper img {
+  width: 80px;
+}
+header.scrolled { 
+  padding: 20px 25px; 
+}
+section.Upcoming-events {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.patservices {
+  padding: 100px 0px;
+}
+.join-events {
+  padding: 100px 0px;
+}
+section.blogs {
+  background: rgb(243 243 243);
+  padding: 100px 0;
+}
+.testimonial-section { 
+  padding: 100px 0px;
+}
+.founderesd {
+  padding: 100px 0px;
+}
+.explore-you.gallery {
+  padding: 100px 0px 20px 0px;
+}
+.newsletter-section{
+  padding: 100px 0px;
+}
+section.teb_section{
+padding: 100px 0px;
+}
+section.details {
+  padding: 100px 0;
+}
+section.all-articsrd {
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+.section-featured {
+  padding: 100px 0px;
+}
+.bannerbg {
+  width: 55%;
+}
+.sign-up-slider {
+  width: 50%;
+}
 }
 
 @media (max-width: 1200px) {
@@ -6450,7 +6537,10 @@ justify-content: center;
 }
 
 
-
+section.all-articsrd {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
   /********************events-detail****************************/
 
 
@@ -6512,7 +6602,7 @@ justify-content: center;
     padding-bottom: 32px;
 }
 section.Upcoming-events {
-  padding-bottom: 140px;
+  padding-bottom: 50px;
 }
 .team-card {
   width: 48%;
@@ -6579,11 +6669,33 @@ section.we-started {
 }
 
 @media (max-width: 991px) {
-
+  .section-featured {
+    padding: 80px 0px;
+  }
+  section.details {
+    padding: 80px 0;
+}
+section.teb_section {
+  padding: 80px 0px;
+}
+.selected-resultsw.here {
+  padding-top: 80px;
+}
+.selected-resultsw h4 {
+  padding: 30px 0px;
+}
+.event-card .Olives p {
+  font-size: 12px;
+}
+  .section-featured h2 {
+    padding-bottom: 30px;
+}
   li.nav-item.dropdownses.profile_pic {
     display: none;
 }
-
+section.Upcoming-events {
+  padding-bottom: 50px;
+}
   a.button.black.width_3 {
     width: 100%; 
 }
@@ -6646,7 +6758,9 @@ button.backintabs {
   align-items: center;
   gap: 15px;
 }
-
+section.patservices.bg-color{
+  margin-top: 0;
+}
   .img-the-dram {
     margin-right: 20px;
 }
@@ -6665,6 +6779,20 @@ button.backintabs {
   width: 100%;
 }
   /**********sing up*************/
+  .services-heding {
+    flex-wrap: wrap;
+}
+.bg-img {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.img-box {
+  order: 2;
+  width: 100%;
+}
+.box-canter {
+  max-width: 100%;
+}
 
   .sign-up_content {
     width: 100%; 
@@ -6711,7 +6839,7 @@ button.backintabs {
 
 .tab-content .tab-pane.show.active.open {
   position: absolute;
-  top: 70px;
+  top: 100px;
   z-index: 99;
   width: 100%;
   height: 100%;
@@ -7131,8 +7259,8 @@ button.backintabs {
     width: 48%;
   }
 
-  section.banner-top {
-    margin-bottom: 50px;
+  .banner-events span{
+    font-size: 30px;
   }
 
   /**************contact css****************/
@@ -7197,7 +7325,13 @@ main.blog-details .banner-upcoming {
 .left-event-content { 
   flex-wrap: wrap;
 }
-
+.fintest-main {
+  padding-left: 80px;
+  padding-right: 15px;
+}
+.banner {
+  padding-top: 0px;
+}
 }
 
 /***********************Dram prime css end*****************/
@@ -7209,7 +7343,7 @@ main.blog-details .banner-upcoming {
 }
 }
 @media (max-width: 767px) {
-  p.card-heading {
+  h5.card-heading {
     font-size: 20px;
 }
 .sher-icon {
@@ -7274,7 +7408,9 @@ button.facebook {
 .sign-up-slider {
   display: none;
 }
-
+.banner-events span{
+  font-size: 30px;
+}
 
 /******end sing up******************/
   .sidebar {
@@ -7387,22 +7523,40 @@ button.toggle-button span.line {
   }
 
   .testimonial-section {
-    padding-top: 80px;
+    padding: 80px 0px;
+  }
+  section.founderesd.bg-color{
+    padding: 80px 0px;
+    margin-top: 0;
   }
 
   .testimonial-section h2 {
     margin-bottom: 0;
   }
-
+  .explore-you.gallery {
+    padding: 80px 0px 20px 0px;
+}
   .testimonial-section .owl-item.active-slide {
     transform: scale(1);
   }
+  .newsletter-section {
+    padding: 80px 0px;
+}
 
+header { 
+  padding: 20px 15px; 
+}
+.logo-wareper img {
+width: 80px;
+}
+header.scrolled { 
+padding: 20px 15px; 
+}
   .navebar.active {
     display: flex;
   }
 
-  section.blogs.white-bg.gallery .flex1.canter {
+  .gallery .flex1.canter {
     flex-direction: column;
   }
 
@@ -7835,16 +7989,19 @@ button.toggle-button span.line {
     height: auto;
   }
 
-  section.Upcoming-events {
-    padding-bottom: 70px;
-  }
+
 
   .sections-who .right p {
     padding-bottom: 20px;
   }
-
+  .Olives {
+    padding: 20px;
+}
+.patservices {
+  padding: 80px 0px;
+}
   section.Upcoming-events {
-    padding-bottom: 120px;
+    padding-bottom: 80px;
 }
 main.discover-liqours .banner-top::after { 
   background: linear-gradient(90deg, rgb(0 0 0 / 48%) 26%, rgb(0 0 0 / 33%) 100%);
@@ -7900,6 +8057,10 @@ img.blog-details-banner {
 }
 .reviews-content {
   flex: 100%;
+}
+.fintest-main{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 }
 
@@ -7965,7 +8126,7 @@ img.blog-details-banner {
   }
 
 
-
+  
   .box-canter img {
     width: 100px;
   }
@@ -7974,10 +8135,7 @@ img.blog-details-banner {
     padding: 80px 20px;
   }
 
-  section.blogs.white-bg {
-    padding: 90px 20px;
-    padding-bottom: 0;
-  }
+  
 
   p.text-size-regular {
     margin-bottom: 10px;
