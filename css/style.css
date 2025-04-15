@@ -3989,6 +3989,7 @@ p.per-year {
 }
 .services-heding.leftaline {
   justify-content: end;
+  padding-bottom: 100px;
 }
 section.the-club.bg-color.mt-0 {
   padding-bottom: 120px;
@@ -6310,6 +6311,12 @@ body {
 .banner-top.dram-prime {
   margin-bottom: 0;
 }
+.sticky-div h2 {
+  font-size: 45px;
+}
+.sticky-div ul.nav.w-fulls {
+  padding-top: 100px;
+}
 /*******************scroll*****************/
 
 /****************scroll********************/
@@ -6338,7 +6345,7 @@ body {
   }
 
   .button {
-    padding: 10px 22px;
+    padding: 10px 17px;
     font-size: 15px;
   }
 
@@ -6457,6 +6464,9 @@ section.values {
 }
 section.we-started{
   padding: 100px 0px;
+}
+.sticky-div h2 {
+  font-size: 35px;
 }
 }
 
@@ -7372,6 +7382,12 @@ main.blog-details .banner-upcoming {
 }
 }
 @media (max-width: 767px) {
+  .sticky-div ul.nav.w-fulls {
+    padding-top: 50px;
+}
+.sticky-div h2 {
+  font-size: 28px;
+}
   h5.card-heading {
     font-size: 20px;
 }
@@ -7573,13 +7589,11 @@ button.toggle-button span.line {
 }
 
 header { 
-  padding: 20px 15px; 
+  padding: 10px 15px; 
 }
-.logo-wareper img {
-width: 80px;
-}
+
 header.scrolled { 
-padding: 20px 15px; 
+padding: 10px 15px; 
 }
   .navebar.active {
     display: flex;
