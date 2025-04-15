@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
 
   $(".dropdown-toggleerd").click(function(e){
@@ -211,6 +212,9 @@ $(document).click(function(e){
     }
   });
 });
+
+
+
 
 ////////////////////////cricle/////////////
 window.addEventListener("scroll", function () {
