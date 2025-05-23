@@ -464,7 +464,7 @@ a {
   cursor: pointer;
   font-size: 18px;
   transition: 0.6s;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 a.button.black-border:hover {
@@ -491,7 +491,7 @@ a.button.greys {
   background-color: #F3F3F3;
   border: 1px solid #F3F3F3;
   padding: 14px 30px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 a.button.greys:hover {
@@ -693,7 +693,7 @@ h4.margin-top {
 }
 .hover_move .button{
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   display: flex;
   align-items: center;
   min-width: 128px;
@@ -1973,7 +1973,10 @@ img.boxbg {
     margin: 0 auto;  
 } */
 .service-card:hover .overlay {
-  bottom: 25%;
+display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
   color: #000000;
   max-width: 415px;
   margin: 0 auto;
@@ -5219,14 +5222,15 @@ h4.bold-hg spen {
 /*********************contact css*************************/
 .bottal-img-conact {
   position: absolute;
-  bottom: -188px;
   width: 100%;
   left: 0;
   right: 0;
   height: 390px;
     overflow: hidden;
 }
-
+.relative2 {
+    position: relative;
+}
 .bottal-img-conact img {
   width: 100%;
 }
@@ -6522,9 +6526,7 @@ justify-content: center;
   }
 
   /**************contact css***************/
-  .bottal-img-conact {
-    bottom: -150px;
-  }
+ 
 
   .main-contact-us {
     padding-bottom: 150px;
@@ -6637,9 +6639,7 @@ section.Upcoming-events {
 }
 
   /*******contact css***************/
-  .bottal-img-conact {
-    bottom: -124px;
-  }
+ 
 
   .main-contact-us {
     padding-bottom: 120px;
@@ -7297,9 +7297,7 @@ section.patservices.bg-color{
     padding: 30px 0px;
   }
 
-  .bottal-img-conact {
-    bottom: -100px;
-  }
+ 
 
   .form-container {
     width: 100%;
@@ -7980,9 +7978,7 @@ padding: 20px 15px;
 
   /**********contact css***************/
 
-  .bottal-img-conact {
-    bottom: -46px;
-  }
+ 
 
   .main-contact-us {
     padding-bottom: 60px;
