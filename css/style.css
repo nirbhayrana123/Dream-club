@@ -790,7 +790,7 @@ h4.margin-top {
 }
 
 h2 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 51px;
   color: rgba(7, 37, 57, 1);
 }
@@ -895,8 +895,8 @@ img.boxbg {
 /*******************CARD ONE ********************/
 .service-card .icon-shep {
   position: absolute;
-  left: -71px;
-  top: -32px;
+  left: -40px;
+  top: -20px;
   width: 130px;
   height: 130px;
   z-index: 2;
@@ -923,7 +923,7 @@ img.boxbg {
   }
 
   100% {
-    transform: translate(350px, 260px) rotate(-90deg) scale(4.4);
+    transform: translate(308px, 248px) rotate(-90deg) scale(4.2);
   }
 }
 
@@ -944,7 +944,7 @@ img.boxbg {
     }
 
     100% {
-      transform: translate(280px, 260px) rotate(-90deg) scale(3.6);
+      transform: translate(245px, 250px) rotate(-90deg) scale(3.6);
     }
   }
 
@@ -966,7 +966,7 @@ img.boxbg {
     }
 
     100% {
-      transform: translate(230px, 260px) rotate(-90deg) scale(3);
+      transform: translate(200px, 253px) rotate(-90deg) scale(3);
     }
   }
 
@@ -988,7 +988,7 @@ img.boxbg {
     }
 
     100% {
-      transform: translate(350px, 260px) rotate(-90deg) scale(4);
+      transform: translate(319px, 250px) rotate(-90deg) scale(4);
     }
   }
 
@@ -1411,7 +1411,7 @@ img.boxbg {
   }
 
   100% {
-    transform: translate(350px, 260px) rotate(180deg) scale(4.4);
+    transform: translate(300px, 247px) rotate(180deg) scale(4.2);
   }
 }
 
@@ -1432,7 +1432,7 @@ img.boxbg {
     }
 
     100% {
-      transform: translate(280px, 260px) rotate(180deg) scale(4);
+      transform: translate(248px, 245px) rotate(180deg) scale(4);
     }
   }
 
@@ -1454,7 +1454,7 @@ img.boxbg {
     }
 
     100% {
-      transform: translate(240px, 260px) rotate(180deg) scale(3.3);
+      transform: translate(202px, 245px) rotate(180deg) scale(3.3);
     }
   }
 
@@ -1476,7 +1476,7 @@ img.boxbg {
     }
 
     100% {
-      transform: translate(350px, 260px) rotate(180deg) scale(3.3);
+      transform: translate(320px, 256px) rotate(180deg) scale(3.3);
     }
   }
 
@@ -2080,10 +2080,11 @@ service-card:hover .icon-shep {
 }
 
 .services-heding {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-  padding-bottom: 60px;
+    display: flex;
+    align-items: start;
+    justify-content: stretch;
+    padding-bottom: 60px;
+    gap: 10rem;
 }
 .service-card .overlay h4 {
   font-weight: 700;
