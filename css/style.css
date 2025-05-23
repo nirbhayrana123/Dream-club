@@ -2104,7 +2104,7 @@ service-card:hover .icon-shep {
 .services-heding p {
   color: #171717;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 1.4em;
   letter-spacing: 0px;
 }
@@ -2634,7 +2634,7 @@ small.d-block.mt-3 {
 }
 
 .banner-left span {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 47px;
 }
 
@@ -2911,7 +2911,7 @@ span.selected_items {
 }
 
 .jackdinelser .selected_item_box {
-  height: 400px;
+  height: 520px;
 }
 
 .row.mt_8 {
@@ -2949,7 +2949,7 @@ span.selected_items {
 
 .jackdinelser img.aberlour {
   position: absolute;
-  top: -85px;
+  top: -97px;
 }
 
 .aberlour_content {
@@ -3992,10 +3992,11 @@ p.per-year {
 }
 .services-heding.leftaline {
   justify-content: end;
+  padding-bottom: 0px;
 }
 section.the-club.bg-color.mt-0 {
   padding-bottom: 120px;
-  padding-top: 120px;
+  padding-top: 50px;
 }
 
 .season_tabs {
@@ -4163,9 +4164,6 @@ a.nav-link.active path {
   text-align: left;
 }
 
-.services-heding.club-jion {
-  display: none;
-}
 
 
 /**************tabs end*****************/
@@ -4559,7 +4557,7 @@ section.values h2 {
  
 
 section.values {
-  padding-top: 120px;
+  padding: 120px 0px;
 }
 .links-colors a {
   color: #fff;
@@ -5546,8 +5544,8 @@ input.form-control.border-1 {
   top: -6px;
 }
 .sticky-div {
-    top: 240px;
-    height: 540px;
+    top: 330px;
+    height: 170px;
     position: sticky;
 }
 .edit-icon {
@@ -5987,6 +5985,9 @@ section.Upcoming-events {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+section.Upcoming-events.homesection2{
+  padding-top: 160px;
+}
 .newsletter-form input::placeholder {
   color: #CECECE;   
 }
@@ -6314,14 +6315,39 @@ body {
 .banner-top.dram-prime {
   margin-bottom: 0;
 }
+.services-heding.club-jion h2 {
+  width: 50%;
+}
+.services-heding.club-jion p {
+  width: 47%;
+}
+.main-joinclub {
+  background-color: #f3f3f3;
+  position: sticky;
+  top: 125px;
+  z-index: 99;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+.services-heding.club-jion{
+  padding-bottom: 0;
+}
 /*******************scroll*****************/
-
+.stunning-gallery {
+  padding-top: 120px;
+}
 /****************scroll********************/
 
 
 /*============ RESPONSIVE STYLES================== */
 @media (max-width: 1400px) {
-
+  .main-joinclub {
+    top: 98px;
+    padding-bottom: 25px;
+}
+.stunning-gallery {
+  padding-top: 100px;
+}
   .professionals {
     padding: 50px 0;
   }
@@ -6342,7 +6368,7 @@ body {
   }
 
   .button {
-    padding: 10px 22px;
+    padding: 10px 17px;
     font-size: 15px;
   }
 
@@ -6421,8 +6447,7 @@ section.Upcoming-events {
 .join-events {
   padding: 100px 0px;
 }
-section.blogs {
-  background: rgb(243 243 243);
+section.blogs { 
   padding: 100px 0;
 }
 .testimonial-section { 
@@ -6457,10 +6482,16 @@ section.all-articsrd {
   width: 50%;
 }
 section.values {
-  padding-top: 100px;
+  padding: 100px 0px;
 }
 section.we-started{
   padding: 100px 0px;
+}
+.jackdinelser img.aberlour{
+  top: -50px;
+}
+.jackdinelser .selected_item_box{
+  height: 380px;
 }
 }
 
@@ -6490,9 +6521,6 @@ justify-content: center;
     padding-bottom: 50px;
   }
  
-  .bg-color {
-    margin-top: 70px;
-  }
 
   .card-custom {
     padding: 20px 30px;
@@ -6695,7 +6723,7 @@ section.we-started {
 
 @media (max-width: 991px) {
   section.values {
-    padding-top: 80px;
+    padding: 80px 0px;
 }
 section.we-started{
   padding: 80px 0px;
@@ -6773,7 +6801,16 @@ section.Upcoming-events {
     background-color: #fff;
     display: block;
 }
+.services-heding.club-jion p {
+  width: 100%;
+}
+.services-heding.club-jion h2 {
+  width: 100%;
+}
 
+.main-joinclub {
+  top: 0;
+}
 button.backintabs {
   font-family: 'Gilroy-Bold';
   font-style: normal;
@@ -6808,6 +6845,9 @@ section.patservices.bg-color{
 }
 .event-column2 {
   width: 100%;
+}
+.stunning-gallery {
+  padding-top: 80px;
 }
   /**********sing up*************/
   .services-heding {
@@ -7370,6 +7410,8 @@ main.blog-details .banner-upcoming {
 }
 }
 @media (max-width: 767px) {
+ 
+
   h5.card-heading {
     font-size: 20px;
 }
@@ -7571,13 +7613,11 @@ button.toggle-button span.line {
 }
 
 header { 
-  padding: 20px 15px; 
+  padding: 10px 15px; 
 }
-.logo-wareper img {
-width: 80px;
-}
+
 header.scrolled { 
-padding: 20px 15px; 
+padding: 10px 15px; 
 }
   .navebar.active {
     display: flex;
@@ -7945,7 +7985,7 @@ padding: 20px 15px;
   }
 
   section.values {
-    padding-top: 60px;
+    padding: 60px 0px;
   }
 
   section.values h2 {
@@ -8086,6 +8126,13 @@ img.blog-details-banner {
 .fintest-main{
     padding-left: 20px;
     padding-right: 20px;
+}
+p.font-bold {
+    font-size: 15px;
+    line-height: 25px;
+}
+.testimonial-content p {
+    font-size: 14px;
 }
 }
 
