@@ -726,8 +726,7 @@ h4.margin-top {
   width: 100%;
   height: 100%;
   gap: 40px;
-  padding: 60px;
-  padding-bottom: 0;
+  padding: 60px; 
 }
 
 .bg-img::after {
@@ -743,7 +742,9 @@ h4.margin-top {
 }
 
 .box-canter {
-  max-width: 485px;
+    max-width: 485px;
+    margin: 0 auto;
+    margin-right: 0;
 }
 
 .img-box,
@@ -2293,9 +2294,12 @@ p.font-bold {
 }
 
 .img-box {
-  position: relative;
-  top: 0px;
-  width: 700px;
+    position: absolute;
+    top: 33px;
+    width: 55%;
+    left: 0;
+    max-width: 55%;
+    text-align: center;
 }
 
 h5.card-heading {
@@ -5775,6 +5779,9 @@ a.btn.btn-dark.mt-2 {
 img.img-fluid { 
   width: 100%;
 }
+.img-box  img.img-fluid {
+    max-width: 670px;
+}
 .bordr {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
@@ -6441,6 +6448,7 @@ header.scrolled {
 section.Upcoming-events {
   padding-top: 100px;
   padding-bottom: 100px;
+  overflow: hidden;
 }
 .patservices {
   padding: 100px 0px;
@@ -6501,6 +6509,50 @@ section.we-started{
   .evening-img h3 {
     font-size: 32px; 
 }
+}
+
+@media (max-width: 1230px) {
+.bannerbg {
+  width: 100%;
+  height: 350px;
+  top: 0;
+}
+.sign-up-slider {
+    display: none;
+}
+    .sign-up {
+        margin-top: 390px;
+    }
+
+  .sign-up_content {
+    width: 100%; 
+    margin-top: 160px;
+}
+.sign-up {
+  flex-wrap: wrap;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 60px;
+}
+
+.header-signup { 
+  display: block;
+}
+.signup section.banner-top { 
+  display: block;
+}
+.sign-up_content {
+  margin-top: 0px;
+}
+
+.banner_img {
+    text-align: left;
+}
+
+
+
+
+
 
 /**********reviwes****************/
 .user-name {
@@ -6527,9 +6579,9 @@ justify-content: center;
     padding: 20px 30px;
   }
 
-  .bg-img {
-    padding: 28px;
-  }
+.bg-img {
+    padding: 45px;
+}
 
   section.blogs {
     padding: 50px 0;
@@ -6576,6 +6628,11 @@ justify-content: center;
   .sections-who {
     height: 400px;
   }
+  .img-box {
+    width: 48%;
+    max-width: 48%;
+}
+
 }
 
 
@@ -6858,36 +6915,18 @@ section.patservices.bg-color{
   flex-wrap: wrap;
   justify-content: center;
 }
-.img-box {
-  order: 2;
-  width: 100%;
-}
+    .img-box {
+        order: 2;
+        width: 100%;
+        position: relative;
+        max-width: 100%;
+        margin-bottom: -60px;
+    }
 .box-canter {
   max-width: 100%;
 }
 
-  .sign-up_content {
-    width: 100%; 
-    margin-top: 160px;
-}
-.sign-up {
-  flex-wrap: wrap;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 60px;
-}
-.sign-up-slider {
-  width: 100%; 
-}
-.header-signup { 
-  display: block;
-}
-.signup section.banner-top { 
-  display: block;
-}
-.sign-up_content {
-  margin-top: 0px;
-}
+
 
 /*************end sing up*****************/
 
@@ -7335,7 +7374,7 @@ section.patservices.bg-color{
 
   /**************contact css****************/
   .contact-us {
-    padding: 30px 0px;
+    padding: 80px 0px;
   }
 
  
@@ -7410,9 +7449,24 @@ main.blog-details .banner-upcoming {
     position: relative;
 }
 }
-@media (max-width: 767px) {
- 
+@media (max-width: 767px) { 
+.form-group {
+    display: block !important; 
+}
+.Marquees {
+    width: 80%;
+    margin: 0 auto;
+}
 
+.contact-us {
+    margin-bottom: 80px;
+}
+.form-group div  {
+    width: 100%  
+}
+.full-w  {
+    margin-bottom: 25px;
+}
   h5.card-heading {
     font-size: 20px;
 }
@@ -7434,7 +7488,9 @@ p.color-bookings {
 img.goto-img {
   width: 100%;
 }
-
+.dram-prime .banner-left p{
+display: block;
+}
 .my-revies {
   padding: 32px 15px; 
 }
@@ -7452,11 +7508,7 @@ img.goto-img {
 .sign-up {
   margin-top: 390px;
 }
-.bannerbg {
-  width: 100%;
-  height: 350px;
-  top: 0;
-}
+
 .header-signup .jion-d-nones {
   display: none !important;
 }
@@ -7505,9 +7557,9 @@ br {
   display: none;
 }
 
-button.toggle-button span.line {
+/* button.toggle-button span.line {
   background-color: #000000;
-}
+} */
   .Olive.li-box .hovericon {
     display: block;
   }
@@ -7877,6 +7929,12 @@ padding: 10px 15px;
   section.the-club.bg-color.mt-0 {
     padding: 60px 0px;
   }
+  .dram-prime .banner_img, .dram-prime .banner-left {
+    width: 100%;
+    padding-top: 100px;
+}
+
+
 
   .dram-prime .banner-left {
     padding-left: 30px;
@@ -7884,7 +7942,7 @@ padding: 10px 15px;
   }
 
   .dram-prime .banner {
-    height: 500px;
+    height: auto;
   }
   .contact_content h2 {
     font-size: 28px;
@@ -8068,6 +8126,7 @@ padding: 10px 15px;
 }
   section.Upcoming-events {
     padding-bottom: 80px;
+
 }
 main.discover-liqours .banner-top::after { 
   background: linear-gradient(90deg, rgb(0 0 0 / 48%) 26%, rgb(0 0 0 / 33%) 100%);
