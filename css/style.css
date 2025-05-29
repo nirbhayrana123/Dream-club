@@ -5131,7 +5131,14 @@ main.blog-details.eventsdetail .banners.example-box {
   color: #fff;
   margin-left: 5px;
 }
-
+span.bg-prime.header 
+ {
+    transform: none;
+    position: relative;
+    left: -16px;
+    z-index: -1;
+    font-size: 16px;
+}
 h4.bold-hg spen {
   color: #C49B41;
   font-weight: 400;
