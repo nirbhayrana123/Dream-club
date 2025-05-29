@@ -6351,6 +6351,7 @@ body {
 .stunning-gallery {
   padding-top: 120px;
 }
+.left-event-content .event-column2 {  position: sticky; top: -42px; height: 627px;}
 /****************scroll********************/
 
 
@@ -7446,6 +7447,9 @@ main.blog-details .banner-upcoming {
 .banner {
   padding-top: 0px;
 }
+.left-event-content .event-column2 {  height: auto;}
+.dalmore-logo { background: #171717; padding: 10px;}
+
 }
 
 /***********************Dram prime css end*****************/
