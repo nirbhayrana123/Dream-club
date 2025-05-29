@@ -272,7 +272,7 @@ button.toggle-button {
 
 header {
   position: absolute;
-  padding: 30px 30px;
+  padding: 20px 30px;
   left: 0;
   right: 0;
   z-index: 99;
@@ -356,7 +356,7 @@ header.scrolled {
   position: fixed;
   top: 0;
   background: #fff;
-  padding: 30px 30px;
+  padding: 20px 30px;
   box-shadow: 2px 2px 32px 0px rgba(0, 0, 0, 0.15);
   z-index: 9999;
 
@@ -5809,7 +5809,12 @@ a.Guests.mt-2 {
   margin-top: 16px;
 }
 .bg-booking {
-  margin-top: 124px;
+  margin-top: 130px;
+}
+.button.dark span {
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-left: 8px;
 }
 .bg-booking-banner {
   display: none;
@@ -6253,15 +6258,16 @@ display: none;
   top: -7px;
   left: -8px;
 }
-.profile_pic a.nav-link figure {
-  margin-bottom: 0;
-  margin-right: 10px;
-  position: relative;
-  width: 60px;
-  height: 60px;
-  overflow: hidden;
-  padding: 0;
-  margin-top: -4px;
+.profile_pic a.nav-link figure
+{
+    margin-bottom: 0;
+    margin-right: 10px;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    padding: 0;
+    margin-top: -7px;
 }
 
 /***********************profile*******************/
