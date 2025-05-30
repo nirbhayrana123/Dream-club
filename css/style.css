@@ -79,6 +79,10 @@ ul {
   position: relative;
   display: inline-block;
 } 
+
+.header-profile-image {
+  border-radius: 50%;
+}
  
 .file-input {
   display: none;
@@ -280,11 +284,11 @@ button.toggle-button {
 
 header {
   position: absolute;
-  padding: 30px 30px;
+  padding: 20px 30px;
   left: 0;
   right: 0;
   z-index: 99;
-  transition: 0.1s allease;
+  transition: 0.1s all ease;
 }
 
 .logo-wareper img {
@@ -313,7 +317,7 @@ a.button.greys:hover {
 }
 
 .navebar ul.navebar-list li a {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   text-decoration: none;
   font-family: 'Gilroy';
@@ -364,7 +368,7 @@ header.scrolled {
   position: fixed;
   top: 0;
   background: #fff;
-  padding: 30px 30px;
+  padding: 20px 30px;
   box-shadow: 2px 2px 32px 0px rgba(0, 0, 0, 0.15);
   z-index: 9999;
 
@@ -683,12 +687,15 @@ h4.margin-top {
   left: 0px;
   width: 100%;
   padding: 32px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.9) 57%, #000000 100%),
+  /* background: linear-gradient(180deg, rgba(69, 39, 111, 0.3) 0%, rgba(69, 39, 111, 0.9) 57%, #000000 100%),
+    linear-gradient(180deg, rgba(122, 28, 24, 0.4) 0%, rgba(72, 16, 14, 0.4) 100%); */
+  background: linear-gradient(180deg, rgba(7, 42, 66, 0.3) 0%, rgba(7, 42, 66, 0.9) 57%, #000000 100%),
     linear-gradient(180deg, rgba(122, 28, 24, 0.4) 0%, rgba(72, 16, 14, 0.4) 100%);
   top: 0px;
   opacity: 0;
   transition: 1s;
 }
+
 
 .Olives {
   position: absolute;
@@ -697,8 +704,10 @@ h4.margin-top {
   bottom: -50px;
   transition: 1s;
   padding: 32px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 57%, rgba(0, 0, 0, 0.8) 100%);
+  /* background: linear-gradient(180deg, rgba(69, 39, 111, 0) 0%, rgba(69, 39, 111, 0.8) 57%, rgba(69, 39, 111, 0.8) 100%); */
+  background: linear-gradient(180deg, rgba(7, 42, 66, 0) 0%, rgba(7, 42, 66, 0.8) 57%, rgba(7, 42, 66, 0.8) 100%);
 }
+
 .hover_move .button{
   font-size: 14px;
   font-weight: 600;
@@ -816,7 +825,7 @@ h2 {
 .patservices{
   padding: 120px 0px;
 }
-a.button.black:hover {
+/* a.button.black:hover {
   background-color: #17171700;
   border: 1px solid #171717;
   color: #171717;
@@ -844,6 +853,36 @@ a.button.black-hover {
   background-color: #17171700;
   border: 1px solid #171717;
   color: #171717;
+} */
+
+a.button.black:hover {
+  background-color: #17171700;
+  border: 1px solid #072a42;
+  color: #072a42;
+}
+
+.service-card svg {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+a.button.black {
+  background-color: #072a42;
+  border: 1px solid #072a42;
+  color: #ffffff;
+}
+
+a.button.black-hover:hover {
+  background-color: #072a42;
+  border: 1px solid #072a42;
+  color: #ffffff;
+}
+
+a.button.black-hover {
+  background-color: #072a4200;
+  border: 1px solid #072a42;
+  color: #072a42;
 }
 
 img.boxbg {
@@ -2351,8 +2390,8 @@ h5.card-heading {
   z-index: 1;
   transition: 1s;
   opacity: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.9) 57%, #000000 100%),
-    linear-gradient(180deg, rgba(122, 28, 24, 0.4) 0%, rgba(72, 16, 14, 0.4) 100%);
+  /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.9) 57%, #000000 100%),
+    linear-gradient(180deg, rgba(122, 28, 24, 0.4) 0%, rgba(72, 16, 14, 0.4) 100%); */
 }
 
 .blogs_slider .box._w-4 h5,
@@ -2384,8 +2423,12 @@ section.blogs {
   background: linear-gradient(180deg, #7b1c1870 0%, #47100E 100%);
 }
 
-.blogs_slider .item.green::after {
+/* .blogs_slider .item.green::after {
   background: linear-gradient(180deg, #173b35a6 0%, #0d231fc9 100%);
+} */
+
+.blogs_slider .item.green::after {
+  background: linear-gradient(180deg, #3b5652a6 0%, #0c0e0ec9 100%);
 }
 
 .blogs_slider .item.blue::after {
@@ -2668,6 +2711,7 @@ input.form-control {
   color: #fff !important;
   backdrop-filter: blur(24px);
   background: rgba(255, 255, 255, 0.1);
+   font-family: 'Gilroy';
 }
 
 input.form-control::placeholder {
@@ -2711,6 +2755,7 @@ main.discover-liqours .blogs_slider .item {
 
 main.discover-liqours .blogs_slider .item.green::after {
   height: 25%;
+  /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 72.5%, rgba(0, 0, 0, 0.8) 93%); */
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 72.5%, rgba(0, 0, 0, 0.8) 93%);
   top: auto;
 }
@@ -2922,7 +2967,7 @@ span.selected_items {
 }
 
 .jackdinelser .selected_item_box {
-  height: 520px;
+  height: 335px;
 }
 
 .row.mt_8 {
@@ -3247,6 +3292,7 @@ textarea {
   color: #6C6C6C;
   font-weight: 400;
   font-size: 16px;
+  font-family: 'Gilroy';
   outline: none !important;
 }
 
@@ -3459,7 +3505,16 @@ a.download-invoice.black {
 }
 
 .footer-bottom p.address {
+  width: 30%;
+}
+
+.footer-bottom p.copyright {
   width: 70%;
+}
+
+.footer-bottom p.powered {
+  width: 30%;
+  text-align: end;
 }
 
 .flexx {
@@ -3961,15 +4016,18 @@ a.button.dark.white-hover:hover {
   top: auto;
   height: 50%;
   opacity: 1;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 57%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(180deg, rgba(7, 42, 66, 0) 0%, rgba(7, 42, 66, 0.8) 57%, rgba(7, 42, 66, 0.8) 100%);
+  /* background: linear-gradient(180deg, rgba(69, 39, 111, 0) 0%, rgba(69, 39, 111, 0.8) 57%, rgba(69, 39, 111, 0.8) 100%); */
 }
 
 .event-card.savings_events:hover .event-overlays {
   top: auto;
   height: 100%;
   opacity: 1;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 57%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(180deg, rgba(7, 42, 66, 0) 0%, rgba(7, 42, 66, 0.8) 57%, rgba(7, 42, 66, 0.8) 100%);
+  /* background: linear-gradient(180deg, rgba(69, 39, 111, 0) 0%, rgba(69, 39, 111, 0.8) 57%, rgba(69, 39, 111, 0.8) 100%); */
 }
+
 
 p.per-year {
   font-family: Gilroy-Regular;
@@ -4171,7 +4229,7 @@ a.nav-link.active path {
 .season_flexs {
   position: relative;
   background-color: #ffffff;
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
 }
 .image-rights img {
   width: 335px;
@@ -4510,7 +4568,7 @@ h2.meet-our {
   display: flex;
   align-items: center;
   padding-top: 24px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-bottom: 120px;
 }
 .team-info h4 {
@@ -4841,6 +4899,7 @@ main.signup {
   border-bottom: 1px solid #6C6C6C;
   font-weight: 400;
   font-size: 16px;
+  font-family: 'Gilroy';
   color: #6C6C6C;
 }
  
@@ -4885,6 +4944,15 @@ button.apple {
 button.facebook {
   width: 15%;
 }
+a.apple,
+a.facebook {
+  width: 15%;
+}
+
+a.google {
+  min-width: 70%;
+}
+
 .featured-slider .owl-nav.disabled {
   position: absolute;
   top: 40%;
@@ -5655,6 +5723,7 @@ input.form-control.border-1 {
   border: none;
   margin: 10px 0px;
   background-color: transparent;
+   font-family: 'Gilroy';
 }
 
 .menu-item i {
@@ -5850,7 +5919,12 @@ a.Guests.mt-2 {
     margin-top: 25px;
 }
 .bg-booking {
-  margin-top: 124px;
+  margin-top: 130px;
+}
+.button.dark span {
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-left: 8px;
 }
 .bg-booking-banner {
   display: none;
@@ -5918,6 +5992,11 @@ ul.Distillery-event-book {
   font-size: 18px;
   text-align: center;
 }
+
+.book-proseed:hover {
+  border: 1px solid #000;
+}
+
 .an-events-cards {
   background-color: #fff;
   padding: 32px;
@@ -6293,15 +6372,16 @@ display: none;
   top: -7px;
   left: -8px;
 }
-.profile_pic a.nav-link figure {
-  margin-bottom: 0;
-  margin-right: 10px;
-  position: relative;
-  width: 60px;
-  height: 60px;
-  overflow: hidden;
-  padding: 0;
-  margin-top: -4px;
+.profile_pic a.nav-link figure
+{
+    margin-bottom: 0;
+    margin-right: 10px;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    padding: 0;
+    margin-top: -7px;
 }
 
 /***********************profile*******************/
@@ -6484,72 +6564,92 @@ body {
   .right {
     width: 45%;
   }
-  header { 
-    padding: 20px 25px; 
-}
-.logo-wareper img {
-  width: 70px;
-}
-header.scrolled { 
-  padding: 20px 25px; 
-}
-section.Upcoming-events {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  overflow: hidden;
-}
-.patservices {
-  padding: 100px 0px;
-}
-.join-events {
-  padding: 100px 0px;
-}
-section.blogs { 
-  padding: 100px 0;
-}
-.testimonial-section { 
-  padding: 100px 0px;
-}
-.founderesd {
-  padding: 100px 0px;
-}
-.explore-you.gallery {
-  padding: 100px 0px 20px 0px;
-}
-.newsletter-section{
-  padding: 100px 0px;
-}
-section.teb_section{
-padding: 100px 0px;
-}
-section.details {
-  padding: 100px 0;
-}
-section.all-articsrd {
-  padding-top: 100px;
-  padding-bottom: 60px;
-}
-.section-featured {
-  padding: 100px 0px;
-}
-.bannerbg {
-  width: 55%;
-}
-.sign-up-slider {
-  width: 50%;
-}
-section.values {
-  padding: 100px 0px;
-}
-section.we-started{
-  padding: 100px 0px;
-}
-.jackdinelser img.aberlour{
-  top: -50px;
-}
-.jackdinelser .selected_item_box{
-  height: 380px;
-}
+  header {
+    padding: 20px 25px;
+  }
+
+  .logo-wareper img {
+    width: 70px;
+  }
+
+  header.scrolled {
+    padding: 20px 25px;
+  }
+
+  section.Upcoming-events {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: hidden;
+  }
+
+  .patservices {
+    padding: 100px 0px;
+  }
+
+  .join-events {
+    padding: 100px 0px;
+  }
+
+  section.blogs {
+    padding: 100px 0;
+  }
+
+  .testimonial-section {
+    padding: 100px 0px;
+  }
+
+  .founderesd {
+    padding: 100px 0px;
+  }
+
+  .explore-you.gallery {
+    padding: 100px 0px 20px 0px;
+  }
+
+  .newsletter-section {
+    padding: 100px 0px;
+  }
+
+  section.teb_section {
+    padding: 100px 0px;
+  }
+
+  section.details {
+    padding: 100px 0;
+  }
+
+  section.all-articsrd {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
+  .section-featured {
+    padding: 100px 0px;
+  }
+
+  .bannerbg {
+    width: 55%;
+  }
+
+  .sign-up-slider {
+    width: 50%;
+  }
+
+  section.values {
+    padding: 100px 0px;
+  }
+
+  section.we-started {
+    padding: 100px 0px;
+  }
+
+  .jackdinelser img.aberlour {
+    top: -50px;
+  }
+
+  .jackdinelser .selected_item_box {
+    height: 380px;
+  }
 }
 
 @media (max-width: 1200px) {
