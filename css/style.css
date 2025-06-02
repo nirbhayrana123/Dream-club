@@ -1138,6 +1138,10 @@ img.boxbg {
     bottom: 0;
 }
 
+.blogs_slider .box::after {
+    opacity: 1!important;
+}
+
   @keyframes moveRotateScale {
     0% {
       transform: translate(0, 0) rotate(0deg) scale(1);
