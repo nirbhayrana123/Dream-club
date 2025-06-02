@@ -73,8 +73,87 @@ ul {
 .mb-6 {
   margin-bottom: 60px;
 }
+
+
 /*****************profile***************/
- 
+
+button.close-popup {
+    position: absolute;
+    right: 5px;
+    top: 4px;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+
+.popup-wrapper {
+    z-index: 999999999;
+    display: block;
+    position: fixed;
+    inset: 0%;
+}
+
+.popup-bg {
+    z-index: 1;
+    background-color: #000000b3;
+    position: absolute;
+    inset: 0%;
+}
+img.popup-logo {
+    width: 85px;
+}
+.w-popup {
+    z-index: 9999999;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+.popup-content {
+    width: 384px;
+    min-height: 332px;
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 35px;
+    position: relative;
+    background-color: #ffffff;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+.popup-content .button {
+    padding: 10px 35px;
+    font-size: 16px;
+}
+
+a.button.bt1 {
+    background-color: #ffffff;
+    color: #171717;
+    border: 1px solid #dbdbdb;
+}
+
+a.button.bt2 {
+    background-color: #171717;
+    border: 1px solid #171717;
+    color: #ffffff;
+}
+a.button.bt1:hover {
+    background-color: #171717;
+    border: 1px solid #171717;
+    color: #ffffff;
+}
+a.button.bt2:hover {
+    background-color: #ffffff;
+    color: #171717;
+    border: 1px solid #dbdbdb;
+}
 .profile-image {
   position: relative;
   display: inline-block;
@@ -464,8 +543,9 @@ a {
 }
 
 .button-row {
-  display: flex;
-  gap: 15px;
+    display: flex;
+    gap: 15px;
+    width: 100%;
 }
 
 .button {
@@ -1052,6 +1132,12 @@ img.boxbg {
 }
 
 @media only screen and (max-width: 767px) {
+.popup-content {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
   @keyframes moveRotateScale {
     0% {
       transform: translate(0, 0) rotate(0deg) scale(1);
@@ -5206,7 +5292,7 @@ main.blog-details.eventsdetail .banners.example-box {
   background: linear-gradient(83.59deg, #231535 -8.32%, #743AA0 124.31%);
   transform: matrix(1, 0, 0, -1, 0, 0);
   padding: 2px 7px;
-  border-radius: 5px;
+ border-radius: 4px 4px 4px 4px;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 3.5px;
@@ -5667,7 +5753,27 @@ input.form-control.border-1 {
 
 
 /****************************/
-
+span.bg-prime.header::before {
+ content: "";
+    width: 15px;
+    height: 28px;
+    position: absolute;
+    left: -9px;
+    top: 0px;
+    z-index: 99999;
+    background-image: url(../images/sap.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+span.bg-prime.header
+ {
+    transform: none;
+    position: relative;
+    left: -16px;
+    z-index: -1;
+    font-size: 16px;
+    z-index: 99;
+}
 
 /*************************/
 

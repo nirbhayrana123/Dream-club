@@ -211,6 +211,9 @@ $(document).click(function(e){
       $("header").removeClass("scrolled");
     }
   });
+  $('#box .button-row').on('click', function () {
+    $('#box').remove();
+  });
 });
 
 
@@ -363,3 +366,6 @@ document.querySelectorAll('.backintabs').forEach(button => {
   }
 });
 
+  
+ 
+ 
