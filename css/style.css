@@ -968,6 +968,8 @@ a.button.black-hover {
 img.boxbg {
   min-height: 584px;
   object-fit: cover;
+  max-height: 584px;
+  width: 100%;
 }
 
 .service-card {
