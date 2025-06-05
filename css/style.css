@@ -8595,7 +8595,7 @@ p.font-bold {
   margin-bottom: 20px;
 }
 }
-
+@media screen and (max-width: 530px) {.icon-shep.four4 {right: -6%; left: auto;}}
 @media (max-width: 480px) {
   .testimonial-section .owl-item {
     transform: scale(1);
@@ -8641,4 +8641,8 @@ p.font-bold {
   .testimonial-section .owl-nav {
     max-width: 87%;
   }
-}
+  .icon-shep.four4 { right: -11% }
+} 
+@media screen and (max-width: 431px) {.icon-shep.four4 {right: -5%;}}
+@media screen and (max-width: 418px) {.icon-shep.four4 {right: -10%;}}
+@media screen and (max-width: 361px) {.service-card .icon-shep {  width: 117px; }.icon-shep.four4 {  right: -12%}}
